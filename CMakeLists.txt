@@ -11,11 +11,17 @@ FetchContent_Declare(
     GIT_REPOSITORY https://github.com/fmtlib/fmt.git
     GIT_TAG 10.1.1
 )     
-FetchContent_MakeAvailable(fmt)
+FetchContent_Declare(
+    eigen
+    GIT_REPOSITORY https://gitlab.com/libeigen/eigen.git
+    GIT_TAG 3.4.0
+)     
+FetchContent_MakeAvailable(fmt eigen)
 
-add_executable(inertiafx main.cpp)
-target_link_libraries(inertiafx PRIVATE fmt::fmt)
+set(core_srcs "Core/Src/Engine.cpp" "Core/Src/World.cpp" "Core/Src/VacuumWorld.cpp" "Core/Src/Body.cpp")
+add_executable(inertiafx main.cpp ${core_srcs})
+target_link_libraries(inertiafx PRIVATE fmt::fmt Eigen3::Eigen)
 
-target_include_directories(inertiafx PUBLIC "${PROJECT_BINARY_DIR}")
+target_include_directories(inertiafx PUBLIC "${PROJECT_SOURCE_DIR}/Core/Inc" "${PROJECT_BINARY_DIR}" "${EIGEN3_INCLUDE_DIR}")
 configure_file(Core/Inc/InertiaFXConfig.h InertiaFX.h)
 
