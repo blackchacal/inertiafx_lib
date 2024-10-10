@@ -2,13 +2,10 @@
 #include "Engine.h"
 #include "VacuumWorld.h"
 
-using namespace InertiaFX;
-using namespace Core;
+using namespace InertiaFX::Core;
 
 int main()
 {
-    std::cout << "InertiaFX\n";
-
     VacuumWorld world;
     Engine engine(&world);
 

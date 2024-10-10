@@ -14,8 +14,7 @@
 
 #include "Body.h"
 
-using namespace InertiaFX;
-using namespace Core;
+using namespace InertiaFX::Core;
 
 IBody::~IBody() {}
 

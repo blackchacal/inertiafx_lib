@@ -2,7 +2,7 @@
  * InertiaFX - Physics Engine                                                 *
  *                                                                            *
  * \file Engine.h                                                             *
- * \brief Engine instance.                                                    *
+ * \brief Engine class.                                                       *
  *                                                                            *
  * \author blackchacal <ribeiro.tonet@gmail.com>                              *
  * \date October, 7th 2024                                                    *
@@ -19,6 +19,7 @@
 
 #include "GenericTypes.h"
 #include "IWorld.h"
+#include "Logger.h"
 
 namespace InertiaFX
 {
@@ -43,8 +44,10 @@ namespace InertiaFX
             bool is_running;
             RefDimensions dimensions;
             uint32_t total_run_time;
+            Logger logger;
 
             void timeStep(uint32_t t);
+            void engineStartLogging(void);
         };
     }
 }

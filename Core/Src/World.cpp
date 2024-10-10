@@ -19,8 +19,7 @@
 #include "World.h"
 #include "Body.h"
 
-using namespace InertiaFX;
-using namespace Core;
+using namespace InertiaFX::Core;
 
 IWorld::~IWorld() {}
 

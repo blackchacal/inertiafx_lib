@@ -16,8 +16,7 @@
 
 #include "VacuumWorld.h"
 
-using namespace InertiaFX;
-using namespace Core;
+using namespace InertiaFX::Core;
 
 VacuumWorld::VacuumWorld()
 {
@@ -26,5 +25,5 @@ VacuumWorld::VacuumWorld()
 
 VacuumWorld::~VacuumWorld()
 {
-    
+
 }

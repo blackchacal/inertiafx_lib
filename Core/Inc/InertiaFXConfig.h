@@ -13,3 +13,13 @@
 #define InertiaFX_VERSION_MAJOR @InertiaFX_VERSION_MAJOR@
 #define InertiaFX_VERSION_MINOR @InertiaFX_VERSION_MINOR@
 #define InertiaFX_VERSION_PATCH @InertiaFX_VERSION_PATCH@
+
+/****************************************************************************** 
+ * Logger Configurations                                                      *
+ ******************************************************************************/
+
+#define LOGGER_EN   (1)
+#define LOGGER_MAX_LOG_MSG_SIZE (256)
+#define LOGGER_LOG_FILENAME ("inertiafx.log")
+#define LOGGER_LOG_TO_CONSOLE   (1)
+#define LOGGER_LOG_TO_FILE      (1)
