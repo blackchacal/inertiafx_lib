@@ -18,8 +18,12 @@ FetchContent_Declare(
 )     
 FetchContent_MakeAvailable(fmt eigen)
 
-set(core_srcs "Core/Src/Engine.cpp" "Core/Src/World.cpp" "Core/Src/VacuumWorld.cpp" "Core/Src/Body.cpp" "Core/Src/Logger.cpp")
-add_executable(inertiafx main.cpp ${core_srcs})
+# Set the source folder
+set(SOURCE_DIR "${PROJECT_SOURCE_DIR}/Core/Src")
+# Recursively collect all .cpp files in the source folder and subfolders
+file(GLOB_RECURSE SOURCES "${SOURCE_DIR}/*.cpp")
+
+add_executable(inertiafx main.cpp ${SOURCES})
 target_link_libraries(inertiafx PRIVATE fmt::fmt Eigen3::Eigen)
 
 target_include_directories(inertiafx PUBLIC "${PROJECT_SOURCE_DIR}/Core/Inc" "${PROJECT_BINARY_DIR}" "${EIGEN3_INCLUDE_DIR}")

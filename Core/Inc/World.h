@@ -41,8 +41,8 @@ namespace InertiaFX
             void setShape(WorldShape shape);
             void addBody(IBody *body, Eigen::Vector3d position);
             void addMedium(IMedium *medium, Eigen::Vector3d position);
-            void generateRandomBodies(unsigned int n_bodies);
-            void generateBodiesAtRandomPositions(unsigned int n_bodies);
+            void spawnRandomBodiesAtRandomPositions(unsigned int n_bodies);
+            void spawnBodiesAtRandomPositions(IBody *body, unsigned int n_bodies);
 
         protected:
             Eigen::Vector3d gravity_vect;

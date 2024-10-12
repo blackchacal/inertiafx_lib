@@ -110,12 +110,12 @@ void World::addMedium(IMedium *medium, Eigen::Vector3d position)
     this->mediums_list.insert(this->mediums_list.end(), medium);
 }
 
-void World::generateRandomBodies(unsigned int n_bodies)
+void World::spawnRandomBodiesAtRandomPositions(unsigned int n_bodies)
 {
     /* TODO: */
 }
 
-void World::generateBodiesAtRandomPositions(unsigned int n_bodies)
+void World::spawnBodiesAtRandomPositions(IBody *body, unsigned int n_bodies)
 {
     /* TODO: */
 }

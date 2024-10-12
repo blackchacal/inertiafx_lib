@@ -37,8 +37,8 @@ namespace InertiaFX
             virtual void setShape(WorldShape shape) = 0;
             virtual void addBody(IBody *body, Eigen::Vector3d position) = 0;
             virtual void addMedium(IMedium *medium, Eigen::Vector3d position) = 0;
-            virtual void generateRandomBodies(unsigned int n_bodies) = 0;
-            virtual void generateBodiesAtRandomPositions(unsigned int n_bodies) = 0;
+            virtual void spawnRandomBodiesAtRandomPositions(unsigned int n_bodies) = 0;
+            virtual void spawnBodiesAtRandomPositions(IBody *body, unsigned int n_bodies) = 0;
         };
     }
 }

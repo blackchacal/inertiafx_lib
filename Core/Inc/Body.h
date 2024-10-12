@@ -2,7 +2,7 @@
  * InertiaFX - Physics Engine                                                 *
  *                                                                            *
  * \file Body.h                                                               *
- * \brief Generic Body base class.                                            *
+ * \brief Generic Body abstract class.                                        *
  *                                                                            *
  * \author blackchacal <ribeiro.tonet@gmail.com>                              *
  * \date October, 8th 2024                                                    *
@@ -28,11 +28,15 @@ namespace InertiaFX
             ~Body();
             void applyForce(Eigen::Vector3d force);
             void setPosition(Eigen::Vector3d position);
+            void setVelocity(Eigen::Vector3d velocity);
+            void setAcceleration(Eigen::Vector3d acceleration);
             Eigen::Vector3d getPosition();
             Eigen::Vector3d getVelocity();
             Eigen::Vector3d getAcceleration();
             double getMass();
+            virtual std::string getName() = 0;
             bool isPointMass();
+            std::string toString();
 
         protected:
             bool is_point_mass;
@@ -41,6 +45,7 @@ namespace InertiaFX
             Eigen::Vector3d velocity;
             Eigen::Vector3d acceleration;
             Eigen::Vector3d force_sum;
+            std::string name;
         };
     }
 }
