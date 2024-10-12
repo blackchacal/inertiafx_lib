@@ -47,6 +47,11 @@ unsigned int World::getTotalNumberOfMediums()
     return this->mediums_list.size();
 }
 
+std::vector<IBody *>& World::getBodies()
+{
+    return this->bodies_list;
+}
+
 double World::getVolume()
 {
     switch (this->shape)

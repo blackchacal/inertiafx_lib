@@ -30,6 +30,7 @@ namespace InertiaFX
             void setPosition(Eigen::Vector3d position);
             void setVelocity(Eigen::Vector3d velocity);
             void setAcceleration(Eigen::Vector3d acceleration);
+            Eigen::Vector3d getNetForce();
             Eigen::Vector3d getPosition();
             Eigen::Vector3d getVelocity();
             Eigen::Vector3d getAcceleration();
@@ -44,7 +45,8 @@ namespace InertiaFX
             Eigen::Vector3d position;
             Eigen::Vector3d velocity;
             Eigen::Vector3d acceleration;
-            Eigen::Vector3d force_sum;
+            Eigen::Vector3d net_force;
+            std::vector<Eigen::Vector3d> forces;
             std::string name;
         };
     }

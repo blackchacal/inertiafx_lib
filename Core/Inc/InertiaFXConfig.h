@@ -20,6 +20,6 @@
 
 #define LOGGER_EN   (1)
 #define LOGGER_MAX_LOG_MSG_SIZE (256)
-#define LOGGER_LOG_FILENAME ("inertiafx.log")
+#define LOGGER_LOG_FILENAME ("@PROJECT_BINARY_DIR@/inertiafx.log")
 #define LOGGER_LOG_TO_CONSOLE   (1)
 #define LOGGER_LOG_TO_FILE      (1)

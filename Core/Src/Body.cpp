@@ -23,10 +23,11 @@ Body::Body()
 {
     this->is_point_mass = false;
     this->mass = 1;
-    this->position = Eigen::Vector3d{0, 0, 0};
-    this->velocity = Eigen::Vector3d{0, 0, 0};
-    this->acceleration = Eigen::Vector3d{0, 0, 0};
-    this->force_sum = Eigen::Vector3d{0, 0, 0};
+    this->position = Eigen::Vector3d::Zero();
+    this->velocity = Eigen::Vector3d::Zero();
+    this->acceleration = Eigen::Vector3d::Zero();
+    this->net_force = Eigen::Vector3d::Zero();
+    this->forces = std::vector<Eigen::Vector3d>();
 }
 
 Body::~Body()
@@ -36,7 +37,7 @@ Body::~Body()
 
 void Body::applyForce(Eigen::Vector3d force)
 {
-
+    this->forces.insert(this->forces.end(), force);
 }
 
 void Body::setPosition(Eigen::Vector3d position)
@@ -52,6 +53,17 @@ void Body::setVelocity(Eigen::Vector3d velocity)
 void Body::setAcceleration(Eigen::Vector3d acceleration)
 {
     this->acceleration = acceleration;
+}
+
+Eigen::Vector3d Body::getNetForce()
+{
+    this->net_force.setZero();
+    for (std::vector<Eigen::Vector3d>::iterator it = forces.begin(); it < forces.end(); it++)
+    {
+        Eigen::Vector3d force = *it;
+        this->net_force += force;
+    }
+    return this->net_force;
 }
 
 Eigen::Vector3d Body::getPosition()

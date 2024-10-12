@@ -35,6 +35,7 @@ namespace InertiaFX
 
             unsigned int getTotalNumberOfBodies();
             unsigned int getTotalNumberOfMediums();
+            std::vector<IBody *>& getBodies();
             double getVolume();
             std::array<double, 3> getMaxDimensions();
             Eigen::Vector3d getGravityVector();

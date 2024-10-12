@@ -11,9 +11,9 @@ int main()
     Engine engine(&world);
 
     PointMass pmass;
-    std::cout << pmass.toString() << std::endl;
+    pmass.applyForce(Eigen::Vector3d{1, 0, 0});
+
     world.addBody(&pmass, Eigen::Vector3d{1, 0, 0});
-    std::cout << pmass.toString() << std::endl;
 
     engine.run(10);
 

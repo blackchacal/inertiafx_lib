@@ -14,6 +14,7 @@
 
 #include <InertiaFX.h>
 #include <Engine.h>
+#include <PointMass.h>
 
 using namespace InertiaFX::Core;
 
@@ -110,6 +111,63 @@ void Engine::setDimensions(RefDimensions dimensions)
 void Engine::timeStep(uint32_t t)
 {
     this->logger.log(LogLevel::INFO, "Engine", "time step: %d", t);
+
+    /* Get world bodies */
+    std::vector<IBody *> bodies = this->world->getBodies();
+
+    /* For each body, calculate the net force, acceleration, velocity and position */
+    for (std::vector<IBody *>::iterator it = bodies.begin(); it < bodies.end(); it++)
+    {
+        PointMass *body = static_cast<PointMass *>(*it);
+
+        /* NOTE: For now, lets assume constant force over time. */
+
+        /* Calculate body net force */
+        /* Apply forces to the object depending on the interactions with other bodies or
+        the medium in which it is inserted. */
+        Eigen::Vector3d net_force = body->getNetForce();
+
+        this->logger.log(LogLevel::INFO, "Engine", "%s net force: (%f, %f, %f)", body->getName().c_str(),
+                         net_force.x(),
+                         net_force.y(),
+                         net_force.z());
+
+        /**
+         * Calculate body acceleration
+         * vec_a = vec_F / m;
+         */
+        Eigen::Vector3d new_acc = net_force / body->getMass();
+        body->setAcceleration(new_acc);
+
+        this->logger.log(LogLevel::INFO, "Engine", "%s acceleration: (%f, %f, %f)", body->getName().c_str(),
+                         new_acc.x(),
+                         new_acc.y(),
+                         new_acc.z());
+
+        /**
+         * Calculate body velocity
+         * vec_v = vec_a * t + vec_v0
+         */
+        Eigen::Vector3d new_vel = new_acc * t + Eigen::Vector3d(0, 0, 0);
+        body->setVelocity(new_vel);
+
+        this->logger.log(LogLevel::INFO, "Engine", "%s velocity: (%f, %f, %f)", body->getName().c_str(),
+                         new_vel.x(),
+                         new_vel.y(),
+                         new_vel.z());
+
+        /**
+         * Calculate body position
+         * vec_x = vec_x0 + vec_v0 * t + (1/2) * vec_a * t^2
+         */
+        Eigen::Vector3d new_pos = Eigen::Vector3d(0, 0, 0) + Eigen::Vector3d(0, 0, 0) * t + 0.5f * new_acc * t * t;
+        body->setPosition(new_pos);
+
+        this->logger.log(LogLevel::INFO, "Engine", "%s position: (%f, %f, %f)", body->getName().c_str(),
+                         body->getPosition().x(),
+                         body->getPosition().y(),
+                         body->getPosition().z());
+    }
 }
 
 void Engine::engineStartLogging(void)

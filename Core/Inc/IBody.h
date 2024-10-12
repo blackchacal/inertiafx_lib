@@ -30,6 +30,7 @@ namespace InertiaFX
             virtual void setPosition(Eigen::Vector3d position) = 0;
             virtual void setVelocity(Eigen::Vector3d velocity) = 0;
             virtual void setAcceleration(Eigen::Vector3d acceleration) = 0;
+            virtual Eigen::Vector3d getNetForce() = 0;
             virtual Eigen::Vector3d getPosition() = 0;
             virtual Eigen::Vector3d getVelocity() = 0;
             virtual Eigen::Vector3d getAcceleration() = 0;

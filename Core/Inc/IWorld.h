@@ -31,6 +31,7 @@ namespace InertiaFX
             virtual ~IWorld() = 0;
             virtual unsigned int getTotalNumberOfBodies() = 0;
             virtual unsigned int getTotalNumberOfMediums() = 0;
+            virtual std::vector<IBody *>& getBodies() = 0;
             virtual double getVolume() = 0;
             virtual std::array<double, 3> getMaxDimensions() = 0;
             virtual Eigen::Vector3d getGravityVector() = 0;
