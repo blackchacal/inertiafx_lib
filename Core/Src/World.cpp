@@ -14,12 +14,12 @@
  * \copyright 2024-NOW. Ricardo Tonet. All rights reserved.                   *
  *****************************************************************************/
 
-#include <numbers>
-
 #include "World.h"
 #include "Body.h"
 
 using namespace InertiaFX::Core;
+
+const double pi = 3.14159265358979323846;
 
 IWorld::~IWorld() {}
 
@@ -73,7 +73,7 @@ double World::getVolume()
          * can provide the radius. Here we are choosing the X direction.
          */
         double r = this->max_dim[0] - this->min_dim[0];
-        return ((4.0f/3.0f) * std::numbers::pi * r * r * r);
+        return ((4.0f/3.0f) * pi * r * r * r);
         break;
     }
 

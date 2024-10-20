@@ -15,25 +15,33 @@
 #include <InertiaFX.h>
 #include <Engine.h>
 #include <PointMass.h>
+#include <PositionReport.hpp>
 
 using namespace InertiaFX::Core;
+using namespace InertiaFX::Reports;
 
-Engine::Engine() : logger()
+Engine::Engine(int argc, char **argv) : logger()
 {
+    this->plot_app = new TApplication("InertiaFX", &argc, argv);
+    this->report = nullptr;
+
     this->engineStartLogging();
 
 #if LOGGER_EN == 0
     this->logger.disable();
 #endif
 
-    IWorld *world = NULL;
+    this->world = nullptr;
     this->is_running = false;
     this->dimensions = RefDimensions::DIM_1D;
     this->total_run_time = 0;
 }
 
-Engine::Engine(IWorld *world) : logger()
+Engine::Engine(int argc, char **argv, IWorld *world) : logger()
 {
+    this->plot_app = new TApplication("InertiaFX", &argc, argv);
+    this->report = nullptr;
+
     this->engineStartLogging();
 
 #if LOGGER_EN == 0
@@ -46,8 +54,11 @@ Engine::Engine(IWorld *world) : logger()
     this->total_run_time = 0;
 }
 
-Engine::Engine(IWorld *world, WorldShape world_shape, RefDimensions dimensions) : logger()
+Engine::Engine(int argc, char **argv, IWorld *world, WorldShape world_shape, RefDimensions dimensions) : logger()
 {
+    this->plot_app = new TApplication("InertiaFX", &argc, argv);
+    this->report = nullptr;
+
     this->engineStartLogging();
 
 #if LOGGER_EN == 0
@@ -63,11 +74,31 @@ Engine::Engine(IWorld *world, WorldShape world_shape, RefDimensions dimensions) 
 
 Engine::~Engine()
 {
+    /* Delete Plot App (TApplication) instance */
+    delete this->plot_app;
+    this->plot_app = nullptr;
+
+    if (this->world != nullptr)
+    {
+        delete this->world;
+        this->world = nullptr;
+    }
+
+    if (this->report != nullptr)
+    {
+        delete this->report;
+        this->report = nullptr;
+    }
 }
 
 void Engine::addWorld(IWorld *world)
 {
     this->world = world;
+}
+
+void Engine::addReport(Report *report)
+{
+    this->report = report;
 }
 
 void Engine::run()
@@ -80,7 +111,17 @@ void Engine::run()
     while (this->is_running)
     {
         timeStep(t);
+        if (this->report != nullptr)
+        {
+            this->report->updateData(t);
+        }
         t++;
+    }
+    if (this->report != nullptr)
+    {
+        this->report->showPlots();
+        // Run the application to display the plot
+        this->plot_app->Run();
     }
 }
 
@@ -94,6 +135,17 @@ void Engine::run(uint32_t run_time)
     for (uint32_t t = 0; t <= this->total_run_time; t++)
     {
         timeStep(t);
+
+        if (this->report != nullptr)
+        {
+            this->report->updateData(t);
+        }
+    }
+    if (this->report != nullptr)
+    {
+        this->report->showPlots();
+        // Run the application to display the plot
+        this->plot_app->Run();
     }
 }
 
