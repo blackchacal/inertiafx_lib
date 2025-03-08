@@ -23,20 +23,31 @@ Report::Report(IBody *body, RefDimensions dimensions, PlotType type)
 {
     this->plot_canvas = new TCanvas("canvas", this->title.c_str(), 800, 600);
 
-    switch (dimensions)
+    switch (this->type)
     {
-    case RefDimensions::DIM_1D:
-        this->plot_canvas->Divide(1,1);
+    case PlotType::Scalar:
+        switch (dimensions)
+        {
+        case RefDimensions::DIM_1D:
+            this->plot_canvas->Divide(1, 1);
+            break;
+
+        case RefDimensions::DIM_2D:
+            this->plot_canvas->Divide(2, 1);
+            break;
+
+        case RefDimensions::DIM_3D:
+            this->plot_canvas->Divide(3, 1);
+            break;
+
+        default:
+            break;
+        }
         break;
 
-    case RefDimensions::DIM_2D:
-        this->plot_canvas->Divide(2,1);
+    case PlotType::Vector:
         break;
 
-    case RefDimensions::DIM_3D:
-        this->plot_canvas->Divide(3,1);
-        break;
-    
     default:
         break;
     }
@@ -45,27 +56,37 @@ Report::Report(IBody *body, RefDimensions dimensions, PlotType type)
     this->dimensions = dimensions;
     this->setReportTitle("");
     this->setPlotType(type);
-
 }
 
 Report::Report(IBody *body, RefDimensions dimensions, PlotType type, std::string title)
 {
     this->plot_canvas = new TCanvas("canvas", this->title.c_str(), 800, 600);
 
-    switch (dimensions)
+    switch (this->type)
     {
-    case RefDimensions::DIM_1D:
-        this->plot_canvas->Divide(1,1);
+    case PlotType::Scalar:
+        switch (dimensions)
+        {
+        case RefDimensions::DIM_1D:
+            this->plot_canvas->Divide(1, 1);
+            break;
+
+        case RefDimensions::DIM_2D:
+            this->plot_canvas->Divide(2, 1);
+            break;
+
+        case RefDimensions::DIM_3D:
+            this->plot_canvas->Divide(3, 1);
+            break;
+
+        default:
+            break;
+        }
         break;
 
-    case RefDimensions::DIM_2D:
-        this->plot_canvas->Divide(2,1);
+    case PlotType::Vector:
         break;
 
-    case RefDimensions::DIM_3D:
-        this->plot_canvas->Divide(3,1);
-        break;
-    
     default:
         break;
     }
