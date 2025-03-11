@@ -1,16 +1,21 @@
 cmake_minimum_required(VERSION 3.22)
 
-project(InertiaFX VERSION 0.1.0 DESCRIPTION "Physics Engine" LANGUAGES CXX)
+project(InertiaFX VERSION 0.1.0 DESCRIPTION "Physics Simulation Library" LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD ${ROOT_CXX_STANDARD})
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+# Define macro INERTIAFX_VERSION to use in code
+add_definitions(-DINERTIAFX_VERSION="@InertiaFX_VERSION_MAJOR@.@InertiaFX_VERSION_MINOR@.@InertiaFX_VERSION_PATCH")
 
-add_subdirectory(Core)
-add_subdirectory(Reports)
+# Set output directories
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-add_executable(inertiafx main.cpp)
+# Enable unit testing
+enable_testing()
 
-target_link_libraries(inertiafx PRIVATE CoreLib ReportsLib)
+# Add Source Folder
+add_subdirectory(src)
 
-configure_file(Core/Inc/InertiaFXConfig.h InertiaFX.h)
+# Add Unit Tests
+add_subdirectory(tests)
 

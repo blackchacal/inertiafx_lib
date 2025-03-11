@@ -1,0 +1,21 @@
+﻿---
+BasedOnStyle: Microsoft
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: 'true'
+AlignOperands: 'true'
+AlignTrailingComments: 'true'
+AlwaysBreakTemplateDeclarations: 'Yes'
+BreakBeforeTernaryOperators: 'false'
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterColon
+ColumnLimit: '100'
+FixNamespaceComments: 'true'
+IndentCaseLabels: 'true'
+IndentWidth: '4'
+Language: Cpp
+NamespaceIndentation: Inner
+SpacesBeforeTrailingComments: '2'
+TabWidth: '4'
+UseTab: Never
+
+...

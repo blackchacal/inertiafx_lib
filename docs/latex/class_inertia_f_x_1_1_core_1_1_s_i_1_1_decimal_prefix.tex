@@ -1,0 +1,198 @@
+\doxysection{Inertia\+FX\+::Core\+::SI\+::Decimal\+Prefix Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix}{}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix}\index{InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}}
+
+
+Provides SI prefix name, symbol, and multiplier.  
+
+
+
+
+{\ttfamily \#include $<$decimal\+\_\+prefix.\+h$>$}
+
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Name}} \+: int \{ \newline
+{\bfseries quetta} = 30
+, {\bfseries ronna} = 27
+, {\bfseries yotta} = 24
+, {\bfseries zetta} = 21
+, \newline
+{\bfseries exa} = 18
+, {\bfseries peta} = 15
+, {\bfseries tera} = 12
+, {\bfseries giga} = 9
+, \newline
+{\bfseries mega} = 6
+, {\bfseries kilo} = 3
+, {\bfseries hecto} = 2
+, {\bfseries deca} = 1
+, \newline
+{\bfseries deci} = -\/1
+, {\bfseries centi} = -\/2
+, {\bfseries milli} = -\/3
+, {\bfseries micro} = -\/6
+, \newline
+{\bfseries nano} = -\/9
+, {\bfseries pico} = -\/12
+, {\bfseries femto} = -\/15
+, {\bfseries atto} = -\/18
+, \newline
+{\bfseries zepto} = -\/21
+, {\bfseries yocto} = -\/24
+, {\bfseries ronto} = -\/27
+, {\bfseries quecto} = -\/30
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates SI decimal prefix names with their exponent values. \end{DoxyCompactList}\item 
+enum class \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Symbol}} \+: int \{ \newline
+{\bfseries Q} = 30
+, {\bfseries R} = 27
+, {\bfseries Y} = 24
+, {\bfseries Z} = 21
+, \newline
+{\bfseries E} = 18
+, {\bfseries P} = 15
+, {\bfseries T} = 12
+, {\bfseries G} = 9
+, \newline
+{\bfseries M} = 6
+, {\bfseries k} = 3
+, {\bfseries h} = 2
+, {\bfseries da} = 1
+, \newline
+{\bfseries d} = -\/1
+, {\bfseries c} = -\/2
+, {\bfseries m} = -\/3
+, {\bfseries u} = -\/6
+, \newline
+{\bfseries n} = -\/9
+, {\bfseries p} = -\/12
+, {\bfseries f} = -\/15
+, {\bfseries a} = -\/18
+, \newline
+{\bfseries z} = -\/21
+, {\bfseries y} = -\/24
+, {\bfseries r} = -\/27
+, {\bfseries q} = -\/30
+ \}
+\begin{DoxyCompactList}\small\item\em Enumerates SI decimal prefix symbols with their exponent values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_ace21b72cff3489177b909fa05dfb08bb}{get\+Name}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Symbol}} prefix)
+\begin{DoxyCompactList}\small\item\em Returns the textual name (e.\+g. "{}milli"{}) for the specified prefix symbol. \end{DoxyCompactList}\item 
+static std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a01a23501423119172934091cd80dfe34}{get\+Symbol}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Name}} prefix)
+\begin{DoxyCompactList}\small\item\em Returns the symbol (e.\+g. "{}m"{}) for the specified prefix name. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a8b98583c80cc8a71a535fab4de30a27f}{get\+Multiplier}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Symbol}} prefix)
+\begin{DoxyCompactList}\small\item\em Returns the decimal multiplier for the specified prefix symbol. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_aef66c516b223bb207ae715fc834f5dc0}{get\+Multiplier}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Name}} prefix)
+\begin{DoxyCompactList}\small\item\em Returns the decimal multiplier for the specified prefix name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides SI prefix name, symbol, and multiplier. 
+
+This class encapsulates SI decimal prefix functionality. The enum classes define recognized prefixes and their respective exponents. Static functions provide name, symbol, and multiplier for each prefix. 
+
+\doxysubsection{Member Enumeration Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}\index{InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}!Name@{Name}}
+\index{Name@{Name}!InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}}
+\doxysubsubsection{\texorpdfstring{Name}{Name}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b} 
+enum class \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Decimal\+Prefix\+::\+Name}} \+: int\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumerates SI decimal prefix names with their exponent values. 
+
+The value of each enum entry represents the exponent of 10 that corresponds to the prefix. For example, Name\+::milli has the value -\/3, representing 10\texorpdfstring{$^\wedge$}{\string^}-\/3. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}\index{InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}}
+\doxysubsubsection{\texorpdfstring{Symbol}{Symbol}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec} 
+enum class \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Decimal\+Prefix\+::\+Symbol}} \+: int\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Enumerates SI decimal prefix symbols with their exponent values. 
+
+The value of each enum entry represents the exponent of 10 that corresponds to the symbol. For instance, Symbol\+::m has the value -\/3, representing 10\texorpdfstring{$^\wedge$}{\string^}-\/3. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_aef66c516b223bb207ae715fc834f5dc0}\index{InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}!getMultiplier@{getMultiplier}}
+\index{getMultiplier@{getMultiplier}!InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}}
+\doxysubsubsection{\texorpdfstring{getMultiplier()}{getMultiplier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_aef66c516b223bb207ae715fc834f5dc0} 
+double Inertia\+FX\+::\+Core\+::\+SI\+::\+Decimal\+Prefix\+::get\+Multiplier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the decimal multiplier for the specified prefix name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & Enum value representing the decimal prefix name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double containing the multiplier (10\texorpdfstring{$^\wedge$}{\string^}exponent). 
+\end{DoxyReturn}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a8b98583c80cc8a71a535fab4de30a27f}\index{InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}!getMultiplier@{getMultiplier}}
+\index{getMultiplier@{getMultiplier}!InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}}
+\doxysubsubsection{\texorpdfstring{getMultiplier()}{getMultiplier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a8b98583c80cc8a71a535fab4de30a27f} 
+double Inertia\+FX\+::\+Core\+::\+SI\+::\+Decimal\+Prefix\+::get\+Multiplier (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the decimal multiplier for the specified prefix symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & Enum value representing the decimal prefix symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A double containing the multiplier (10\texorpdfstring{$^\wedge$}{\string^}exponent). 
+\end{DoxyReturn}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_ace21b72cff3489177b909fa05dfb08bb}\index{InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}!getName@{getName}}
+\index{getName@{getName}!InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_ace21b72cff3489177b909fa05dfb08bb} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Decimal\+Prefix\+::get\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the textual name (e.\+g. "{}milli"{}) for the specified prefix symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & Enum value representing the decimal prefix symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the prefix name. 
+\end{DoxyReturn}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a01a23501423119172934091cd80dfe34}\index{InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!InertiaFX::Core::SI::DecimalPrefix@{InertiaFX::Core::SI::DecimalPrefix}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a01a23501423119172934091cd80dfe34} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Decimal\+Prefix\+::get\+Symbol (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the symbol (e.\+g. "{}m"{}) for the specified prefix name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & Enum value representing the decimal prefix name. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the prefix symbol. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/inc/\mbox{\hyperlink{decimal__prefix_8h}{decimal\+\_\+prefix.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/src/\mbox{\hyperlink{decimal__prefix_8cpp}{decimal\+\_\+prefix.\+cpp}}\end{DoxyCompactItemize}
