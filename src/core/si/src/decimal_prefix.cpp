@@ -1,4 +1,4 @@
-/**
+﻿/**
  * InertiaFX_Lib - Physics Simulation Library.
  * Copyright (C) 2025  Ricardo Tonet <https://github.com/blackchacal>
  *
@@ -64,13 +64,15 @@ namespace Core
                     return "hecto";
                 case Symbol::da:
                     return "deca";
+                case Symbol::none:
+                    return "";
                 case Symbol::d:
                     return "deci";
                 case Symbol::c:
                     return "centi";
                 case Symbol::m:
                     return "milli";
-                case Symbol::u:
+                case Symbol::mu:
                     return "micro";
                 case Symbol::n:
                     return "nano";
@@ -121,6 +123,8 @@ namespace Core
                     return "h";
                 case Name::deca:
                     return "da";
+                case Name::none:
+                    return "";
                 case Name::deci:
                     return "d";
                 case Name::centi:

@@ -20,7 +20,7 @@ target_include_directories(Core PUBLIC
 )
 
 # Link submodules into Core
-target_link_libraries(Core PRIVATE Tools SI Engine)
+target_link_libraries(Core PRIVATE SI)
 
 # Install Core library
 install(TARGETS Core DESTINATION lib)

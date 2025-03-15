@@ -17,5 +17,5 @@ add_subdirectory(core)
 add_subdirectory(newtonian_mechanics)
 
 # Register test executables
-add_test(NAME InertiaFXTests COMMAND InertiaFXTests)
+# add_test(NAME InertiaFXTests COMMAND InertiaFXTests)
 

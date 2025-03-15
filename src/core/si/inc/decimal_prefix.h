@@ -1,4 +1,4 @@
-/**
+﻿/**
  * InertiaFX_Lib - Physics Simulation Library.
  * Copyright (C) 2025  Ricardo Tonet <https://github.com/blackchacal>
  *
@@ -30,6 +30,7 @@
 #ifndef INERTIAFX_CORE_SI_DECIMALPREFIX_H
 #define INERTIAFX_CORE_SI_DECIMALPREFIX_H
 
+#include <iostream>
 #include <string>
 
 namespace InertiaFX
@@ -71,6 +72,7 @@ namespace Core
                 kilo   = 3,
                 hecto  = 2,
                 deca   = 1,
+                none   = 0,
                 deci   = -1,
                 centi  = -2,
                 milli  = -3,
@@ -95,30 +97,31 @@ namespace Core
              */
             enum class Symbol : int
             {
-                Q  = 30,
-                R  = 27,
-                Y  = 24,
-                Z  = 21,
-                E  = 18,
-                P  = 15,
-                T  = 12,
-                G  = 9,
-                M  = 6,
-                k  = 3,
-                h  = 2,
-                da = 1,
-                d  = -1,
-                c  = -2,
-                m  = -3,
-                u  = -6,  // Will translate to the Unicode 'μ' symbol
-                n  = -9,
-                p  = -12,
-                f  = -15,
-                a  = -18,
-                z  = -21,
-                y  = -24,
-                r  = -27,
-                q  = -30,
+                Q    = 30,
+                R    = 27,
+                Y    = 24,
+                Z    = 21,
+                E    = 18,
+                P    = 15,
+                T    = 12,
+                G    = 9,
+                M    = 6,
+                k    = 3,
+                h    = 2,
+                da   = 1,
+                none = 0,
+                d    = -1,
+                c    = -2,
+                m    = -3,
+                mu   = -6,  // Will translate to the Unicode 'μ' symbol
+                n    = -9,
+                p    = -12,
+                f    = -15,
+                a    = -18,
+                z    = -21,
+                y    = -24,
+                r    = -27,
+                q    = -30,
             };
 
             /**
