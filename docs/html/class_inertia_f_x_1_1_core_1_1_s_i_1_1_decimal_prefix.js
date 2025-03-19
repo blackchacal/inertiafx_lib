@@ -13,6 +13,7 @@ var class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix =
       [ "kilo", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838ba823df70fef5a629989e4987f955653cf", null ],
       [ "hecto", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838baac8ce19ee701b0f5d8c51dfc78c772b8", null ],
       [ "deca", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838ba5dce471dd0c9e02a708819dd02ed4e1b", null ],
+      [ "none", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838ba334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
       [ "deci", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838ba1e7d043fcadb9ee1fd895a618819ecb2", null ],
       [ "centi", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838ba2b534e239a3bcd72377c5a0385a29ca2", null ],
       [ "milli", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838ba7fc3da7e128f1aad65c2a51b69f7be90", null ],
@@ -39,10 +40,11 @@ var class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix =
       [ "k", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca8ce4b16b22b58894aa86c421e8759df3", null ],
       [ "h", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca2510c39011c5be704182423e3a695e91", null ],
       [ "da", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca5ca2aa845c8cd5ace6b016841f100d82", null ],
+      [ "none", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca334c4a4c42fdb79d7ebc3e73b517e6f8", null ],
       [ "d", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca8277e0910d750195b448797616e091ad", null ],
       [ "c", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca4a8a08f09d37b73795649038408b5f33", null ],
       [ "m", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca6f8f57715090da2632453988d9a1501b", null ],
-      [ "u", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca7b774effe4a349c6dd82ad4f4f21d34c", null ],
+      [ "mu", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca89aa4b196b48c8a13a6549bb1eaebd80", null ],
       [ "n", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca7b8b965ad4bca0e41ab51de7b31363a1", null ],
       [ "p", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca83878c91171338902e0fe0fb97a8c47a", null ],
       [ "f", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca8fa14cdd754f91cc6554c9e71929cce7", null ],
@@ -51,5 +53,11 @@ var class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix =
       [ "y", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca415290769594460e2e485922904f345d", null ],
       [ "r", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca4b43b0aee35624cd95b910189b3dc231", null ],
       [ "q", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8eca7694f4a66316e53c8cdd9d9954bd611d", null ]
-    ] ]
+    ] ],
+    [ "getMultiplier", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#aef66c516b223bb207ae715fc834f5dc0", null ],
+    [ "getMultiplier", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a8b98583c80cc8a71a535fab4de30a27f", null ],
+    [ "getName", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a2aa072034c27296b3dc1a39a5eeb6818", null ],
+    [ "getName", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#ace21b72cff3489177b909fa05dfb08bb", null ],
+    [ "getSymbol", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a01a23501423119172934091cd80dfe34", null ],
+    [ "getSymbol", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a488bbf277bdb5e4f2d4c0956f9287c52", null ]
 ];

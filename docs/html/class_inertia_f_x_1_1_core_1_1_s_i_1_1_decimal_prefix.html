@@ -134,20 +134,22 @@ Public Types</h2></td></tr>
 , <b>hecto</b> = 2
 , <b>deca</b> = 1
 , <br />
-&#160;&#160;<b>deci</b> = -1
+&#160;&#160;<b>none</b> = 0
+, <b>deci</b> = -1
 , <b>centi</b> = -2
 , <b>milli</b> = -3
-, <b>micro</b> = -6
 , <br />
-&#160;&#160;<b>nano</b> = -9
+&#160;&#160;<b>micro</b> = -6
+, <b>nano</b> = -9
 , <b>pico</b> = -12
 , <b>femto</b> = -15
-, <b>atto</b> = -18
 , <br />
-&#160;&#160;<b>zepto</b> = -21
+&#160;&#160;<b>atto</b> = -18
+, <b>zepto</b> = -21
 , <b>yocto</b> = -24
 , <b>ronto</b> = -27
-, <b>quecto</b> = -30
+, <br />
+&#160;&#160;<b>quecto</b> = -30
 <br />
  }</td></tr>
 <tr class="memdesc:a3069866022d95ef4fd31e116b527838b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates SI decimal prefix names with their exponent values.  <a href="#a3069866022d95ef4fd31e116b527838b">More...</a><br /></td></tr>
@@ -168,20 +170,22 @@ Public Types</h2></td></tr>
 , <b>h</b> = 2
 , <b>da</b> = 1
 , <br />
-&#160;&#160;<b>d</b> = -1
+&#160;&#160;<b>none</b> = 0
+, <b>d</b> = -1
 , <b>c</b> = -2
 , <b>m</b> = -3
-, <b>u</b> = -6
 , <br />
-&#160;&#160;<b>n</b> = -9
+&#160;&#160;<b>mu</b> = -6
+, <b>n</b> = -9
 , <b>p</b> = -12
 , <b>f</b> = -15
-, <b>a</b> = -18
 , <br />
-&#160;&#160;<b>z</b> = -21
+&#160;&#160;<b>a</b> = -18
+, <b>z</b> = -21
 , <b>y</b> = -24
 , <b>r</b> = -27
-, <b>q</b> = -30
+, <br />
+&#160;&#160;<b>q</b> = -30
 <br />
  }</td></tr>
 <tr class="memdesc:a7b871473c8374eb9b755d6d70658b8ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerates SI decimal prefix symbols with their exponent values.  <a href="#a7b871473c8374eb9b755d6d70658b8ec">More...</a><br /></td></tr>
@@ -189,12 +193,18 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2aa072034c27296b3dc1a39a5eeb6818" id="r_a2aa072034c27296b3dc1a39a5eeb6818"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2aa072034c27296b3dc1a39a5eeb6818">getName</a> (<a class="el" href="#a3069866022d95ef4fd31e116b527838b">Name</a> prefix)</td></tr>
+<tr class="memdesc:a2aa072034c27296b3dc1a39a5eeb6818"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the textual name (e.g. "milli") for the specified prefix name.  <br /></td></tr>
+<tr class="separator:a2aa072034c27296b3dc1a39a5eeb6818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace21b72cff3489177b909fa05dfb08bb" id="r_ace21b72cff3489177b909fa05dfb08bb"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace21b72cff3489177b909fa05dfb08bb">getName</a> (<a class="el" href="#a7b871473c8374eb9b755d6d70658b8ec">Symbol</a> prefix)</td></tr>
 <tr class="memdesc:ace21b72cff3489177b909fa05dfb08bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the textual name (e.g. "milli") for the specified prefix symbol.  <br /></td></tr>
 <tr class="separator:ace21b72cff3489177b909fa05dfb08bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01a23501423119172934091cd80dfe34" id="r_a01a23501423119172934091cd80dfe34"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01a23501423119172934091cd80dfe34">getSymbol</a> (<a class="el" href="#a3069866022d95ef4fd31e116b527838b">Name</a> prefix)</td></tr>
 <tr class="memdesc:a01a23501423119172934091cd80dfe34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the symbol (e.g. "m") for the specified prefix name.  <br /></td></tr>
 <tr class="separator:a01a23501423119172934091cd80dfe34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488bbf277bdb5e4f2d4c0956f9287c52" id="r_a488bbf277bdb5e4f2d4c0956f9287c52"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a488bbf277bdb5e4f2d4c0956f9287c52">getSymbol</a> (<a class="el" href="#a7b871473c8374eb9b755d6d70658b8ec">Symbol</a> prefix)</td></tr>
+<tr class="memdesc:a488bbf277bdb5e4f2d4c0956f9287c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the symbol (e.g. "m") for the specified prefix symbol.  <br /></td></tr>
+<tr class="separator:a488bbf277bdb5e4f2d4c0956f9287c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b98583c80cc8a71a535fab4de30a27f" id="r_a8b98583c80cc8a71a535fab4de30a27f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b98583c80cc8a71a535fab4de30a27f">getMultiplier</a> (<a class="el" href="#a7b871473c8374eb9b755d6d70658b8ec">Symbol</a> prefix)</td></tr>
 <tr class="memdesc:a8b98583c80cc8a71a535fab4de30a27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the decimal multiplier for the specified prefix symbol.  <br /></td></tr>
 <tr class="separator:a8b98583c80cc8a71a535fab4de30a27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,8 +335,42 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2aa072034c27296b3dc1a39a5eeb6818" name="a2aa072034c27296b3dc1a39a5eeb6818"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2aa072034c27296b3dc1a39a5eeb6818">&#9670;&#160;</a></span>getName() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string InertiaFX::Core::SI::DecimalPrefix::getName </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a3069866022d95ef4fd31e116b527838b">Name</a></td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the textual name (e.g. "milli") for the specified prefix name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>Enum value representing the decimal prefix name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A std::string containing the prefix name. </dd></dl>
+
+</div>
+</div>
 <a id="ace21b72cff3489177b909fa05dfb08bb" name="ace21b72cff3489177b909fa05dfb08bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace21b72cff3489177b909fa05dfb08bb">&#9670;&#160;</a></span>getName()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ace21b72cff3489177b909fa05dfb08bb">&#9670;&#160;</a></span>getName() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,7 +404,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a01a23501423119172934091cd80dfe34" name="a01a23501423119172934091cd80dfe34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01a23501423119172934091cd80dfe34">&#9670;&#160;</a></span>getSymbol()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a01a23501423119172934091cd80dfe34">&#9670;&#160;</a></span>getSymbol() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,6 +430,40 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">prefix</td><td>Enum value representing the decimal prefix name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A std::string containing the prefix symbol. </dd></dl>
+
+</div>
+</div>
+<a id="a488bbf277bdb5e4f2d4c0956f9287c52" name="a488bbf277bdb5e4f2d4c0956f9287c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a488bbf277bdb5e4f2d4c0956f9287c52">&#9670;&#160;</a></span>getSymbol() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string InertiaFX::Core::SI::DecimalPrefix::getSymbol </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="#a7b871473c8374eb9b755d6d70658b8ec">Symbol</a></td>          <td class="paramname"><span class="paramname"><em>prefix</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the symbol (e.g. "m") for the specified prefix symbol. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>Enum value representing the decimal prefix symbol. </td></tr>
   </table>
   </dd>
 </dl>

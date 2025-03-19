@@ -26,6 +26,10 @@ namespace InertiaFX
 {
 namespace Core
 {
+    /**
+     * @enum Submodules
+     * @brief List of Core submodules.
+     */
     enum class Submodules : int
     {
         Tools,

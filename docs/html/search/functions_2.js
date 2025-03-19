@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7einertiafx_0',['~InertiaFX',['../class_inertia_f_x_1_1_inertia_f_x.html#a263cbdebe6f6b7f506b4a51eecdc0042',1,'InertiaFX::InertiaFX']]]
+  ['kilogram_0',['Kilogram',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram.html#a0405a1fe10431553a3f85c89dd3b494b',1,'InertiaFX::Core::SI::Kilogram']]]
 ];

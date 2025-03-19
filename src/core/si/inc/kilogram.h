@@ -60,12 +60,12 @@ namespace Core
             std::string toString() const override;
 
             /**
-             * @copydoc IPhysicalUnit::toString(DecimalPrefix::Name)
+             * @copydoc IPhysicalUnit::toString(DecimalPrefix::Name) const
              */
             std::string toString(DecimalPrefix::Name prefixName) const override;
 
             /**
-             * @copydoc IPhysicalUnit::toString(DecimalPrefix::Symbol)
+             * @copydoc IPhysicalUnit::toString(DecimalPrefix::Symbol) const
              */
             std::string toString(DecimalPrefix::Symbol prefixSymbol) const override;
         };

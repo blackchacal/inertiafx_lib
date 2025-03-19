@@ -1,0 +1,131 @@
+\doxysection{Inertia\+FX\+::Core\+::SI\+::Kilogram Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram}{}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram}\index{InertiaFX::Core::SI::Kilogram@{InertiaFX::Core::SI::Kilogram}}
+
+
+Represents the SI base unit of mass.  
+
+
+
+
+{\ttfamily \#include $<$kilogram.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Kilogram\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a0405a1fe10431553a3f85c89dd3b494b}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a0405a1fe10431553a3f85c89dd3b494b} 
+{\bfseries Kilogram} ()
+\begin{DoxyCompactList}\small\item\em Default constructor initializing \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram}{Kilogram} unit properties. \end{DoxyCompactList}\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_af0a6481edc70770994ad64c978a6d249}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_af0a6481edc70770994ad64c978a6d249} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Kilogram} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_aa8b712507b491cf6f17175838d6ff2e6}{to\+String}} () const override
+\begin{DoxyCompactList}\small\item\em Get a string representation of the unit without any prefix.    \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a8786aa9df4899ea26f980d7e5162fec2}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix\+Name) const override
+\begin{DoxyCompactList}\small\item\em Get a string representation of the unit using a specified decimal prefix name.    \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a1e038f88ac11977e396b0d5a4f7f4496}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix\+Symbol) const override
+\begin{DoxyCompactList}\small\item\em Get a string representation of the unit using a specified decimal prefix symbol.    \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Physical\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_ad717cd07fb8b3553c1fdb254813ae6a5}{Physical\+Unit}} (const std\+::string \&name, const std\+::string \&name\+Plural, const std\+::string \&symbol, const std\+::string \&description)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit}{Physical\+Unit} with given name, symbol, and description. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Physical\+Unit} ()=0
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_a0cd585fe60d483526ef5c090786d7bb9}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the full name of the unit.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_a5bb21e20f5a6a7daf6a00adaf7d40cc1}{get\+Name\+Plural}} () const override
+\begin{DoxyCompactList}\small\item\em Get the full name of the unit in plural form.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_a840644eaabe870a53fc5f810e5b9af1e}{get\+Symbol}} () const override
+\begin{DoxyCompactList}\small\item\em Get the symbol of the unit.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_a280a25e2bb1563f047452dc1f3198d55}{get\+Description}} () const override
+\begin{DoxyCompactList}\small\item\em Get a brief description of the unit.    \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IPhysical\+Unit} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for safe polymorphic destruction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Physical\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_a260740aa5e39e98f93a192bbf506cd9a}{\+\_\+symbol}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the SI base unit of mass. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_aa8b712507b491cf6f17175838d6ff2e6}\index{InertiaFX::Core::SI::Kilogram@{InertiaFX::Core::SI::Kilogram}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::Kilogram@{InertiaFX::Core::SI::Kilogram}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_aa8b712507b491cf6f17175838d6ff2e6} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Kilogram\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a string representation of the unit without any prefix.    
+
+\begin{DoxyReturn}{Returns}
+A std\+::string representing the unit in its standard form.    
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_ae3d6714eb93867385ecdf8325386b348}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Physical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a8786aa9df4899ea26f980d7e5162fec2}\index{InertiaFX::Core::SI::Kilogram@{InertiaFX::Core::SI::Kilogram}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::Kilogram@{InertiaFX::Core::SI::Kilogram}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a8786aa9df4899ea26f980d7e5162fec2} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Kilogram\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix\+Name}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a string representation of the unit using a specified decimal prefix name.    
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix\+Name} & The decimal prefix name to prepend to the unit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string representing the prefixed unit.    
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_a5137c61bacc9198b2de6c87b2f0e32af}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Physical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a1e038f88ac11977e396b0d5a4f7f4496}\index{InertiaFX::Core::SI::Kilogram@{InertiaFX::Core::SI::Kilogram}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::Kilogram@{InertiaFX::Core::SI::Kilogram}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram_a1e038f88ac11977e396b0d5a4f7f4496} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Kilogram\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix\+Symbol}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a string representation of the unit using a specified decimal prefix symbol.    
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix\+Symbol} & The decimal prefix symbol to prepend to the unit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string representing the prefixed unit.    
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_aa3a90dfd035d41a19b9bbd405db83a8a}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Physical\+Unit}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/inc/\mbox{\hyperlink{kilogram_8h}{kilogram.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/src/\mbox{\hyperlink{kilogram_8cpp}{kilogram.\+cpp}}\end{DoxyCompactItemize}
