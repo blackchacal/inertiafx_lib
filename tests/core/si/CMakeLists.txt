@@ -3,6 +3,7 @@ project(SI_Tests)
 
 add_executable(SI_Tests
     test_decimal_prefix.cpp
+    test_physical_units.cpp
 )
 
 target_link_libraries(SI_Tests PRIVATE

@@ -3,6 +3,35 @@
 
 using namespace InertiaFX::Core::SI;
 
+TEST(DecimalPrefixTests, GetCorrectPrefixNameFromName)
+{
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::quetta), "quetta");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::ronna), "ronna");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::yotta), "yotta");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::zetta), "zetta");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::exa), "exa");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::peta), "peta");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::tera), "tera");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::giga), "giga");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::mega), "mega");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::kilo), "kilo");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::hecto), "hecto");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::deca), "deca");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::none), "");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::deci), "deci");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::centi), "centi");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::milli), "milli");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::micro), "micro");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::nano), "nano");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::pico), "pico");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::femto), "femto");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::atto), "atto");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::zepto), "zepto");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::yocto), "yocto");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::ronto), "ronto");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::quecto), "quecto");
+}
+
 TEST(DecimalPrefixTests, GetCorrectPrefixNameFromSymbol)
 {
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::Q), "quetta");
@@ -59,6 +88,35 @@ TEST(DecimalPrefixTests, GetCorrectPrefixSymbolFromName)
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::yocto), "y");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::ronto), "r");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::quecto), "q");
+}
+
+TEST(DecimalPrefixTests, GetCorrectPrefixSymbolFromSymbol)
+{
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::Q), "Q");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::R), "R");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::Y), "Y");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::Z), "Z");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::E), "E");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::P), "P");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::T), "T");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::G), "G");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::M), "M");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::k), "k");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::h), "h");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::da), "da");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::none), "");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::d), "d");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::c), "c");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::m), "m");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::mu), "\u03BC");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::n), "n");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::p), "p");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::f), "f");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::a), "a");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::z), "z");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::y), "y");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::r), "r");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::q), "q");
 }
 
 TEST(DecimalPrefixTests, GetCorrectMultiplierFromPrefixName)

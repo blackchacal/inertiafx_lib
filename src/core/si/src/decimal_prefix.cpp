@@ -36,6 +36,65 @@ namespace Core
 {
     namespace SI
     {
+        std::string DecimalPrefix::getName(Name prefix)
+        {
+            switch (prefix)
+            {
+                case Name::quetta:
+                    return "quetta";
+                case Name::ronna:
+                    return "ronna";
+                case Name::yotta:
+                    return "yotta";
+                case Name::zetta:
+                    return "zetta";
+                case Name::exa:
+                    return "exa";
+                case Name::peta:
+                    return "peta";
+                case Name::tera:
+                    return "tera";
+                case Name::giga:
+                    return "giga";
+                case Name::mega:
+                    return "mega";
+                case Name::kilo:
+                    return "kilo";
+                case Name::hecto:
+                    return "hecto";
+                case Name::deca:
+                    return "deca";
+                case Name::none:
+                    return "";
+                case Name::deci:
+                    return "deci";
+                case Name::centi:
+                    return "centi";
+                case Name::milli:
+                    return "milli";
+                case Name::micro:
+                    return "micro";  // Greek letter mu
+                case Name::nano:
+                    return "nano";
+                case Name::pico:
+                    return "pico";
+                case Name::femto:
+                    return "femto";
+                case Name::atto:
+                    return "atto";
+                case Name::zepto:
+                    return "zepto";
+                case Name::yocto:
+                    return "yocto";
+                case Name::ronto:
+                    return "ronto";
+                case Name::quecto:
+                    return "quecto";
+                default:
+                    return "";
+            }
+        }
+
         std::string DecimalPrefix::getName(Symbol prefix)
         {
             switch (prefix)
@@ -148,6 +207,65 @@ namespace Core
                 case Name::ronto:
                     return "r";
                 case Name::quecto:
+                    return "q";
+                default:
+                    return "";
+            }
+        }
+
+        std::string DecimalPrefix::getSymbol(Symbol prefix)
+        {
+            switch (prefix)
+            {
+                case Symbol::Q:
+                    return "Q";
+                case Symbol::R:
+                    return "R";
+                case Symbol::Y:
+                    return "Y";
+                case Symbol::Z:
+                    return "Z";
+                case Symbol::E:
+                    return "E";
+                case Symbol::P:
+                    return "P";
+                case Symbol::T:
+                    return "T";
+                case Symbol::G:
+                    return "G";
+                case Symbol::M:
+                    return "M";
+                case Symbol::k:
+                    return "k";
+                case Symbol::h:
+                    return "h";
+                case Symbol::da:
+                    return "da";
+                case Symbol::none:
+                    return "";
+                case Symbol::d:
+                    return "d";
+                case Symbol::c:
+                    return "c";
+                case Symbol::m:
+                    return "m";
+                case Symbol::mu:
+                    return "\u03BC";  // Greek letter mu
+                case Symbol::n:
+                    return "n";
+                case Symbol::p:
+                    return "p";
+                case Symbol::f:
+                    return "f";
+                case Symbol::a:
+                    return "a";
+                case Symbol::z:
+                    return "z";
+                case Symbol::y:
+                    return "y";
+                case Symbol::r:
+                    return "r";
+                case Symbol::q:
                     return "q";
                 default:
                     return "";

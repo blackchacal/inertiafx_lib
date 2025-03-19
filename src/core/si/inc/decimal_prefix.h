@@ -125,6 +125,13 @@ namespace Core
             };
 
             /**
+             * @brief Returns the textual name (e.g. "milli") for the specified prefix name.
+             * @param prefix Enum value representing the decimal prefix name.
+             * @return A std::string containing the prefix name.
+             */
+            static std::string getName(Name prefix);
+
+            /**
              * @brief Returns the textual name (e.g. "milli") for the specified prefix symbol.
              * @param prefix Enum value representing the decimal prefix symbol.
              * @return A std::string containing the prefix name.
@@ -137,6 +144,13 @@ namespace Core
              * @return A std::string containing the prefix symbol.
              */
             static std::string getSymbol(Name prefix);
+
+            /**
+             * @brief Returns the symbol (e.g. "m") for the specified prefix symbol.
+             * @param prefix Enum value representing the decimal prefix symbol.
+             * @return A std::string containing the prefix symbol.
+             */
+            static std::string getSymbol(Symbol prefix);
 
             /**
              * @brief Returns the decimal multiplier for the specified prefix symbol.
