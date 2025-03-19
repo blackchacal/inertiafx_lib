@@ -44,6 +44,8 @@ namespace Core
             static const std::string DESCRIPTION; /**< Detailed description of this unit. */
 
           public:
+            using PhysicalUnit::toString;
+
             /**
              * @brief Default constructor initializing Kilogram unit properties.
              */
@@ -53,11 +55,6 @@ namespace Core
              * @brief Default destructor.
              */
             ~Kilogram() = default;
-
-            /**
-             * @copydoc IPhysicalUnit::toString()
-             */
-            std::string toString() const override;
 
             /**
              * @copydoc IPhysicalUnit::toString(DecimalPrefix::Name) const

@@ -43,12 +43,6 @@ namespace Core
         {
         }
 
-        std::string Kilogram::toString() const
-        {
-            // Example output for meters: "m"
-            return _symbol;
-        }
-
         std::string Kilogram::toString(DecimalPrefix::Name prefixName) const
         {
             std::string s;
