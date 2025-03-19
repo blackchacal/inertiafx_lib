@@ -57,17 +57,17 @@ namespace Core
             /**
              * @copydoc IPhysicalUnit::toString()
              */
-            virtual std::string toString() const override;
+            std::string toString() const override;
 
             /**
              * @copydoc IPhysicalUnit::toString(DecimalPrefix::Name)
              */
-            virtual std::string toString(DecimalPrefix::Name prefixName) const override;
+            std::string toString(DecimalPrefix::Name prefixName) const override;
 
             /**
              * @copydoc IPhysicalUnit::toString(DecimalPrefix::Symbol)
              */
-            virtual std::string toString(DecimalPrefix::Symbol prefixSymbol) const override;
+            std::string toString(DecimalPrefix::Symbol prefixSymbol) const override;
         };
     }  // namespace SI
 }  // namespace Core
