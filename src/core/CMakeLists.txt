@@ -7,6 +7,17 @@ target_sources(Core PRIVATE
     core.cpp
 )
 
+include(FetchContent)
+
+# Fetch GoogleTest if not installed
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/refs/tags/v1.16.0.zip
+)
+FetchContent_MakeAvailable(googletest)
+
+enable_testing()
+
 # Add submodules
 # add_subdirectory(tools)
 add_subdirectory(si)

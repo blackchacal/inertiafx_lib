@@ -13,8 +13,8 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 # Add subdirectories for each module's tests
-add_subdirectory(core)
-add_subdirectory(newtonian_mechanics)
+# add_subdirectory(core)
+# add_subdirectory(newtonian_mechanics)
 
 # Register test executables
 # add_test(NAME InertiaFXTests COMMAND InertiaFXTests)

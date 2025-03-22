@@ -10,6 +10,8 @@ target_sources(SI PRIVATE
     src/kilogram.cpp
 )
 
+add_subdirectory(tests)
+
 target_include_directories(SI PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/inc)
 
 install(TARGETS SI DESTINATION lib)
