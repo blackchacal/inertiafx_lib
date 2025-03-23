@@ -1,0 +1,168 @@
+\doxysection{Inertia\+FX\+::Core\+::SI\+::IScalar\+Qty Interface Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty}{}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty}\index{InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}}
+
+
+Interface defining the required operations for scalar physical quantities.  
+
+
+
+
+{\ttfamily \#include $<$iscalar\+\_\+qty.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::IScalar\+Qty\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.378582cm]{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a8607c6517b89a29293f8c450509659e7}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a8607c6517b89a29293f8c450509659e7} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IScalar\+Qty} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for interface cleanup. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a405cc3a689fa06dbed0ca5495da16539}{get\+Value}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in its base unit. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a07bacace6562f49cab4bbe9ecb6cf065}{get\+Value\+In}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a0a9d198b53f48fec2b8aa5536cf4816c}{get\+Value\+In}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a2676d1b74d22d284768d0d0297ef96f6}{set\+Value}} (double new\+Value)=0
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_aca4fd6f2971fb43a5c40f06eff38677e}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit). \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_ac43214c7ed9d55fd7d2431b1afdf8594}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface defining the required operations for scalar physical quantities. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a405cc3a689fa06dbed0ca5495da16539}\index{InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}!getValue@{getValue}}
+\index{getValue@{getValue}!InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a405cc3a689fa06dbed0ca5495da16539} 
+virtual double Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty\+::get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the current value of the physical quantity in its base unit. 
+
+\begin{DoxyReturn}{Returns}
+The value of the quantity in its base unit. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a40fe4306ee64be6eaec977557e708a70}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a07bacace6562f49cab4bbe9ecb6cf065}\index{InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}!getValueIn@{getValueIn}}
+\index{getValueIn@{getValueIn}!InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}}
+\doxysubsubsection{\texorpdfstring{getValueIn()}{getValueIn()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a07bacace6562f49cab4bbe9ecb6cf065} 
+virtual double Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty\+::get\+Value\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the current value of the physical quantity in the specified prefix of its base unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The decimal prefix by name (e.\+g., "{}kilo"{}, "{}milli"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the quantity converted to the requested prefix. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a8b0d08b543346d9c3dea2da1d25baa00}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a0a9d198b53f48fec2b8aa5536cf4816c}\index{InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}!getValueIn@{getValueIn}}
+\index{getValueIn@{getValueIn}!InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}}
+\doxysubsubsection{\texorpdfstring{getValueIn()}{getValueIn()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a0a9d198b53f48fec2b8aa5536cf4816c} 
+virtual double Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty\+::get\+Value\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the current value of the physical quantity in the specified prefix of its base unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The decimal prefix by symbol (e.\+g., "{}k"{}, "{}m"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the quantity converted to the requested prefix. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a94911962bce27c661582248806ea94c0}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a2676d1b74d22d284768d0d0297ef96f6}\index{InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}!setValue@{setValue}}
+\index{setValue@{setValue}!InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a2676d1b74d22d284768d0d0297ef96f6} 
+virtual void Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{new\+Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the value of this physical quantity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value to assign in base unit. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aa49d5903aebcd415abbb79caf3399668}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_aca4fd6f2971fb43a5c40f06eff38677e}\index{InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}!setValueFrom@{setValueFrom}}
+\index{setValueFrom@{setValueFrom}!InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}}
+\doxysubsubsection{\texorpdfstring{setValueFrom()}{setValueFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_aca4fd6f2971fb43a5c40f06eff38677e} 
+virtual void Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty\+::set\+Value\+From (\begin{DoxyParamCaption}\item[{double}]{new\+Value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the value of this physical quantity (in a specific prefix of its base unit). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value to assign. \\
+\hline
+{\em prefix} & The decimal prefix by name (e.\+g., "{}kilo"{}, "{}milli"{}). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a4e12554d9a7c6c359c8f51a528cbccfa}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_ac43214c7ed9d55fd7d2431b1afdf8594}\index{InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}!setValueFrom@{setValueFrom}}
+\index{setValueFrom@{setValueFrom}!InertiaFX::Core::SI::IScalarQty@{InertiaFX::Core::SI::IScalarQty}}
+\doxysubsubsection{\texorpdfstring{setValueFrom()}{setValueFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_ac43214c7ed9d55fd7d2431b1afdf8594} 
+virtual void Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty\+::set\+Value\+From (\begin{DoxyParamCaption}\item[{double}]{new\+Value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the value of this physical quantity (in a specific prefix of its base unit). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value to assign. \\
+\hline
+{\em prefix} & The decimal prefix by symbol (e.\+g., "{}k"{}, "{}m"{}). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aadf8a1288ecf503493f96b3841953c18}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/inc/\mbox{\hyperlink{iscalar__qty_8h}{iscalar\+\_\+qty.\+h}}\end{DoxyCompactItemize}

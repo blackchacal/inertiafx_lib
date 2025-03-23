@@ -77,18 +77,18 @@ TEST(PhysicalUnitsTests, ToStringPrefixNameReturnsCorrectUnitSymbolWithPrefix)
     EXPECT_EQ(metre.toString(DecimalPrefix::Name::nano), "nm");
     EXPECT_EQ(metre.toString(DecimalPrefix::Name::milli), "mm");
     EXPECT_EQ(metre.toString(DecimalPrefix::Name::kilo), "km");
-    EXPECT_EQ(metre.toString(DecimalPrefix::Name::none), "m");
+    EXPECT_EQ(metre.toString(DecimalPrefix::Name::base), "m");
 
     Second second;
     EXPECT_EQ(second.toString(DecimalPrefix::Name::milli), "ms");
-    EXPECT_EQ(second.toString(DecimalPrefix::Name::none), "s");
+    EXPECT_EQ(second.toString(DecimalPrefix::Name::base), "s");
 
     Kilogram kilogram;
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Name::kilo), "ton");
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Name::milli), "g");
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Name::micro), "mg");
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Name::nano), "\u03BCg");
-    EXPECT_EQ(kilogram.toString(DecimalPrefix::Name::none), "kg");
+    EXPECT_EQ(kilogram.toString(DecimalPrefix::Name::base), "kg");
 }
 
 TEST(PhysicalUnitsTests, ToStringPrefixSymbolReturnsCorrectUnitSymbolWithPrefix)
@@ -97,16 +97,16 @@ TEST(PhysicalUnitsTests, ToStringPrefixSymbolReturnsCorrectUnitSymbolWithPrefix)
     EXPECT_EQ(metre.toString(DecimalPrefix::Symbol::n), "nm");
     EXPECT_EQ(metre.toString(DecimalPrefix::Symbol::m), "mm");
     EXPECT_EQ(metre.toString(DecimalPrefix::Symbol::k), "km");
-    EXPECT_EQ(metre.toString(DecimalPrefix::Symbol::none), "m");
+    EXPECT_EQ(metre.toString(DecimalPrefix::Symbol::base), "m");
 
     Second second;
     EXPECT_EQ(second.toString(DecimalPrefix::Symbol::m), "ms");
-    EXPECT_EQ(second.toString(DecimalPrefix::Symbol::none), "s");
+    EXPECT_EQ(second.toString(DecimalPrefix::Symbol::base), "s");
 
     Kilogram kilogram;
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Symbol::k), "ton");
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Symbol::m), "g");
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Symbol::mu), "mg");
     EXPECT_EQ(kilogram.toString(DecimalPrefix::Symbol::n), "\u03BCg");
-    EXPECT_EQ(kilogram.toString(DecimalPrefix::Symbol::none), "kg");
+    EXPECT_EQ(kilogram.toString(DecimalPrefix::Symbol::base), "kg");
 }

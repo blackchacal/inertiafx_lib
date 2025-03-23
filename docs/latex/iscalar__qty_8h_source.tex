@@ -1,0 +1,44 @@
+\doxysection{iscalar\+\_\+qty.\+h}
+\hypertarget{iscalar__qty_8h_source}{}\label{iscalar__qty_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/si/inc/iscalar\_qty.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/si/inc/iscalar\_qty.h}}
+\mbox{\hyperlink{iscalar__qty_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_SI\_ISCALARQTY\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_SI\_ISCALARQTY\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{decimal__prefix_8h}{decimal\_prefix.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{iphysical__qty_8h}{iphysical\_qty.h}}"{}}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{namespace\ }SI}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty}{IScalarQty}}\ :\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty}{IPhysicalQty}}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a8607c6517b89a29293f8c450509659e7}{\string~IScalarQty}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a405cc3a689fa06dbed0ca5495da16539}{getValue}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a07bacace6562f49cab4bbe9ecb6cf065}{getValueIn}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{DecimalPrefix::Name}}\ prefix)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a0a9d198b53f48fec2b8aa5536cf4816c}{getValueIn}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{DecimalPrefix::Symbol}}\ prefix)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a2676d1b74d22d284768d0d0297ef96f6}{setValue}}(\textcolor{keywordtype}{double}\ newValue)\ =\ 0;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_aca4fd6f2971fb43a5c40f06eff38677e}{setValueFrom}}(\textcolor{keywordtype}{double}\ newValue,\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{DecimalPrefix::Name}}\ prefix)\ =\ 0;}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_ac43214c7ed9d55fd7d2431b1afdf8594}{setValueFrom}}(\textcolor{keywordtype}{double}\ newValue,\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{DecimalPrefix::Symbol}}\ prefix)\ =\ 0;}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
+\DoxyCodeLine{00096\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00097\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_SI\_ISCALARQTY\_H}}
+
+\end{DoxyCode}

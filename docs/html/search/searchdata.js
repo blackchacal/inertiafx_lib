@@ -1,9 +1,9 @@
 var indexSectionsWithContent =
 {
-  0: "_cdgikmnpst~",
-  1: "dikmps",
-  2: "cdikmps",
-  3: "gikmpst~",
+  0: "_cdfgiklmnpst~",
+  1: "dfiklmpst",
+  2: "cdfiklmps",
+  3: "dfgiklmpst~",
   4: "_",
   5: "ns"
 };

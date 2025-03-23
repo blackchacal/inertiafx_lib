@@ -4,10 +4,20 @@ project(SI)
 add_library(SI STATIC)
 target_sources(SI PRIVATE
     src/decimal_prefix.cpp
+
+    # Physical Units
     src/physical_unit.cpp
     src/metre.cpp
     src/second.cpp
     src/kilogram.cpp
+
+    # Fundamental Quantities
+    src/length.cpp
+    src/si_time.cpp
+    src/mass.cpp
+    
+    # Derived Quantities
+    # src/velocity.cpp
 )
 
 add_subdirectory(tests)

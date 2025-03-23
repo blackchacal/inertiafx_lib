@@ -17,7 +17,7 @@ TEST(DecimalPrefixTests, GetCorrectPrefixNameFromName)
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::kilo), "kilo");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::hecto), "hecto");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::deca), "deca");
-    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::none), "");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::base), "");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::deci), "deci");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::centi), "centi");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Name::milli), "milli");
@@ -46,7 +46,7 @@ TEST(DecimalPrefixTests, GetCorrectPrefixNameFromSymbol)
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::k), "kilo");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::h), "hecto");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::da), "deca");
-    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::none), "");
+    EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::base), "");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::d), "deci");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::c), "centi");
     EXPECT_EQ(DecimalPrefix::getName(DecimalPrefix::Symbol::m), "milli");
@@ -75,7 +75,7 @@ TEST(DecimalPrefixTests, GetCorrectPrefixSymbolFromName)
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::kilo), "k");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::hecto), "h");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::deca), "da");
-    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::none), "");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::base), "");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::deci), "d");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::centi), "c");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::milli), "m");
@@ -104,7 +104,7 @@ TEST(DecimalPrefixTests, GetCorrectPrefixSymbolFromSymbol)
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::k), "k");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::h), "h");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::da), "da");
-    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::none), "");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::base), "");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::d), "d");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::c), "c");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::m), "m");
@@ -133,7 +133,7 @@ TEST(DecimalPrefixTests, GetCorrectMultiplierFromPrefixName)
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::kilo), 1e3);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::hecto), 1e2);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::deca), 1e1);
-    EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::none), 1);
+    EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::base), 1);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::deci), 1e-1);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::centi), 1e-2);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Name::milli), 1e-3);
@@ -162,7 +162,7 @@ TEST(DecimalPrefixTests, GetCorrectMultiplierFromPrefixSymbol)
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::k), 1e3);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::h), 1e2);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::da), 1e1);
-    EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::none), 1);
+    EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::base), 1);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::d), 1e-1);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::c), 1e-2);
     EXPECT_DOUBLE_EQ(DecimalPrefix::getMultiplier(DecimalPrefix::Symbol::m), 1e-3);

@@ -1,0 +1,52 @@
+\doxysection{iphysical\+\_\+qty.\+h}
+\hypertarget{iphysical__qty_8h_source}{}\label{iphysical__qty_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/si/inc/iphysical\_qty.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/si/inc/iphysical\_qty.h}}
+\mbox{\hyperlink{iphysical__qty_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_SI\_IPHYSICALQTY\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_SI\_IPHYSICALQTY\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{decimal__prefix_8h}{decimal\_prefix.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{namespace\ }SI}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty}{IPhysicalQty}}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a7e06c205c2d08f80ee895226f5df736a}{\string~IPhysicalQty}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a044202d32f6a309a46163a9bc5e18305}{getName}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a3ea6ad197591b4c015b46467e421ca61}{getSymbol}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a6fd2932c73bd7ee38c4237036b3af067}{getDescription}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a61000614956b851c7165570d6f7968db}{isFundamental}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abf67bb71d70b4a8e776150a9f3bee1d6}{getUnitName}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_ab175b0954e8f389e77795bc25aa75a37}{getUnitSymbol}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a4b81cc23d69de9f9714fde52a996ccc0}{getUnitDescription}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a975388181c09f5376286a2aecc6a6944}{toString}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_acc9b95e8bda1460b56fe17ef234bbf1d}{toString}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{DecimalPrefix::Name}}\ prefix)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_afa3b2abc70ef6d8eb4f3eadd6dc5f0ba}{toString}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{DecimalPrefix::Symbol}}\ prefix)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00119\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
+\DoxyCodeLine{00120\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00121\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_SI\_IPHYSICALQTY\_H}}
+
+\end{DoxyCode}

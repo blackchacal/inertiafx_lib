@@ -1,0 +1,234 @@
+\doxysection{Inertia\+FX\+::Core\+::SI\+::IPhysical\+Qty Interface Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty}{}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+
+
+Interface defining the required operations for physical quantities such as temperature, speed, force, etc.  
+
+
+
+
+{\ttfamily \#include $<$iphysical\+\_\+qty.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::IPhysical\+Qty\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.318518cm]{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a7e06c205c2d08f80ee895226f5df736a}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a7e06c205c2d08f80ee895226f5df736a} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IPhysical\+Qty} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for interface cleanup. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a044202d32f6a309a46163a9bc5e18305}{get\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the physical quantity. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a3ea6ad197591b4c015b46467e421ca61}{get\+Symbol}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the symbol of the physical quantity. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a6fd2932c73bd7ee38c4237036b3af067}{get\+Description}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the description of the physical quantity. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a61000614956b851c7165570d6f7968db}{is\+Fundamental}} () const =0
+\begin{DoxyCompactList}\small\item\em Indicates if this quantity is fundamental. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abf67bb71d70b4a8e776150a9f3bee1d6}{get\+Unit\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the base unit associated with this quantity. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_ab175b0954e8f389e77795bc25aa75a37}{get\+Unit\+Symbol}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the symbol of the base unit associated with this quantity. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a4b81cc23d69de9f9714fde52a996ccc0}{get\+Unit\+Description}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves a description of the base unit for this quantity. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a975388181c09f5376286a2aecc6a6944}{to\+String}} () const =0
+\begin{DoxyCompactList}\small\item\em Builds a string representation of the quantity and its current value in the base unit. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_acc9b95e8bda1460b56fe17ef234bbf1d}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) const =0
+\begin{DoxyCompactList}\small\item\em Builds a string representation of the quantity\textquotesingle{}s value in a specified decimal prefix of its base unit. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_afa3b2abc70ef6d8eb4f3eadd6dc5f0ba}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) const =0
+\begin{DoxyCompactList}\small\item\em Builds a string representation of the quantity\textquotesingle{}s value in a specified decimal prefix of its base unit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface defining the required operations for physical quantities such as temperature, speed, force, etc. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a6fd2932c73bd7ee38c4237036b3af067}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a6fd2932c73bd7ee38c4237036b3af067} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the description of the physical quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string detailing the quantity\textquotesingle{}s meaning or usage. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty_a4df1e190aca9442b49fa8b12f2794a12}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Qty$<$ T $>$}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a8d30aff6cca0d3d558f474cb493a9a6f}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a044202d32f6a309a46163a9bc5e18305}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getName@{getName}}
+\index{getName@{getName}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a044202d32f6a309a46163a9bc5e18305} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the name of the physical quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the name (e.\+g., "{}\+Temperature"{}, "{}\+Speed"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty_aef63870c108f50f97fc00c22a3ebfaa4}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Qty$<$ T $>$}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aca26616028a12612befdff02c5b18c2b}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a3ea6ad197591b4c015b46467e421ca61}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a3ea6ad197591b4c015b46467e421ca61} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+Symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the symbol of the physical quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the symbol (e.\+g., "{}\+T"{}, "{}v"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty_a0e0279f0f4bea618ddcea83eb849a02b}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Qty$<$ T $>$}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a144affb7c30c4a3ebc3a9af2383fd9b0}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a4b81cc23d69de9f9714fde52a996ccc0}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getUnitDescription@{getUnitDescription}}
+\index{getUnitDescription@{getUnitDescription}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{getUnitDescription()}{getUnitDescription()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a4b81cc23d69de9f9714fde52a996ccc0} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+Unit\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves a description of the base unit for this quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string describing the unit\textquotesingle{}s context or usage. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty_a3741b68882773c168bcac36484958dd6}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Qty$<$ T $>$}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a2394f2b146d8354bb569a4675f116a00}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abf67bb71d70b4a8e776150a9f3bee1d6}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getUnitName@{getUnitName}}
+\index{getUnitName@{getUnitName}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{getUnitName()}{getUnitName()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abf67bb71d70b4a8e776150a9f3bee1d6} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+Unit\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the name of the base unit associated with this quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the base unit name (e.\+g., "{}\+Kelvin"{}, "{}\+Meter/\+Second"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty_a5678ede521e77538bb890f254c5221c4}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Qty$<$ T $>$}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_abca9bd35ceda10aa4f7ade0db7293132}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_ab175b0954e8f389e77795bc25aa75a37}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getUnitSymbol@{getUnitSymbol}}
+\index{getUnitSymbol@{getUnitSymbol}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{getUnitSymbol()}{getUnitSymbol()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_ab175b0954e8f389e77795bc25aa75a37} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+Unit\+Symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the symbol of the base unit associated with this quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the base unit symbol (e.\+g., "{}\+K"{}, "{}m/s"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty_a1148d19db6f81112b0251843fb620346}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Qty$<$ T $>$}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a3318d792b435c5cb155fbc1221ab8d32}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a61000614956b851c7165570d6f7968db}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!isFundamental@{isFundamental}}
+\index{isFundamental@{isFundamental}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{isFundamental()}{isFundamental()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a61000614956b851c7165570d6f7968db} 
+virtual bool Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::is\+Fundamental (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Indicates if this quantity is fundamental. 
+
+\begin{DoxyReturn}{Returns}
+true if fundamental, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty_ac403b149dc0ded1221280ea9ccdc5aec}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Qty$<$ T $>$}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a2e5abe3eddd71b47d4d1136fdfadd057}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a975388181c09f5376286a2aecc6a6944}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a975388181c09f5376286a2aecc6a6944} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Builds a string representation of the quantity and its current value in the base unit. 
+
+\begin{DoxyReturn}{Returns}
+A string with both the value and unit symbol (e.\+g., "{}25.\+0 K"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a7550a34fc01939a413f1d86cc8fd760e}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_acc9b95e8bda1460b56fe17ef234bbf1d}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_acc9b95e8bda1460b56fe17ef234bbf1d} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Builds a string representation of the quantity\textquotesingle{}s value in a specified decimal prefix of its base unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The decimal prefix by name (e.\+g., "{}kilo"{}, "{}milli"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string with the value (converted to the specified prefix) and the appropriate unit symbol. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a4bb043d886cb9140dcc9d469f59699c9}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_afa3b2abc70ef6d8eb4f3eadd6dc5f0ba}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_afa3b2abc70ef6d8eb4f3eadd6dc5f0ba} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Builds a string representation of the quantity\textquotesingle{}s value in a specified decimal prefix of its base unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The decimal prefix by symbol (e.\+g., "{}k"{}, "{}m"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A string with the value (converted to the specified prefix) and the appropriate unit symbol. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_ae14cbd460b770d71c6f1b0de511ff9ac}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/inc/\mbox{\hyperlink{iphysical__qty_8h}{iphysical\+\_\+qty.\+h}}\end{DoxyCompactItemize}

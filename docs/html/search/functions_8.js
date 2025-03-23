@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['second_0',['Second',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html#aaa2df2368dae2999461344b07470036b',1,'InertiaFX::Core::SI::Second']]],
+  ['setvalue_1',['setValue',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aa49d5903aebcd415abbb79caf3399668',1,'InertiaFX::Core::SI::FundamentalQty::setValue()'],['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html#a2676d1b74d22d284768d0d0297ef96f6',1,'InertiaFX::Core::SI::IScalarQty::setValue()']]],
+  ['setvaluefrom_2',['setValueFrom',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a4e12554d9a7c6c359c8f51a528cbccfa',1,'InertiaFX::Core::SI::FundamentalQty::setValueFrom(double newValue, DecimalPrefix::Name prefix)'],['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aadf8a1288ecf503493f96b3841953c18',1,'InertiaFX::Core::SI::FundamentalQty::setValueFrom(double newValue, DecimalPrefix::Symbol prefix)'],['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html#aca4fd6f2971fb43a5c40f06eff38677e',1,'InertiaFX::Core::SI::IScalarQty::setValueFrom(double newValue, DecimalPrefix::Name prefix)=0'],['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html#ac43214c7ed9d55fd7d2431b1afdf8594',1,'InertiaFX::Core::SI::IScalarQty::setValueFrom(double newValue, DecimalPrefix::Symbol prefix)=0']]]
+];

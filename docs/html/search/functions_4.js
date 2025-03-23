@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['physicalunit_0',['PhysicalUnit',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#ad717cd07fb8b3553c1fdb254813ae6a5',1,'InertiaFX::Core::SI::PhysicalUnit']]]
+  ['kilogram_0',['Kilogram',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram.html#a0405a1fe10431553a3f85c89dd3b494b',1,'InertiaFX::Core::SI::Kilogram']]]
 ];

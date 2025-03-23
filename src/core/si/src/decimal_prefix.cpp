@@ -64,7 +64,7 @@ namespace Core
                     return "hecto";
                 case Name::deca:
                     return "deca";
-                case Name::none:
+                case Name::base:
                     return "";
                 case Name::deci:
                     return "deci";
@@ -123,7 +123,7 @@ namespace Core
                     return "hecto";
                 case Symbol::da:
                     return "deca";
-                case Symbol::none:
+                case Symbol::base:
                     return "";
                 case Symbol::d:
                     return "deci";
@@ -182,7 +182,7 @@ namespace Core
                     return "h";
                 case Name::deca:
                     return "da";
-                case Name::none:
+                case Name::base:
                     return "";
                 case Name::deci:
                     return "d";
@@ -241,7 +241,7 @@ namespace Core
                     return "h";
                 case Symbol::da:
                     return "da";
-                case Symbol::none:
+                case Symbol::base:
                     return "";
                 case Symbol::d:
                     return "d";
