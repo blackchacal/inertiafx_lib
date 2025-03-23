@@ -31,9 +31,9 @@ namespace Core
 {
     namespace SI
     {
-        PhysicalUnit::PhysicalUnit(const std::string &name, const std::string &namePlural,
+        PhysicalUnit::PhysicalUnit(const std::string &name, const std::string &pluralName,
                                    const std::string &symbol, const std::string &description) :
-            _name(name), _namePlural(namePlural), _symbol(symbol), _description(description)
+            _name(name), _pluralName(pluralName), _symbol(symbol), _description(description)
         {
         }
 
@@ -46,9 +46,9 @@ namespace Core
             return _name;
         }
 
-        std::string PhysicalUnit::getNamePlural() const
+        std::string PhysicalUnit::getPluralName() const
         {
-            return _namePlural;
+            return _pluralName;
         }
 
         std::string PhysicalUnit::getSymbol() const

@@ -61,7 +61,7 @@ namespace Core
              * @brief Get the full name of the unit in plural form.
              * @return A std::string containing the unit name.
              */
-            virtual std::string getNamePlural() const = 0;
+            virtual std::string getPluralName() const = 0;
 
             /**
              * @brief Get the symbol of the unit.

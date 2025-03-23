@@ -48,7 +48,7 @@ namespace Core
         {
           private:
             std::string _name;        /**< The full name of the unit. */
-            std::string _namePlural;  /**< The full name of the unit in plural form. */
+            std::string _pluralName;  /**< The full name of the unit in plural form. */
             std::string _description; /**< A brief description of the unit. */
 
           protected:
@@ -77,9 +77,9 @@ namespace Core
             virtual std::string getName() const override;
 
             /**
-             * @copydoc IPhysicalUnit::getNamePlural()
+             * @copydoc IPhysicalUnit::getPluralName()
              */
-            virtual std::string getNamePlural() const override;
+            virtual std::string getPluralName() const override;
 
             /**
              * @copydoc IPhysicalUnit::getSymbol()
