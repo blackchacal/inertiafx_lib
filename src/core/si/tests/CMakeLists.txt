@@ -9,6 +9,10 @@ add_executable(SI_UnitTests
     test_metre.cpp
     test_second.cpp
     test_kilogram.cpp
+    test_ampere.cpp
+    test_kelvin.cpp
+    test_mole.cpp
+    test_candela.cpp
     
     # Test fundamental quantities
     test_length.cpp

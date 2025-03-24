@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['physicalunit_0',['PhysicalUnit',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#ad717cd07fb8b3553c1fdb254813ae6a5',1,'InertiaFX::Core::SI::PhysicalUnit']]]
+  ['length_0',['Length',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html#a166d1794e2cdd523b387ec5a7b91336f',1,'InertiaFX::Core::SI::Length']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['mass_0',['Mass',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#a7c8a1522b7b5bff33c905fbcf1dd93a6',1,'InertiaFX::Core::SI::Mass']]],
-  ['metre_1',['Metre',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre.html#a69288018d3501a583b59881cffe539d9',1,'InertiaFX::Core::SI::Metre']]]
+  ['kelvin_0',['Kelvin',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_kelvin.html#a6bbb5afa6fea9209a9310f19ea9328e3',1,'InertiaFX::Core::SI::Kelvin']]],
+  ['kilogram_1',['Kilogram',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram.html#a0405a1fe10431553a3f85c89dd3b494b',1,'InertiaFX::Core::SI::Kilogram']]]
 ];

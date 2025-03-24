@@ -35,7 +35,7 @@ namespace Core
         const std::string Metre::DESCRIPTION =
             "The metre, symbol m, is the SI unit of length."
             "It is defined by taking the fixed numerical value of the speed of light"
-            " in vacuum c to be 299 792 458 when expressed in the unit m s^(–1), where the "
+            " in vacuum c to be 299 792 458 when expressed in the unit m s^–1, where the "
             "second is defined in terms of the caesium frequency ΔνCs.";
 
         Metre::Metre() : PhysicalUnit("metre", "metres", "m", DESCRIPTION)

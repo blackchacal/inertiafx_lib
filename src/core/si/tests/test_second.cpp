@@ -19,7 +19,7 @@ TEST_F(SecondTest, Constructor)
               "It is defined by taking the fixed numerical value of the caesium"
               "frequency ΔνCs, the unperturbed ground-state hyperfine transition "
               "frequency of the caesium-133 atom, to be 9 192 631 770 when expressed"
-              " in the unit Hz, which is equal to s–1.");
+              " in the unit Hz, which is equal to s^–1.");
 }
 
 TEST_F(SecondTest, ToStringWithDecimalPrefixName)

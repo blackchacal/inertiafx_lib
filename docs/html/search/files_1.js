@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['decimal_5fprefix_2ecpp_0',['decimal_prefix.cpp',['../decimal__prefix_8cpp.html',1,'']]],
-  ['decimal_5fprefix_2eh_1',['decimal_prefix.h',['../decimal__prefix_8h.html',1,'']]],
-  ['derived_5fqty_2eh_2',['derived_qty.h',['../derived__qty_8h.html',1,'']]]
+  ['candela_2ecpp_0',['candela.cpp',['../candela_8cpp.html',1,'']]],
+  ['candela_2eh_1',['candela.h',['../candela_8h.html',1,'']]],
+  ['core_2ecpp_2',['core.cpp',['../core_8cpp.html',1,'']]]
 ];

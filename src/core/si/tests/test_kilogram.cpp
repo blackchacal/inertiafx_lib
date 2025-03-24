@@ -17,8 +17,8 @@ TEST_F(KilogramTest, ConstructorInitializesBaseClassCorrectly)
     EXPECT_EQ(kilogram.getDescription(),
               "The kilogram, symbol kg, is the SI unit of mass. "
               "It is defined by taking the fixed numerical value of the"
-              " Planck constant h to be 6.626 070 15 x 10–34 when expressed"
-              " in the unit J s, which is equal to kg m2 s–1, where the metre"
+              " Planck constant h to be 6.626 070 15 x 10^–34 when expressed"
+              " in the unit J s, which is equal to kg m^2 s^–1, where the metre"
               " and the second are defined in terms of c and ΔνCs.");
 }
 

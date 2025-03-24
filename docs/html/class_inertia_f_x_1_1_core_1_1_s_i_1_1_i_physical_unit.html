@@ -120,10 +120,14 @@ Inheritance diagram for InertiaFX::Core::SI::IPhysicalUnit:</div>
  <div class="center">
   <img src="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.png" usemap="#InertiaFX::Core::SI::IPhysicalUnit_map" alt=""/>
   <map id="InertiaFX::Core::SI::IPhysicalUnit_map" name="InertiaFX::Core::SI::IPhysicalUnit_map">
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html" title="A base class that implements the IPhysicalUnit interface." alt="InertiaFX::Core::SI::PhysicalUnit" shape="rect" coords="203,56,396,80"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram.html" title="Represents the SI base unit of mass." alt="InertiaFX::Core::SI::Kilogram" shape="rect" coords="0,112,193,136"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre.html" title="Represents the SI base unit of length." alt="InertiaFX::Core::SI::Metre" shape="rect" coords="203,112,396,136"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html" title="Represents the SI base unit of time." alt="InertiaFX::Core::SI::Second" shape="rect" coords="406,112,599,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html" title="A base class that implements the IPhysicalUnit interface." alt="InertiaFX::Core::SI::PhysicalUnit" shape="rect" coords="609,56,802,80"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html" title="Represents the SI base unit of electric current." alt="InertiaFX::Core::SI::Ampere" shape="rect" coords="0,112,193,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html" title="Represents the SI base unit of luminous intensity." alt="InertiaFX::Core::SI::Candela" shape="rect" coords="203,112,396,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_kelvin.html" title="Represents the SI base unit of thermodynamic temperature." alt="InertiaFX::Core::SI::Kelvin" shape="rect" coords="406,112,599,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram.html" title="Represents the SI base unit of mass." alt="InertiaFX::Core::SI::Kilogram" shape="rect" coords="609,112,802,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre.html" title="Represents the SI base unit of length." alt="InertiaFX::Core::SI::Metre" shape="rect" coords="812,112,1005,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mole.html" title="Represents the SI base unit of amount of substance." alt="InertiaFX::Core::SI::Mole" shape="rect" coords="1015,112,1208,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html" title="Represents the SI base unit of time." alt="InertiaFX::Core::SI::Second" shape="rect" coords="1218,112,1411,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -136,9 +140,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalUnit</b>
 <tr class="memitem:a0bf2b7af574cde378284164dc982df3f" id="r_a0bf2b7af574cde378284164dc982df3f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bf2b7af574cde378284164dc982df3f">getName</a> () const =0</td></tr>
 <tr class="memdesc:a0bf2b7af574cde378284164dc982df3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full name of the unit.  <br /></td></tr>
 <tr class="separator:a0bf2b7af574cde378284164dc982df3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c9095ab1ea176f94757401c70a410e6" id="r_a1c9095ab1ea176f94757401c70a410e6"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c9095ab1ea176f94757401c70a410e6">getNamePlural</a> () const =0</td></tr>
-<tr class="memdesc:a1c9095ab1ea176f94757401c70a410e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full name of the unit in plural form.  <br /></td></tr>
-<tr class="separator:a1c9095ab1ea176f94757401c70a410e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05f668cd345e926cdc38fcaeafb2491f" id="r_a05f668cd345e926cdc38fcaeafb2491f"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05f668cd345e926cdc38fcaeafb2491f">getPluralName</a> () const =0</td></tr>
+<tr class="memdesc:a05f668cd345e926cdc38fcaeafb2491f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the full name of the unit in plural form.  <br /></td></tr>
+<tr class="separator:a05f668cd345e926cdc38fcaeafb2491f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64f0fcc61bc6f6e99e572f70d5b9c5fb" id="r_a64f0fcc61bc6f6e99e572f70d5b9c5fb"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64f0fcc61bc6f6e99e572f70d5b9c5fb">getSymbol</a> () const =0</td></tr>
 <tr class="memdesc:a64f0fcc61bc6f6e99e572f70d5b9c5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the symbol of the unit.  <br /></td></tr>
 <tr class="separator:a64f0fcc61bc6f6e99e572f70d5b9c5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,8 +223,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalUnit</b>
 
 </div>
 </div>
-<a id="a1c9095ab1ea176f94757401c70a410e6" name="a1c9095ab1ea176f94757401c70a410e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c9095ab1ea176f94757401c70a410e6">&#9670;&#160;</a></span>getNamePlural()</h2>
+<a id="a05f668cd345e926cdc38fcaeafb2491f" name="a05f668cd345e926cdc38fcaeafb2491f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05f668cd345e926cdc38fcaeafb2491f">&#9670;&#160;</a></span>getPluralName()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,7 +233,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalUnit</b>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string InertiaFX::Core::SI::IPhysicalUnit::getNamePlural </td>
+          <td class="memname">virtual std::string InertiaFX::Core::SI::IPhysicalUnit::getPluralName </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -245,7 +249,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalUnit</b>
 <p>Get the full name of the unit in plural form. </p>
 <dl class="section return"><dt>Returns</dt><dd>A std::string containing the unit name. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#a5bb21e20f5a6a7daf6a00adaf7d40cc1">InertiaFX::Core::SI::PhysicalUnit</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#acfc5bc5ca9639831c623d6aeee150bbc">InertiaFX::Core::SI::PhysicalUnit</a>.</p>
 
 </div>
 </div>

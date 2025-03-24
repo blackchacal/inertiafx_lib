@@ -10,6 +10,10 @@ target_sources(SI PRIVATE
     src/metre.cpp
     src/second.cpp
     src/kilogram.cpp
+    src/ampere.cpp
+    src/kelvin.cpp
+    src/mole.cpp
+    src/candela.cpp
 
     # Fundamental Quantities
     src/length.cpp
