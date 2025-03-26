@@ -36,17 +36,19 @@ TEST_F(MassTest, PrefixConversions)
     };
 
     std::vector<TestCase> testCases = {
-        {DecimalPrefix::Name::yotta, 1.0, 1e24}, {DecimalPrefix::Name::zetta, 1.0, 1e21},
-        {DecimalPrefix::Name::exa, 1.0, 1e18},   {DecimalPrefix::Name::peta, 1.0, 1e15},
-        {DecimalPrefix::Name::tera, 1.0, 1e12},  {DecimalPrefix::Name::giga, 1.0, 1e9},
-        {DecimalPrefix::Name::mega, 1.0, 1e6},   {DecimalPrefix::Name::kilo, 1.0, 1e3},
-        {DecimalPrefix::Name::hecto, 1.0, 1e2},  {DecimalPrefix::Name::deca, 1.0, 1e1},
-        {DecimalPrefix::Name::base, 1.0, 1.0},   {DecimalPrefix::Name::deci, 1.0, 1e-1},
-        {DecimalPrefix::Name::centi, 1.0, 1e-2}, {DecimalPrefix::Name::milli, 1.0, 1e-3},
-        {DecimalPrefix::Name::micro, 1.0, 1e-6}, {DecimalPrefix::Name::nano, 1.0, 1e-9},
-        {DecimalPrefix::Name::pico, 1.0, 1e-12}, {DecimalPrefix::Name::femto, 1.0, 1e-15},
-        {DecimalPrefix::Name::atto, 1.0, 1e-18}, {DecimalPrefix::Name::zepto, 1.0, 1e-21},
-        {DecimalPrefix::Name::yocto, 1.0, 1e-24}};
+        {DecimalPrefix::Name::quetta, 1.0, 1e30}, {DecimalPrefix::Name::ronna, 1.0, 1e27},
+        {DecimalPrefix::Name::yotta, 1.0, 1e24},  {DecimalPrefix::Name::zetta, 1.0, 1e21},
+        {DecimalPrefix::Name::exa, 1.0, 1e18},    {DecimalPrefix::Name::peta, 1.0, 1e15},
+        {DecimalPrefix::Name::tera, 1.0, 1e12},   {DecimalPrefix::Name::giga, 1.0, 1e9},
+        {DecimalPrefix::Name::mega, 1.0, 1e6},    {DecimalPrefix::Name::kilo, 1.0, 1e3},
+        {DecimalPrefix::Name::hecto, 1.0, 1e2},   {DecimalPrefix::Name::deca, 1.0, 1e1},
+        {DecimalPrefix::Name::base, 1.0, 1.0},    {DecimalPrefix::Name::deci, 1.0, 1e-1},
+        {DecimalPrefix::Name::centi, 1.0, 1e-2},  {DecimalPrefix::Name::milli, 1.0, 1e-3},
+        {DecimalPrefix::Name::micro, 1.0, 1e-6},  {DecimalPrefix::Name::nano, 1.0, 1e-9},
+        {DecimalPrefix::Name::pico, 1.0, 1e-12},  {DecimalPrefix::Name::femto, 1.0, 1e-15},
+        {DecimalPrefix::Name::atto, 1.0, 1e-18},  {DecimalPrefix::Name::zepto, 1.0, 1e-21},
+        {DecimalPrefix::Name::yocto, 1.0, 1e-24}, {DecimalPrefix::Name::ronto, 1.0, 1e-27},
+        {DecimalPrefix::Name::quecto, 1.0, 1e-30}};
 
     for (const auto &tc : testCases)
     {

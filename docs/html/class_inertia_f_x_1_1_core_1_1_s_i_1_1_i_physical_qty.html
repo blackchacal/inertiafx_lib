@@ -120,12 +120,17 @@ Inheritance diagram for InertiaFX::Core::SI::IPhysicalQty:</div>
  <div class="center">
   <img src="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.png" usemap="#InertiaFX::Core::SI::IPhysicalQty_map" alt=""/>
   <map id="InertiaFX::Core::SI::IPhysicalQty_map" name="InertiaFX::Core::SI::IPhysicalQty_map">
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html" title="Represents a derived physical quantity in the system (e.g., velocity, acceleration)." alt="InertiaFX::Core::SI::DerivedQty&lt; T &gt;" shape="rect" coords="0,56,217,80"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html" title="Interface defining the required operations for scalar physical quantities." alt="InertiaFX::Core::SI::IScalarQty" shape="rect" coords="227,56,444,80"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html" title="Represents a fundamental physical quantity in the system (e.g., length, mass)." alt="InertiaFX::Core::SI::FundamentalQty" shape="rect" coords="227,112,444,136"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html" title="Concrete fundamental quantity representing length." alt="InertiaFX::Core::SI::Length" shape="rect" coords="0,168,217,192"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Mass" shape="rect" coords="227,168,444,192"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Time" shape="rect" coords="454,168,671,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html" title="Interface defining the required operations for scalar physical quantities." alt="InertiaFX::Core::SI::IScalarQty" shape="rect" coords="117,56,341,80"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_vector_qty.html" title="Interface defining the required operations for vector physical quantities." alt="InertiaFX::Core::SI::IVectorQty" shape="rect" coords="936,56,1160,80"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html" title="Represents a derived scalar physical quantity in the system (e.g., area, volume)." alt="InertiaFX::Core::SI::DerivedScalarQty" shape="rect" coords="0,112,224,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html" title="Represents a fundamental physical quantity in the system (e.g., length, mass)." alt="InertiaFX::Core::SI::FundamentalQty" shape="rect" coords="234,112,458,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html" title="Represents a derived vector physical quantity in the system (e.g., velocity, acceleration)." alt="InertiaFX::Core::SI::DerivedVectorQty" shape="rect" coords="936,112,1160,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html" title="Concrete fundamental quantity representing length." alt="InertiaFX::Core::SI::Length" shape="rect" coords="0,168,224,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Mass" shape="rect" coords="234,168,458,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Time" shape="rect" coords="468,168,692,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration.html" title="Concrete derived quantity representing acceleration." alt="InertiaFX::Core::SI::Acceleration" shape="rect" coords="702,168,926,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html" title="Concrete derived quantity representing position in space." alt="InertiaFX::Core::SI::Position" shape="rect" coords="936,168,1160,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity.html" title="Concrete derived quantity representing velocity." alt="InertiaFX::Core::SI::Velocity" shape="rect" coords="1170,168,1394,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -195,7 +200,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Retrieves the description of the physical quantity. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string detailing the quantity's meaning or usage. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html#a4df1e190aca9442b49fa8b12f2794a12">InertiaFX::Core::SI::DerivedQty&lt; T &gt;</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a8d30aff6cca0d3d558f474cb493a9a6f">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#aad2a6cee88b759b3a6d2eab2d72ec598">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a84f049b52393feafe187be62ba3859fb">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a8d30aff6cca0d3d558f474cb493a9a6f">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -225,7 +230,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Retrieves the name of the physical quantity. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the name (e.g., "Temperature", "Speed"). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html#aef63870c108f50f97fc00c22a3ebfaa4">InertiaFX::Core::SI::DerivedQty&lt; T &gt;</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aca26616028a12612befdff02c5b18c2b">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#abdcd7c34581486cc4ada82cd6fea7651">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a28d9504e79303b363cab2389e664d8a2">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aca26616028a12612befdff02c5b18c2b">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -255,7 +260,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Retrieves the symbol of the physical quantity. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the symbol (e.g., "T", "v"). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html#a0e0279f0f4bea618ddcea83eb849a02b">InertiaFX::Core::SI::DerivedQty&lt; T &gt;</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a144affb7c30c4a3ebc3a9af2383fd9b0">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#ab69c8082feaf93048dc109ec5927fc42">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a915cb6a2f56d6c2a5525906e803fe04f">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a144affb7c30c4a3ebc3a9af2383fd9b0">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -285,7 +290,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Retrieves a description of the base unit for this quantity. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string describing the unit's context or usage. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html#a3741b68882773c168bcac36484958dd6">InertiaFX::Core::SI::DerivedQty&lt; T &gt;</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a2394f2b146d8354bb569a4675f116a00">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#af48e14b51a9576300b3c1e1306b09a13">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a4ab7627134029f1446398cb015bad0a9">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a2394f2b146d8354bb569a4675f116a00">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -315,7 +320,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Retrieves the name of the base unit associated with this quantity. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the base unit name (e.g., "Kelvin", "Meter/Second"). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html#a5678ede521e77538bb890f254c5221c4">InertiaFX::Core::SI::DerivedQty&lt; T &gt;</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#abca9bd35ceda10aa4f7ade0db7293132">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#ad7b98022bf862263413853e1ef684b9d">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a8572138cca8e7480675f78c2f77472e8">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#abca9bd35ceda10aa4f7ade0db7293132">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -345,7 +350,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Retrieves the symbol of the base unit associated with this quantity. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the base unit symbol (e.g., "K", "m/s"). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html#a1148d19db6f81112b0251843fb620346">InertiaFX::Core::SI::DerivedQty&lt; T &gt;</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a3318d792b435c5cb155fbc1221ab8d32">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#a17e4388aa458afd36ba96340b1a6fb9e">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a6dd6d8f36793ed1f8b0012bbef269797">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a3318d792b435c5cb155fbc1221ab8d32">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -375,7 +380,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Indicates if this quantity is fundamental. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if fundamental, false otherwise. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_qty.html#ac403b149dc0ded1221280ea9ccdc5aec">InertiaFX::Core::SI::DerivedQty&lt; T &gt;</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a2e5abe3eddd71b47d4d1136fdfadd057">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#aedaeb4e2d6752191bac198ae681b20ba">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a7a0c8bfbca1f2c34792e4a2a7ac1d10e">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a2e5abe3eddd71b47d4d1136fdfadd057">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -405,7 +410,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 <p>Builds a string representation of the quantity and its current value in the base unit. </p>
 <dl class="section return"><dt>Returns</dt><dd>A string with both the value and unit symbol (e.g., "25.0 K"). </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a7550a34fc01939a413f1d86cc8fd760e">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#abc7575ba0941fd19cb37af64ad945a4e">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a6ed8a9b2744b161f7bf01ec77b5f75bb">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a7550a34fc01939a413f1d86cc8fd760e">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -441,7 +446,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string with the value (converted to the specified prefix) and the appropriate unit symbol. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a4bb043d886cb9140dcc9d469f59699c9">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#ab67021b9c940c406305c62da157ad751">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a7e5bf8fb0366d05e80f34c8bb435c9a4">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a4bb043d886cb9140dcc9d469f59699c9">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -477,7 +482,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IPhysicalQty</b> 
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A string with the value (converted to the specified prefix) and the appropriate unit symbol. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#ae14cbd460b770d71c6f1b0de511ff9ac">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#ad6c37372b7fb407e09c3befcb4ccedea">InertiaFX::Core::SI::DerivedScalarQty</a>, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#a81ab86c8d2ed7f33b2687257468f2a35">InertiaFX::Core::SI::DerivedVectorQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#ae14cbd460b770d71c6f1b0de511ff9ac">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>

@@ -13,6 +13,8 @@ add_executable(SI_UnitTests
     test_kelvin.cpp
     test_mole.cpp
     test_candela.cpp
+    test_metre_per_second.cpp
+    test_metre_per_second_sq.cpp
     
     # Test fundamental quantities
     test_length.cpp
@@ -20,7 +22,9 @@ add_executable(SI_UnitTests
     test_time.cpp
 
     # Test derived quantities
-    test_derived_qtys.cpp
+    test_position.cpp
+    test_velocity.cpp
+    test_acceleration.cpp
 )
 
 target_link_libraries(SI_UnitTests PRIVATE

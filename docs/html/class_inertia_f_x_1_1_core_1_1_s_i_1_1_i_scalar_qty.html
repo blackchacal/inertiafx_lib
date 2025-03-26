@@ -120,11 +120,12 @@ Inheritance diagram for InertiaFX::Core::SI::IScalarQty:</div>
  <div class="center">
   <img src="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.png" usemap="#InertiaFX::Core::SI::IScalarQty_map" alt=""/>
   <map id="InertiaFX::Core::SI::IScalarQty_map" name="InertiaFX::Core::SI::IScalarQty_map">
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html" title="Interface defining the required operations for physical quantities such as temperature,..." alt="InertiaFX::Core::SI::IPhysicalQty" shape="rect" coords="223,0,436,24"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html" title="Represents a fundamental physical quantity in the system (e.g., length, mass)." alt="InertiaFX::Core::SI::FundamentalQty" shape="rect" coords="223,112,436,136"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html" title="Concrete fundamental quantity representing length." alt="InertiaFX::Core::SI::Length" shape="rect" coords="0,168,213,192"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Mass" shape="rect" coords="223,168,436,192"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Time" shape="rect" coords="446,168,659,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html" title="Interface defining the required operations for physical quantities such as temperature,..." alt="InertiaFX::Core::SI::IPhysicalQty" shape="rect" coords="116,0,339,24"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html" title="Represents a derived scalar physical quantity in the system (e.g., area, volume)." alt="InertiaFX::Core::SI::DerivedScalarQty" shape="rect" coords="0,112,223,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html" title="Represents a fundamental physical quantity in the system (e.g., length, mass)." alt="InertiaFX::Core::SI::FundamentalQty" shape="rect" coords="233,112,456,136"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html" title="Concrete fundamental quantity representing length." alt="InertiaFX::Core::SI::Length" shape="rect" coords="0,168,223,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Mass" shape="rect" coords="233,168,456,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Time" shape="rect" coords="466,168,689,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -182,7 +183,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IScalarQty</b> ()
 <p>Retrieves the current value of the physical quantity in its base unit. </p>
 <dl class="section return"><dt>Returns</dt><dd>The value of the quantity in its base unit. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a40fe4306ee64be6eaec977557e708a70">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#a69b801b3f895adda98f0045012cc2866">InertiaFX::Core::SI::DerivedScalarQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a40fe4306ee64be6eaec977557e708a70">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -218,7 +219,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IScalarQty</b> ()
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of the quantity converted to the requested prefix. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a8b0d08b543346d9c3dea2da1d25baa00">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#aafa8e81521e6c7f047c0c568176ee967">InertiaFX::Core::SI::DerivedScalarQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a8b0d08b543346d9c3dea2da1d25baa00">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -254,7 +255,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IScalarQty</b> ()
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The value of the quantity converted to the requested prefix. </dd></dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a94911962bce27c661582248806ea94c0">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#acce732521e017fb95781edbaec79c13e">InertiaFX::Core::SI::DerivedScalarQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a94911962bce27c661582248806ea94c0">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -289,7 +290,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IScalarQty</b> ()
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aa49d5903aebcd415abbb79caf3399668">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#a79e065394b33196f224044f2ff1bd8c4">InertiaFX::Core::SI::DerivedScalarQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aa49d5903aebcd415abbb79caf3399668">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -329,7 +330,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IScalarQty</b> ()
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a4e12554d9a7c6c359c8f51a528cbccfa">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#aec3fcad9b7b8a4e073eba9e79b535a79">InertiaFX::Core::SI::DerivedScalarQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a4e12554d9a7c6c359c8f51a528cbccfa">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>
@@ -369,7 +370,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IScalarQty</b> ()
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aadf8a1288ecf503493f96b3841953c18">InertiaFX::Core::SI::FundamentalQty</a>.</p>
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#a7614d9811fc5086c884c8fa8249f2a52">InertiaFX::Core::SI::DerivedScalarQty</a>, and <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#aadf8a1288ecf503493f96b3841953c18">InertiaFX::Core::SI::FundamentalQty</a>.</p>
 
 </div>
 </div>

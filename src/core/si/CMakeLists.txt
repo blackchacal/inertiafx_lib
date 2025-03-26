@@ -14,6 +14,8 @@ target_sources(SI PRIVATE
     src/kelvin.cpp
     src/mole.cpp
     src/candela.cpp
+    src/metre_per_second.cpp
+    src/metre_per_second_sq.cpp
 
     # Fundamental Quantities
     src/length.cpp
@@ -21,7 +23,9 @@ target_sources(SI PRIVATE
     src/mass.cpp
     
     # Derived Quantities
-    # src/velocity.cpp
+    src/position.cpp
+    src/velocity.cpp
+    src/acceleration.cpp
 )
 
 add_subdirectory(tests)
