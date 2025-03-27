@@ -27,6 +27,10 @@ var annotated_dup =
           [ "Second", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_second" ],
           [ "Time", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_time" ],
           [ "Velocity", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity" ]
+        ] ],
+        [ "Tools", null, [
+          [ "ILogger", "class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html", "class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger" ],
+          [ "Logger", "class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html", "class_inertia_f_x_1_1_core_1_1_tools_1_1_logger" ]
         ] ]
       ] ],
       [ "InertiaFX", "class_inertia_f_x_1_1_inertia_f_x.html", "class_inertia_f_x_1_1_inertia_f_x" ]

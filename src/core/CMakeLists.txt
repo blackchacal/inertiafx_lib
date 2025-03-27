@@ -19,7 +19,7 @@ FetchContent_MakeAvailable(googletest)
 enable_testing()
 
 # Add submodules
-# add_subdirectory(tools)
+add_subdirectory(tools)
 add_subdirectory(si)
 # add_subdirectory(engine)
 
@@ -31,7 +31,7 @@ target_include_directories(Core PUBLIC
 )
 
 # Link submodules into Core
-target_link_libraries(Core PRIVATE SI)
+target_link_libraries(Core PRIVATE SI Tools)
 
 # Install Core library
 install(TARGETS Core DESTINATION lib)

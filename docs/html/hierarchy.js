@@ -1,6 +1,9 @@
 var hierarchy =
 [
     [ "InertiaFX::Core::SI::DecimalPrefix", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html", null ],
+    [ "InertiaFX::Core::Tools::ILogger", "class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html", [
+      [ "InertiaFX::Core::Tools::Logger", "class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html", null ]
+    ] ],
     [ "InertiaFX", "class_inertia_f_x.html", null ],
     [ "InertiaFX::InertiaFX", "class_inertia_f_x_1_1_inertia_f_x.html", null ],
     [ "InertiaFX::Core::SI::IPhysicalQty", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html", [

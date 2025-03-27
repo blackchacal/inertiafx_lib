@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['mass_0',['Mass',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#a7c8a1522b7b5bff33c905fbcf1dd93a6',1,'InertiaFX::Core::SI::Mass']]],
-  ['metre_1',['Metre',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre.html#a69288018d3501a583b59881cffe539d9',1,'InertiaFX::Core::SI::Metre']]],
-  ['metrepersecond_2',['MetrePerSecond',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre_per_second.html#a4101047374a08dbe0443d57b424ee689',1,'InertiaFX::Core::SI::MetrePerSecond']]],
-  ['metrepersecondsq_3',['MetrePerSecondSq',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre_per_second_sq.html#ab39eb14cbd903891e4779025b4aedf51',1,'InertiaFX::Core::SI::MetrePerSecondSq']]],
-  ['mole_4',['Mole',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_mole.html#a5fd3ea60b3b736192e6542d5425d5373',1,'InertiaFX::Core::SI::Mole']]]
+  ['length_0',['Length',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html#a166d1794e2cdd523b387ec5a7b91336f',1,'InertiaFX::Core::SI::Length']]],
+  ['log_1',['log',['../class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html#a94593f60d5e90da79caf6c877a7132da',1,'InertiaFX::Core::Tools::ILogger::log()'],['../class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a73c1f37d0bc26bec6786c387d5040181',1,'InertiaFX::Core::Tools::Logger::log(LogLevel level, const char *format,...) override']]],
+  ['logger_2',['Logger',['../class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a1829fa68e4b956f5713096e90400a425',1,'InertiaFX::Core::Tools::Logger']]]
 ];

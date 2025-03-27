@@ -1,0 +1,121 @@
+\doxysection{Inertia\+FX\+::Core\+::Tools\+::Logger Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{}\label{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}\index{InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}}
+
+
+Concrete implementation of \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger}{ILogger} for logging to stdout/stderr.  
+
+
+
+
+{\ttfamily \#include $<$logger.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::Tools\+::Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a1829fa68e4b956f5713096e90400a425}\label{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a1829fa68e4b956f5713096e90400a425} 
+{\bfseries Logger} ()
+\begin{DoxyCompactList}\small\item\em Constructor initializes the logger with default settings. \end{DoxyCompactList}\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a1fbb6bde81417080d5e1445d02de27c4}\label{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a1fbb6bde81417080d5e1445d02de27c4} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Logger} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Logger}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a73c1f37d0bc26bec6786c387d5040181}{log}} (\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} level, const char \texorpdfstring{$\ast$}{*}format,...) override
+\begin{DoxyCompactList}\small\item\em Logs a formatted message at the given log level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_ad37b182c8ec9c1c129017516ce915e3e}{enable}} () override
+\begin{DoxyCompactList}\small\item\em Enables the logger, allowing log output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a08efa093e6385399170cfa3f57843643}{disable}} () override
+\begin{DoxyCompactList}\small\item\em Disables the logger, suppressing all log output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_aa2febad81b3e6a434f8bb1daa613c042}{set\+Threshold}} (\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} level) override
+\begin{DoxyCompactList}\small\item\em Sets the minimum severity level required for messages to be logged. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+ILogger}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ILogger} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete implementation of \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger}{ILogger} for logging to stdout/stderr. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a08efa093e6385399170cfa3f57843643}\index{InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}!disable@{disable}}
+\index{disable@{disable}!InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}}
+\doxysubsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a08efa093e6385399170cfa3f57843643} 
+void Inertia\+FX\+::\+Core\+::\+Tools\+::\+Logger\+::disable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Disables the logger, suppressing all log output. 
+
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger_ace7b0d43a1ab6b04d6da8cf07d541c4e}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+ILogger}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_ad37b182c8ec9c1c129017516ce915e3e}\index{InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}!enable@{enable}}
+\index{enable@{enable}!InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}}
+\doxysubsubsection{\texorpdfstring{enable()}{enable()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_ad37b182c8ec9c1c129017516ce915e3e} 
+void Inertia\+FX\+::\+Core\+::\+Tools\+::\+Logger\+::enable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Enables the logger, allowing log output. 
+
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger_a4fb11440f1c141f8598da6419d0f78ef}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+ILogger}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a73c1f37d0bc26bec6786c387d5040181}\index{InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}!log@{log}}
+\index{log@{log}!InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a73c1f37d0bc26bec6786c387d5040181} 
+void Inertia\+FX\+::\+Core\+::\+Tools\+::\+Logger\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}}}]{level}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{format}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Logs a formatted message at the given log level. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The severity level of the log message. \\
+\hline
+{\em format} & A printf-\/style format string. \\
+\hline
+{\em ...} & Variadic arguments to format the string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger_a94593f60d5e90da79caf6c877a7132da}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+ILogger}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_aa2febad81b3e6a434f8bb1daa613c042}\index{InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}!setThreshold@{setThreshold}}
+\index{setThreshold@{setThreshold}!InertiaFX::Core::Tools::Logger@{InertiaFX::Core::Tools::Logger}}
+\doxysubsubsection{\texorpdfstring{setThreshold()}{setThreshold()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_aa2febad81b3e6a434f8bb1daa613c042} 
+void Inertia\+FX\+::\+Core\+::\+Tools\+::\+Logger\+::set\+Threshold (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}}}]{level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the minimum severity level required for messages to be logged. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The threshold log level. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger_a98d5053350c7bbdb28a43e6e8795b5d2}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+ILogger}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/tools/inc/\mbox{\hyperlink{logger_8h}{logger.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/tools/src/\mbox{\hyperlink{logger_8cpp}{logger.\+cpp}}\end{DoxyCompactItemize}
