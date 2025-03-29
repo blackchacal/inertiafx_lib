@@ -1,0 +1,50 @@
+\doxysection{file\+\_\+logger.\+h}
+\hypertarget{file__logger_8h_source}{}\label{file__logger_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/tools/inc/file\_logger.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/tools/inc/file\_logger.h}}
+\mbox{\hyperlink{file__logger_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_TOOLS\_FILELOGGER\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_TOOLS\_FILELOGGER\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{logger_8h}{Logger.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{namespace\ }Tools}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aeebbe35803981e1b6975f75173529b98}{FileLogger}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a1829fa68e4b956f5713096e90400a425}{Logger}}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_a7cc1b4fc3fa6d487f33608c823f6d468}{MAX\_LOG\_MESSAGE\_LENGTH}}\ =\ 1024;\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aeebbe35803981e1b6975f75173529b98}{FileLogger}}(\textcolor{keyword}{const}\ std::string\ \&filepath,\ \mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{LogLevel}}\ levelThreshold,\ \textcolor{keywordtype}{bool}\ printToFile);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aefa03802660e3813d275f12f44d8c7f7}{\string~FileLogger}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_acd976dced3a93ee0be36810ff3844198}{setPrintToFile}}(\textcolor{keywordtype}{bool}\ printToFile);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_ae31071ae808b63d75a66c997924774e9}{clearLogs}}();}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_addfc48fc4be652cabb61590a28899340}{log}}(\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{LogLevel}}\ level,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ ...)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_printToFile;\ \ \ \ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_filepath;\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ std::ofstream\ \_fileStream;\ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ vLogFile(\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{LogLevel}}\ level,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *format,\ va\_list\ args);}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Tools}}
+\DoxyCodeLine{00107\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00108\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00110\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_TOOLS\_FILELOGGER\_H}}
+
+\end{DoxyCode}

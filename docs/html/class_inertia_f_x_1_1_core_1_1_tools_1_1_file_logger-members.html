@@ -77,7 +77,7 @@ $(function() { codefold.init(0); });
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html',''); initResizable(true); });
+$(function(){initNavTree('class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html',''); initResizable(true); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -103,22 +103,27 @@ $(function(){initNavTree('class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html',
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">InertiaFX::Core::Tools::Logger Member List</div></div>
+  <div class="headertitle"><div class="title">InertiaFX::Core::Tools::FileLogger Member List</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html">InertiaFX::Core::Tools::FileLogger</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a9b7bab9e8fa0e36e42ac8bd04fb4da56">_enabled</a></td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#afb46389769ac8f0e62c23cc7a3538f36">_threshold</a></td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a08efa093e6385399170cfa3f57843643">disable</a>() override</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#ad37b182c8ec9c1c129017516ce915e3e">enable</a>() override</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a73c1f37d0bc26bec6786c387d5040181">log</a>(LogLevel level, const char *format,...) override</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#ae31071ae808b63d75a66c997924774e9">clearLogs</a>()</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html">InertiaFX::Core::Tools::FileLogger</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a08efa093e6385399170cfa3f57843643">disable</a>() override</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#ad37b182c8ec9c1c129017516ce915e3e">enable</a>() override</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#aeebbe35803981e1b6975f75173529b98">FileLogger</a>(const std::string &amp;filepath, LogLevel levelThreshold, bool printToFile)</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html">InertiaFX::Core::Tools::FileLogger</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#addfc48fc4be652cabb61590a28899340">log</a>(LogLevel level, const char *format,...) override</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html">InertiaFX::Core::Tools::FileLogger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a1829fa68e4b956f5713096e90400a425">Logger</a>()</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a76b12071f7a8922f0cc5dd61a10df244">logLevelToString</a>(LogLevel level) const</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#a7cc1b4fc3fa6d487f33608c823f6d468">MAX_LOG_MESSAGE_LENGTH</a></td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html">InertiaFX::Core::Tools::FileLogger</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#acd976dced3a93ee0be36810ff3844198">setPrintToFile</a>(bool printToFile)</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html">InertiaFX::Core::Tools::FileLogger</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#aa2febad81b3e6a434f8bb1daa613c042">setThreshold</a>(LogLevel level) override</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html#abf5330fd91d710f786625942ea779948">~ILogger</a>()=default</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html">InertiaFX::Core::Tools::ILogger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a1fbb6bde81417080d5e1445d02de27c4">~Logger</a>()</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#aefa03802660e3813d275f12f44d8c7f7">~FileLogger</a>()</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html">InertiaFX::Core::Tools::FileLogger</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html#abf5330fd91d710f786625942ea779948">~ILogger</a>()=default</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html">InertiaFX::Core::Tools::ILogger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a1fbb6bde81417080d5e1445d02de27c4">~Logger</a>()</td><td class="entry"><a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html">InertiaFX::Core::Tools::Logger</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

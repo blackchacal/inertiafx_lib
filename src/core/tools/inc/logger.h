@@ -79,10 +79,19 @@ namespace Core
              */
             void setThreshold(LogLevel level) override;
 
-          private:
+          protected:
             bool _enabled;       /**< Indicates whether logging is enabled. */
             LogLevel _threshold; /**< Minimum severity level for messages to be logged. */
 
+            /**
+             * @brief Converts a LogLevel enum into a string for display.
+             *
+             * @param level The log level to convert.
+             * @return const char* The string representation of the log level.
+             */
+            const char *logLevelToString(LogLevel level) const;
+
+          private:
             /**
              * @brief Internal helper to perform the formatted output.
              *
@@ -92,14 +101,6 @@ namespace Core
              * @param args Variadic argument list.
              */
             void vLog(LogLevel level, FILE *outputFile, const char *format, va_list args);
-
-            /**
-             * @brief Converts a LogLevel enum into a string for display.
-             *
-             * @param level The log level to convert.
-             * @return const char* The string representation of the log level.
-             */
-            const char *logLevelToString(LogLevel level) const;
         };
 
     }  // namespace Tools

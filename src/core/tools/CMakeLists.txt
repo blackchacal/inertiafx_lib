@@ -3,7 +3,8 @@ project(Tools)
 
 add_library(Tools STATIC)
 target_sources(Tools PRIVATE
-    src/Logger.cpp
+    src/logger.cpp
+    src/file_logger.cpp
 )
 
 add_subdirectory(tests)

@@ -1,0 +1,162 @@
+\doxysection{Inertia\+FX\+::Core\+::Tools\+::File\+Logger Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger}{}\label{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger}\index{InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}}
+
+
+\doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Logger} that optionally writes log messages to both console and a file.  
+
+
+
+
+{\ttfamily \#include $<$file\+\_\+logger.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::Tools\+::File\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aeebbe35803981e1b6975f75173529b98}{File\+Logger}} (const std\+::string \&filepath, \mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} level\+Threshold, bool print\+To\+File)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger}{File\+Logger} with a file path, log threshold, and file-\/logging toggle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aefa03802660e3813d275f12f44d8c7f7}{\texorpdfstring{$\sim$}{\string~}\+File\+Logger}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger}{File\+Logger}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_acd976dced3a93ee0be36810ff3844198}{set\+Print\+To\+File}} (bool print\+To\+File)
+\begin{DoxyCompactList}\small\item\em Sets whether or not to log messages to the file. \end{DoxyCompactList}\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_ae31071ae808b63d75a66c997924774e9}\label{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_ae31071ae808b63d75a66c997924774e9} 
+void {\bfseries clear\+Logs} ()
+\begin{DoxyCompactList}\small\item\em Clears the log file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_addfc48fc4be652cabb61590a28899340}{log}} (\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} level, const char \texorpdfstring{$\ast$}{*}format,...) override
+\begin{DoxyCompactList}\small\item\em Logs a formatted message at the given log level. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+Logger}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Logger} ()
+\begin{DoxyCompactList}\small\item\em Constructor initializes the logger with default settings. \end{DoxyCompactList}\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Logger} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Logger}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a73c1f37d0bc26bec6786c387d5040181}{log}} (\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} level, const char \texorpdfstring{$\ast$}{*}format,...) override
+\begin{DoxyCompactList}\small\item\em Logs a formatted message at the given log level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_ad37b182c8ec9c1c129017516ce915e3e}{enable}} () override
+\begin{DoxyCompactList}\small\item\em Enables the logger, allowing log output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a08efa093e6385399170cfa3f57843643}{disable}} () override
+\begin{DoxyCompactList}\small\item\em Disables the logger, suppressing all log output. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_aa2febad81b3e6a434f8bb1daa613c042}{set\+Threshold}} (\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} level) override
+\begin{DoxyCompactList}\small\item\em Sets the minimum severity level required for messages to be logged. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+ILogger}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+ILogger} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_a7cc1b4fc3fa6d487f33608c823f6d468}{MAX\+\_\+\+LOG\+\_\+\+MESSAGE\+\_\+\+LENGTH}} = 1024
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+Logger}}}
+\begin{DoxyCompactItemize}
+\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a76b12071f7a8922f0cc5dd61a10df244}{log\+Level\+To\+String}} (\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} level) const
+\begin{DoxyCompactList}\small\item\em Converts a \doxylink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level} enum into a string for display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+Logger}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_a9b7bab9e8fa0e36e42ac8bd04fb4da56}{\+\_\+enabled}}
+\item 
+\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger_afb46389769ac8f0e62c23cc7a3538f36}{\+\_\+threshold}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Logger} that optionally writes log messages to both console and a file. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aeebbe35803981e1b6975f75173529b98}\index{InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}!FileLogger@{FileLogger}}
+\index{FileLogger@{FileLogger}!InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}}
+\doxysubsubsection{\texorpdfstring{FileLogger()}{FileLogger()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aeebbe35803981e1b6975f75173529b98} 
+Inertia\+FX\+::\+Core\+::\+Tools\+::\+File\+Logger\+::\+File\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filepath}{, }\item[{\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}}}]{level\+Threshold}{, }\item[{bool}]{print\+To\+File}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger}{File\+Logger} with a file path, log threshold, and file-\/logging toggle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & Path to the log file. \\
+\hline
+{\em level\+Threshold} & Minimum severity level to be logged. \\
+\hline
+{\em print\+To\+File} & If true, messages are also logged to the file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aefa03802660e3813d275f12f44d8c7f7}\index{InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}!````~FileLogger@{\texorpdfstring{$\sim$}{\string~}FileLogger}}
+\index{````~FileLogger@{\texorpdfstring{$\sim$}{\string~}FileLogger}!InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}FileLogger()}{\string~FileLogger()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_aefa03802660e3813d275f12f44d8c7f7} 
+Inertia\+FX\+::\+Core\+::\+Tools\+::\+File\+Logger\+::\texorpdfstring{$\sim$}{\string~}\+File\+Logger (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger}{File\+Logger}. 
+
+Closes the file stream if it is open. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_addfc48fc4be652cabb61590a28899340}\index{InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}!log@{log}}
+\index{log@{log}!InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_addfc48fc4be652cabb61590a28899340} 
+void Inertia\+FX\+::\+Core\+::\+Tools\+::\+File\+Logger\+::log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ilogger_8h_a2549e8f562d2044baefb1722ccb560fa}{Log\+Level}}}]{level}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{format}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Logs a formatted message at the given log level. 
+
+The message is written to console via \doxylink{class_inertia_f_x_1_1_core_1_1_tools_1_1_logger}{Logger}. If file logging is enabled, it is also written to the output file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The severity level of the log message. \\
+\hline
+{\em format} & A printf-\/style format string. \\
+\hline
+{\em ...} & Variadic arguments to format the string. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger_a94593f60d5e90da79caf6c877a7132da}{Inertia\+FX\+::\+Core\+::\+Tools\+::\+ILogger}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_acd976dced3a93ee0be36810ff3844198}\index{InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}!setPrintToFile@{setPrintToFile}}
+\index{setPrintToFile@{setPrintToFile}!InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}}
+\doxysubsubsection{\texorpdfstring{setPrintToFile()}{setPrintToFile()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_acd976dced3a93ee0be36810ff3844198} 
+void Inertia\+FX\+::\+Core\+::\+Tools\+::\+File\+Logger\+::set\+Print\+To\+File (\begin{DoxyParamCaption}\item[{bool}]{print\+To\+File}{}\end{DoxyParamCaption})}
+
+
+
+Sets whether or not to log messages to the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em print\+To\+File} & If true, writes messages to the file in addition to console. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_a7cc1b4fc3fa6d487f33608c823f6d468}\index{InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}!MAX\_LOG\_MESSAGE\_LENGTH@{MAX\_LOG\_MESSAGE\_LENGTH}}
+\index{MAX\_LOG\_MESSAGE\_LENGTH@{MAX\_LOG\_MESSAGE\_LENGTH}!InertiaFX::Core::Tools::FileLogger@{InertiaFX::Core::Tools::FileLogger}}
+\doxysubsubsection{\texorpdfstring{MAX\_LOG\_MESSAGE\_LENGTH}{MAX\_LOG\_MESSAGE\_LENGTH}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger_a7cc1b4fc3fa6d487f33608c823f6d468} 
+const int Inertia\+FX\+::\+Core\+::\+Tools\+::\+File\+Logger\+::\+MAX\+\_\+\+LOG\+\_\+\+MESSAGE\+\_\+\+LENGTH = 1024\hspace{0.3cm}{\ttfamily [static]}}
+
+Maximum length of log message. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/tools/inc/\mbox{\hyperlink{file__logger_8h}{file\+\_\+logger.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/tools/src/\mbox{\hyperlink{file__logger_8cpp}{file\+\_\+logger.\+cpp}}\end{DoxyCompactItemize}

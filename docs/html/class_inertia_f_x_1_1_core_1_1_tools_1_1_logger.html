@@ -105,6 +105,8 @@ $(function(){initNavTree('class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">InertiaFX::Core::Tools::Logger Class Reference</div></div>
 </div><!--header-->
@@ -120,7 +122,8 @@ Inheritance diagram for InertiaFX::Core::Tools::Logger:</div>
  <div class="center">
   <img src="class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.png" usemap="#InertiaFX::Core::Tools::Logger_map" alt=""/>
   <map id="InertiaFX::Core::Tools::Logger_map" name="InertiaFX::Core::Tools::Logger_map">
-<area href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html" title="Interface for log message output in the InertiaFX library." alt="InertiaFX::Core::Tools::ILogger" shape="rect" coords="0,0,183,24"/>
+<area href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html" title="Interface for log message output in the InertiaFX library." alt="InertiaFX::Core::Tools::ILogger" shape="rect" coords="0,0,201,24"/>
+<area href="class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html" title="Logger that optionally writes log messages to both console and a file." alt="InertiaFX::Core::Tools::FileLogger" shape="rect" coords="0,112,201,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -151,6 +154,19 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Logger</b> ()</td
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ILogger</b> ()=default</td></tr>
 <tr class="memdesc:abf5330fd91d710f786625942ea779948 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
 <tr class="separator:abf5330fd91d710f786625942ea779948 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a76b12071f7a8922f0cc5dd61a10df244" id="r_a76b12071f7a8922f0cc5dd61a10df244"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76b12071f7a8922f0cc5dd61a10df244">logLevelToString</a> (<a class="el" href="ilogger_8h.html#a2549e8f562d2044baefb1722ccb560fa">LogLevel</a> level) const</td></tr>
+<tr class="memdesc:a76b12071f7a8922f0cc5dd61a10df244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a <a class="el" href="ilogger_8h.html#a2549e8f562d2044baefb1722ccb560fa" title="Logging levels for message categorization.">LogLevel</a> enum into a string for display.  <br /></td></tr>
+<tr class="separator:a76b12071f7a8922f0cc5dd61a10df244"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a9b7bab9e8fa0e36e42ac8bd04fb4da56" id="r_a9b7bab9e8fa0e36e42ac8bd04fb4da56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b7bab9e8fa0e36e42ac8bd04fb4da56">_enabled</a></td></tr>
+<tr class="separator:a9b7bab9e8fa0e36e42ac8bd04fb4da56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb46389769ac8f0e62c23cc7a3538f36" id="r_afb46389769ac8f0e62c23cc7a3538f36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ilogger_8h.html#a2549e8f562d2044baefb1722ccb560fa">LogLevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb46389769ac8f0e62c23cc7a3538f36">_threshold</a></td></tr>
+<tr class="separator:afb46389769ac8f0e62c23cc7a3538f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Concrete implementation of <a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html" title="Interface for log message output in the InertiaFX library.">ILogger</a> for logging to stdout/stderr. </p>
@@ -259,6 +275,40 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ILogger</b> ()=de
 
 </div>
 </div>
+<a id="a76b12071f7a8922f0cc5dd61a10df244" name="a76b12071f7a8922f0cc5dd61a10df244"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b12071f7a8922f0cc5dd61a10df244">&#9670;&#160;</a></span>logLevelToString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * InertiaFX::Core::Tools::Logger::logLevelToString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="ilogger_8h.html#a2549e8f562d2044baefb1722ccb560fa">LogLevel</a></td>          <td class="paramname"><span class="paramname"><em>level</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a <a class="el" href="ilogger_8h.html#a2549e8f562d2044baefb1722ccb560fa" title="Logging levels for message categorization.">LogLevel</a> enum into a string for display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>The log level to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>const char* The string representation of the log level. </dd></dl>
+
+</div>
+</div>
 <a id="aa2febad81b3e6a434f8bb1daa613c042" name="aa2febad81b3e6a434f8bb1daa613c042"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2febad81b3e6a434f8bb1daa613c042">&#9670;&#160;</a></span>setThreshold()</h2>
 
@@ -291,6 +341,53 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~ILogger</b> ()=de
 </dl>
 
 <p>Implements <a class="el" href="class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html#a98d5053350c7bbdb28a43e6e8795b5d2">InertiaFX::Core::Tools::ILogger</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9b7bab9e8fa0e36e42ac8bd04fb4da56" name="a9b7bab9e8fa0e36e42ac8bd04fb4da56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b7bab9e8fa0e36e42ac8bd04fb4da56">&#9670;&#160;</a></span>_enabled</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InertiaFX::Core::Tools::Logger::_enabled</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Indicates whether logging is enabled. </p>
+
+</div>
+</div>
+<a id="afb46389769ac8f0e62c23cc7a3538f36" name="afb46389769ac8f0e62c23cc7a3538f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb46389769ac8f0e62c23cc7a3538f36">&#9670;&#160;</a></span>_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ilogger_8h.html#a2549e8f562d2044baefb1722ccb560fa">LogLevel</a> InertiaFX::Core::Tools::Logger::_threshold</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Minimum severity level for messages to be logged. </p>
 
 </div>
 </div>

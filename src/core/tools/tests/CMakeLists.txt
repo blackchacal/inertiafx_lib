@@ -4,6 +4,7 @@ project(Tools_UnitTests)
 add_executable(Tools_UnitTests
     # Test general classes
     test_logger.cpp
+    test_file_logger.cpp
 )
 
 target_link_libraries(Tools_UnitTests PRIVATE

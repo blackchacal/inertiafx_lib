@@ -45,7 +45,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "acceleration_8cpp.html",
-"class_inertia_f_x_1_1_inertia_f_x.html#a41e2b7fa1e5ba3f5c434b1d2ca3ce58f"
+"class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a1829fa68e4b956f5713096e90400a425"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
