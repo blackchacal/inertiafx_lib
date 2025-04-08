@@ -28,6 +28,16 @@ TEST_F(VelocityTest, Constructor)
     EXPECT_DOUBLE_EQ(defaultVelocity->getValue()[2], 3.0);
 }
 
+TEST_F(VelocityTest, UnitNamesAndDescription)
+{
+    EXPECT_EQ(defaultVelocity->getUnitName(), "metre per second");
+    EXPECT_EQ(defaultVelocity->getUnitPluralName(), "metres per second");
+    EXPECT_EQ(defaultVelocity->getUnitSymbol(), "m s^-1");
+    EXPECT_EQ(
+        defaultVelocity->getUnitDescription(),
+        "The metre per second, symbol m s^-1, is an SI coherent derived unit of velocity/speed.");
+}
+
 TEST_F(VelocityTest, PrefixConversions)
 {
     struct TestCase

@@ -52,6 +52,9 @@ namespace Core
              */
             Velocity(std::array<double, 3> value,
                      DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
+
+            Velocity(const Velocity &)            = default;  // Copy constructor
+            Velocity &operator=(const Velocity &) = default;  // Copy assignment operator
         };
 
     }  // namespace SI

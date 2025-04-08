@@ -53,6 +53,14 @@ namespace Core
              * @brief Default destructor.
              */
             ~Candela() = default;
+
+            /**
+             *  @copydoc IPhysicalUnit::clone()
+             */
+            std::unique_ptr<IPhysicalUnit> clone() const override
+            {
+                return std::make_unique<Candela>(*this);
+            };
         };
     }  // namespace SI
 }  // namespace Core

@@ -30,6 +30,16 @@ TEST_F(AccelerationTest, Constructor)
     EXPECT_DOUBLE_EQ(defaultAcceleration->getValue()[2], 3.0);
 }
 
+TEST_F(AccelerationTest, UnitNamesAndDescription)
+{
+    EXPECT_EQ(defaultAcceleration->getUnitName(), "metre per second squared");
+    EXPECT_EQ(defaultAcceleration->getUnitPluralName(), "metres per second squared");
+    EXPECT_EQ(defaultAcceleration->getUnitSymbol(), "m s^-2");
+    EXPECT_EQ(defaultAcceleration->getUnitDescription(),
+              "The metre per second squared, symbol m s^-2, is an SI coherent derived unit of "
+              "acceleration.");
+}
+
 TEST_F(AccelerationTest, PrefixConversions)
 {
     struct TestCase

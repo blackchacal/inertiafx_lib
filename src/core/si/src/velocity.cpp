@@ -25,7 +25,9 @@
 
 #include "velocity.h"
 #include "decimal_prefix.h"
-#include "metre_per_second.h"
+#include "derived_physical_unit.h"
+#include "metre.h"
+#include "second.h"
 #include <array>
 
 namespace InertiaFX
@@ -37,7 +39,12 @@ namespace Core
         // Constructor
         Velocity::Velocity(std::array<double, 3> value, DecimalPrefix::Name prefix) :
             DerivedVectorQty("Velocity", "v", "Represents the derived SI Velocity quantity.",
-                             std::make_unique<MetrePerSecond>())
+                             std::make_unique<DerivedPhysicalUnit>(
+                                 std::vector<PhysicalUnitPower>{
+                                     PhysicalUnitPower{std::make_unique<Metre>(), 1},
+                                     PhysicalUnitPower{std::make_unique<Second>(), -1}},
+                                 "The metre per second, symbol m s^-1, is an SI coherent derived "
+                                 "unit of velocity/speed."))
         {
             // Store internally in base units
             this->_value[0] = value[0] * DecimalPrefix::getMultiplier(prefix);

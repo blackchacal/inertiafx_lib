@@ -61,6 +61,33 @@ namespace Core
             }
 
             /**
+             * @brief Constructs a new FundamentalQty object by copying another instance.
+             * @param other The other instance to copy from.
+             */
+            DerivedVectorQty(const DerivedVectorQty &other)
+            {
+                // If other._unit is not null, clone it; else store null
+                _unit =
+                    other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            }
+
+            DerivedVectorQty &operator=(const DerivedVectorQty &other)
+            {
+                if (this != &other)
+                {
+                    // If there's an existing owned object, remove it
+                    _unit.reset();
+
+                    // Deep-copy from other
+                    if (other._unit)
+                    {
+                        _unit = std::unique_ptr<IPhysicalUnit>(other._unit->clone());
+                    }
+                }
+                return *this;
+            }
+
+            /**
              * @brief Virtual destructor.
              */
             virtual ~DerivedVectorQty() = default;
@@ -103,6 +130,14 @@ namespace Core
             std::string getUnitName() const override
             {
                 return _unit->getName();
+            }
+
+            /**
+             * @copydoc IPhysicalQty::getUnitPluralName()
+             */
+            std::string getUnitPluralName() const override
+            {
+                return _unit->getPluralName();
             }
 
             /**

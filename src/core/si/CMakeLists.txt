@@ -7,6 +7,7 @@ target_sources(SI PRIVATE
 
     # Physical Units
     src/physical_unit.cpp
+    src/derived_physical_unit.cpp
     src/metre.cpp
     src/second.cpp
     src/kilogram.cpp
@@ -14,18 +15,21 @@ target_sources(SI PRIVATE
     src/kelvin.cpp
     src/mole.cpp
     src/candela.cpp
-    src/metre_per_second.cpp
-    src/metre_per_second_sq.cpp
+    src/newton.cpp
 
     # Fundamental Quantities
     src/length.cpp
     src/si_time.cpp
     src/mass.cpp
     
-    # Derived Quantities
+    # Derived Scalar Quantities
+    src/volume.cpp
+
+    # Derived Vector Quantities
     src/position.cpp
     src/velocity.cpp
     src/acceleration.cpp
+    src/force.cpp
 )
 
 add_subdirectory(tests)

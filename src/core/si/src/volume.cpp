@@ -17,16 +17,16 @@
  */
 
 /**
- * @file metre_per_second.h
- * @brief Declaration of the MetrePerSecond unit class.
+ * @file volume.cpp
+ * @brief Definition of the Volume class.
  *
- * @date 25, Mar 2025
+ * @date 02, Apr 2025
  */
 
-#ifndef INERTIAFX_CORE_SI_METRE_PER_SECOND_H
-#define INERTIAFX_CORE_SI_METRE_PER_SECOND_H
-
-#include "physical_unit.h"
+#include "volume.h"
+#include "decimal_prefix.h"
+#include "derived_physical_unit.h"
+#include "metre.h"
 
 namespace InertiaFX
 {
@@ -34,28 +34,20 @@ namespace Core
 {
     namespace SI
     {
-        /**
-         * @class MetrePerSecond
-         * @brief Represents the SI base unit of length.
-         */
-        class MetrePerSecond : public PhysicalUnit
+        // Constructor
+        Volume::Volume(double value, DecimalPrefix::Name prefix) :
+            DerivedScalarQty(
+                "Volume", "V", "Represents the derived SI Volume quantity.",
+                std::make_unique<DerivedPhysicalUnit>(
+                    std::vector<PhysicalUnitPower>{PhysicalUnitPower{std::make_unique<Metre>(), 3}},
+                    "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
         {
-          private:
-            static const std::string DESCRIPTION; /**< Detailed description of this unit. */
+            // Store internally in base units
+            this->_value = value * DecimalPrefix::getMultiplier(prefix);
 
-          public:
-            /**
-             * @brief Default constructor initializing MetrePerSecond unit properties.
-             */
-            MetrePerSecond();
-
-            /**
-             * @brief Default destructor.
-             */
-            ~MetrePerSecond() = default;
-        };
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = prefix;
+        }
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX
-
-#endif  // INERTIAFX_CORE_SI_METRE_PER_SECOND_H

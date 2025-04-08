@@ -57,6 +57,14 @@ namespace Core
             ~Kilogram() = default;
 
             /**
+             *  @copydoc IPhysicalUnit::clone()
+             */
+            std::unique_ptr<IPhysicalUnit> clone() const override
+            {
+                return std::make_unique<Kilogram>(*this);
+            };
+
+            /**
              * @copydoc IPhysicalUnit::toString(DecimalPrefix::Name) const
              */
             std::string toString(DecimalPrefix::Name prefixName) const override;

@@ -53,6 +53,14 @@ namespace Core
              * @brief Default destructor.
              */
             ~Metre() = default;
+
+            /**
+             *  @copydoc IPhysicalUnit::clone()
+             */
+            std::unique_ptr<IPhysicalUnit> clone() const override
+            {
+                return std::make_unique<Metre>(*this);
+            };
         };
     }  // namespace SI
 }  // namespace Core

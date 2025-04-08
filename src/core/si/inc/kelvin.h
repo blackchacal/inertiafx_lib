@@ -53,6 +53,14 @@ namespace Core
              * @brief Default destructor.
              */
             ~Kelvin() = default;
+
+            /**
+             *  @copydoc IPhysicalUnit::clone()
+             */
+            std::unique_ptr<IPhysicalUnit> clone() const override
+            {
+                return std::make_unique<Kelvin>(*this);
+            };
         };
     }  // namespace SI
 }  // namespace Core

@@ -53,6 +53,14 @@ namespace Core
              * @brief Default destructor.
              */
             ~Ampere() = default;
+
+            /**
+             *  @copydoc IPhysicalUnit::clone()
+             */
+            std::unique_ptr<IPhysicalUnit> clone() const override
+            {
+                return std::make_unique<Ampere>(*this);
+            };
         };
     }  // namespace SI
 }  // namespace Core

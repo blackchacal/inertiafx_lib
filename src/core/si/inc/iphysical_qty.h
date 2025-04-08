@@ -74,9 +74,17 @@ namespace Core
 
             /**
              * @brief Retrieves the name of the base unit associated with this quantity.
-             * @return A string representing the base unit name (e.g., "Kelvin", "Meter/Second").
+             * @return A string representing the base unit name (e.g., "kelvin", "meter per
+             * second").
              */
             virtual std::string getUnitName() const = 0;
+
+            /**
+             * @brief Retrieves the plural name of the base unit associated with this quantity.
+             * @return A string representing the base unit plural name (e.g., "kelvins", "meters per
+             * second").
+             */
+            virtual std::string getUnitPluralName() const = 0;
 
             /**
              * @brief Retrieves the symbol of the base unit associated with this quantity.

@@ -17,16 +17,16 @@
  */
 
 /**
- * @file second.h
- * @brief Declaration of the Second unit class.
+ * @file volume.h
+ * @brief Declaration of the Volume class.
  *
- * @date 18, Mar 2025
+ * @date 02, Apr 2025
  */
 
-#ifndef INERTIAFX_CORE_SI_SECOND_H
-#define INERTIAFX_CORE_SI_SECOND_H
+#ifndef INERTIAFX_CORE_SI_VOLUME_H
+#define INERTIAFX_CORE_SI_VOLUME_H
 
-#include "physical_unit.h"
+#include "derived_scalar_qty.h"
 
 namespace InertiaFX
 {
@@ -35,35 +35,29 @@ namespace Core
     namespace SI
     {
         /**
-         * @class Second
-         * @brief Represents the SI base unit of time.
+         * @class Volume
+         * @brief Concrete derived scalar quantity representing volume.
          */
-        class Second : public PhysicalUnit
+        class Volume : public DerivedScalarQty
         {
-          private:
-            static const std::string DESCRIPTION; /**< Detailed description of this unit. */
-
           public:
             /**
-             * @brief Default constructor initializing Second unit properties.
+             * @brief Constructs a new Volume object.
+             * @param value The numeric value of volume in the specified prefix.
+             * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
+             * expressed. It defaults to base which is 10^0.
+             *
+             * Internally, the volume is stored in base prefix value.
              */
-            Second();
 
-            /**
-             * @brief Default destructor.
-             */
-            ~Second() = default;
+            Volume(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            /**
-             *  @copydoc IPhysicalUnit::clone()
-             */
-            std::unique_ptr<IPhysicalUnit> clone() const override
-            {
-                return std::make_unique<Second>(*this);
-            };
+            Volume(const Volume &)            = default;  // Copy constructor
+            Volume &operator=(const Volume &) = default;  // Copy assignment operator
         };
+
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX
 
-#endif  // INERTIAFX_CORE_SI_SECOND_H
+#endif  // INERTIAFX_CORE_SI_VOLUME_H

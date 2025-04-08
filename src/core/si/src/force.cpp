@@ -17,13 +17,16 @@
  */
 
 /**
- * @file metre_per_second_sq.cpp
- * @brief Definition of the MetrePerSecondSq unit class.
+ * @file force.cpp
+ * @brief Definition of the Force class.
  *
- * @date 16, Mar 2025
+ * @date 03, Apr 2025
  */
 
-#include "metre_per_second_sq.h"
+#include "force.h"
+#include "decimal_prefix.h"
+#include "newton.h"
+#include <array>
 
 namespace InertiaFX
 {
@@ -31,15 +34,18 @@ namespace Core
 {
     namespace SI
     {
-        // Static description string
-        const std::string MetrePerSecondSq::DESCRIPTION =
-            "The metre per second squared, symbol m s^-2 or m/s^2, is a derived SI unit of "
-            "acceleration.";
-
-        MetrePerSecondSq::MetrePerSecondSq() :
-            PhysicalUnit("metre per second squared", "metres per second squared", "m s^-2",
-                         DESCRIPTION)
+        // Constructor
+        Force::Force(std::array<double, 3> value, DecimalPrefix::Name prefix) :
+            DerivedVectorQty("Force", "F", "Represents the derived SI Force quantity.",
+                             std::make_unique<Newton>())
         {
+            // Store internally in base units
+            this->_value[0] = value[0] * DecimalPrefix::getMultiplier(prefix);
+            this->_value[1] = value[1] * DecimalPrefix::getMultiplier(prefix);
+            this->_value[2] = value[2] * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = prefix;
         }
     }  // namespace SI
 }  // namespace Core

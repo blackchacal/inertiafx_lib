@@ -13,18 +13,21 @@ add_executable(SI_UnitTests
     test_kelvin.cpp
     test_mole.cpp
     test_candela.cpp
-    test_metre_per_second.cpp
-    test_metre_per_second_sq.cpp
+    test_newton.cpp
     
     # Test fundamental quantities
     test_length.cpp
     test_mass.cpp
     test_time.cpp
 
-    # Test derived quantities
+    # Test derived scalar quantities
+    test_volume.cpp
+
+    # Test derived vector quantities
     test_position.cpp
     test_velocity.cpp
     test_acceleration.cpp
+    test_force.cpp
 )
 
 target_link_libraries(SI_UnitTests PRIVATE

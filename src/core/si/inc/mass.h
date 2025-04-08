@@ -36,7 +36,7 @@ namespace Core
     {
         /**
          * @class Mass
-         * @brief Concrete fundamental quantity representing time.
+         * @brief Concrete fundamental quantity representing mass.
          */
         class Mass : public FundamentalQty
         {
@@ -51,6 +51,9 @@ namespace Core
              */
 
             Mass(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
+
+            Mass(const Mass &)            = default;  // Copy constructor
+            Mass &operator=(const Mass &) = default;  // Copy assignment operator
         };
 
     }  // namespace SI

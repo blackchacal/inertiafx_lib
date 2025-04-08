@@ -23,8 +23,8 @@
  * @date 16, Mar 2025
  */
 
-#ifndef INERTIAFX_CORE_SI_PHYSICALUNIT_H
-#define INERTIAFX_CORE_SI_PHYSICALUNIT_H
+#ifndef INERTIAFX_CORE_SI_PHYSICAL_UNIT_H
+#define INERTIAFX_CORE_SI_PHYSICAL_UNIT_H
 
 #include "decimal_prefix.h"
 #include "iphysical_unit.h"
@@ -46,14 +46,6 @@ namespace Core
          */
         class PhysicalUnit : public IPhysicalUnit
         {
-          private:
-            std::string _name;        /**< The full name of the unit. */
-            std::string _pluralName;  /**< The full name of the unit in plural form. */
-            std::string _description; /**< A brief description of the unit. */
-
-          protected:
-            std::string _symbol; /**< The symbol of the unit. */
-
           public:
             /**
              * @brief Constructs a PhysicalUnit with given name, symbol, and description.
@@ -105,10 +97,18 @@ namespace Core
              * @copydoc IPhysicalUnit::toString(DecimalPrefix::Symbol) const
              */
             virtual std::string toString(DecimalPrefix::Symbol prefixSymbol) const override;
+
+          protected:
+            std::string _symbol; /**< The symbol of the unit. */
+
+          private:
+            std::string _name;        /**< The full name of the unit. */
+            std::string _pluralName;  /**< The full name of the unit in plural form. */
+            std::string _description; /**< A brief description of the unit. */
         };
 
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX
 
-#endif  // INERTIAFX_CORE_SI_PHYSICALUNIT_H
+#endif  // INERTIAFX_CORE_SI_PHYSICAL_UNIT_H

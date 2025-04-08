@@ -17,14 +17,14 @@
  */
 
 /**
- * @file metre_per_second_sq.h
- * @brief Declaration of the MetrePerSecondSq unit class.
+ * @file newton.h
+ * @brief Declaration of the Newton unit class.
  *
- * @date 25, Mar 2025
+ * @date 03, Apr 2025
  */
 
-#ifndef INERTIAFX_CORE_SI_METRE_PER_SECOND_SQ_H
-#define INERTIAFX_CORE_SI_METRE_PER_SECOND_SQ_H
+#ifndef INERTIAFX_CORE_SI_METRE_H
+#define INERTIAFX_CORE_SI_METRE_H
 
 #include "physical_unit.h"
 
@@ -35,27 +35,35 @@ namespace Core
     namespace SI
     {
         /**
-         * @class MetrePerSecondSq
+         * @class Newton
          * @brief Represents the SI base unit of length.
          */
-        class MetrePerSecondSq : public PhysicalUnit
+        class Newton : public PhysicalUnit
         {
           private:
             static const std::string DESCRIPTION; /**< Detailed description of this unit. */
 
           public:
             /**
-             * @brief Default constructor initializing MetrePerSecondSq unit properties.
+             * @brief Default constructor initializing Newton unit properties.
              */
-            MetrePerSecondSq();
+            Newton();
 
             /**
              * @brief Default destructor.
              */
-            ~MetrePerSecondSq() = default;
+            ~Newton() = default;
+
+            /**
+             *  @copydoc IPhysicalUnit::clone()
+             */
+            std::unique_ptr<IPhysicalUnit> clone() const override
+            {
+                return std::make_unique<Newton>(*this);
+            };
         };
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX
 
-#endif  // INERTIAFX_CORE_SI_METRE_PER_SECOND_SQ_H
+#endif  // INERTIAFX_CORE_SI_METRE_H

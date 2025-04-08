@@ -52,6 +52,11 @@ namespace Core
             virtual ~IPhysicalUnit() = default;
 
             /**
+             * @brief Add a clone() that creates a new IPhysicalUnit of the same dynamic type.
+             */
+            virtual std::unique_ptr<IPhysicalUnit> clone() const = 0;
+
+            /**
              * @brief Get the full name of the unit.
              * @return A std::string containing the unit name.
              */

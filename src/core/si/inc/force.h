@@ -17,14 +17,14 @@
  */
 
 /**
- * @file position.h
- * @brief Declaration of the Position class.
+ * @file force.h
+ * @brief Declaration of the Force class.
  *
- * @date 25, Mar 2025
+ * @date 03, Apr 2025
  */
 
-#ifndef INERTIAFX_CORE_SI_POSITION_H
-#define INERTIAFX_CORE_SI_POSITION_H
+#ifndef INERTIAFX_CORE_SI_FORCE_H
+#define INERTIAFX_CORE_SI_FORCE_H
 
 #include "derived_vector_qty.h"
 #include <array>
@@ -36,29 +36,29 @@ namespace Core
     namespace SI
     {
         /**
-         * @class Position
-         * @brief Concrete derived quantity representing position in space.
+         * @class Force
+         * @brief Concrete derived quantity representing force.
          */
-        class Position : public DerivedVectorQty
+        class Force : public DerivedVectorQty
         {
           public:
             /**
-             * @brief Constructs a new Position object.
-             * @param value The numeric value of position vector in the specified prefix.
+             * @brief Constructs a new Force object.
+             * @param value The numeric value of force vector in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
              *
-             * Internally, the position is stored in base prefix value.
+             * Internally, the force is stored in base prefix value.
              */
-            Position(std::array<double, 3> value,
-                     DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
+            Force(std::array<double, 3> value,
+                  DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Position(const Position &)            = default;  // Copy constructor
-            Position &operator=(const Position &) = default;  // Copy assignment operator
+            Force(const Force &)            = default;  // Copy constructor
+            Force &operator=(const Force &) = default;  // Copy assignment operator
         };
 
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX
 
-#endif  // INERTIAFX_CORE_SI_POSITION_H
+#endif  // INERTIAFX_CORE_SI_FORCE_H

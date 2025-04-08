@@ -52,6 +52,9 @@ namespace Core
              */
             Acceleration(std::array<double, 3> value,
                          DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
+
+            Acceleration(const Acceleration &)            = default;  // Copy constructor
+            Acceleration &operator=(const Acceleration &) = default;  // Copy assignment operator
         };
 
     }  // namespace SI

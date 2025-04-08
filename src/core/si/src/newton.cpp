@@ -17,13 +17,13 @@
  */
 
 /**
- * @file metre_per_second.cpp
- * @brief Definition of the MetrePerSecond unit class.
+ * @file newton.cpp
+ * @brief Definition of the Newton unit class.
  *
- * @date 16, Mar 2025
+ * @date 03, Apr 2025
  */
 
-#include "metre_per_second.h"
+#include "newton.h"
 
 namespace InertiaFX
 {
@@ -32,12 +32,13 @@ namespace Core
     namespace SI
     {
         // Static description string
-        const std::string MetrePerSecond::DESCRIPTION =
-            "The metre per second, symbol m s^-1 or m/s, is a derived SI unit of speed or "
-            "velocity.";
+        const std::string Newton::DESCRIPTION =
+            "The newton, symbol N, is the SI unit of force."
+            "It is expressed in term of base units as kg m s^–2."
+            "It is defined as the force required to accelerate a mass of one kilogram at a rate of "
+            "one metre per second squared.";
 
-        MetrePerSecond::MetrePerSecond() :
-            PhysicalUnit("metre per second", "metres per second", "m s^-1", DESCRIPTION)
+        Newton::Newton() : PhysicalUnit("newton", "newtons", "N", DESCRIPTION)
         {
         }
     }  // namespace SI
