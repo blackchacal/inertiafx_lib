@@ -79,7 +79,7 @@ TEST(DecimalPrefixTests, GetCorrectPrefixSymbolFromName)
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::deci), "d");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::centi), "c");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::milli), "m");
-    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::micro), "\u03BC");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::micro), "μ");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::nano), "n");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::pico), "p");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Name::femto), "f");
@@ -108,7 +108,7 @@ TEST(DecimalPrefixTests, GetCorrectPrefixSymbolFromSymbol)
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::d), "d");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::c), "c");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::m), "m");
-    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::mu), "\u03BC");
+    EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::mu), "μ");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::n), "n");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::p), "p");
     EXPECT_EQ(DecimalPrefix::getSymbol(DecimalPrefix::Symbol::f), "f");

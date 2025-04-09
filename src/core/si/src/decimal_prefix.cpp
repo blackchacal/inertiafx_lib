@@ -191,7 +191,7 @@ namespace Core
                 case Name::milli:
                     return "m";
                 case Name::micro:
-                    return "\u03BC";  // Greek letter mu
+                    return "μ";  // Greek letter mu
                 case Name::nano:
                     return "n";
                 case Name::pico:
@@ -250,7 +250,7 @@ namespace Core
                 case Symbol::m:
                     return "m";
                 case Symbol::mu:
-                    return "\u03BC";  // Greek letter mu
+                    return "μ";  // Greek letter mu
                 case Symbol::n:
                     return "n";
                 case Symbol::p:

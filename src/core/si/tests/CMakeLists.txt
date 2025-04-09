@@ -22,6 +22,7 @@ add_executable(SI_UnitTests
 
     # Test derived scalar quantities
     test_volume.cpp
+    test_density.cpp
 
     # Test derived vector quantities
     test_position.cpp

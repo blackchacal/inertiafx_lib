@@ -24,6 +24,7 @@ target_sources(SI PRIVATE
     
     # Derived Scalar Quantities
     src/volume.cpp
+    src/density.cpp
 
     # Derived Vector Quantities
     src/position.cpp
