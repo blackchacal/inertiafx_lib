@@ -94,3 +94,12 @@ TEST_F(LengthTest, SmallValues)
     EXPECT_GT(length->getValue(), 0.0);
     EXPECT_FALSE(std::isinf(length->getValue()));
 }
+
+TEST_F(LengthTest, AdditionOperator)
+{
+    Length length1(1.0, DecimalPrefix::Name::base);
+    Length length2(2.0, DecimalPrefix::Name::base);
+    auto result = length1 + length2;
+
+    EXPECT_DOUBLE_EQ(result.getValue(), 3.0);
+}

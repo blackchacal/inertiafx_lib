@@ -43,17 +43,24 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Density object.
+             *
+             * The density is initialized to 1.0 and stored in base prefix value.
+             */
+            Density();
+
+            /**
+             * @brief Constructs a new Density object.
              * @param value The numeric value of density in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
              *
              * Internally, the density is stored in base prefix value.
              */
-
             Density(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Density(const Density &)            = default;  // Copy constructor
-            Density &operator=(const Density &) = default;  // Copy assignment operator
+            Density(const Density &);             // Copy constructor
+            Density &operator=(const Density &);  // Copy assignment operator
+            Density operator+(const Density &other) const;
         };
 
     }  // namespace SI

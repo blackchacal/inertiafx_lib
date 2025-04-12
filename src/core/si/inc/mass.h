@@ -43,17 +43,24 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Mass object.
+             *
+             * The mass is initialized to 1.0 and stored in base prefix value.
+             */
+            Mass();
+
+            /**
+             * @brief Constructs a new Mass object.
              * @param value The numeric value of mass in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
              *
              * Internally, the mass is stored in base prefix value.
              */
-
             Mass(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Mass(const Mass &)            = default;  // Copy constructor
-            Mass &operator=(const Mass &) = default;  // Copy assignment operator
+            Mass(const Mass &other);             // Copy constructor
+            Mass &operator=(const Mass &other);  // Copy assignment operator
+            Mass operator+(const Mass &other) const;
         };
 
     }  // namespace SI

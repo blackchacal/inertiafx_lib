@@ -43,6 +43,13 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Length object.
+             *
+             * The length is initialized to 1.0 and stored in base prefix value.
+             */
+            Length();
+
+            /**
+             * @brief Constructs a new Length object.
              * @param value The numeric value of length in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
@@ -50,6 +57,10 @@ namespace Core
              * Internally, the length is stored in base prefix value.
              */
             Length(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
+
+            Length(const Length &other);             // Copy constructor
+            Length &operator=(const Length &other);  // Copy assignment operator
+            Length operator+(const Length &other) const;
         };
 
     }  // namespace SI

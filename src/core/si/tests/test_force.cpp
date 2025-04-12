@@ -31,6 +31,17 @@ TEST_F(ForceTest, Constructor)
     EXPECT_DOUBLE_EQ(defaultForce->getValue()[2], 3.0);
 }
 
+TEST_F(ForceTest, DefaultConstructor)
+{
+    Force defaultForce;
+    EXPECT_EQ(defaultForce.getName(), "Force");
+    EXPECT_EQ(defaultForce.getSymbol(), "F");
+    EXPECT_EQ(defaultForce.getDescription(), "Represents the derived SI Force quantity.");
+    EXPECT_DOUBLE_EQ(defaultForce.getValue()[0], 0.0);
+    EXPECT_DOUBLE_EQ(defaultForce.getValue()[1], 0.0);
+    EXPECT_DOUBLE_EQ(defaultForce.getValue()[2], 0.0);
+}
+
 TEST_F(ForceTest, PrefixConversions)
 {
     struct TestCase
@@ -82,4 +93,18 @@ TEST_F(ForceTest, NegativeValues)
     EXPECT_DOUBLE_EQ(force->getValue()[0], -1.0 * 1e3);
     EXPECT_DOUBLE_EQ(force->getValue()[1], -2.0 * 1e3);
     EXPECT_DOUBLE_EQ(force->getValue()[2], -3.0 * 1e3);
+}
+
+TEST_F(ForceTest, AdditionOperator)
+{
+    std::array<double, 3> value1 = {1.0, 2.0, 3.0};
+    std::array<double, 3> value2 = {4.0, 5.0, 6.0};
+    auto force1                  = std::make_unique<Force>(value1, DecimalPrefix::Name::base);
+    auto force2                  = std::make_unique<Force>(value2, DecimalPrefix::Name::base);
+
+    Force result = *force1 + *force2;
+
+    EXPECT_DOUBLE_EQ(result.getValue()[0], value1[0] + value2[0]);
+    EXPECT_DOUBLE_EQ(result.getValue()[1], value1[1] + value2[1]);
+    EXPECT_DOUBLE_EQ(result.getValue()[2], value1[2] + value2[2]);
 }

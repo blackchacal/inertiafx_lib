@@ -35,6 +35,20 @@ namespace Core
     namespace SI
     {
         // Constructor
+        Position::Position() :
+            DerivedVectorQty("Position", "r", "Represents the derived SI Position quantity.",
+                             std::make_unique<Metre>())
+        {
+            // Store internally in base units
+            this->_value[0] = 0.0;
+            this->_value[1] = 0.0;
+            this->_value[2] = 0.0;
+
+            // Optionally store the base prefix for reference or user logic
+            this->_prefix = DecimalPrefix::Name::base;
+        }
+
+        // Constructor
         Position::Position(std::array<double, 3> value, DecimalPrefix::Name prefix) :
             DerivedVectorQty("Position", "r", "Represents the derived SI Position quantity.",
                              std::make_unique<Metre>())
@@ -46,6 +60,43 @@ namespace Core
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = prefix;
+        }
+
+        Position::Position(const Position &other) :
+            DerivedVectorQty("Position", "r", "Represents the derived SI Position quantity.",
+                             std::make_unique<Metre>())
+        {
+            // Copy constructor
+            _value  = other._value;
+            _unit   = other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            _prefix = other._prefix;
+        }
+
+        Position &Position::operator=(const Position &other)
+        {
+            // Copy assignment operator
+            if (this != &other)
+            {
+                _value  = other._value;
+                _prefix = other._prefix;
+
+                // If there's an existing owned object, remove it
+                _unit.reset();
+
+                // Deep-copy from other
+                _unit =
+                    other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            }
+            return *this;
+        }
+
+        Position Position::operator+(const Position &other) const
+        {
+            std::array<double, 3> newValue = {0.0, 0.0, 0.0};
+            newValue[0]                    = this->getValue()[0] + other.getValue()[0];
+            newValue[1]                    = this->getValue()[1] + other.getValue()[1];
+            newValue[2]                    = this->getValue()[2] + other.getValue()[2];
+            return Position(newValue);
         }
     }  // namespace SI
 }  // namespace Core

@@ -106,3 +106,12 @@ TEST_F(TimeTest, SmallValues)
     EXPECT_GT(time->getValue(), 0.0);
     EXPECT_FALSE(std::isinf(time->getValue()));
 }
+
+TEST_F(TimeTest, AdditionOperator)
+{
+    Time time1(1.0, DecimalPrefix::Name::base);
+    Time time2(2.0, DecimalPrefix::Name::base);
+    auto result = time1 + time2;
+
+    EXPECT_DOUBLE_EQ(result.getValue(), 3.0);
+}

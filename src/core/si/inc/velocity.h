@@ -44,6 +44,13 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Velocity object.
+             *
+             * The velocity is initialized to (0.0, 0.0, 0.0) and is stored in base prefix value.
+             */
+            Velocity();
+
+            /**
+             * @brief Constructs a new Velocity object.
              * @param value The numeric value of velocity vector in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
@@ -53,8 +60,9 @@ namespace Core
             Velocity(std::array<double, 3> value,
                      DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Velocity(const Velocity &)            = default;  // Copy constructor
-            Velocity &operator=(const Velocity &) = default;  // Copy assignment operator
+            Velocity(const Velocity &);             // Copy constructor
+            Velocity &operator=(const Velocity &);  // Copy assignment operator
+            Velocity operator+(const Velocity &other) const;
         };
 
     }  // namespace SI

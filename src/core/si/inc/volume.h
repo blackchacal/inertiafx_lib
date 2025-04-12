@@ -43,6 +43,13 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Volume object.
+             *
+             * The volume is initialized to 1.0 and stored in base prefix value.
+             */
+            Volume();
+
+            /**
+             * @brief Constructs a new Volume object.
              * @param value The numeric value of volume in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
@@ -52,8 +59,9 @@ namespace Core
 
             Volume(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Volume(const Volume &)            = default;  // Copy constructor
-            Volume &operator=(const Volume &) = default;  // Copy assignment operator
+            Volume(const Volume &);             // Copy constructor
+            Volume &operator=(const Volume &);  // Copy assignment operator
+            Volume operator+(const Volume &other) const;
         };
 
     }  // namespace SI

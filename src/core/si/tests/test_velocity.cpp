@@ -89,3 +89,33 @@ TEST_F(VelocityTest, NegativeValues)
     EXPECT_DOUBLE_EQ(velocity->getValue()[1], -2000.0);
     EXPECT_DOUBLE_EQ(velocity->getValue()[2], -3000.0);
 }
+
+TEST_F(VelocityTest, DefaultConstructor)
+{
+    Velocity defaultVelocity;
+    EXPECT_EQ(defaultVelocity.getName(), "Velocity");
+    EXPECT_EQ(defaultVelocity.getSymbol(), "v");
+    EXPECT_EQ(defaultVelocity.getDescription(), "Represents the derived SI Velocity quantity.");
+    EXPECT_DOUBLE_EQ(defaultVelocity.getValue()[0], 0.0);
+    EXPECT_DOUBLE_EQ(defaultVelocity.getValue()[1], 0.0);
+    EXPECT_DOUBLE_EQ(defaultVelocity.getValue()[2], 0.0);
+}
+
+TEST_F(VelocityTest, ParameterizedConstructor)
+{
+    Velocity velocity({1.0, 2.0, 3.0}, DecimalPrefix::Name::base);
+    EXPECT_DOUBLE_EQ(velocity.getValue()[0], 1.0);
+    EXPECT_DOUBLE_EQ(velocity.getValue()[1], 2.0);
+    EXPECT_DOUBLE_EQ(velocity.getValue()[2], 3.0);
+}
+
+TEST_F(VelocityTest, AdditionOperator)
+{
+    Velocity vel1({1.0, 2.0, 3.0}, DecimalPrefix::Name::base);
+    Velocity vel2({4.0, 5.0, 6.0}, DecimalPrefix::Name::base);
+    auto result = vel1 + vel2;
+
+    EXPECT_DOUBLE_EQ(result.getValue()[0], 5.0);
+    EXPECT_DOUBLE_EQ(result.getValue()[1], 7.0);
+    EXPECT_DOUBLE_EQ(result.getValue()[2], 9.0);
+}

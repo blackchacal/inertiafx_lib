@@ -106,3 +106,27 @@ TEST_F(MassTest, SmallValues)
     EXPECT_GT(mass->getValue(), 0.0);
     EXPECT_FALSE(std::isinf(mass->getValue()));
 }
+
+TEST_F(MassTest, DefaultConstructor)
+{
+    Mass defaultMass;
+    EXPECT_EQ(defaultMass.getName(), "Mass");
+    EXPECT_EQ(defaultMass.getSymbol(), "m");
+    EXPECT_EQ(defaultMass.getDescription(), "Represents the fundamental SI Mass quantity.");
+    EXPECT_DOUBLE_EQ(defaultMass.getValue(), 1.0);
+}
+
+TEST_F(MassTest, ParameterizedConstructor)
+{
+    Mass mass(10.0, DecimalPrefix::Name::kilo);
+    EXPECT_DOUBLE_EQ(mass.getValue(), 10.0 * 1e3);
+}
+
+TEST_F(MassTest, AdditionOperator)
+{
+    Mass mass1(1.0, DecimalPrefix::Name::base);
+    Mass mass2(2.0, DecimalPrefix::Name::base);
+    auto result = mass1 + mass2;
+
+    EXPECT_DOUBLE_EQ(result.getValue(), 3.0);
+}

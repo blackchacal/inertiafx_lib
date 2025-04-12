@@ -43,6 +43,13 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Time object.
+             *
+             * The time is initialized to 1.0 and stored in base prefix value.
+             */
+            Time();
+
+            /**
+             * @brief Constructs a new Time object.
              * @param value The numeric value of time in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
@@ -50,6 +57,10 @@ namespace Core
              * Internally, the time is stored in base prefix value.
              */
             Time(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
+
+            Time(const Time &other);             // Copy constructor
+            Time &operator=(const Time &other);  // Copy assignment operator
+            Time operator+(const Time &other) const;
         };
 
     }  // namespace SI

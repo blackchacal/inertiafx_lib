@@ -35,6 +35,21 @@ namespace Core
     namespace SI
     {
         // Constructor
+        Volume::Volume() :
+            DerivedScalarQty(
+                "Volume", "V", "Represents the derived SI Volume quantity.",
+                std::make_unique<DerivedPhysicalUnit>(
+                    std::vector<PhysicalUnitPower>{PhysicalUnitPower{std::make_unique<Metre>(), 3}},
+                    "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
+        {
+            // Store internally in base units
+            this->_value = 1.0;
+
+            // Optionally store the base prefix for reference or user logic
+            this->_prefix = DecimalPrefix::Name::base;
+        }
+
+        // Constructor
         Volume::Volume(double value, DecimalPrefix::Name prefix) :
             DerivedScalarQty(
                 "Volume", "V", "Represents the derived SI Volume quantity.",
@@ -47,6 +62,42 @@ namespace Core
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = prefix;
+        }
+
+        Volume::Volume(const Volume &other) :
+            DerivedScalarQty(
+                "Volume", "V", "Represents the derived SI Volume quantity.",
+                std::make_unique<DerivedPhysicalUnit>(
+                    std::vector<PhysicalUnitPower>{PhysicalUnitPower{std::make_unique<Metre>(), 3}},
+                    "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
+        {
+            // Copy constructor
+            _value  = other._value;
+            _unit   = other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            _prefix = other._prefix;
+        }
+
+        Volume &Volume::operator=(const Volume &other)
+        {
+            // Copy assignment operator
+            if (this != &other)
+            {
+                _value  = other._value;
+                _prefix = other._prefix;
+
+                // If there's an existing owned object, remove it
+                _unit.reset();
+
+                // Deep-copy from other
+                _unit =
+                    other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            }
+            return *this;
+        }
+
+        Volume Volume::operator+(const Volume &other) const
+        {
+            return Volume(this->getValue() + other.getValue());
         }
     }  // namespace SI
 }  // namespace Core

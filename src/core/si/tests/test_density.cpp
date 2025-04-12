@@ -121,3 +121,12 @@ TEST_F(DensityTest, SmallValues)
     EXPECT_GT(volume->getValue(), 0.0);
     EXPECT_FALSE(std::isinf(volume->getValue()));
 }
+
+TEST_F(DensityTest, AdditionOperator)
+{
+    Density density1(1.0, DecimalPrefix::Name::base);
+    Density density2(2.0, DecimalPrefix::Name::base);
+    auto result = density1 + density2;
+
+    EXPECT_DOUBLE_EQ(result.getValue(), 3.0);
+}

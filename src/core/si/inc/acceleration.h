@@ -44,6 +44,14 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Acceleration object.
+             *
+             * The acceleration is initialized as (0.0, 0.0, 0.0) and is stored in base prefix
+             * value.
+             */
+            Acceleration();
+
+            /**
+             * @brief Constructs a new Acceleration object.
              * @param value The numeric value of acceleration vector in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
@@ -53,8 +61,9 @@ namespace Core
             Acceleration(std::array<double, 3> value,
                          DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Acceleration(const Acceleration &)            = default;  // Copy constructor
-            Acceleration &operator=(const Acceleration &) = default;  // Copy assignment operator
+            Acceleration(const Acceleration &);             // Copy constructor
+            Acceleration &operator=(const Acceleration &);  // Copy assignment operator
+            Acceleration operator+(const Acceleration &other) const;
         };
 
     }  // namespace SI

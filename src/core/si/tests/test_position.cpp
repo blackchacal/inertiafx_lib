@@ -80,3 +80,33 @@ TEST_F(PositionTest, NegativeValues)
     EXPECT_DOUBLE_EQ(position->getValue()[1], -2000.0);
     EXPECT_DOUBLE_EQ(position->getValue()[2], -3000.0);
 }
+
+TEST_F(PositionTest, DefaultConstructor)
+{
+    Position defaultPosition;
+    EXPECT_EQ(defaultPosition.getName(), "Position");
+    EXPECT_EQ(defaultPosition.getSymbol(), "r");
+    EXPECT_EQ(defaultPosition.getDescription(), "Represents the derived SI Position quantity.");
+    EXPECT_DOUBLE_EQ(defaultPosition.getValue()[0], 0.0);
+    EXPECT_DOUBLE_EQ(defaultPosition.getValue()[1], 0.0);
+    EXPECT_DOUBLE_EQ(defaultPosition.getValue()[2], 0.0);
+}
+
+TEST_F(PositionTest, ParameterizedConstructor)
+{
+    Position position({1.0, 2.0, 3.0}, DecimalPrefix::Name::base);
+    EXPECT_DOUBLE_EQ(position.getValue()[0], 1.0);
+    EXPECT_DOUBLE_EQ(position.getValue()[1], 2.0);
+    EXPECT_DOUBLE_EQ(position.getValue()[2], 3.0);
+}
+
+TEST_F(PositionTest, AdditionOperator)
+{
+    Position pos1({1.0, 2.0, 3.0}, DecimalPrefix::Name::base);
+    Position pos2({4.0, 5.0, 6.0}, DecimalPrefix::Name::base);
+    auto result = pos1 + pos2;
+
+    EXPECT_DOUBLE_EQ(result.getValue()[0], 5.0);
+    EXPECT_DOUBLE_EQ(result.getValue()[1], 7.0);
+    EXPECT_DOUBLE_EQ(result.getValue()[2], 9.0);
+}

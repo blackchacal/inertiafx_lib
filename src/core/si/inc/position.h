@@ -44,6 +44,12 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Position object.
+             * The position is initialized to (0.0, 0.0, 0.0) and stored in base prefix value.
+             */
+            Position();
+
+            /**
+             * @brief Constructs a new Position object.
              * @param value The numeric value of position vector in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
@@ -53,8 +59,9 @@ namespace Core
             Position(std::array<double, 3> value,
                      DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Position(const Position &)            = default;  // Copy constructor
-            Position &operator=(const Position &) = default;  // Copy assignment operator
+            Position(const Position &);             // Copy constructor
+            Position &operator=(const Position &);  // Copy assignment operator
+            Position operator+(const Position &other) const;
         };
 
     }  // namespace SI

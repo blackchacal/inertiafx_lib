@@ -36,6 +36,23 @@ namespace Core
     namespace SI
     {
         // Constructor
+        Density::Density() :
+            DerivedScalarQty("Density", "ρ", "Represents the derived SI Density quantity.",
+                             std::make_unique<DerivedPhysicalUnit>(
+                                 std::vector<PhysicalUnitPower>{
+                                     PhysicalUnitPower{std::make_unique<Kilogram>(), 1},
+                                     PhysicalUnitPower{std::make_unique<Metre>(), -3}},
+                                 "The kilogram per cubic metre, symbol kg m^-3, is an SI coherent "
+                                 "derived unit of density."))
+        {
+            // Store internally in base units
+            this->_value = 1.0;
+
+            // Optionally store the base prefix for reference or user logic
+            this->_prefix = DecimalPrefix::Name::base;
+        }
+
+        // Constructor
         Density::Density(double value, DecimalPrefix::Name prefix) :
             DerivedScalarQty("Density", "ρ", "Represents the derived SI Density quantity.",
                              std::make_unique<DerivedPhysicalUnit>(
@@ -50,6 +67,44 @@ namespace Core
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = prefix;
+        }
+
+        Density::Density(const Density &other) :
+            DerivedScalarQty("Density", "ρ", "Represents the derived SI Density quantity.",
+                             std::make_unique<DerivedPhysicalUnit>(
+                                 std::vector<PhysicalUnitPower>{
+                                     PhysicalUnitPower{std::make_unique<Kilogram>(), 1},
+                                     PhysicalUnitPower{std::make_unique<Metre>(), -3}},
+                                 "The kilogram per cubic metre, symbol kg m^-3, is an SI coherent "
+                                 "derived unit of density."))
+        {
+            // Copy constructor
+            _value  = other._value;
+            _unit   = other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            _prefix = other._prefix;
+        }
+
+        Density &Density::operator=(const Density &other)
+        {
+            // Copy assignment operator
+            if (this != &other)
+            {
+                _value  = other._value;
+                _prefix = other._prefix;
+
+                // If there's an existing owned object, remove it
+                _unit.reset();
+
+                // Deep-copy from other
+                _unit =
+                    other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            }
+            return *this;
+        }
+
+        Density Density::operator+(const Density &other) const
+        {
+            return Density(this->getValue() + other.getValue());
         }
     }  // namespace SI
 }  // namespace Core

@@ -23,9 +23,9 @@
  * @date 23, Mar 2025
  */
 
+#include "si_time.h"
 #include "decimal_prefix.h"
 #include "second.h"
-#include "si_time.h"
 
 namespace InertiaFX
 {
@@ -33,6 +33,18 @@ namespace Core
 {
     namespace SI
     {
+        // Constructor
+        Time::Time() :
+            FundamentalQty("Time", "t", "Represents the fundamental SI Time quantity.",
+                           std::make_unique<Second>())
+        {
+            // Store internally in base units
+            this->_value = 1.0;
+
+            // Optionally store the base prefix for reference or user logic
+            this->_prefix = DecimalPrefix::Name::base;
+        }
+
         // Constructor
         Time::Time(double value, DecimalPrefix::Name prefix) :
             FundamentalQty("Time", "t", "Represents the fundamental SI Time quantity.",
@@ -43,6 +55,39 @@ namespace Core
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = prefix;
+        }
+
+        Time::Time(const Time &other) :
+            FundamentalQty("Time", "t", "Represents the fundamental SI Time quantity.",
+                           std::make_unique<Second>())
+        {
+            // Copy constructor
+            _value  = other._value;
+            _unit   = other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            _prefix = other._prefix;
+        }
+
+        Time &Time::operator=(const Time &other)
+        {
+            // Copy assignment operator
+            if (this != &other)
+            {
+                _value  = other._value;
+                _prefix = other._prefix;
+
+                // If there's an existing owned object, remove it
+                _unit.reset();
+
+                // Deep-copy from other
+                _unit =
+                    other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
+            }
+            return *this;
+        }
+
+        Time Time::operator+(const Time &other) const
+        {
+            return Time(this->getValue() + other.getValue());
         }
     }  // namespace SI
 }  // namespace Core

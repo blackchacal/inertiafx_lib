@@ -44,6 +44,13 @@ namespace Core
           public:
             /**
              * @brief Constructs a new Force object.
+             *
+             * The force is initialized as (0.0, 0.0, 0.0) and stored in base prefix value.
+             */
+            Force();
+
+            /**
+             * @brief Constructs a new Force object.
              * @param value The numeric value of force vector in the specified prefix.
              * @param prefix The decimal prefix name (e.g., "kilo", "milli") in which 'value' is
              * expressed. It defaults to base which is 10^0.
@@ -53,8 +60,9 @@ namespace Core
             Force(std::array<double, 3> value,
                   DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Force(const Force &)            = default;  // Copy constructor
-            Force &operator=(const Force &) = default;  // Copy assignment operator
+            Force(const Force &);             // Copy constructor
+            Force &operator=(const Force &);  // Copy assignment operator
+            Force operator+(const Force &other) const;
         };
 
     }  // namespace SI

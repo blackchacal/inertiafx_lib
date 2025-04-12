@@ -91,3 +91,34 @@ TEST_F(AccelerationTest, NegativeValues)
     EXPECT_DOUBLE_EQ(acceleration->getValue()[1], -2000.0);
     EXPECT_DOUBLE_EQ(acceleration->getValue()[2], -3000.0);
 }
+
+TEST_F(AccelerationTest, DefaultConstructor)
+{
+    Acceleration defaultAcceleration;
+    EXPECT_EQ(defaultAcceleration.getName(), "Acceleration");
+    EXPECT_EQ(defaultAcceleration.getSymbol(), "a");
+    EXPECT_EQ(defaultAcceleration.getDescription(),
+              "Represents the derived SI Acceleration quantity.");
+    EXPECT_DOUBLE_EQ(defaultAcceleration.getValue()[0], 0.0);
+    EXPECT_DOUBLE_EQ(defaultAcceleration.getValue()[1], 0.0);
+    EXPECT_DOUBLE_EQ(defaultAcceleration.getValue()[2], 0.0);
+}
+
+TEST_F(AccelerationTest, ParameterizedConstructor)
+{
+    Acceleration acceleration({1.0, 2.0, 3.0}, DecimalPrefix::Name::base);
+    EXPECT_DOUBLE_EQ(acceleration.getValue()[0], 1.0);
+    EXPECT_DOUBLE_EQ(acceleration.getValue()[1], 2.0);
+    EXPECT_DOUBLE_EQ(acceleration.getValue()[2], 3.0);
+}
+
+TEST_F(AccelerationTest, AdditionOperator)
+{
+    Acceleration acc1({1.0, 2.0, 3.0}, DecimalPrefix::Name::base);
+    Acceleration acc2({4.0, 5.0, 6.0}, DecimalPrefix::Name::base);
+    auto result = acc1 + acc2;
+
+    EXPECT_DOUBLE_EQ(result.getValue()[0], 5.0);
+    EXPECT_DOUBLE_EQ(result.getValue()[1], 7.0);
+    EXPECT_DOUBLE_EQ(result.getValue()[2], 9.0);
+}
