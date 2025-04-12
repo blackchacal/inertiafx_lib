@@ -60,8 +60,32 @@ namespace Core
             Velocity(std::array<double, 3> value,
                      DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Velocity(const Velocity &);             // Copy constructor
-            Velocity &operator=(const Velocity &);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Velocity object from an existing one.
+             *
+             * @param other The other Velocity object to copy from.
+             */
+            Velocity(const Velocity &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Velocity object from an existing one.
+             *
+             * @param other The other Velocity object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Velocity &operator=(const Velocity &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Velocity objects together.
+             *
+             * @param other The other Velocity object to add.
+             * @return A new Velocity object representing the sum.
+             */
             Velocity operator+(const Velocity &other) const;
         };
 

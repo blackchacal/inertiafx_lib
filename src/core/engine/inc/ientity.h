@@ -66,7 +66,6 @@ namespace Core
             /**
              * @brief Sets the new position of the entity.
              * @param position New position of the entity.
-             * @return void.
              */
             virtual void setPosition(const Position &position) = 0;
 
@@ -77,7 +76,6 @@ namespace Core
              * the vector is given in the SI base unit system (meters).
              *
              * @param position New position vector of the entity.
-             * @return void.
              */
             virtual void setPosition(const std::array<double, 3> position) = 0;
 
@@ -90,7 +88,6 @@ namespace Core
             /**
              * @brief Sets the new velocity of the entity.
              * @param velocity New velocity of the entity.
-             * @return void.
              */
             virtual void setVelocity(const Velocity &velocity) = 0;
 
@@ -101,7 +98,6 @@ namespace Core
              * the vector is given in the SI base unit system (meters per second).
              *
              * @param velocity New velocity vector of the entity.
-             * @return void.
              */
             virtual void setVelocity(const std::array<double, 3> velocity) = 0;
 
@@ -114,7 +110,6 @@ namespace Core
             /**
              * @brief Sets the new acceleration of the entity.
              * @param acceleration New acceleration of the entity.
-             * @return void.
              */
             virtual void setAcceleration(const Acceleration &acceleration) = 0;
 
@@ -125,50 +120,47 @@ namespace Core
              * the vector is given in the SI base unit system (meters per second squared).
              *
              * @param acceleration New acceleration vector of the entity.
-             * @return void.
              */
             virtual void setAcceleration(const std::array<double, 3> acceleration) = 0;
 
             /**
-             * @brief Retrieves the current force actin on the entity.
+             * @brief Retrieves the current force acting on the entity.
              * @return A Force object reference representing the entity’s net force.
              */
             virtual const Force &getForce() const = 0;
 
             /**
-             * @brief Sets the new force actin on the entity.
+             * @brief Sets the new force acting on the entity.
              * @param force New net force acting on the entity.
-             * @return void.
              */
             virtual void setForce(const Force &force) = 0;
 
             /**
-             * @brief Sets the new force actin on the entity.
+             * @brief Sets the new force acting on the entity.
              *
              * @details This overload allows setting the force using a 3D vector. It assumes
              * the vector is given in the SI base unit system (newtons).
              *
              * @param force New net force vector acting on the entity.
-             * @return void.
              */
             virtual void setForce(const std::array<double, 3> force) = 0;
 
             /**
-             * @brief Adds a new force actin on the entity.
+             * @brief Adds a new force acting on the entity.
+             *
              * @details This method adds a force to the existing net force acting on the entity.
+             *
              * @param force New force acting on the entity.
-             * @return void.
              */
             virtual void addForce(const Force &force) = 0;
 
             /**
-             * @brief Sets the new force actin on the entity.
+             * @brief Sets the new force acting on the entity.
              *
              * @details This overload allows adding a force to the existing net force, using a 3D
              * vector. It assumes the vector is given in the SI base unit system (newtons).
              *
              * @param force New force vector acting on the entity.
-             * @return void.
              */
             virtual void addForce(const std::array<double, 3> force) = 0;
 
@@ -192,7 +184,6 @@ namespace Core
 
             /**
              * @brief Sets this entity as fixed in position.
-             * @return void.
              */
             virtual void fixEntity() = 0;
         };

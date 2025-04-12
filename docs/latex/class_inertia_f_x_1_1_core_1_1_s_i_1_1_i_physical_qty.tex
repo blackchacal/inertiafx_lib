@@ -12,7 +12,7 @@ Interface defining the required operations for physical quantities such as tempe
 Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::IPhysical\+Qty\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=1.609195cm]{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty}
+\includegraphics[height=2.816092cm]{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Public Member Functions}
@@ -31,6 +31,8 @@ virtual bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_
 \begin{DoxyCompactList}\small\item\em Indicates if this quantity is fundamental. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abf67bb71d70b4a8e776150a9f3bee1d6}{get\+Unit\+Name}} () const =0
 \begin{DoxyCompactList}\small\item\em Retrieves the name of the base unit associated with this quantity. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abdde46c9b453738eaed1dd234369384a}{get\+Unit\+Plural\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the plural name of the base unit associated with this quantity. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_ab175b0954e8f389e77795bc25aa75a37}{get\+Unit\+Symbol}} () const =0
 \begin{DoxyCompactList}\small\item\em Retrieves the symbol of the base unit associated with this quantity. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a4b81cc23d69de9f9714fde52a996ccc0}{get\+Unit\+Description}} () const =0
@@ -126,11 +128,28 @@ virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+
 Retrieves the name of the base unit associated with this quantity. 
 
 \begin{DoxyReturn}{Returns}
-A string representing the base unit name (e.\+g., "{}\+Kelvin"{}, "{}\+Meter/\+Second"{}). 
+A string representing the base unit name (e.\+g., "{}kelvin"{}, "{}meter per second"{}). 
 \end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty_ad7b98022bf862263413853e1ef684b9d}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Scalar\+Qty}}, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a8572138cca8e7480675f78c2f77472e8}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Vector\+Qty}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_abca9bd35ceda10aa4f7ade0db7293132}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abdde46c9b453738eaed1dd234369384a}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getUnitPluralName@{getUnitPluralName}}
+\index{getUnitPluralName@{getUnitPluralName}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}
+\doxysubsubsection{\texorpdfstring{getUnitPluralName()}{getUnitPluralName()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abdde46c9b453738eaed1dd234369384a} 
+virtual std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty\+::get\+Unit\+Plural\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the plural name of the base unit associated with this quantity. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the base unit plural name (e.\+g., "{}kelvins"{}, "{}meters per second"{}). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty_a3f9659fc1de60962abda182fe9851554}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Scalar\+Qty}}, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a1c4cccf48a699fd997da706b5e88eca6}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Vector\+Qty}}, and \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_acefc17a8bf8cdfe6220610a377b8a714}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
 
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_ab175b0954e8f389e77795bc25aa75a37}\index{InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}!getUnitSymbol@{getUnitSymbol}}
 \index{getUnitSymbol@{getUnitSymbol}!InertiaFX::Core::SI::IPhysicalQty@{InertiaFX::Core::SI::IPhysicalQty}}

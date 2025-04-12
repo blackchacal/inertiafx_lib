@@ -196,13 +196,20 @@ namespace Core
             void fixEntity() override;
 
           protected:
-            Position _position;         /** Position of the entity. */
-            Velocity _velocity;         /** Velocity of the entity. */
-            Acceleration _acceleration; /** Acceleration of the entity. */
-            Force _netForce;            /** Net Force actin on the entity. */
-            Mass _mass;                 /** Mass of the entity. */
-            Volume _volume;             /** Volume of the entity. */
-            bool _isFixed; /** Flag indicating if this entity is fixed (immovable) in space. */
+            /** Position of the entity. */
+            Position _position;
+            /** Velocity of the entity. */
+            Velocity _velocity;
+            /** Acceleration of the entity. */
+            Acceleration _acceleration;
+            /** Net Force acting on the entity. */
+            Force _netForce;
+            /** Mass of the entity. */
+            Mass _mass;
+            /** Volume of the entity. */
+            Volume _volume;
+            /** Flag indicating if this entity is fixed (immovable) in space. */
+            bool _isFixed;
         };
 
     }  // namespace Engine

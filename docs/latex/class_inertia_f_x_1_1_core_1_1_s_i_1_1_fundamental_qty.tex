@@ -20,6 +20,10 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Fundamental\+Qty\+:\begin{f
 \item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a21de0dd43bdfd853282e8ba468dd14b8}{Fundamental\+Qty}} (const std\+::string \&name, const std\+::string \&symbol, const std\+::string \&description, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit}} $>$ unit)
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a45c9c910f434660123dd8b25caf5c733}{Fundamental\+Qty}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty}} \&other)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty} object by copying another instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a50ff51cf8718a0ca6f4ec9dceebcfe7c}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for deep-\/copying another instance. \end{DoxyCompactList}\item 
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_adbc09db12f5f4f85faa1a601d6abb6bd}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_adbc09db12f5f4f85faa1a601d6abb6bd} 
 virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Fundamental\+Qty} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
@@ -33,6 +37,8 @@ bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a2e
 \begin{DoxyCompactList}\small\item\em Indicates if this quantity is fundamental.    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_abca9bd35ceda10aa4f7ade0db7293132}{get\+Unit\+Name}} () const override
 \begin{DoxyCompactList}\small\item\em Retrieves the name of the base unit associated with this quantity.    \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_acefc17a8bf8cdfe6220610a377b8a714}{get\+Unit\+Plural\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the plural name of the base unit associated with this quantity.    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a3318d792b435c5cb155fbc1221ab8d32}{get\+Unit\+Symbol}} () const override
 \begin{DoxyCompactList}\small\item\em Retrieves the symbol of the base unit associated with this quantity.    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a2394f2b146d8354bb569a4675f116a00}{get\+Unit\+Description}} () const override
@@ -40,15 +46,15 @@ std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamenta
 double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a40fe4306ee64be6eaec977557e708a70}{get\+Value}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in its base unit.    \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a8b0d08b543346d9c3dea2da1d25baa00}{get\+Value\+In}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) const
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit.    \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a94911962bce27c661582248806ea94c0}{get\+Value\+In}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) const
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit.    \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aa49d5903aebcd415abbb79caf3399668}{set\+Value}} (double new\+Value)
 \begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity.    \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a4e12554d9a7c6c359c8f51a528cbccfa}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)
 \begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aadf8a1288ecf503493f96b3841953c18}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a7550a34fc01939a413f1d86cc8fd760e}{to\+String}} () const
 \begin{DoxyCompactList}\small\item\em Builds a string representation of the quantity and its current value in the base unit. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a4bb043d886cb9140dcc9d469f59699c9}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) const
@@ -89,7 +95,7 @@ Represents a fundamental physical quantity in the system (e.\+g., length, mass).
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a21de0dd43bdfd853282e8ba468dd14b8}\index{InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}!FundamentalQty@{FundamentalQty}}
 \index{FundamentalQty@{FundamentalQty}!InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}}
-\doxysubsubsection{\texorpdfstring{FundamentalQty()}{FundamentalQty()}}
+\doxysubsubsection{\texorpdfstring{FundamentalQty()}{FundamentalQty()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a21de0dd43bdfd853282e8ba468dd14b8} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::\+Fundamental\+Qty (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name}{, }\item[{const std\+::string \&}]{symbol}{, }\item[{const std\+::string \&}]{description}{, }\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit}} $>$}]{unit}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
@@ -106,6 +112,21 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qt
 {\em description} & A short description of this quantity. \\
 \hline
 {\em unit} & The \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit} defining the base unit info for this quantity. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a45c9c910f434660123dd8b25caf5c733}\index{InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}!FundamentalQty@{FundamentalQty}}
+\index{FundamentalQty@{FundamentalQty}!InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}}
+\doxysubsubsection{\texorpdfstring{FundamentalQty()}{FundamentalQty()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a45c9c910f434660123dd8b25caf5c733} 
+Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::\+Fundamental\+Qty (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty} object by copying another instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other instance to copy from. \\
 \hline
 \end{DoxyParams}
 
@@ -190,11 +211,28 @@ std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::get\+Unit\+
 Retrieves the name of the base unit associated with this quantity.    
 
 \begin{DoxyReturn}{Returns}
-A string representing the base unit name (e.\+g., "{}\+Kelvin"{}, "{}\+Meter/\+Second"{}).    
+A string representing the base unit name (e.\+g., "{}kelvin"{}, "{}meter per second"{}).    
 \end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abf67bb71d70b4a8e776150a9f3bee1d6}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_acefc17a8bf8cdfe6220610a377b8a714}\index{InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}!getUnitPluralName@{getUnitPluralName}}
+\index{getUnitPluralName@{getUnitPluralName}!InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}}
+\doxysubsubsection{\texorpdfstring{getUnitPluralName()}{getUnitPluralName()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_acefc17a8bf8cdfe6220610a377b8a714} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::get\+Unit\+Plural\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the plural name of the base unit associated with this quantity.    
+
+\begin{DoxyReturn}{Returns}
+A string representing the base unit plural name (e.\+g., "{}kelvins"{}, "{}meters per second"{}).    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_abdde46c9b453738eaed1dd234369384a}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty}}.
 
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a3318d792b435c5cb155fbc1221ab8d32}\index{InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}!getUnitSymbol@{getUnitSymbol}}
 \index{getUnitSymbol@{getUnitSymbol}!InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}}
@@ -238,8 +276,16 @@ double Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::get\+Value\+In (\b
 
 
 
+Retrieves the current value of the physical quantity in the specified prefix of its base unit.    
 
 
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The decimal prefix by name (e.\+g., "{}kilo"{}, "{}milli"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the quantity converted to the requested prefix.    
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a07bacace6562f49cab4bbe9ecb6cf065}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty}}.
@@ -252,8 +298,16 @@ double Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::get\+Value\+In (\b
 
 
 
+Retrieves the current value of the physical quantity in the specified prefix of its base unit.    
 
 
+\begin{DoxyParams}{Parameters}
+{\em prefix} & The decimal prefix by symbol (e.\+g., "{}k"{}, "{}m"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value of the quantity converted to the requested prefix.    
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_a0a9d198b53f48fec2b8aa5536cf4816c}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty}}.
@@ -275,6 +329,24 @@ true if fundamental, false otherwise.
 
 Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty_a61000614956b851c7165570d6f7968db}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Qty}}.
 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a50ff51cf8718a0ca6f4ec9dceebcfe7c}\index{InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}!operator=@{operator=}}
+\index{operator=@{operator=}!InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a50ff51cf8718a0ca6f4ec9dceebcfe7c} 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty}} \& Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty}} \&}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Assignment operator for deep-\/copying another instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other instance to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this object. 
+\end{DoxyReturn}
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aa49d5903aebcd415abbb79caf3399668}\index{InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}!setValue@{setValue}}
 \index{setValue@{setValue}!InertiaFX::Core::SI::FundamentalQty@{InertiaFX::Core::SI::FundamentalQty}}
 \doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
@@ -323,8 +395,15 @@ void Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty\+::set\+Value\+From (\b
 
 
 
+Sets the value of this physical quantity (in a specific prefix of its base unit).    
 
 
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value to assign. \\
+\hline
+{\em prefix} & The decimal prefix by symbol (e.\+g., "{}k"{}, "{}m"{}).    \\
+\hline
+\end{DoxyParams}
 
 
 Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty_ac43214c7ed9d55fd7d2431b1afdf8594}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IScalar\+Qty}}.

@@ -124,7 +124,7 @@ Inheritance diagram for InertiaFX::Core::SI::FundamentalQty:</div>
 <area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html" title="Interface defining the required operations for scalar physical quantities." alt="InertiaFX::Core::SI::IScalarQty" shape="rect" coords="223,56,436,80"/>
 <area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html" title="Interface defining the required operations for physical quantities such as temperature,..." alt="InertiaFX::Core::SI::IPhysicalQty" shape="rect" coords="223,0,436,24"/>
 <area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html" title="Concrete fundamental quantity representing length." alt="InertiaFX::Core::SI::Length" shape="rect" coords="0,168,213,192"/>
-<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Mass" shape="rect" coords="223,168,436,192"/>
+<area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html" title="Concrete fundamental quantity representing mass." alt="InertiaFX::Core::SI::Mass" shape="rect" coords="223,168,436,192"/>
 <area href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html" title="Concrete fundamental quantity representing time." alt="InertiaFX::Core::SI::Time" shape="rect" coords="446,168,659,192"/>
   </map>
 </div></div>
@@ -134,6 +134,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21de0dd43bdfd853282e8ba468dd14b8" id="r_a21de0dd43bdfd853282e8ba468dd14b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21de0dd43bdfd853282e8ba468dd14b8">FundamentalQty</a> (const std::string &amp;name, const std::string &amp;symbol, const std::string &amp;description, std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html">IPhysicalUnit</a> &gt; unit)</td></tr>
 <tr class="memdesc:a21de0dd43bdfd853282e8ba468dd14b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html" title="Represents a fundamental physical quantity in the system (e.g., length, mass).">FundamentalQty</a> object.  <br /></td></tr>
 <tr class="separator:a21de0dd43bdfd853282e8ba468dd14b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45c9c910f434660123dd8b25caf5c733" id="r_a45c9c910f434660123dd8b25caf5c733"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45c9c910f434660123dd8b25caf5c733">FundamentalQty</a> (const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html">FundamentalQty</a> &amp;other)</td></tr>
+<tr class="memdesc:a45c9c910f434660123dd8b25caf5c733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html" title="Represents a fundamental physical quantity in the system (e.g., length, mass).">FundamentalQty</a> object by copying another instance.  <br /></td></tr>
+<tr class="separator:a45c9c910f434660123dd8b25caf5c733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ff51cf8718a0ca6f4ec9dceebcfe7c" id="r_a50ff51cf8718a0ca6f4ec9dceebcfe7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html">FundamentalQty</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a50ff51cf8718a0ca6f4ec9dceebcfe7c">operator=</a> (const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html">FundamentalQty</a> &amp;other)</td></tr>
+<tr class="memdesc:a50ff51cf8718a0ca6f4ec9dceebcfe7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator for deep-copying another instance.  <br /></td></tr>
+<tr class="separator:a50ff51cf8718a0ca6f4ec9dceebcfe7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbc09db12f5f4f85faa1a601d6abb6bd" id="r_adbc09db12f5f4f85faa1a601d6abb6bd"><td class="memItemLeft" align="right" valign="top"><a id="adbc09db12f5f4f85faa1a601d6abb6bd" name="adbc09db12f5f4f85faa1a601d6abb6bd"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FundamentalQty</b> ()=default</td></tr>
 <tr class="memdesc:adbc09db12f5f4f85faa1a601d6abb6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor. <br /></td></tr>
@@ -153,6 +159,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FundamentalQty</b
 <tr class="memitem:abca9bd35ceda10aa4f7ade0db7293132" id="r_abca9bd35ceda10aa4f7ade0db7293132"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abca9bd35ceda10aa4f7ade0db7293132">getUnitName</a> () const override</td></tr>
 <tr class="memdesc:abca9bd35ceda10aa4f7ade0db7293132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the name of the base unit associated with this quantity.     <br /></td></tr>
 <tr class="separator:abca9bd35ceda10aa4f7ade0db7293132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefc17a8bf8cdfe6220610a377b8a714" id="r_acefc17a8bf8cdfe6220610a377b8a714"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acefc17a8bf8cdfe6220610a377b8a714">getUnitPluralName</a> () const override</td></tr>
+<tr class="memdesc:acefc17a8bf8cdfe6220610a377b8a714"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the plural name of the base unit associated with this quantity.     <br /></td></tr>
+<tr class="separator:acefc17a8bf8cdfe6220610a377b8a714"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3318d792b435c5cb155fbc1221ab8d32" id="r_a3318d792b435c5cb155fbc1221ab8d32"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3318d792b435c5cb155fbc1221ab8d32">getUnitSymbol</a> () const override</td></tr>
 <tr class="memdesc:a3318d792b435c5cb155fbc1221ab8d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the symbol of the base unit associated with this quantity.     <br /></td></tr>
 <tr class="separator:a3318d792b435c5cb155fbc1221ab8d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,8 +172,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FundamentalQty</b
 <tr class="memdesc:a40fe4306ee64be6eaec977557e708a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of the physical quantity in its base unit.     <br /></td></tr>
 <tr class="separator:a40fe4306ee64be6eaec977557e708a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0d08b543346d9c3dea2da1d25baa00" id="r_a8b0d08b543346d9c3dea2da1d25baa00"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b0d08b543346d9c3dea2da1d25baa00">getValueIn</a> (<a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a3069866022d95ef4fd31e116b527838b">DecimalPrefix::Name</a> prefix) const</td></tr>
+<tr class="memdesc:a8b0d08b543346d9c3dea2da1d25baa00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of the physical quantity in the specified prefix of its base unit.     <br /></td></tr>
 <tr class="separator:a8b0d08b543346d9c3dea2da1d25baa00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94911962bce27c661582248806ea94c0" id="r_a94911962bce27c661582248806ea94c0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94911962bce27c661582248806ea94c0">getValueIn</a> (<a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8ec">DecimalPrefix::Symbol</a> prefix) const</td></tr>
+<tr class="memdesc:a94911962bce27c661582248806ea94c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current value of the physical quantity in the specified prefix of its base unit.     <br /></td></tr>
 <tr class="separator:a94911962bce27c661582248806ea94c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa49d5903aebcd415abbb79caf3399668" id="r_aa49d5903aebcd415abbb79caf3399668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa49d5903aebcd415abbb79caf3399668">setValue</a> (double newValue)</td></tr>
 <tr class="memdesc:aa49d5903aebcd415abbb79caf3399668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of this physical quantity.     <br /></td></tr>
@@ -173,6 +184,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~FundamentalQty</b
 <tr class="memdesc:a4e12554d9a7c6c359c8f51a528cbccfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of this physical quantity (in a specific prefix of its base unit).     <br /></td></tr>
 <tr class="separator:a4e12554d9a7c6c359c8f51a528cbccfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadf8a1288ecf503493f96b3841953c18" id="r_aadf8a1288ecf503493f96b3841953c18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aadf8a1288ecf503493f96b3841953c18">setValueFrom</a> (double newValue, <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix.html#a7b871473c8374eb9b755d6d70658b8ec">DecimalPrefix::Symbol</a> prefix)</td></tr>
+<tr class="memdesc:aadf8a1288ecf503493f96b3841953c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of this physical quantity (in a specific prefix of its base unit).     <br /></td></tr>
 <tr class="separator:aadf8a1288ecf503493f96b3841953c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7550a34fc01939a413f1d86cc8fd760e" id="r_a7550a34fc01939a413f1d86cc8fd760e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7550a34fc01939a413f1d86cc8fd760e">toString</a> () const</td></tr>
 <tr class="memdesc:a7550a34fc01939a413f1d86cc8fd760e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a string representation of the quantity and its current value in the base unit.  <br /></td></tr>
@@ -220,7 +232,7 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
 <div class="textblock"><p>Represents a fundamental physical quantity in the system (e.g., length, mass). </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a21de0dd43bdfd853282e8ba468dd14b8" name="a21de0dd43bdfd853282e8ba468dd14b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21de0dd43bdfd853282e8ba468dd14b8">&#9670;&#160;</a></span>FundamentalQty()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21de0dd43bdfd853282e8ba468dd14b8">&#9670;&#160;</a></span>FundamentalQty() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,6 +275,39 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
     <tr><td class="paramname">symbol</td><td>The symbol of the physical quantity (e.g., "L", "m"). </td></tr>
     <tr><td class="paramname">description</td><td>A short description of this quantity. </td></tr>
     <tr><td class="paramname">unit</td><td>The <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html" title="Interface representing the behavior and attributes of a physical unit.">IPhysicalUnit</a> defining the base unit info for this quantity. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45c9c910f434660123dd8b25caf5c733" name="a45c9c910f434660123dd8b25caf5c733"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45c9c910f434660123dd8b25caf5c733">&#9670;&#160;</a></span>FundamentalQty() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InertiaFX::Core::SI::FundamentalQty::FundamentalQty </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html">FundamentalQty</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html" title="Represents a fundamental physical quantity in the system (e.g., length, mass).">FundamentalQty</a> object by copying another instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other instance to copy from. </td></tr>
   </table>
   </dd>
 </dl>
@@ -414,9 +459,41 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
 </div><div class="memdoc">
 
 <p>Retrieves the name of the base unit associated with this quantity.    </p>
-<dl class="section return"><dt>Returns</dt><dd>A string representing the base unit name (e.g., "Kelvin", "Meter/Second").    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the base unit name (e.g., "kelvin", "meter per
+second").    </dd></dl>
 
 <p>Implements <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html#abf67bb71d70b4a8e776150a9f3bee1d6">InertiaFX::Core::SI::IPhysicalQty</a>.</p>
+
+</div>
+</div>
+<a id="acefc17a8bf8cdfe6220610a377b8a714" name="acefc17a8bf8cdfe6220610a377b8a714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acefc17a8bf8cdfe6220610a377b8a714">&#9670;&#160;</a></span>getUnitPluralName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string InertiaFX::Core::SI::FundamentalQty::getUnitPluralName </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the plural name of the base unit associated with this quantity.    </p>
+<dl class="section return"><dt>Returns</dt><dd>A string representing the base unit plural name (e.g., "kelvins", "meters per
+second").    </dd></dl>
+
+<p>Implements <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html#abdde46c9b453738eaed1dd234369384a">InertiaFX::Core::SI::IPhysicalQty</a>.</p>
 
 </div>
 </div>
@@ -503,7 +580,14 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Retrieves the current value of the physical quantity in the specified prefix of its base unit.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The decimal prefix by name (e.g., "kilo", "milli"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the quantity converted to the requested prefix.    </dd></dl>
 
 <p>Implements <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html#a07bacace6562f49cab4bbe9ecb6cf065">InertiaFX::Core::SI::IScalarQty</a>.</p>
 
@@ -532,7 +616,14 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Retrieves the current value of the physical quantity in the specified prefix of its base unit.    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prefix</td><td>The decimal prefix by symbol (e.g., "k", "m"). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value of the quantity converted to the requested prefix.    </dd></dl>
 
 <p>Implements <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html#a0a9d198b53f48fec2b8aa5536cf4816c">InertiaFX::Core::SI::IScalarQty</a>.</p>
 
@@ -565,6 +656,40 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
 <dl class="section return"><dt>Returns</dt><dd>true if fundamental, false otherwise.    </dd></dl>
 
 <p>Implements <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html#a61000614956b851c7165570d6f7968db">InertiaFX::Core::SI::IPhysicalQty</a>.</p>
+
+</div>
+</div>
+<a id="a50ff51cf8718a0ca6f4ec9dceebcfe7c" name="a50ff51cf8718a0ca6f4ec9dceebcfe7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ff51cf8718a0ca6f4ec9dceebcfe7c">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html">FundamentalQty</a> &amp; InertiaFX::Core::SI::FundamentalQty::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html">FundamentalQty</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assignment operator for deep-copying another instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other instance to copy from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A reference to this object. </dd></dl>
 
 </div>
 </div>
@@ -670,7 +795,14 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
 </table>
 </div><div class="memdoc">
 
-<p></p>
+<p>Sets the value of this physical quantity (in a specific prefix of its base unit).    </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newValue</td><td>The new value to assign. </td></tr>
+    <tr><td class="paramname">prefix</td><td>The decimal prefix by symbol (e.g., "k", "m").    </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html#ac43214c7ed9d55fd7d2431b1afdf8594">InertiaFX::Core::SI::IScalarQty</a>.</p>
 

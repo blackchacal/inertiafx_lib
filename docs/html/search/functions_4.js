@@ -1,5 +1,7 @@
 var searchData=
 [
   ['filelogger_0',['FileLogger',['../class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#aeebbe35803981e1b6975f75173529b98',1,'InertiaFX::Core::Tools::FileLogger']]],
-  ['fundamentalqty_1',['FundamentalQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a21de0dd43bdfd853282e8ba468dd14b8',1,'InertiaFX::Core::SI::FundamentalQty']]]
+  ['fixentity_1',['fixEntity',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_entity.html#abedb9301c9f91443397bb5a130568fad',1,'InertiaFX::Core::Engine::Entity::fixEntity()'],['../class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#af858a9cff366c8761c1f896ffba3620a',1,'InertiaFX::Core::Engine::IEntity::fixEntity()']]],
+  ['force_2',['Force',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_force.html#aa46e9274e5e8b693f68940bcd8350767',1,'InertiaFX::Core::SI::Force::Force()'],['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_force.html#ab6eae034fe5a420d7c5cb13ff984b541',1,'InertiaFX::Core::SI::Force::Force(std::array&lt; double, 3 &gt; value, DecimalPrefix::Name prefix=DecimalPrefix::Name::base)'],['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_force.html#af85a9e604da7d4b035c9fc3957e018d0',1,'InertiaFX::Core::SI::Force::Force(const Force &amp;other)']]],
+  ['fundamentalqty_3',['FundamentalQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a21de0dd43bdfd853282e8ba468dd14b8',1,'InertiaFX::Core::SI::FundamentalQty::FundamentalQty(const std::string &amp;name, const std::string &amp;symbol, const std::string &amp;description, std::unique_ptr&lt; IPhysicalUnit &gt; unit)'],['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#a45c9c910f434660123dd8b25caf5c733',1,'InertiaFX::Core::SI::FundamentalQty::FundamentalQty(const FundamentalQty &amp;other)']]]
 ];

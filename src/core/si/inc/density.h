@@ -58,8 +58,32 @@ namespace Core
              */
             Density(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Density(const Density &);             // Copy constructor
-            Density &operator=(const Density &);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Density object from an existing one.
+             *
+             * @param other The other Density object to copy from.
+             */
+            Density(const Density &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Density object from an existing one.
+             *
+             * @param other The other Density object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Density &operator=(const Density &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Density objects together.
+             *
+             * @param other The other Density object to add.
+             * @return A new Density object representing the sum.
+             */
             Density operator+(const Density &other) const;
         };
 

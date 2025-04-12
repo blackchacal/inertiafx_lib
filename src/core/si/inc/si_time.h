@@ -58,8 +58,32 @@ namespace Core
              */
             Time(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Time(const Time &other);             // Copy constructor
-            Time &operator=(const Time &other);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Time object from an existing one.
+             *
+             * @param other The other Time object to copy from.
+             */
+            Time(const Time &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Time object from an existing one.
+             *
+             * @param other The other Time object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Time &operator=(const Time &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Time objects together.
+             *
+             * @param other The other Time object to add.
+             * @return A new Time object representing the sum.
+             */
             Time operator+(const Time &other) const;
         };
 

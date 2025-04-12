@@ -130,13 +130,21 @@ $(function(){initNavTree('ampere_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_function" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#a5c7c655975bf7f24fe21dcee5135f899">Ampere</a>();</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#ada8d3447cc1221b5e7936f010e177ca9">   55</a></span>            <a class="code hl_function" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#ada8d3447cc1221b5e7936f010e177ca9">~Ampere</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        };</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#a4ccd9f67948dc3c15e2b1142c9440316">   60</a></span>            std::unique_ptr&lt;IPhysicalUnit&gt; <a class="code hl_function" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#a4ccd9f67948dc3c15e2b1142c9440316">clone</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">            </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">return</span> std::make_unique&lt;Ampere&gt;(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            };</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }  <span class="comment">// namespace SI</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}  <span class="comment">// namespace Core</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}  <span class="comment">// namespace InertiaFX</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif  </span><span class="comment">// INERTIAFX_CORE_SI_AMPERE_H</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        };</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }  <span class="comment">// namespace SI</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}  <span class="comment">// namespace Core</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace InertiaFX</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif  </span><span class="comment">// INERTIAFX_CORE_SI_AMPERE_H</span></div>
+<div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere_html_a4ccd9f67948dc3c15e2b1142c9440316"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#a4ccd9f67948dc3c15e2b1142c9440316">InertiaFX::Core::SI::Ampere::clone</a></div><div class="ttdeci">std::unique_ptr&lt; IPhysicalUnit &gt; clone() const override</div><div class="ttdoc">Add a clone() that creates a new IPhysicalUnit of the same dynamic type.</div><div class="ttdef"><b>Definition</b> ampere.h:60</div></div>
 <div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere_html_a5c7c655975bf7f24fe21dcee5135f899"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#a5c7c655975bf7f24fe21dcee5135f899">InertiaFX::Core::SI::Ampere::Ampere</a></div><div class="ttdeci">Ampere()</div><div class="ttdoc">Default constructor initializing Ampere unit properties.</div><div class="ttdef"><b>Definition</b> ampere.cpp:41</div></div>
 <div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere_html_ada8d3447cc1221b5e7936f010e177ca9"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#ada8d3447cc1221b5e7936f010e177ca9">InertiaFX::Core::SI::Ampere::~Ampere</a></div><div class="ttdeci">~Ampere()=default</div><div class="ttdoc">Default destructor.</div></div>
 <div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_html_ad717cd07fb8b3553c1fdb254813ae6a5"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#ad717cd07fb8b3553c1fdb254813ae6a5">InertiaFX::Core::SI::PhysicalUnit::PhysicalUnit</a></div><div class="ttdeci">PhysicalUnit(const std::string &amp;name, const std::string &amp;namePlural, const std::string &amp;symbol, const std::string &amp;description)</div><div class="ttdoc">Constructs a PhysicalUnit with given name, symbol, and description.</div><div class="ttdef"><b>Definition</b> physical_unit.cpp:34</div></div>

@@ -58,8 +58,32 @@ namespace Core
              */
             Mass(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Mass(const Mass &other);             // Copy constructor
-            Mass &operator=(const Mass &other);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Mass object from an existing one.
+             *
+             * @param other The other Mass object to copy from.
+             */
+            Mass(const Mass &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Mass object from an existing one.
+             *
+             * @param other The other Mass object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Mass &operator=(const Mass &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Mass objects together.
+             *
+             * @param other The other Mass object to add.
+             * @return A new Mass object representing the sum.
+             */
             Mass operator+(const Mass &other) const;
         };
 

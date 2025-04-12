@@ -59,8 +59,32 @@ namespace Core
 
             Volume(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Volume(const Volume &);             // Copy constructor
-            Volume &operator=(const Volume &);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Volume object from an existing one.
+             *
+             * @param other The other Volume object to copy from.
+             */
+            Volume(const Volume &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Volume object from an existing one.
+             *
+             * @param other The other Volume object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Volume &operator=(const Volume &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Volume objects together.
+             *
+             * @param other The other Volume object to add.
+             * @return A new Volume object representing the sum.
+             */
             Volume operator+(const Volume &other) const;
         };
 

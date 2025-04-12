@@ -39,21 +39,43 @@ namespace Core
 {
     namespace SI
     {
+        /**
+         * @struct PhysicalUnitPower
+         * @brief A structure to represent a physical unit and its power.
+         *
+         * This structure is used to represent a physical unit along with the power to which it is
+         * raised. It is primarily used in the context of derived physical units.
+         */
         struct PhysicalUnitPower
         {
-            std::unique_ptr<IPhysicalUnit> unit; /** Unit. */
-            int power;                           /** Power to which the unit is raised. */
+            /** Unit. */
+            std::unique_ptr<IPhysicalUnit> unit;
+            /** Power to which the unit is raised. */
+            int power;
 
+            /**
+             * @brief Constructs a PhysicalUnitPower with a given unit and power.
+             * @param u A unique pointer to an IPhysicalUnit representing the unit.
+             * @param p An integer representing the power of the unit.
+             */
             PhysicalUnitPower(std::unique_ptr<IPhysicalUnit> u, int p) :
                 unit(std::move(u)), power(p)
             {
             }
 
+            /**
+             * @brief Copy constructor for PhysicalUnitPower.
+             * @param other The PhysicalUnitPower object to copy from.
+             */
             PhysicalUnitPower(const PhysicalUnitPower &other) :
                 unit(other.unit ? other.unit->clone() : nullptr), power(other.power)
             {
             }
 
+            /**
+             * @brief Move constructor for PhysicalUnitPower.
+             * @param other The PhysicalUnitPower object to move from.
+             */
             PhysicalUnitPower &operator=(const PhysicalUnitPower &other)
             {
                 if (this != &other)
@@ -132,7 +154,8 @@ namespace Core
             }
 
           protected:
-            std::string _symbol; /** The symbol of the unit. */
+            /** The symbol of the unit. */
+            std::string _symbol;
 
           private:
             std::string _name;        /** The full name of the unit. */

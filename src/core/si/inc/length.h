@@ -58,8 +58,32 @@ namespace Core
              */
             Length(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Length(const Length &other);             // Copy constructor
-            Length &operator=(const Length &other);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Length object from an existing one.
+             *
+             * @param other The other Length object to copy from.
+             */
+            Length(const Length &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Length object from an existing one.
+             *
+             * @param other The other Length object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Length &operator=(const Length &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Length objects together.
+             *
+             * @param other The other Length object to add.
+             * @return A new Length object representing the sum.
+             */
             Length operator+(const Length &other) const;
         };
 

@@ -1,0 +1,67 @@
+\doxysection{solid\+\_\+body.\+h}
+\hypertarget{solid__body_8h_source}{}\label{solid__body_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/solid\_body.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/solid\_body.h}}
+\mbox{\hyperlink{solid__body_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_ENGINE\_SOLID\_BODY\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_ENGINE\_SOLID\_BODY\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{density_8h}{density.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{entity_8h}{entity.h}}"{}}}
+\DoxyCodeLine{00031\ \textcolor{comment}{//\ \#include\ "{}ishape.h"{}}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{using\ namespace\ }InertiaFX::Core::SI;}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00038\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{namespace\ }SI}
+\DoxyCodeLine{00040\ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_shape}{Shape}};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{namespace\ }Engine}
+\DoxyCodeLine{00051\ \ \ \ \ \{}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_a2fdd17f1fbbc8c400742437aaa42e3d6}{SolidBody}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_a2fdd17f1fbbc8c400742437aaa42e3d6}{SolidBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_a2fdd17f1fbbc8c400742437aaa42e3d6}{SolidBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_a2fdd17f1fbbc8c400742437aaa42e3d6}{SolidBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity);}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_a2fdd17f1fbbc8c400742437aaa42e3d6}{SolidBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration);}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_a2fdd17f1fbbc8c400742437aaa42e3d6}{SolidBody}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration,}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&netForce);}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_aa6984d49fd0465a063a83f79fd24a7f7}{\string~SolidBody}}()\ =\ 0;}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_ab4905fc4deab38e9eab3b6b71bc45c2e}{getDensity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_shape}{Shape}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_af662b4a3994665821e5293808ced866a}{getShape}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<Density>\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_af654f1f906add953ae44ab065bdc758e}{\_density}};}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_shape}{Shape}}\ *\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body_a1b9c9c17d2b845dec9e4495d8fb34509}{\_solidShape}};}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ initBodyData(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume);}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
+\DoxyCodeLine{00166\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00167\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_SOLID\_BODY\_H}}
+
+\end{DoxyCode}

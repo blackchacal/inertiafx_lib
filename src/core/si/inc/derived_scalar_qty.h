@@ -70,6 +70,11 @@ namespace Core
                     other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
             }
 
+            /**
+             * @brief Assignment operator for copying another DerivedScalarQty instance.
+             * @param other The other instance to copy from.
+             * @return A reference to this object.
+             */
             DerivedScalarQty &operator=(const DerivedScalarQty &other)
             {
                 if (this != &other)
@@ -164,7 +169,7 @@ namespace Core
             }
 
             /**
-             * @copydoc IScalarQty::getValueIn(DecimalPrefix::Name)
+             * @copydoc IScalarQty::getValueIn(DecimalPrefix::Name prefix) const
              */
             double getValueIn(DecimalPrefix::Name prefix) const
             {
@@ -172,7 +177,7 @@ namespace Core
             }
 
             /**
-             * @copydoc IScalarQty::getValueIn(DecimalPrefix::Symbol)
+             * @copydoc IScalarQty::getValueIn(DecimalPrefix::Symbol prefix) const
              */
             double getValueIn(DecimalPrefix::Symbol prefix) const
             {
@@ -189,7 +194,7 @@ namespace Core
             }
 
             /**
-             * @copydoc IScalarQty::setValueFrom(double, DecimalPrefix::Name)
+             * @copydoc IScalarQty::setValueFrom(double newValue, DecimalPrefix::Name prefix)
              */
             void setValueFrom(double newValue, DecimalPrefix::Name prefix)
             {
@@ -198,7 +203,7 @@ namespace Core
             }
 
             /**
-             * @copydoc IScalarQty::setValueFrom(T newValue, DecimalPrefix::Symbol prefix)
+             * @copydoc IScalarQty::setValueFrom(double newValue, DecimalPrefix::Symbol prefix)
              */
             void setValueFrom(double newValue, DecimalPrefix::Symbol prefix)
             {

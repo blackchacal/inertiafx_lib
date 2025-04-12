@@ -60,8 +60,32 @@ namespace Core
             Force(std::array<double, 3> value,
                   DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Force(const Force &);             // Copy constructor
-            Force &operator=(const Force &);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Force object from an existing one.
+             *
+             * @param other The other Force object to copy from.
+             */
+            Force(const Force &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Force object from an existing one.
+             *
+             * @param other The other Force object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Force &operator=(const Force &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Force objects together.
+             *
+             * @param other The other Force object to add.
+             * @return A new Force object representing the sum.
+             */
             Force operator+(const Force &other) const;
         };
 

@@ -59,8 +59,32 @@ namespace Core
             Position(std::array<double, 3> value,
                      DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Position(const Position &);             // Copy constructor
-            Position &operator=(const Position &);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Position object from an existing one.
+             *
+             * @param other The other Position object to copy from.
+             */
+            Position(const Position &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Position object from an existing one.
+             *
+             * @param other The other Position object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Position &operator=(const Position &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Position objects together.
+             *
+             * @param other The other Position object to add.
+             * @return A new Position object representing the sum.
+             */
             Position operator+(const Position &other) const;
         };
 

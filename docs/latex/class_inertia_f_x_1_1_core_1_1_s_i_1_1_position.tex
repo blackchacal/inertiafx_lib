@@ -18,13 +18,26 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Position\+:\begin{figure}[H
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a7aa333261d2d67116d1cc8a6469c83af}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a7aa333261d2d67116d1cc8a6469c83af} 
+{\bfseries Position} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. The position is initialized to (0.\+0, 0.\+0, 0.\+0) and stored in base prefix value. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_ae638a2f61360f5d781faf38b5cedb115}{Position}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix=Decimal\+Prefix\+::\+Name\+::base)
-\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3a07cf5463a74375ee4c86f8b0bec432}{Position}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3d13a5f595fb40b5ba3f75401bfb2067}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a2418c62ec9e75d55eed9c7b598a2d4df}{operator+}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other) const
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Vector\+Qty}}}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_ad76e2135f7f1fb944ff92a7bee0c04a4}{Derived\+Vector\+Qty}} (const std\+::string \&name, const std\+::string \&symbol, const std\+::string \&description, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit}} $>$ unit)
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Derived\+Vector\+Qty} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_acb9ace871b195e5c1e33cb3a0bcca082}{Derived\+Vector\+Qty}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Derived\+Vector\+Qty}} \&other)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Fundamental\+Qty} object by copying another instance. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Derived\+Vector\+Qty}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a60fb697897efffff6c14b80c5828afeb}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Derived\+Vector\+Qty}} \&other)
+\begin{DoxyCompactList}\small\item\em Assignment operator for copying another \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Derived\+Vector\+Qty} instance. \end{DoxyCompactList}\item 
 virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Derived\+Vector\+Qty} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a28d9504e79303b363cab2389e664d8a2}{get\+Name}} () const override
@@ -37,6 +50,8 @@ bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_
 \begin{DoxyCompactList}\small\item\em Indicates if this quantity is fundamental.    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a8572138cca8e7480675f78c2f77472e8}{get\+Unit\+Name}} () const override
 \begin{DoxyCompactList}\small\item\em Retrieves the name of the base unit associated with this quantity.    \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a1c4cccf48a699fd997da706b5e88eca6}{get\+Unit\+Plural\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the plural name of the base unit associated with this quantity.    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a6dd6d8f36793ed1f8b0012bbef269797}{get\+Unit\+Symbol}} () const override
 \begin{DoxyCompactList}\small\item\em Retrieves the symbol of the base unit associated with this quantity.    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a4ab7627134029f1446398cb015bad0a9}{get\+Unit\+Description}} () const override
@@ -44,15 +59,15 @@ std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_ve
 std\+::array$<$ double, 3 $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a7ce2f54d2197ee5096c2d532ed3f0f73}{get\+Value}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in its base unit.    \end{DoxyCompactList}\item 
 std\+::array$<$ double, 3 $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a3090fad6160a139e8e41d4e91e12aa63}{get\+Value\+In}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) const
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit.    \end{DoxyCompactList}\item 
 std\+::array$<$ double, 3 $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_af815de8da81ba350f51d7f4397f96bad}{get\+Value\+In}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) const
-\item 
+\begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit.    \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_abcea1dde8b8bd94ce67a8f9851fcd2f8}{set\+Value}} (std\+::array$<$ double, 3 $>$ new\+Value)
 \begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity.    \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a40c7133bc7f2ee71559e2f40ce156f71}{set\+Value\+From}} (std\+::array$<$ double, 3 $>$ new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)
 \begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a641aa5140f152e99f270f7a3fbd1d6d0}{set\+Value\+From}} (std\+::array$<$ double, 3 $>$ new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a6ed8a9b2744b161f7bf01ec77b5f75bb}{to\+String}} () const
 \begin{DoxyCompactList}\small\item\em Builds a string representation of the quantity and its current value in the base unit. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty_a7e5bf8fb0366d05e80f34c8bb435c9a4}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) const
@@ -88,7 +103,7 @@ Concrete derived quantity representing position in space.
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_ae638a2f61360f5d781faf38b5cedb115}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!Position@{Position}}
 \index{Position@{Position}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
-\doxysubsubsection{\texorpdfstring{Position()}{Position()}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_ae638a2f61360f5d781faf38b5cedb115} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::\+Position (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Name\+:\+:base}}\end{DoxyParamCaption})}
 
@@ -103,7 +118,70 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Posi
 {\em prefix} & The decimal prefix name (e.\+g., "{}kilo"{}, "{}milli"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
 \hline
 \end{DoxyParams}
-Internally, the position is stored in base prefix value. 
+Internally, the position is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3a07cf5463a74375ee4c86f8b0bec432}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!Position@{Position}}
+\index{Position@{Position}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3a07cf5463a74375ee4c86f8b0bec432} 
+Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object from an existing one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object to copy from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a2418c62ec9e75d55eed9c7b598a2d4df}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!operator+@{operator+}}
+\index{operator+@{operator+}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a2418c62ec9e75d55eed9c7b598a2d4df} 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Addition operator. 
+
+Adds two \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} objects together.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object to add. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object representing the sum. 
+\end{DoxyReturn}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3d13a5f595fb40b5ba3f75401bfb2067}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!operator=@{operator=}}
+\index{operator=@{operator=}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3d13a5f595fb40b5ba3f75401bfb2067} 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object from an existing one.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this object.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This operator performs a deep copy of the object. 
+\end{DoxyNote}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

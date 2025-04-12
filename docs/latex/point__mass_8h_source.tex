@@ -1,0 +1,46 @@
+\doxysection{point\+\_\+mass.\+h}
+\hypertarget{point__mass_8h_source}{}\label{point__mass_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/point\_mass.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/point\_mass.h}}
+\mbox{\hyperlink{point__mass_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_ENGINE\_POINT\_MASS\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_ENGINE\_POINT\_MASS\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{entity_8h}{entity.h}}"{}}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{using\ namespace\ }InertiaFX::Core::SI;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{namespace\ }Engine}
+\DoxyCodeLine{00038\ \ \ \ \ \{}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a70ec04cedb631d8613132dc7683b220b}{PointMass}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a70ec04cedb631d8613132dc7683b220b}{PointMass}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a70ec04cedb631d8613132dc7683b220b}{PointMass}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a70ec04cedb631d8613132dc7683b220b}{PointMass}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a70ec04cedb631d8613132dc7683b220b}{PointMass}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a70ec04cedb631d8613132dc7683b220b}{PointMass}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&netForce);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a30ca184727ab19a7ec78f6bf717aa830}{\string~PointMass}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
+\DoxyCodeLine{00109\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00110\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00112\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_POINT\_MASS\_H}}
+
+\end{DoxyCode}

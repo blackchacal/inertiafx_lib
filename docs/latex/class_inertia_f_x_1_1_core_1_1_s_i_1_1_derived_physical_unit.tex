@@ -1,0 +1,237 @@
+\doxysection{Inertia\+FX\+::Core\+::SI\+::Derived\+Physical\+Unit Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit}{}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+
+
+A class to represent derived physical units that implements the \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit} interface.  
+
+
+
+
+{\ttfamily \#include $<$derived\+\_\+physical\+\_\+unit.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Derived\+Physical\+Unit\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a101499470b20cbe0798b700095a6a21d}{Derived\+Physical\+Unit}} (std\+::vector$<$ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power}{Physical\+Unit\+Power}} $>$ base\+Units, const std\+::string \&description)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit}{Derived\+Physical\+Unit} from a list of base units. \end{DoxyCompactList}\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a162878416e0d9cba40e685854fec83d9}\label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a162878416e0d9cba40e685854fec83d9} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Derived\+Physical\+Unit} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a096a460e6f0df8ebcc2ca82c942a0afd}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the full name of the unit.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_af649533340e2e3309bdf07490e9ca862}{get\+Plural\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the full name of the unit in plural form.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a80e994e60bb1109197277d719b090bd4}{get\+Symbol}} () const override
+\begin{DoxyCompactList}\small\item\em Get the symbol of the unit.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a21b09a3312bb89a8214ff6dd1a74b63d}{get\+Description}} () const override
+\begin{DoxyCompactList}\small\item\em Get a brief description of the unit.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a8786c40dfd525d2f60fdd331fea0d2d0}{to\+String}} () const override
+\begin{DoxyCompactList}\small\item\em Get a string representation of the unit without any prefix.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a2002ebbdf803f2f8fd13a1d8499ea1f6}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix\+Name) const override
+\begin{DoxyCompactList}\small\item\em Get a string representation of the unit using a specified decimal prefix name.    \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a0766700cf5d5581814ff180c32f76bfa}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix\+Symbol) const override
+\begin{DoxyCompactList}\small\item\em Get a string representation of the unit using a specified decimal prefix symbol.    \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a6e11a6c646a9d0d7548a6f7e284653f8}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a6e11a6c646a9d0d7548a6f7e284653f8}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit} of the same dynamic type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IPhysical\+Unit} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for safe polymorphic destruction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a44f5d35e049cc9ac8843c8ddc5cfc231}{\+\_\+symbol}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to represent derived physical units that implements the \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit} interface. 
+
+This class provides a generic implementation for a derived physical unit by obtaining the basic attributes such as name, symbol through a combination of the names and symbols of the base units that form the derived unit. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a101499470b20cbe0798b700095a6a21d}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!DerivedPhysicalUnit@{DerivedPhysicalUnit}}
+\index{DerivedPhysicalUnit@{DerivedPhysicalUnit}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{DerivedPhysicalUnit()}{DerivedPhysicalUnit()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a101499470b20cbe0798b700095a6a21d} 
+Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::\+Derived\+Physical\+Unit (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power}{Physical\+Unit\+Power}} $>$}]{base\+Units}{, }\item[{const std\+::string \&}]{description}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit}{Derived\+Physical\+Unit} from a list of base units. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+Units} & A vector of \doxylink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power}{Physical\+Unit\+Power} objects representing the base units and their powers. \\
+\hline
+{\em description} & A short description of the derived unit\textquotesingle{}s purpose or usage. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a6e11a6c646a9d0d7548a6f7e284653f8}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!clone@{clone}}
+\index{clone@{clone}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a6e11a6c646a9d0d7548a6f7e284653f8} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit}} $>$ Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a6e11a6c646a9d0d7548a6f7e284653f8}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysical\+Unit} of the same dynamic type. 
+
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_aa9a5fa5e77d276c37b3748c1ebf9c72c}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a21b09a3312bb89a8214ff6dd1a74b63d}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{getDescription()}{getDescription()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a21b09a3312bb89a8214ff6dd1a74b63d} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::get\+Description (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a brief description of the unit.    
+
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the unit description.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_ac328fe2fe81b92dcaa7378c8dd556735}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a096a460e6f0df8ebcc2ca82c942a0afd}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!getName@{getName}}
+\index{getName@{getName}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a096a460e6f0df8ebcc2ca82c942a0afd} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the full name of the unit.    
+
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the unit name.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_a0bf2b7af574cde378284164dc982df3f}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_af649533340e2e3309bdf07490e9ca862}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!getPluralName@{getPluralName}}
+\index{getPluralName@{getPluralName}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{getPluralName()}{getPluralName()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_af649533340e2e3309bdf07490e9ca862} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::get\+Plural\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the full name of the unit in plural form.    
+
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the unit name.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_a05f668cd345e926cdc38fcaeafb2491f}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a80e994e60bb1109197277d719b090bd4}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!getSymbol@{getSymbol}}
+\index{getSymbol@{getSymbol}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{getSymbol()}{getSymbol()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a80e994e60bb1109197277d719b090bd4} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::get\+Symbol (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the symbol of the unit.    
+
+\begin{DoxyReturn}{Returns}
+A std\+::string containing the unit symbol.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_a64f0fcc61bc6f6e99e572f70d5b9c5fb}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a8786c40dfd525d2f60fdd331fea0d2d0}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a8786c40dfd525d2f60fdd331fea0d2d0} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::to\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a string representation of the unit without any prefix.    
+
+\begin{DoxyReturn}{Returns}
+A std\+::string representing the unit in its standard form.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_a4b64d00192d1fbfb6cc3fd7a5e775c4d}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a2002ebbdf803f2f8fd13a1d8499ea1f6}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a2002ebbdf803f2f8fd13a1d8499ea1f6} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix\+Name}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a string representation of the unit using a specified decimal prefix name.    
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix\+Name} & The decimal prefix name to prepend to the unit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string representing the prefixed unit.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_a6b8110d403d37e8e145ec5123d6cda97}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a0766700cf5d5581814ff180c32f76bfa}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!toString@{toString}}
+\index{toString@{toString}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a0766700cf5d5581814ff180c32f76bfa} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::to\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix\+Symbol}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get a string representation of the unit using a specified decimal prefix symbol.    
+
+
+\begin{DoxyParams}{Parameters}
+{\em prefix\+Symbol} & The decimal prefix symbol to prepend to the unit. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A std\+::string representing the prefixed unit.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit_a0926873ef5aac98f8c5d8cc6fdf64893}{Inertia\+FX\+::\+Core\+::\+SI\+::\+IPhysical\+Unit}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a44f5d35e049cc9ac8843c8ddc5cfc231}\index{InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}!\_symbol@{\_symbol}}
+\index{\_symbol@{\_symbol}!InertiaFX::Core::SI::DerivedPhysicalUnit@{InertiaFX::Core::SI::DerivedPhysicalUnit}}
+\doxysubsubsection{\texorpdfstring{\_symbol}{\_symbol}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a44f5d35e049cc9ac8843c8ddc5cfc231} 
+std\+::string Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Physical\+Unit\+::\+\_\+symbol\hspace{0.3cm}{\ttfamily [protected]}}
+
+The symbol of the unit. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/inc/\mbox{\hyperlink{derived__physical__unit_8h}{derived\+\_\+physical\+\_\+unit.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/si/src/\mbox{\hyperlink{derived__physical__unit_8cpp}{derived\+\_\+physical\+\_\+unit.\+cpp}}\end{DoxyCompactItemize}

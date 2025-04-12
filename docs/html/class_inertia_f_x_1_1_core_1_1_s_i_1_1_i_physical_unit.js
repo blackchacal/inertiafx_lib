@@ -1,6 +1,7 @@
 var class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit =
 [
     [ "~IPhysicalUnit", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html#a229f7fc9aed6c1dfcff11e50fd383d2d", null ],
+    [ "clone", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html#aa9a5fa5e77d276c37b3748c1ebf9c72c", null ],
     [ "getDescription", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html#ac328fe2fe81b92dcaa7378c8dd556735", null ],
     [ "getName", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html#a0bf2b7af574cde378284164dc982df3f", null ],
     [ "getPluralName", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html#a05f668cd345e926cdc38fcaeafb2491f", null ],

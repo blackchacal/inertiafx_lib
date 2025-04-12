@@ -1,0 +1,95 @@
+\doxysection{derived\+\_\+physical\+\_\+unit.\+h}
+\hypertarget{derived__physical__unit_8h_source}{}\label{derived__physical__unit_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/si/inc/derived\_physical\_unit.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/si/inc/derived\_physical\_unit.h}}
+\mbox{\hyperlink{derived__physical__unit_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_SI\_DERIVED\_PHYSICAL\_UNIT\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_SI\_DERIVED\_PHYSICAL\_UNIT\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{decimal__prefix_8h}{decimal\_prefix.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{iphysical__unit_8h}{iphysical\_unit.h}}"{}}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{using\ namespace\ }InertiaFX::Core::SI;}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00037\ \{}
+\DoxyCodeLine{00038\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keyword}{namespace\ }SI}
+\DoxyCodeLine{00041\ \ \ \ \ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_a57bab5cf167c779f681659ff531477ba}{PhysicalUnitPower}}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<IPhysicalUnit>\ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_aa769ea2bff4f24ec94661bdf351d9e7f}{power}};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_a57bab5cf167c779f681659ff531477ba}{PhysicalUnitPower}}(std::unique\_ptr<IPhysicalUnit>\ u,\ \textcolor{keywordtype}{int}\ p)\ :}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}}(std::move(u)),\ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_aa769ea2bff4f24ec94661bdf351d9e7f}{power}}(p)}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_ab020ddb9e894b9967593da9078093717}{PhysicalUnitPower}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_a57bab5cf167c779f681659ff531477ba}{PhysicalUnitPower}}\ \&other)\ :}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}}(other.\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}}\ ?\ other.\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}}-\/>clone()\ :\ nullptr),\ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_aa769ea2bff4f24ec94661bdf351d9e7f}{power}}(other.\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_aa769ea2bff4f24ec94661bdf351d9e7f}{power}})}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_a57bab5cf167c779f681659ff531477ba}{PhysicalUnitPower}}\ \&\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_ae24360508889ff529e700f5b1b419831}{operator=}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_a57bab5cf167c779f681659ff531477ba}{PhysicalUnitPower}}\ \&other)}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\textcolor{keyword}{this}\ !=\ \&other)}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}}\ \ =\ (other.\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}}\ ?\ other.\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_af3cec16f8b41747955b7091227f22441}{unit}}-\/>clone()\ :\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_aa769ea2bff4f24ec94661bdf351d9e7f}{power}}\ =\ other.\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power_aa769ea2bff4f24ec94661bdf351d9e7f}{power}};\ \ \textcolor{comment}{//\ Ensure\ power\ is\ copied}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ *\textcolor{keyword}{this};}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a101499470b20cbe0798b700095a6a21d}{DerivedPhysicalUnit}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit}{IPhysicalUnit}}}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a101499470b20cbe0798b700095a6a21d}{DerivedPhysicalUnit}}(std::vector<PhysicalUnitPower>\ baseUnits,}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&description);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a162878416e0d9cba40e685854fec83d9}{\string~DerivedPhysicalUnit}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a096a460e6f0df8ebcc2ca82c942a0afd}{getName}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_af649533340e2e3309bdf07490e9ca862}{getPluralName}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a80e994e60bb1109197277d719b090bd4}{getSymbol}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a21b09a3312bb89a8214ff6dd1a74b63d}{getDescription}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a8786c40dfd525d2f60fdd331fea0d2d0}{toString}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a8786c40dfd525d2f60fdd331fea0d2d0}{toString}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{DecimalPrefix::Name}}\ prefixName)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a8786c40dfd525d2f60fdd331fea0d2d0}{toString}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{DecimalPrefix::Symbol}}\ prefixSymbol)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<IPhysicalUnit>\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a6e11a6c646a9d0d7548a6f7e284653f8}{clone}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00152\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_unique<DerivedPhysicalUnit>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit_a44f5d35e049cc9ac8843c8ddc5cfc231}{\_symbol}};}
+\DoxyCodeLine{00159\ }
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_name;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_pluralName;\ \ }
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_description;\ }
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ buildBaseUnitName(\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power}{PhysicalUnitPower}}\ baseUnit)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ buildBaseUnitPluralName(\mbox{\hyperlink{struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power}{PhysicalUnitPower}}\ baseUnit)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
+\DoxyCodeLine{00170\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00171\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_SI\_DERIVED\_PHYSICAL\_UNIT\_H}}
+
+\end{DoxyCode}

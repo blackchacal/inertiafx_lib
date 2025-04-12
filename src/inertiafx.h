@@ -54,7 +54,12 @@ class InertiaFX
     static std::string getVersion();
 
     /**
-     * @brief Default constructor.
+     * @brief Default constructor for the InertiaFX class.
+     *
+     * @details Initializes the InertiaFX library. This constructor sets up any
+     * required internal state or resources needed for the library to function.
+     * It is typically used when creating an instance of the InertiaFX class
+     * to manage the library's core functionalities.
      */
     InertiaFX();
 

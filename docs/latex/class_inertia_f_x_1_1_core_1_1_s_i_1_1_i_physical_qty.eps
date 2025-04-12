@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 57.471264
+%%BoundingBox: 0 0 500 100.574715
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 8.700000 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 4.971428 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 4 def
+/rows 7 def
 /cols 6 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -179,10 +179,13 @@ boxfont setfont
 (InertiaFX::Core::SI::DerivedScalarQty) cw
 (InertiaFX::Core::SI::FundamentalQty) cw
 (InertiaFX::Core::SI::DerivedVectorQty) cw
+(InertiaFX::Core::SI::Density) cw
+(InertiaFX::Core::SI::Volume) cw
 (InertiaFX::Core::SI::Length) cw
 (InertiaFX::Core::SI::Mass) cw
 (InertiaFX::Core::SI::Time) cw
 (InertiaFX::Core::SI::Acceleration) cw
+(InertiaFX::Core::SI::Force) cw
 (InertiaFX::Core::SI::Position) cw
 (InertiaFX::Core::SI::Velocity) cw
 /boxwidth boxwidth marginwidth 2 mul add def
@@ -196,58 +199,71 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (InertiaFX::Core::SI::IPhysicalQty) 2.250000 3.000000 box
- (InertiaFX::Core::SI::IScalarQty) 0.500000 2.000000 box
- (InertiaFX::Core::SI::IVectorQty) 4.000000 2.000000 box
- (InertiaFX::Core::SI::DerivedScalarQty) 0.000000 1.000000 box
- (InertiaFX::Core::SI::FundamentalQty) 1.000000 1.000000 box
- (InertiaFX::Core::SI::DerivedVectorQty) 4.000000 1.000000 box
- (InertiaFX::Core::SI::Length) 0.000000 0.000000 box
- (InertiaFX::Core::SI::Mass) 1.000000 0.000000 box
- (InertiaFX::Core::SI::Time) 2.000000 0.000000 box
- (InertiaFX::Core::SI::Acceleration) 3.000000 0.000000 box
- (InertiaFX::Core::SI::Position) 4.000000 0.000000 box
+ (InertiaFX::Core::SI::IPhysicalQty) 2.500000 6.000000 box
+ (InertiaFX::Core::SI::IScalarQty) 1.000000 5.000000 box
+ (InertiaFX::Core::SI::IVectorQty) 4.000000 5.000000 box
+ (InertiaFX::Core::SI::DerivedScalarQty) 0.000000 4.000000 box
+ (InertiaFX::Core::SI::FundamentalQty) 2.000000 4.000000 box
+ (InertiaFX::Core::SI::DerivedVectorQty) 4.000000 4.000000 box
+ (InertiaFX::Core::SI::Density) 1.000000 3.000000 box
+ (InertiaFX::Core::SI::Volume) 1.000000 2.000000 box
+ (InertiaFX::Core::SI::Length) 3.000000 3.000000 box
+ (InertiaFX::Core::SI::Mass) 3.000000 2.000000 box
+ (InertiaFX::Core::SI::Time) 3.000000 1.000000 box
+ (InertiaFX::Core::SI::Acceleration) 5.000000 3.000000 box
+ (InertiaFX::Core::SI::Force) 5.000000 2.000000 box
+ (InertiaFX::Core::SI::Position) 5.000000 1.000000 box
  (InertiaFX::Core::SI::Velocity) 5.000000 0.000000 box
 
 % ----- relations -----
 
 dotted
-1 2.250000 2.250000 out
+1 2.500000 5.250000 out
 dotted
-0.500000 4.000000 3.000000 conn
+1.000000 4.000000 6.000000 conn
 dotted
-0 0.500000 2.750000 in
+0 1.000000 5.750000 in
 solid
-1 0.500000 1.250000 out
+1 1.000000 4.250000 out
 solid
-0.000000 1.000000 2.000000 conn
+0.000000 2.000000 5.000000 conn
 dotted
-0 4.000000 2.750000 in
+0 4.000000 5.750000 in
 solid
-1 4.000000 1.250000 out
+1 4.000000 4.250000 out
 solid
-0 0.000000 1.750000 in
+0 0.000000 4.750000 in
 solid
-0 1.000000 1.750000 in
+1 0.000000 3.250000 out
 solid
-1 1.000000 0.250000 out
+0 2.000000 4.750000 in
 solid
-0.000000 2.000000 1.000000 conn
+1 2.000000 3.250000 out
 solid
-0 4.000000 1.750000 in
+0 4.000000 4.750000 in
 solid
-1 4.000000 0.250000 out
+1 4.000000 3.250000 out
 solid
-3.000000 5.000000 1.000000 conn
+0 0.000000 3.500000 hedge
 solid
-0 0.000000 0.750000 in
+0 0.000000 2.500000 hedge
 solid
-0 1.000000 0.750000 in
+0.000000 4.000000 2.500000 vedge
 solid
-0 2.000000 0.750000 in
+0 2.000000 3.500000 hedge
 solid
-0 3.000000 0.750000 in
+0 2.000000 2.500000 hedge
 solid
-0 4.000000 0.750000 in
+0 2.000000 1.500000 hedge
 solid
-0 5.000000 0.750000 in
+2.000000 4.000000 1.500000 vedge
+solid
+0 4.000000 3.500000 hedge
+solid
+0 4.000000 2.500000 hedge
+solid
+0 4.000000 1.500000 hedge
+solid
+0 4.000000 0.500000 hedge
+solid
+4.000000 4.000000 0.500000 vedge

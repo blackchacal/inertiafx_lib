@@ -25,11 +25,16 @@
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela_a43524f5c3a1454bf136aa68930b2d35c}{Candela}}();}
 \DoxyCodeLine{00051\ }
 \DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela_ae41231a385fee98005a138204002aa32}{\string~Candela}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00057\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
-\DoxyCodeLine{00058\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
-\DoxyCodeLine{00059\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_SI\_CANDELA\_H}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<IPhysicalUnit>\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela_a829650fd4656f51a1130a97225907faa}{clone}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00061\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_unique<Candela>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00065\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
+\DoxyCodeLine{00066\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00067\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_SI\_CANDELA\_H}}
 
 \end{DoxyCode}

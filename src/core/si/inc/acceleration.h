@@ -61,8 +61,32 @@ namespace Core
             Acceleration(std::array<double, 3> value,
                          DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
-            Acceleration(const Acceleration &);             // Copy constructor
-            Acceleration &operator=(const Acceleration &);  // Copy assignment operator
+            /**
+             * @brief Copy constructor.
+             * @details Constructs a new Acceleration object from an existing one.
+             *
+             * @param other The other Acceleration object to copy from.
+             */
+            Acceleration(const Acceleration &other);
+
+            /**
+             * @brief Copy assignment operator.
+             * @details Constructs a new Acceleration object from an existing one.
+             *
+             * @param other The other Acceleration object to copy from.
+             * @return A reference to this object.
+             *
+             * @note This operator performs a deep copy of the object.
+             */
+            Acceleration &operator=(const Acceleration &other);
+
+            /**
+             * @brief Addition operator.
+             * @details Adds two Acceleration objects together.
+             *
+             * @param other The other Acceleration object to add.
+             * @return A new Acceleration object representing the sum.
+             */
             Acceleration operator+(const Acceleration &other) const;
         };
 

@@ -130,14 +130,22 @@ $(function(){initNavTree('candela_8h_source.html',''); initResizable(true); });
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <a class="code hl_function" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#a43524f5c3a1454bf136aa68930b2d35c">Candela</a>();</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#ae41231a385fee98005a138204002aa32">   55</a></span>            <a class="code hl_function" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#ae41231a385fee98005a138204002aa32">~Candela</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        };</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span></div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#a829650fd4656f51a1130a97225907faa">   60</a></span>            std::unique_ptr&lt;IPhysicalUnit&gt; <a class="code hl_function" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#a829650fd4656f51a1130a97225907faa">clone</a>()<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">            </span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>                <span class="keywordflow">return</span> std::make_unique&lt;Candela&gt;(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            };</div>
 </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }  <span class="comment">// namespace SI</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}  <span class="comment">// namespace Core</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}  <span class="comment">// namespace InertiaFX</span></div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif  </span><span class="comment">// INERTIAFX_CORE_SI_CANDELA_H</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        };</div>
+</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }  <span class="comment">// namespace SI</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}  <span class="comment">// namespace Core</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace InertiaFX</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif  </span><span class="comment">// INERTIAFX_CORE_SI_CANDELA_H</span></div>
 <div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_candela_html_a43524f5c3a1454bf136aa68930b2d35c"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#a43524f5c3a1454bf136aa68930b2d35c">InertiaFX::Core::SI::Candela::Candela</a></div><div class="ttdeci">Candela()</div><div class="ttdoc">Default constructor initializing Candela unit properties.</div><div class="ttdef"><b>Definition</b> candela.cpp:43</div></div>
+<div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_candela_html_a829650fd4656f51a1130a97225907faa"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#a829650fd4656f51a1130a97225907faa">InertiaFX::Core::SI::Candela::clone</a></div><div class="ttdeci">std::unique_ptr&lt; IPhysicalUnit &gt; clone() const override</div><div class="ttdoc">Add a clone() that creates a new IPhysicalUnit of the same dynamic type.</div><div class="ttdef"><b>Definition</b> candela.h:60</div></div>
 <div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_candela_html_ae41231a385fee98005a138204002aa32"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#ae41231a385fee98005a138204002aa32">InertiaFX::Core::SI::Candela::~Candela</a></div><div class="ttdeci">~Candela()=default</div><div class="ttdoc">Default destructor.</div></div>
 <div class="ttc" id="aclass_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_html_ad717cd07fb8b3553c1fdb254813ae6a5"><div class="ttname"><a href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#ad717cd07fb8b3553c1fdb254813ae6a5">InertiaFX::Core::SI::PhysicalUnit::PhysicalUnit</a></div><div class="ttdeci">PhysicalUnit(const std::string &amp;name, const std::string &amp;namePlural, const std::string &amp;symbol, const std::string &amp;description)</div><div class="ttdoc">Constructs a PhysicalUnit with given name, symbol, and description.</div><div class="ttdef"><b>Definition</b> physical_unit.cpp:34</div></div>
 <div class="ttc" id="aphysical__unit_8h_html"><div class="ttname"><a href="physical__unit_8h.html">physical_unit.h</a></div><div class="ttdoc">Declaration of the PhysicalUnit class.</div></div>

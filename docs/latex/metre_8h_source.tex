@@ -25,11 +25,16 @@
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre_a69288018d3501a583b59881cffe539d9}{Metre}}();}
 \DoxyCodeLine{00051\ }
 \DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre_a732020a8c6222134855d6f667cda7b27}{\string~Metre}}()\ =\ \textcolor{keywordflow}{default};}
-\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00057\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
-\DoxyCodeLine{00058\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
-\DoxyCodeLine{00059\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
-\DoxyCodeLine{00060\ }
-\DoxyCodeLine{00061\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_SI\_METRE\_H}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<IPhysicalUnit>\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre_a6f0a5c68e75cd7a66481cb7479a2aff5}{clone}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00061\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_unique<Metre>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00065\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ SI}}
+\DoxyCodeLine{00066\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00067\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_SI\_METRE\_H}}
 
 \end{DoxyCode}
