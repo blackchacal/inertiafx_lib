@@ -22,7 +22,7 @@ var searchData=
   ['_7emole_19',['~Mole',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_mole.html#a44902fb825ef40e7586eb9d2160c7268',1,'InertiaFX::Core::SI::Mole']]],
   ['_7enewton_20',['~Newton',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_newton.html#a1522ddc5af72a3f699d00582b95b69f3',1,'InertiaFX::Core::SI::Newton']]],
   ['_7ephysicalunit_21',['~PhysicalUnit',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#aaa2d92c7d36cf383256e157a67b5c6af',1,'InertiaFX::Core::SI::PhysicalUnit']]],
-  ['_7epointmass_22',['~PointMass',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a30ca184727ab19a7ec78f6bf717aa830',1,'InertiaFX::Core::Engine::PointMass']]],
+  ['_7epointmass_22',['~PointMass',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a85c0b60e9a46ce1a5e392c47ed2c79c8',1,'InertiaFX::Core::Engine::PointMass']]],
   ['_7esecond_23',['~Second',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html#ae55e4b2db5c9dde481d7242114dff4fc',1,'InertiaFX::Core::SI::Second']]],
   ['_7esolidbody_24',['~SolidBody',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body.html#aa6984d49fd0465a063a83f79fd24a7f7',1,'InertiaFX::Core::Engine::SolidBody']]]
 ];

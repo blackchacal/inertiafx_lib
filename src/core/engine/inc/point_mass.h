@@ -45,6 +45,11 @@ namespace Core
         {
           public:
             /**
+             * @brief The number of PointMass instances created.
+             */
+            static unsigned int nInstances;
+
+            /**
              * @brief Constructs a PointMass with mass.
              * @param mass The mass of the body.
              *
@@ -102,7 +107,7 @@ namespace Core
             /**
              * @brief Destructor.
              */
-            ~PointMass() = default;
+            ~PointMass();
         };
 
     }  // namespace Engine

@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"index.html":[],
 "inertiafx_8cpp.html":[1,0,0,0,0,0,0,1],
 "inertiafx_8h.html":[1,0,0,0,0,0,0,2],
 "inertiafx_8h_source.html":[1,0,0,0,0,0,0,2],

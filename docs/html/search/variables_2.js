@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['power_0',['power',['../struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power.html#aa769ea2bff4f24ec94661bdf351d9e7f',1,'InertiaFX::Core::SI::PhysicalUnitPower']]]
+  ['ninstances_0',['nInstances',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a130184b3f68483583da1710c1b97f7ea',1,'InertiaFX::Core::Engine::PointMass']]]
 ];

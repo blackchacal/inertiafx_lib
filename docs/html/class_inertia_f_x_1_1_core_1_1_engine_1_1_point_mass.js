@@ -5,5 +5,6 @@ var class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass =
     [ "PointMass", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#afdeeedea712e3df593dde2efd189f762", null ],
     [ "PointMass", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a7c9c3be648f42419a81ff5bd93fec96a", null ],
     [ "PointMass", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a60e017a9a151eb81de36a0c6a4706008", null ],
-    [ "~PointMass", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a30ca184727ab19a7ec78f6bf717aa830", null ]
+    [ "~PointMass", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a85c0b60e9a46ce1a5e392c47ed2c79c8", null ],
+    [ "nInstances", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a130184b3f68483583da1710c1b97f7ea", null ]
 ];

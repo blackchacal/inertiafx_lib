@@ -127,3 +127,46 @@ TEST_F(PointMassTest, FixEntity)
     pointMass.fixEntity();
     EXPECT_TRUE(pointMass.isFixed());
 }
+
+TEST_F(PointMassTest, InstanceCountSingle)
+{
+    EXPECT_EQ(PointMass::nInstances, 0);
+
+    {
+        PointMass pointMass(mass);
+        EXPECT_EQ(PointMass::nInstances, 1);
+    }
+
+    EXPECT_EQ(PointMass::nInstances, 0);
+}
+
+TEST_F(PointMassTest, InstanceCountMultiple)
+{
+    EXPECT_EQ(PointMass::nInstances, 0);
+
+    {
+        PointMass pointMass1(mass);
+        PointMass pointMass2(mass, position);
+        PointMass pointMass3(mass, position, velocity);
+        EXPECT_EQ(PointMass::nInstances, 3);
+    }
+
+    EXPECT_EQ(PointMass::nInstances, 0);
+}
+
+TEST_F(PointMassTest, InstanceCountWithDestruction)
+{
+    EXPECT_EQ(PointMass::nInstances, 0);
+
+    PointMass *pointMass1 = new PointMass(mass);
+    EXPECT_EQ(PointMass::nInstances, 1);
+
+    PointMass *pointMass2 = new PointMass(mass, position);
+    EXPECT_EQ(PointMass::nInstances, 2);
+
+    delete pointMass1;
+    EXPECT_EQ(PointMass::nInstances, 1);
+
+    delete pointMass2;
+    EXPECT_EQ(PointMass::nInstances, 0);
+}

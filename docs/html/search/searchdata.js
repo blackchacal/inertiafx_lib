@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "acdefiklmnpstv",
   2: "acdefiklmnpsv",
   3: "acdefgiklmnopstv~",
-  4: "_mpu",
+  4: "_mnpu",
   5: "lns"
 };
 
