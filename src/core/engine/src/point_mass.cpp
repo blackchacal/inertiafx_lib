@@ -35,33 +35,35 @@ namespace Core
     {
         unsigned int PointMass::nInstances = 0;
 
-        PointMass::PointMass(const Mass &mass) : Entity(mass, 0.0)
+        PointMass::PointMass(const Mass &mass) :
+            Entity(mass, Volume(0.0, DecimalPrefix::Name::base))
         {
             PointMass::nInstances++;
         }
 
         PointMass::PointMass(const Mass &mass, const Position &position) :
-            Entity(mass, 0.0, position)
+            Entity(mass, Volume(0.0, DecimalPrefix::Name::base), position)
         {
             PointMass::nInstances++;
         }
 
         PointMass::PointMass(const Mass &mass, const Position &position, const Velocity &velocity) :
-            Entity(mass, 0.0, position, velocity)
+            Entity(mass, Volume(0.0, DecimalPrefix::Name::base), position, velocity)
         {
             PointMass::nInstances++;
         }
 
         PointMass::PointMass(const Mass &mass, const Position &position, const Velocity &velocity,
                              const Acceleration &acceleration) :
-            Entity(mass, 0.0, position, velocity, acceleration)
+            Entity(mass, Volume(0.0, DecimalPrefix::Name::base), position, velocity, acceleration)
         {
             PointMass::nInstances++;
         }
 
         PointMass::PointMass(const Mass &mass, const Position &position, const Velocity &velocity,
                              const Acceleration &acceleration, const Force &netForce) :
-            Entity(mass, 0.0, position, velocity, acceleration, netForce)
+            Entity(mass, Volume(0.0, DecimalPrefix::Name::base), position, velocity, acceleration,
+                   netForce)
         {
             PointMass::nInstances++;
         }

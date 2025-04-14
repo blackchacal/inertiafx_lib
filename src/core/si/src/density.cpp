@@ -69,6 +69,23 @@ namespace Core
             this->_prefix = prefix;
         }
 
+        // Constructor
+        Density::Density(double value, DecimalPrefix::Symbol prefix) :
+            DerivedScalarQty("Density", "ρ", "Represents the derived SI Density quantity.",
+                             std::make_unique<DerivedPhysicalUnit>(
+                                 std::vector<PhysicalUnitPower>{
+                                     PhysicalUnitPower{std::make_unique<Kilogram>(), 1},
+                                     PhysicalUnitPower{std::make_unique<Metre>(), -3}},
+                                 "The kilogram per cubic metre, symbol kg m^-3, is an SI coherent "
+                                 "derived unit of density."))
+        {
+            // Store internally in base units
+            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
         Density::Density(const Density &other) :
             DerivedScalarQty("Density", "ρ", "Represents the derived SI Density quantity.",
                              std::make_unique<DerivedPhysicalUnit>(
@@ -104,7 +121,7 @@ namespace Core
 
         Density Density::operator+(const Density &other) const
         {
-            return Density(this->getValue() + other.getValue());
+            return Density(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
         }
     }  // namespace SI
 }  // namespace Core

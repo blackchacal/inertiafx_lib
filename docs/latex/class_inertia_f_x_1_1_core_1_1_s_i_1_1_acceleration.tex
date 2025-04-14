@@ -22,6 +22,8 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Acceleration\+:\begin{figur
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_ad7954a93437f05dfab69035f55887878}{Acceleration}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix=Decimal\+Prefix\+::\+Name\+::base)
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_ac063240f7818f8bb407784013963656a}{Acceleration}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix=Decimal\+Prefix\+::\+Symbol\+::base)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_aaf703782680f8ad8141ae6eade61bbbc}{Acceleration}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_a137fcb22c6dba1da32baccb60fc3b1a7}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&other)
@@ -102,7 +104,7 @@ Concrete derived quantity representing acceleration.
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_a68cec4bf7465b4def241ad9e1471c128}\index{InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}!Acceleration@{Acceleration}}
 \index{Acceleration@{Acceleration}!InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}}
-\doxysubsubsection{\texorpdfstring{Acceleration()}{Acceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{Acceleration()}{Acceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_a68cec4bf7465b4def241ad9e1471c128} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Acceleration\+::\+Acceleration (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
@@ -112,7 +114,7 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{
 
 The acceleration is initialized as (0.\+0, 0.\+0, 0.\+0) and is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_ad7954a93437f05dfab69035f55887878}\index{InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}!Acceleration@{Acceleration}}
 \index{Acceleration@{Acceleration}!InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}}
-\doxysubsubsection{\texorpdfstring{Acceleration()}{Acceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{Acceleration()}{Acceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_ad7954a93437f05dfab69035f55887878} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Acceleration\+::\+Acceleration (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Name\+:\+:base}}\end{DoxyParamCaption})}
 
@@ -127,9 +129,26 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{
 {\em prefix} & The decimal prefix name (e.\+g., "{}kilo"{}, "{}milli"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
 \hline
 \end{DoxyParams}
+Internally, the acceleration is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_ac063240f7818f8bb407784013963656a}\index{InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}!Acceleration@{Acceleration}}
+\index{Acceleration@{Acceleration}!InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}}
+\doxysubsubsection{\texorpdfstring{Acceleration()}{Acceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_ac063240f7818f8bb407784013963656a} 
+Inertia\+FX\+::\+Core\+::\+SI\+::\+Acceleration\+::\+Acceleration (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Symbol\+:\+:base}}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The numeric value of acceleration vector in the specified prefix. \\
+\hline
+{\em prefix} & The decimal prefix symbol (e.\+g., "{}k"{}, "{}m"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
+\hline
+\end{DoxyParams}
 Internally, the acceleration is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_aaf703782680f8ad8141ae6eade61bbbc}\index{InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}!Acceleration@{Acceleration}}
 \index{Acceleration@{Acceleration}!InertiaFX::Core::SI::Acceleration@{InertiaFX::Core::SI::Acceleration}}
-\doxysubsubsection{\texorpdfstring{Acceleration()}{Acceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{Acceleration()}{Acceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration_aaf703782680f8ad8141ae6eade61bbbc} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Acceleration\+::\+Acceleration (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&}]{other}{}\end{DoxyParamCaption})}
 

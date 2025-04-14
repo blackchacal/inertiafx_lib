@@ -12,6 +12,9 @@ var hierarchy =
         [ "InertiaFX::Core::Tools::FileLogger", "class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html", null ]
       ] ]
     ] ],
+    [ "InertiaFX::Core::Engine::IMaterial", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material.html", [
+      [ "InertiaFX::Core::Engine::Material", "class_inertia_f_x_1_1_core_1_1_engine_1_1_material.html", null ]
+    ] ],
     [ "InertiaFX", "class_inertia_f_x.html", null ],
     [ "InertiaFX::InertiaFX", "class_inertia_f_x_1_1_inertia_f_x.html", null ],
     [ "InertiaFX::Core::SI::IPhysicalQty", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html", [
@@ -23,6 +26,7 @@ var hierarchy =
         [ "InertiaFX::Core::SI::FundamentalQty", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html", [
           [ "InertiaFX::Core::SI::Length", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_length.html", null ],
           [ "InertiaFX::Core::SI::Mass", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html", null ],
+          [ "InertiaFX::Core::SI::Temperature", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature.html", null ],
           [ "InertiaFX::Core::SI::Time", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html", null ]
         ] ]
       ] ],
@@ -31,6 +35,7 @@ var hierarchy =
           [ "InertiaFX::Core::SI::Acceleration", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration.html", null ],
           [ "InertiaFX::Core::SI::Force", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_force.html", null ],
           [ "InertiaFX::Core::SI::Position", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html", null ],
+          [ "InertiaFX::Core::SI::Pressure", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure.html", null ],
           [ "InertiaFX::Core::SI::Velocity", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity.html", null ]
         ] ]
       ] ]
@@ -45,6 +50,7 @@ var hierarchy =
         [ "InertiaFX::Core::SI::Metre", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre.html", null ],
         [ "InertiaFX::Core::SI::Mole", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mole.html", null ],
         [ "InertiaFX::Core::SI::Newton", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_newton.html", null ],
+        [ "InertiaFX::Core::SI::Pascal", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_pascal.html", null ],
         [ "InertiaFX::Core::SI::Second", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html", null ]
       ] ]
     ] ],

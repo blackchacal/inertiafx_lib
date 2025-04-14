@@ -32,24 +32,32 @@ namespace Core
     namespace Engine
     {
         Entity::Entity() :
-            _mass(0.0),                                             // Assumed to default to zero
-            _volume(0.0),                                           // Assumed to default to zero
-            _position(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _velocity(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0})),  // Assumed to default to zero
-            _netForce(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _isFixed(false)  // Assumed to default to not fixed
+            _mass(0.0, DecimalPrefix::Name::base),    // Assumed to default to zero
+            _volume(0.0, DecimalPrefix::Name::base),  // Assumed to default to zero
+            _position(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _velocity(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+            _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _isFixed(false)                        // Assumed to default to not fixed
         {
         }
 
         Entity::Entity(const Mass &mass, const Volume &volume) :
             _mass(mass),      // Initialize mass with provided value
             _volume(volume),  // Initialize volume with provided value
-            _position(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _velocity(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0})),  // Assumed to default to zero
-            _netForce(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _isFixed(false)  // Assumed to default to not fixed
+            _position(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _velocity(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+            _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _isFixed(false)                        // Assumed to default to not fixed
         {
         }
 
@@ -57,10 +65,13 @@ namespace Core
             _mass(mass),          // Initialize mass with provided value
             _volume(volume),      // Initialize volume with provided value
             _position(position),  // Initialize position with provided value
-            _velocity(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0})),  // Assumed to default to zero
-            _netForce(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _isFixed(false)  // Assumed to default to not fixed
+            _velocity(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+            _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _isFixed(false)                        // Assumed to default to not fixed
         {
         }
 
@@ -70,9 +81,11 @@ namespace Core
             _volume(volume),      // Initialize volume with provided value
             _position(position),  // Initialize position with provided value
             _velocity(velocity),  // Initialize velocity with provided value
-            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0})),  // Assumed to default to zero
-            _netForce(std::array<double, 3>({0.0, 0.0, 0.0})),      // Assumed to default to zero
-            _isFixed(false)  // Assumed to default to not fixed
+            _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+            _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _isFixed(false)                        // Assumed to default to not fixed
         {
         }
 
@@ -83,8 +96,9 @@ namespace Core
             _position(position),          // Initialize position with provided value
             _velocity(velocity),          // Initialize velocity with provided value
             _acceleration(acceleration),  // Initialize acceleration with provided value
-            _netForce(std::array<double, 3>({0.0, 0.0, 0.0})),  // Assumed to default to zero
-            _isFixed(false)                                     // Assumed to default to not fixed
+            _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                      DecimalPrefix::Name::base),  // Assumed to default to zero
+            _isFixed(false)                        // Assumed to default to not fixed
         {
         }
 
@@ -170,7 +184,7 @@ namespace Core
 
         void Entity::addForce(const std::array<double, 3> force)
         {
-            _netForce = _netForce + Force(force);
+            _netForce = _netForce + Force(force, DecimalPrefix::Name::base);
         }
 
         const Mass &Entity::getMass() const

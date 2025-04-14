@@ -57,6 +57,18 @@ namespace Core
             this->_prefix = prefix;
         }
 
+        // Constructor
+        Mass::Mass(double value, DecimalPrefix::Symbol prefix) :
+            FundamentalQty("Mass", "m", "Represents the fundamental SI Mass quantity.",
+                           std::make_unique<Kilogram>())
+        {
+            // Store internally in base units
+            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
         Mass::Mass(const Mass &other) :
             FundamentalQty("Mass", "m", "Represents the fundamental SI Mass quantity.",
                            std::make_unique<Kilogram>())
@@ -87,7 +99,7 @@ namespace Core
 
         Mass Mass::operator+(const Mass &other) const
         {
-            return Mass(this->getValue() + other.getValue());
+            return Mass(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
         }
     }  // namespace SI
 }  // namespace Core

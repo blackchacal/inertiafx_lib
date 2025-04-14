@@ -57,6 +57,18 @@ namespace Core
             this->_prefix = prefix;
         }
 
+        // Constructor
+        Time::Time(double value, DecimalPrefix::Symbol prefix) :
+            FundamentalQty("Time", "t", "Represents the fundamental SI Time quantity.",
+                           std::make_unique<Second>())
+        {
+            // Store internally in base units
+            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
         Time::Time(const Time &other) :
             FundamentalQty("Time", "t", "Represents the fundamental SI Time quantity.",
                            std::make_unique<Second>())
@@ -87,7 +99,7 @@ namespace Core
 
         Time Time::operator+(const Time &other) const
         {
-            return Time(this->getValue() + other.getValue());
+            return Time(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
         }
     }  // namespace SI
 }  // namespace Core

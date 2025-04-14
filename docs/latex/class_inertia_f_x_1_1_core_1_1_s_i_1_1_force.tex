@@ -22,6 +22,8 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Force\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_ab6eae034fe5a420d7c5cb13ff984b541}{Force}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix=Decimal\+Prefix\+::\+Name\+::base)
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_a2d3419ffc2d73e2ee9d58eaee2464268}{Force}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix=Decimal\+Prefix\+::\+Symbol\+::base)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_af85a9e604da7d4b035c9fc3957e018d0}{Force}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_a6b3d11733d8c7105c6cf8c446f1f6743}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&other)
@@ -102,7 +104,7 @@ Concrete derived quantity representing force.
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_aa46e9274e5e8b693f68940bcd8350767}\index{InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}!Force@{Force}}
 \index{Force@{Force}!InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}}
-\doxysubsubsection{\texorpdfstring{Force()}{Force()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{Force()}{Force()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_aa46e9274e5e8b693f68940bcd8350767} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Force\+::\+Force (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
@@ -112,7 +114,7 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} 
 
 The force is initialized as (0.\+0, 0.\+0, 0.\+0) and stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_ab6eae034fe5a420d7c5cb13ff984b541}\index{InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}!Force@{Force}}
 \index{Force@{Force}!InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}}
-\doxysubsubsection{\texorpdfstring{Force()}{Force()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{Force()}{Force()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_ab6eae034fe5a420d7c5cb13ff984b541} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Force\+::\+Force (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Name\+:\+:base}}\end{DoxyParamCaption})}
 
@@ -127,9 +129,26 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} 
 {\em prefix} & The decimal prefix name (e.\+g., "{}kilo"{}, "{}milli"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
 \hline
 \end{DoxyParams}
+Internally, the force is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_a2d3419ffc2d73e2ee9d58eaee2464268}\index{InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}!Force@{Force}}
+\index{Force@{Force}!InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}}
+\doxysubsubsection{\texorpdfstring{Force()}{Force()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_a2d3419ffc2d73e2ee9d58eaee2464268} 
+Inertia\+FX\+::\+Core\+::\+SI\+::\+Force\+::\+Force (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Symbol\+:\+:base}}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The numeric value of force vector in the specified prefix. \\
+\hline
+{\em prefix} & The decimal prefix symbol (e.\+g., "{}k"{}, "{}m"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
+\hline
+\end{DoxyParams}
 Internally, the force is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_af85a9e604da7d4b035c9fc3957e018d0}\index{InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}!Force@{Force}}
 \index{Force@{Force}!InertiaFX::Core::SI::Force@{InertiaFX::Core::SI::Force}}
-\doxysubsubsection{\texorpdfstring{Force()}{Force()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{Force()}{Force()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force_af85a9e604da7d4b035c9fc3957e018d0} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Force\+::\+Force (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{other}{}\end{DoxyParamCaption})}
 

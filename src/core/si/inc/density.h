@@ -59,6 +59,16 @@ namespace Core
             Density(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
             /**
+             * @brief Constructs a new Density object.
+             * @param value The numeric value of density in the specified prefix.
+             * @param prefix The decimal prefix symbol (e.g., "k", "m") in which 'value' is
+             * expressed. It defaults to base which is 10^0.
+             *
+             * Internally, the density is stored in base prefix value.
+             */
+            Density(double value, DecimalPrefix::Symbol prefix = DecimalPrefix::Symbol::base);
+
+            /**
              * @brief Copy constructor.
              * @details Constructs a new Density object from an existing one.
              *

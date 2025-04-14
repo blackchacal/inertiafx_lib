@@ -57,6 +57,18 @@ namespace Core
             this->_prefix = prefix;
         }
 
+        // Constructor
+        Length::Length(double value, DecimalPrefix::Symbol prefix) :
+            FundamentalQty("Length", "l", "Represents the fundamental SI Length quantity.",
+                           std::make_unique<Metre>())
+        {
+            // Store internally in base units
+            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
         Length::Length(const Length &other) :
             FundamentalQty("Length", "l", "Represents the fundamental SI Length quantity.",
                            std::make_unique<Metre>())
@@ -87,7 +99,7 @@ namespace Core
 
         Length Length::operator+(const Length &other) const
         {
-            return Length(this->getValue() + other.getValue());
+            return Length(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
         }
     }  // namespace SI
 }  // namespace Core

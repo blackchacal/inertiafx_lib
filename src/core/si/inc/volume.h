@@ -60,6 +60,17 @@ namespace Core
             Volume(double value, DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
             /**
+             * @brief Constructs a new Volume object.
+             * @param value The numeric value of volume in the specified prefix.
+             * @param prefix The decimal prefix symbol (e.g., "k", "m") in which 'value' is
+             * expressed. It defaults to base which is 10^0.
+             *
+             * Internally, the volume is stored in base prefix value.
+             */
+
+            Volume(double value, DecimalPrefix::Symbol prefix = DecimalPrefix::Symbol::base);
+
+            /**
              * @brief Copy constructor.
              * @details Constructs a new Volume object from an existing one.
              *

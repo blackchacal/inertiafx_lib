@@ -74,6 +74,25 @@ namespace Core
             this->_prefix = prefix;
         }
 
+        // Constructor
+        Velocity::Velocity(std::array<double, 3> value, DecimalPrefix::Symbol prefix) :
+            DerivedVectorQty("Velocity", "v", "Represents the derived SI Velocity quantity.",
+                             std::make_unique<DerivedPhysicalUnit>(
+                                 std::vector<PhysicalUnitPower>{
+                                     PhysicalUnitPower{std::make_unique<Metre>(), 1},
+                                     PhysicalUnitPower{std::make_unique<Second>(), -1}},
+                                 "The metre per second, symbol m s^-1, is an SI coherent derived "
+                                 "unit of velocity/speed."))
+        {
+            // Store internally in base units
+            this->_value[0] = value[0] * DecimalPrefix::getMultiplier(prefix);
+            this->_value[1] = value[1] * DecimalPrefix::getMultiplier(prefix);
+            this->_value[2] = value[2] * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
         Velocity::Velocity(const Velocity &other) :
             DerivedVectorQty("Velocity", "v", "Represents the derived SI Velocity quantity.",
                              std::make_unique<DerivedPhysicalUnit>(
@@ -113,7 +132,7 @@ namespace Core
             newValue[0]                    = this->getValue()[0] + other.getValue()[0];
             newValue[1]                    = this->getValue()[1] + other.getValue()[1];
             newValue[2]                    = this->getValue()[2] + other.getValue()[2];
-            return Velocity(newValue);
+            return Velocity(newValue, DecimalPrefix::Name::base);
         }
     }  // namespace SI
 }  // namespace Core

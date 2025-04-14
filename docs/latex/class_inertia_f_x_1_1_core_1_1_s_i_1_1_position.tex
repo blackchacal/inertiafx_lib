@@ -23,6 +23,8 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Position\+:\begin{figure}[H
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. The position is initialized to (0.\+0, 0.\+0, 0.\+0) and stored in base prefix value. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_ae638a2f61360f5d781faf38b5cedb115}{Position}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix=Decimal\+Prefix\+::\+Name\+::base)
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3e6d13f0db3f6cc18bd8df32d3fbaa98}{Position}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix=Decimal\+Prefix\+::\+Symbol\+::base)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3a07cf5463a74375ee4c86f8b0bec432}{Position}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3d13a5f595fb40b5ba3f75401bfb2067}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other)
@@ -103,7 +105,7 @@ Concrete derived quantity representing position in space.
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_ae638a2f61360f5d781faf38b5cedb115}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!Position@{Position}}
 \index{Position@{Position}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
-\doxysubsubsection{\texorpdfstring{Position()}{Position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_ae638a2f61360f5d781faf38b5cedb115} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::\+Position (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Name\+:\+:base}}\end{DoxyParamCaption})}
 
@@ -118,9 +120,26 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Posi
 {\em prefix} & The decimal prefix name (e.\+g., "{}kilo"{}, "{}milli"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
 \hline
 \end{DoxyParams}
+Internally, the position is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3e6d13f0db3f6cc18bd8df32d3fbaa98}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!Position@{Position}}
+\index{Position@{Position}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3e6d13f0db3f6cc18bd8df32d3fbaa98} 
+Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::\+Position (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Symbol\+:\+:base}}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The numeric value of position vector in the specified prefix. \\
+\hline
+{\em prefix} & The decimal prefix symbol (e.\+g., "{}k"{}, "{}m"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
+\hline
+\end{DoxyParams}
 Internally, the position is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3a07cf5463a74375ee4c86f8b0bec432}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!Position@{Position}}
 \index{Position@{Position}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
-\doxysubsubsection{\texorpdfstring{Position()}{Position()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\doxysubsubsection{\texorpdfstring{Position()}{Position()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3a07cf5463a74375ee4c86f8b0bec432} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{other}{}\end{DoxyParamCaption})}
 

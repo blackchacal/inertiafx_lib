@@ -22,6 +22,8 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Velocity\+:\begin{figure}[H
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a9a0f335443dc7b008e9bd2944c2a5bb4}{Velocity}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix=Decimal\+Prefix\+::\+Name\+::base)
 \begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a9a40ed88453dcacf9d4b7d2767ac32b7}{Velocity}} (std\+::array$<$ double, 3 $>$ value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix=Decimal\+Prefix\+::\+Symbol\+::base)
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a4054c827073fcaa03b858e79588487c6}{Velocity}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a055f58871b37f4930b819044bed1bc6c}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&other)
@@ -102,7 +104,7 @@ Concrete derived quantity representing velocity.
 \doxysubsection{Constructor \& Destructor Documentation}
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a417037ba6f152789afb13d834e467530}\index{InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}!Velocity@{Velocity}}
 \index{Velocity@{Velocity}!InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}}
-\doxysubsubsection{\texorpdfstring{Velocity()}{Velocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+\doxysubsubsection{\texorpdfstring{Velocity()}{Velocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a417037ba6f152789afb13d834e467530} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Velocity\+::\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
@@ -112,7 +114,7 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velo
 
 The velocity is initialized to (0.\+0, 0.\+0, 0.\+0) and is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a9a0f335443dc7b008e9bd2944c2a5bb4}\index{InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}!Velocity@{Velocity}}
 \index{Velocity@{Velocity}!InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}}
-\doxysubsubsection{\texorpdfstring{Velocity()}{Velocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+\doxysubsubsection{\texorpdfstring{Velocity()}{Velocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a9a0f335443dc7b008e9bd2944c2a5bb4} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Velocity\+::\+Velocity (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Name\+:\+:base}}\end{DoxyParamCaption})}
 
@@ -127,9 +129,26 @@ Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velo
 {\em prefix} & The decimal prefix name (e.\+g., "{}kilo"{}, "{}milli"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
 \hline
 \end{DoxyParams}
+Internally, the velocity is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a9a40ed88453dcacf9d4b7d2767ac32b7}\index{InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}!Velocity@{Velocity}}
+\index{Velocity@{Velocity}!InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}}
+\doxysubsubsection{\texorpdfstring{Velocity()}{Velocity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a9a40ed88453dcacf9d4b7d2767ac32b7} 
+Inertia\+FX\+::\+Core\+::\+SI\+::\+Velocity\+::\+Velocity (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{ = {\ttfamily DecimalPrefix\+:\+:Symbol\+:\+:base}}\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & The numeric value of velocity vector in the specified prefix. \\
+\hline
+{\em prefix} & The decimal prefix symbol (e.\+g., "{}k"{}, "{}m"{}) in which \textquotesingle{}value\textquotesingle{} is expressed. It defaults to base which is 10\texorpdfstring{$^\wedge$}{\string^}0.\\
+\hline
+\end{DoxyParams}
 Internally, the velocity is stored in base prefix value. \Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a4054c827073fcaa03b858e79588487c6}\index{InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}!Velocity@{Velocity}}
 \index{Velocity@{Velocity}!InertiaFX::Core::SI::Velocity@{InertiaFX::Core::SI::Velocity}}
-\doxysubsubsection{\texorpdfstring{Velocity()}{Velocity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+\doxysubsubsection{\texorpdfstring{Velocity()}{Velocity()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity_a4054c827073fcaa03b858e79588487c6} 
 Inertia\+FX\+::\+Core\+::\+SI\+::\+Velocity\+::\+Velocity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{other}{}\end{DoxyParamCaption})}
 

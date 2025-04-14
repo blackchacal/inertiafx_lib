@@ -60,6 +60,17 @@ namespace Core
                      DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
             /**
+             * @brief Constructs a new Position object.
+             * @param value The numeric value of position vector in the specified prefix.
+             * @param prefix The decimal prefix symbol (e.g., "k", "m") in which 'value' is
+             * expressed. It defaults to base which is 10^0.
+             *
+             * Internally, the position is stored in base prefix value.
+             */
+            Position(std::array<double, 3> value,
+                     DecimalPrefix::Symbol prefix = DecimalPrefix::Symbol::base);
+
+            /**
              * @brief Copy constructor.
              * @details Constructs a new Position object from an existing one.
              *

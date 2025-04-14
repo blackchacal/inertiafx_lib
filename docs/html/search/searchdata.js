@@ -2,7 +2,7 @@ var indexSectionsWithContent =
 {
   0: "_acdefgiklmnopstuv~",
   1: "acdefiklmnpstv",
-  2: "acdefiklmnpsv",
+  2: "acdefiklmnpstv",
   3: "acdefgiklmnopstv~",
   4: "_mnpu",
   5: "lns"

@@ -16,10 +16,10 @@ class PointMassTest : public ::testing::Test
   protected:
     void SetUp() override
     {
-        mass         = Mass(10.0);  // 10 kg
-        position     = Position({1.0, 2.0, 3.0});
-        velocity     = Velocity({0.5, 0.5, 0.5});
-        acceleration = Acceleration({0.1, 0.2, 0.3});
+        mass         = Mass(10.0, DecimalPrefix::Name::base);  // 10 kg
+        position     = Position({1.0, 2.0, 3.0}, DecimalPrefix::Name::base);
+        velocity     = Velocity({0.5, 0.5, 0.5}, DecimalPrefix::Name::base);
+        acceleration = Acceleration({0.1, 0.2, 0.3}, DecimalPrefix::Name::base);
         force        = Force({5.0, 5.0, 5.0}, DecimalPrefix::Name::base);
     }
 

@@ -64,6 +64,21 @@ namespace Core
             this->_prefix = prefix;
         }
 
+        // Constructor
+        Volume::Volume(double value, DecimalPrefix::Symbol prefix) :
+            DerivedScalarQty(
+                "Volume", "V", "Represents the derived SI Volume quantity.",
+                std::make_unique<DerivedPhysicalUnit>(
+                    std::vector<PhysicalUnitPower>{PhysicalUnitPower{std::make_unique<Metre>(), 3}},
+                    "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
+        {
+            // Store internally in base units
+            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
         Volume::Volume(const Volume &other) :
             DerivedScalarQty(
                 "Volume", "V", "Represents the derived SI Volume quantity.",
@@ -97,7 +112,7 @@ namespace Core
 
         Volume Volume::operator+(const Volume &other) const
         {
-            return Volume(this->getValue() + other.getValue());
+            return Volume(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
         }
     }  // namespace SI
 }  // namespace Core

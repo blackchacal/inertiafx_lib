@@ -5,6 +5,8 @@ var annotated_dup =
         [ "Engine", null, [
           [ "Entity", "class_inertia_f_x_1_1_core_1_1_engine_1_1_entity.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_entity" ],
           [ "IEntity", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity" ],
+          [ "IMaterial", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material" ],
+          [ "Material", "class_inertia_f_x_1_1_core_1_1_engine_1_1_material.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_material" ],
           [ "PointMass", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass" ],
           [ "SolidBody", "class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body" ]
         ] ],
@@ -30,10 +32,13 @@ var annotated_dup =
           [ "Metre", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre" ],
           [ "Mole", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mole.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mole" ],
           [ "Newton", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_newton.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_newton" ],
+          [ "Pascal", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_pascal.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_pascal" ],
           [ "PhysicalUnit", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit" ],
           [ "PhysicalUnitPower", "struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power.html", "struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power" ],
           [ "Position", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_position" ],
+          [ "Pressure", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure" ],
           [ "Second", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_second" ],
+          [ "Temperature", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature" ],
           [ "Time", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_time.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_time" ],
           [ "Velocity", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity" ],
           [ "Volume", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume" ]

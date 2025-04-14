@@ -5,7 +5,7 @@
 %%For: 
 %Magnification: 1.00
 %%Orientation: Portrait
-%%BoundingBox: 0 0 500 274.348419
+%%BoundingBox: 0 0 500 301.783264
 %%Pages: 0
 %%BeginSetup
 %%EndSetup
@@ -19,12 +19,12 @@
 /marginwidth 10 def
 /distx 20 def
 /disty 40 def
-/boundaspect 1.822500 def  % aspect ratio of the BoundingBox (width/height)
+/boundaspect 1.656818 def  % aspect ratio of the BoundingBox (width/height)
 /boundx 500 def
 /boundy boundx boundaspect div def
 /xspacing 0 def
 /yspacing 0 def
-/rows 10 def
+/rows 11 def
 /cols 3 def
 /scalefactor 0 def
 /boxfont /Times-Roman findfont fontheight scalefont def
@@ -183,6 +183,7 @@ boxfont setfont
 (InertiaFX::Core::SI::Metre) cw
 (InertiaFX::Core::SI::Mole) cw
 (InertiaFX::Core::SI::Newton) cw
+(InertiaFX::Core::SI::Pascal) cw
 (InertiaFX::Core::SI::Second) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
@@ -195,30 +196,33 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (InertiaFX::Core::SI::IPhysicalUnit) 0.500000 9.000000 box
- (InertiaFX::Core::SI::DerivedPhysicalUnit) 0.000000 8.000000 box
- (InertiaFX::Core::SI::PhysicalUnit) 1.000000 8.000000 box
- (InertiaFX::Core::SI::Ampere) 2.000000 7.000000 box
- (InertiaFX::Core::SI::Candela) 2.000000 6.000000 box
- (InertiaFX::Core::SI::Kelvin) 2.000000 5.000000 box
- (InertiaFX::Core::SI::Kilogram) 2.000000 4.000000 box
- (InertiaFX::Core::SI::Metre) 2.000000 3.000000 box
- (InertiaFX::Core::SI::Mole) 2.000000 2.000000 box
- (InertiaFX::Core::SI::Newton) 2.000000 1.000000 box
+ (InertiaFX::Core::SI::IPhysicalUnit) 0.500000 10.000000 box
+ (InertiaFX::Core::SI::DerivedPhysicalUnit) 0.000000 9.000000 box
+ (InertiaFX::Core::SI::PhysicalUnit) 1.000000 9.000000 box
+ (InertiaFX::Core::SI::Ampere) 2.000000 8.000000 box
+ (InertiaFX::Core::SI::Candela) 2.000000 7.000000 box
+ (InertiaFX::Core::SI::Kelvin) 2.000000 6.000000 box
+ (InertiaFX::Core::SI::Kilogram) 2.000000 5.000000 box
+ (InertiaFX::Core::SI::Metre) 2.000000 4.000000 box
+ (InertiaFX::Core::SI::Mole) 2.000000 3.000000 box
+ (InertiaFX::Core::SI::Newton) 2.000000 2.000000 box
+ (InertiaFX::Core::SI::Pascal) 2.000000 1.000000 box
  (InertiaFX::Core::SI::Second) 2.000000 0.000000 box
 
 % ----- relations -----
 
 solid
-1 0.500000 8.250000 out
+1 0.500000 9.250000 out
 solid
-0.000000 1.000000 9.000000 conn
+0.000000 1.000000 10.000000 conn
 solid
-0 0.000000 8.750000 in
+0 0.000000 9.750000 in
 solid
-0 1.000000 8.750000 in
+0 1.000000 9.750000 in
 solid
-1 1.000000 7.250000 out
+1 1.000000 8.250000 out
+solid
+0 1.000000 8.500000 hedge
 solid
 0 1.000000 7.500000 hedge
 solid
@@ -236,4 +240,4 @@ solid
 solid
 0 1.000000 0.500000 hedge
 solid
-1.000000 8.000000 0.500000 vedge
+1.000000 9.000000 0.500000 vedge

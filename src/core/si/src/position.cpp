@@ -62,6 +62,20 @@ namespace Core
             this->_prefix = prefix;
         }
 
+        // Constructor
+        Position::Position(std::array<double, 3> value, DecimalPrefix::Symbol prefix) :
+            DerivedVectorQty("Position", "r", "Represents the derived SI Position quantity.",
+                             std::make_unique<Metre>())
+        {
+            // Store internally in base units
+            this->_value[0] = value[0] * DecimalPrefix::getMultiplier(prefix);
+            this->_value[1] = value[1] * DecimalPrefix::getMultiplier(prefix);
+            this->_value[2] = value[2] * DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
         Position::Position(const Position &other) :
             DerivedVectorQty("Position", "r", "Represents the derived SI Position quantity.",
                              std::make_unique<Metre>())
@@ -96,7 +110,7 @@ namespace Core
             newValue[0]                    = this->getValue()[0] + other.getValue()[0];
             newValue[1]                    = this->getValue()[1] + other.getValue()[1];
             newValue[2]                    = this->getValue()[2] + other.getValue()[2];
-            return Position(newValue);
+            return Position(newValue, DecimalPrefix::Name::base);
         }
     }  // namespace SI
 }  // namespace Core

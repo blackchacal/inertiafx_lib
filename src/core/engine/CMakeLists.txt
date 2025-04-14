@@ -5,6 +5,7 @@ add_library(Engine STATIC)
 target_sources(Engine PRIVATE
     src/entity.cpp
     src/point_mass.cpp
+    src/material.cpp
     # src/solid_body.cpp
 )
 

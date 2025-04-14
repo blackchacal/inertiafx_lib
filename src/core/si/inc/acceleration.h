@@ -62,6 +62,17 @@ namespace Core
                          DecimalPrefix::Name prefix = DecimalPrefix::Name::base);
 
             /**
+             * @brief Constructs a new Acceleration object.
+             * @param value The numeric value of acceleration vector in the specified prefix.
+             * @param prefix The decimal prefix symbol (e.g., "k", "m") in which 'value' is
+             * expressed. It defaults to base which is 10^0.
+             *
+             * Internally, the acceleration is stored in base prefix value.
+             */
+            Acceleration(std::array<double, 3> value,
+                         DecimalPrefix::Symbol prefix = DecimalPrefix::Symbol::base);
+
+            /**
              * @brief Copy constructor.
              * @details Constructs a new Acceleration object from an existing one.
              *

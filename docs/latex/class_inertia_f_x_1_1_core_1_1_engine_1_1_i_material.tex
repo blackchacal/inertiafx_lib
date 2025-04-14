@@ -1,0 +1,466 @@
+\doxysection{Inertia\+FX\+::Core\+::Engine\+::IMaterial Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+
+
+Interface representing a physical material (liquid, gas, solid) for use in physics simulation.  
+
+
+
+
+{\ttfamily \#include $<$imaterial.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::Engine\+::IMaterial\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ad077261e36884c5697fd673e8c8ddc33}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ad077261e36884c5697fd673e8c8ddc33} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IMaterial} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for interface cleanup. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_afb0084792c61037d9730023f62a7f452}{get\+Volume}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s volume. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab873434bde39bd4b77bfe12a00744b1b}{set\+Volume}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} volume)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s volume using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a7a1bcaaf05d85fb7ee16aa3d3dae6dab}{set\+Volume}} (double volume, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s volume by numeric value and prefix name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a87f7af07908a97e0773a35896250b583}{set\+Volume}} (double volume, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s volume by numeric value and prefix symbol. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a266ea388cbf29794cc98968de6ee070e}{get\+Mass}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s mass. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4b7aaa208f5a3bf37ddedd8baf39712b}{set\+Mass}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} mass)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s mass using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ac38b320bb5c30f10fbe12d1315fb22bd}{set\+Mass}} (double mass, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s mass by numeric value and prefix name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_adc29dc711b27383dbaaf7bbf8dbd0167}{set\+Mass}} (double mass, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s mass by numeric value and prefix symbol. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4e32ec40ef0bfccb91bdccc603693291}{get\+Density}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s density. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4c754282c92e037f8391d5b77df2fe75}{set\+Density}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} density)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s density using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab1455f6bb66ccf4784552c88255060e7}{set\+Density}} (double density, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s density by numeric value and prefix name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a9663675f0666326213207efdead23ca4}{set\+Density}} (double density, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s density by numeric value and prefix symbol. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab04edb9a84610fe19bc641aae50cd351}{get\+Temperature}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s temperature. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a3727c6434609662bcc4d2a5d0aaeabd0}{set\+Temperature}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} temperature)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s temperature using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a0931c858c3ed931b028d0608f4e106da}{set\+Temperature}} (double temperature, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s temperature by numeric value and prefix name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a18c3ac05c2d5d11f7e6b120005dbd720}{set\+Temperature}} (double temperature, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s temperature by numeric value and prefix symbol. \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a0733f2c20ccf3ed750d9804cda98ac7a}{get\+Pressure}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s pressure. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_af1bcef6da99ff481a84e57ec22f72b7e}{set\+Pressure}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} pressure)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s pressure using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ac60d40ec3a775813a66c0bf4a53f0592}{set\+Pressure}} (std\+::array$<$ double, 3 $>$ pressure, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s pressure from an array of numeric values and a prefix name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a8b3533fdd7a809f33cb1ad6da16bc34c}{set\+Pressure}} (std\+::array$<$ double, 3 $>$ pressure, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)=0
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s pressure from an array of numeric values and a prefix symbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface representing a physical material (liquid, gas, solid) for use in physics simulation. 
+
+This interface provides methods to manage fundamental physical properties of materials, such as volume, mass, density, temperature, and pressure. These methods use unit-\/aware types as well as overloads that accept scalar values combined with a specified decimal prefix. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4e32ec40ef0bfccb91bdccc603693291}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!getDensity@{getDensity}}
+\index{getDensity@{getDensity}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{getDensity()}{getDensity()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4e32ec40ef0bfccb91bdccc603693291} 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::get\+Density (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the material\textquotesingle{}s density. 
+
+\begin{DoxyReturn}{Returns}
+The current density of the material. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a83b91c932fd9c71493f66ec64a6c28f5}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a266ea388cbf29794cc98968de6ee070e}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!getMass@{getMass}}
+\index{getMass@{getMass}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{getMass()}{getMass()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a266ea388cbf29794cc98968de6ee070e} 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::get\+Mass (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the material\textquotesingle{}s mass. 
+
+\begin{DoxyReturn}{Returns}
+The current mass of the material. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_aeac4587b276e2cf971c6746cdfadbfbd}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a0733f2c20ccf3ed750d9804cda98ac7a}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!getPressure@{getPressure}}
+\index{getPressure@{getPressure}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{getPressure()}{getPressure()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a0733f2c20ccf3ed750d9804cda98ac7a} 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::get\+Pressure (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the material\textquotesingle{}s pressure. 
+
+\begin{DoxyReturn}{Returns}
+The current pressure of the material. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a896201b67c0ab66db88e6df2355321ce}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab04edb9a84610fe19bc641aae50cd351}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!getTemperature@{getTemperature}}
+\index{getTemperature@{getTemperature}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{getTemperature()}{getTemperature()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab04edb9a84610fe19bc641aae50cd351} 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::get\+Temperature (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the material\textquotesingle{}s temperature. 
+
+\begin{DoxyReturn}{Returns}
+The current temperature of the material. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a70688a9bcfdce1fbda21ee7093c0c74b}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_afb0084792c61037d9730023f62a7f452}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_afb0084792c61037d9730023f62a7f452} 
+virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::get\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the material\textquotesingle{}s volume. 
+
+\begin{DoxyReturn}{Returns}
+The current volume of the material. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a9a1e43725b529b2d8cb29336118a17cf}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4c754282c92e037f8391d5b77df2fe75}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setDensity@{setDensity}}
+\index{setDensity@{setDensity}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setDensity()}{setDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4c754282c92e037f8391d5b77df2fe75} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Density (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}}}]{density}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s density using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em density} & The \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density} object representing the new density. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a0b05640d9e8ab85b2abe40e01802b705}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab1455f6bb66ccf4784552c88255060e7}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setDensity@{setDensity}}
+\index{setDensity@{setDensity}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setDensity()}{setDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab1455f6bb66ccf4784552c88255060e7} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Density (\begin{DoxyParamCaption}\item[{double}]{density}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s density by numeric value and prefix name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em density} & Numeric value for density. \\
+\hline
+{\em prefix} & A named decimal prefix (e.\+g., Decimal\+Prefix\+::\+Name\+::\+KILO). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a0042c24b688277ddf3c5a4326b4cf78d}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a9663675f0666326213207efdead23ca4}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setDensity@{setDensity}}
+\index{setDensity@{setDensity}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setDensity()}{setDensity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a9663675f0666326213207efdead23ca4} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Density (\begin{DoxyParamCaption}\item[{double}]{density}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s density by numeric value and prefix symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em density} & Numeric value for density. \\
+\hline
+{\em prefix} & A symbolic decimal prefix (e.\+g., Decimal\+Prefix\+::\+Symbol\+::k). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a53f36fe7f66fcefb711bea3ce8220bc7}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ac38b320bb5c30f10fbe12d1315fb22bd}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setMass@{setMass}}
+\index{setMass@{setMass}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setMass()}{setMass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ac38b320bb5c30f10fbe12d1315fb22bd} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Mass (\begin{DoxyParamCaption}\item[{double}]{mass}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s mass by numeric value and prefix name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mass} & Numeric value for mass. \\
+\hline
+{\em prefix} & A named decimal prefix (e.\+g., Decimal\+Prefix\+::\+Name\+::\+Kilo). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a129e640f9942fbc17ff9257cf65dbc3b}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_adc29dc711b27383dbaaf7bbf8dbd0167}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setMass@{setMass}}
+\index{setMass@{setMass}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setMass()}{setMass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_adc29dc711b27383dbaaf7bbf8dbd0167} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Mass (\begin{DoxyParamCaption}\item[{double}]{mass}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s mass by numeric value and prefix symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mass} & Numeric value for mass. \\
+\hline
+{\em prefix} & A symbolic decimal prefix (e.\+g., Decimal\+Prefix\+::\+Symbol\+::k). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_ac14820289d7446409e91dd228265310e}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4b7aaa208f5a3bf37ddedd8baf39712b}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setMass@{setMass}}
+\index{setMass@{setMass}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setMass()}{setMass()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a4b7aaa208f5a3bf37ddedd8baf39712b} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}}]{mass}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s mass using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mass} & The \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass} object representing the new mass. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_ac9698354b63128801ebfed625036ee30}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_af1bcef6da99ff481a84e57ec22f72b7e}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setPressure@{setPressure}}
+\index{setPressure@{setPressure}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setPressure()}{setPressure()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_af1bcef6da99ff481a84e57ec22f72b7e} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Pressure (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}}}]{pressure}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s pressure using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressure} & The \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure} object representing the new pressure. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_adab8deff7320f0176661bcea129231bf}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ac60d40ec3a775813a66c0bf4a53f0592}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setPressure@{setPressure}}
+\index{setPressure@{setPressure}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setPressure()}{setPressure()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ac60d40ec3a775813a66c0bf4a53f0592} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Pressure (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{pressure}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s pressure from an array of numeric values and a prefix name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressure} & An array of 3 doubles (e.\+g., partial or vector components). \\
+\hline
+{\em prefix} & A named decimal prefix (e.\+g., Decimal\+Prefix\+::\+Name\+::\+KILO). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_addace46fde29bda00d7561ab15fd9a9d}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a8b3533fdd7a809f33cb1ad6da16bc34c}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setPressure@{setPressure}}
+\index{setPressure@{setPressure}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setPressure()}{setPressure()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a8b3533fdd7a809f33cb1ad6da16bc34c} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Pressure (\begin{DoxyParamCaption}\item[{std\+::array$<$ double, 3 $>$}]{pressure}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s pressure from an array of numeric values and a prefix symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pressure} & An array of 3 doubles (e.\+g., partial or vector components). \\
+\hline
+{\em prefix} & A symbolic decimal prefix (e.\+g., Decimal\+Prefix\+::\+Symbol\+::k). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a0d538c0ea31eef1f3434c9e455606380}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a0931c858c3ed931b028d0608f4e106da}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setTemperature@{setTemperature}}
+\index{setTemperature@{setTemperature}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setTemperature()}{setTemperature()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a0931c858c3ed931b028d0608f4e106da} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Temperature (\begin{DoxyParamCaption}\item[{double}]{temperature}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s temperature by numeric value and prefix name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temperature} & Numeric value for temperature. \\
+\hline
+{\em prefix} & A named decimal prefix (e.\+g., Decimal\+Prefix\+::\+Name\+::\+KILO). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a865f11c82d9a8f27215bd0b37ec790af}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a18c3ac05c2d5d11f7e6b120005dbd720}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setTemperature@{setTemperature}}
+\index{setTemperature@{setTemperature}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setTemperature()}{setTemperature()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a18c3ac05c2d5d11f7e6b120005dbd720} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Temperature (\begin{DoxyParamCaption}\item[{double}]{temperature}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s temperature by numeric value and prefix symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temperature} & Numeric value for temperature. \\
+\hline
+{\em prefix} & A symbolic decimal prefix (e.\+g., Decimal\+Prefix\+::\+Symbol\+::k). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a4fbad7f2588c9e1f247a248e8a9e1a97}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a3727c6434609662bcc4d2a5d0aaeabd0}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setTemperature@{setTemperature}}
+\index{setTemperature@{setTemperature}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setTemperature()}{setTemperature()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a3727c6434609662bcc4d2a5d0aaeabd0} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Temperature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}}}]{temperature}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s temperature using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em temperature} & The \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature} object representing the new temperature. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a6f896b862eef2d0901cb54ae84f89f6b}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a7a1bcaaf05d85fb7ee16aa3d3dae6dab}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a7a1bcaaf05d85fb7ee16aa3d3dae6dab} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Volume (\begin{DoxyParamCaption}\item[{double}]{volume}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s volume by numeric value and prefix name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Numeric value for volume. \\
+\hline
+{\em prefix} & A named decimal prefix (e.\+g., Decimal\+Prefix\+::\+Name\+::\+Kilo). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a28b47d86ff5b7809bd081107c1937b9b}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a87f7af07908a97e0773a35896250b583}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a87f7af07908a97e0773a35896250b583} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Volume (\begin{DoxyParamCaption}\item[{double}]{volume}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s volume by numeric value and prefix symbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & Numeric value for volume. \\
+\hline
+{\em prefix} & A symbolic decimal prefix (e.\+g., Decimal\+Prefix\+::\+Symbol\+::k). \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_ad26d8b88f30d26e8fe04974c5c91c248}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab873434bde39bd4b77bfe12a00744b1b}\index{InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}!setVolume@{setVolume}}
+\index{setVolume@{setVolume}!InertiaFX::Core::Engine::IMaterial@{InertiaFX::Core::Engine::IMaterial}}
+\doxysubsubsection{\texorpdfstring{setVolume()}{setVolume()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_ab873434bde39bd4b77bfe12a00744b1b} 
+virtual void Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial\+::set\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}}]{volume}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the material\textquotesingle{}s volume using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & The \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} object representing the new volume. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a10ad845aac0f193a4b247b845b4eb4b6}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/inc/\mbox{\hyperlink{imaterial_8h}{imaterial.\+h}}\end{DoxyCompactItemize}
