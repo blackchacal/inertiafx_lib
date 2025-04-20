@@ -1,0 +1,108 @@
+\doxysection{Inertia\+FX\+::Core\+::Engine\+::Empty\+Space Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space}{}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space}\index{InertiaFX::Core::Engine::EmptySpace@{InertiaFX::Core::Engine::EmptySpace}}
+
+
+A concrete class inheriting from \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}{World}, representing an empty simulation space.  
+
+
+
+
+{\ttfamily \#include $<$empty\+\_\+space.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::Engine\+::Empty\+Space\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space_a84e9a5a87f29c210764f7e81d19ba6b0}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space_a84e9a5a87f29c210764f7e81d19ba6b0} 
+{\bfseries Empty\+Space} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space_ade7c7830fc3d38b6a2465577d59bc09c}{Empty\+Space}} (double length, double width, double height)
+\begin{DoxyCompactList}\small\item\em Constructor with volume dimensions. \end{DoxyCompactList}\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space_a2d43f68543ce4f12b69bac6861ab077b}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space_a2d43f68543ce4f12b69bac6861ab077b} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Empty\+Space} ()=default
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+World}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+World} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_adeac7e3145586b5e3e40a4406431b266}{get\+Entities}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves all entities in the simulation world.    \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a900a966c03a5363e1fdb8abda74db419}{get\+Total\+Number\+Of\+Entities}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the total number of entities in the simulation world.    \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ $>$ \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a575b60e55ee7b67d6fc73ba405172850}{get\+Mediums}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves all mediums in the simulation world.    \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8edbf20baa1bfba0b98cd8f8e118836c}{get\+Total\+Number\+Of\+Mediums}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the total number of mediums in the simulation world.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a82e395d397f766a8145f5ece569274ca}{get\+Volume}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the medium\textquotesingle{}s volume.    \end{DoxyCompactList}\item 
+std\+::tuple$<$ double, double, double $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd877f3744302c252225b86b406fce68}{get\+Volume\+Dimensions}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the dimensions of the simulation world\textquotesingle{}s volume.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_aa0dfc52c2904c7a572a7f4a80e1627c9}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Adds an entity to the simulation world.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_afe0203dc79d43a87e189567d3fffa4a4}{add\+Medium}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ medium) override
+\begin{DoxyCompactList}\small\item\em Adds a medium to the simulation world.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a2b851c54444a4d2607e3d0072d9d126d}{get\+Gravity}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the gravity force acting on the world.    \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IWorld} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for interface cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+World}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries World} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ad6f01160517e83ded1dc8779c754de26}{World}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&gravity)
+\begin{DoxyCompactList}\small\item\em Constructor with volume and gravity parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+World}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4}{\+\_\+entities}}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c}{\+\_\+mediums}}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}{\+\_\+volume}}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded}{\+\_\+gravity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A concrete class inheriting from \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}{World}, representing an empty simulation space. 
+
+This class is used to create a simulation world that is like empty space with specified dimensions. There is no gravity on this world. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space_ade7c7830fc3d38b6a2465577d59bc09c}\index{InertiaFX::Core::Engine::EmptySpace@{InertiaFX::Core::Engine::EmptySpace}!EmptySpace@{EmptySpace}}
+\index{EmptySpace@{EmptySpace}!InertiaFX::Core::Engine::EmptySpace@{InertiaFX::Core::Engine::EmptySpace}}
+\doxysubsubsection{\texorpdfstring{EmptySpace()}{EmptySpace()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space_ade7c7830fc3d38b6a2465577d59bc09c} 
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Empty\+Space\+::\+Empty\+Space (\begin{DoxyParamCaption}\item[{double}]{length}{, }\item[{double}]{width}{, }\item[{double}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Constructor with volume dimensions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em length} & \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_length}{Length} of the empty space. \\
+\hline
+{\em width} & Width of the empty space. \\
+\hline
+{\em height} & Height of the empty space. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/inc/\mbox{\hyperlink{empty__space_8h}{empty\+\_\+space.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/src/\mbox{\hyperlink{empty__space_8cpp}{empty\+\_\+space.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\doxysection{liquid.\+h}
+\hypertarget{liquid_8h_source}{}\label{liquid_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/liquid.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/liquid.h}}
+\mbox{\hyperlink{liquid_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_ENGINE\_LIQUID\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_ENGINE\_LIQUID\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{material_8h}{material.h}}"{}}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00032\ \{}
+\DoxyCodeLine{00033\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00034\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{namespace\ }Engine}
+\DoxyCodeLine{00036\ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a56f6e7e7719d220b5daad034c981e97e}{Liquid}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a9fd241e197d34b125872352ab97ccc03}{Material}}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a56f6e7e7719d220b5daad034c981e97e}{Liquid}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ std::unique\_ptr<IMaterial>\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a1516501a35b6c333d1be82606eb3c982}{clone}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00057\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_unique<Liquid>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a2011283a30814de9b552d9cb7cbe44b3}{setViscosity}}(\textcolor{keywordtype}{double}\ viscosity);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a069bb831d8d60e3195723aa4bdeea15a}{getViscosity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \_viscosity;\ \ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00076\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
+\DoxyCodeLine{00077\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00078\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_LIQUID\_H}}
+
+\end{DoxyCode}

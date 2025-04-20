@@ -123,6 +123,12 @@ namespace Core
         {
             return Density(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
         }
+
+        bool Density::operator==(const Density &other) const
+        {
+            constexpr double EPS = 1e-9;
+            return std::abs(_value - other._value) < EPS && _prefix == other._prefix;
+        }
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX

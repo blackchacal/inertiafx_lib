@@ -95,6 +95,15 @@ namespace Core
              * @return A new Mass object representing the sum.
              */
             Mass operator+(const Mass &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Mass objects for equality.
+             *
+             * @param other The other Mass object to compare.
+             * @return True if the Mass objects are equal, false otherwise.
+             */
+            bool operator==(const Mass &other) const;
         };
 
     }  // namespace SI

@@ -14,11 +14,13 @@ add_executable(SI_UnitTests
     test_mole.cpp
     test_candela.cpp
     test_newton.cpp
+    test_pascal.cpp
     
     # Test fundamental quantities
     test_length.cpp
     test_mass.cpp
     test_time.cpp
+    test_temperature.cpp
 
     # Test derived scalar quantities
     test_volume.cpp
@@ -29,6 +31,7 @@ add_executable(SI_UnitTests
     test_velocity.cpp
     test_acceleration.cpp
     test_force.cpp
+    test_pressure.cpp
 )
 
 target_link_libraries(SI_UnitTests PRIVATE

@@ -1,0 +1,162 @@
+\doxysection{Inertia\+FX\+::Core\+::Engine\+::Liquid Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}{}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}\index{InertiaFX::Core::Engine::Liquid@{InertiaFX::Core::Engine::Liquid}}
+
+
+Concrete class that represents a liquid material.  
+
+
+
+
+{\ttfamily \#include $<$liquid.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::Engine\+::Liquid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a56f6e7e7719d220b5daad034c981e97e}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a56f6e7e7719d220b5daad034c981e97e} 
+{\bfseries Liquid} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{IMaterial}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a1516501a35b6c333d1be82606eb3c982}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a1516501a35b6c333d1be82606eb3c982}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{IMaterial} of the same dynamic type.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a2011283a30814de9b552d9cb7cbe44b3}{set\+Viscosity}} (double viscosity)
+\begin{DoxyCompactList}\small\item\em Sets the viscosity of the liquid. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a069bb831d8d60e3195723aa4bdeea15a}{get\+Viscosity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the viscosity of the liquid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Material} ()=default
+\begin{DoxyCompactList}\small\item\em Default virtual destructor. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a9a1e43725b529b2d8cb29336118a17cf}{get\+Volume}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s volume.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a5a70ff3c49ba832420980571b3e22996}{set\+Volume}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s volume using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} object.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a28b47d86ff5b7809bd081107c1937b9b}{set\+Volume}} (double volume, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s volume by numeric value and prefix name.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_ad26d8b88f30d26e8fe04974c5c91c248}{set\+Volume}} (double volume, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s volume by numeric value and prefix symbol.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_aeac4587b276e2cf971c6746cdfadbfbd}{get\+Mass}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s mass.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_aeb1e8d1ac6f71b0c52142399141cda0a}{set\+Mass}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&mass) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s mass using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass} object.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a129e640f9942fbc17ff9257cf65dbc3b}{set\+Mass}} (double mass, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s mass by numeric value and prefix name.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_ac14820289d7446409e91dd228265310e}{set\+Mass}} (double mass, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s mass by numeric value and prefix symbol.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a83b91c932fd9c71493f66ec64a6c28f5}{get\+Density}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s density.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_afb88e465e53627800d8b79e2e6097a37}{set\+Density}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \&density) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s density using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density} object.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a0042c24b688277ddf3c5a4326b4cf78d}{set\+Density}} (double density, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s density by numeric value and prefix name.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a53f36fe7f66fcefb711bea3ce8220bc7}{set\+Density}} (double density, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s density by numeric value and prefix symbol.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a70688a9bcfdce1fbda21ee7093c0c74b}{get\+Temperature}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s temperature.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_aaa47d33e524070fbf5db6472b63d2f95}{set\+Temperature}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \&temperature) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s temperature using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature} object.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a865f11c82d9a8f27215bd0b37ec790af}{set\+Temperature}} (double temperature, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s temperature by numeric value and prefix name.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a4fbad7f2588c9e1f247a248e8a9e1a97}{set\+Temperature}} (double temperature, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s temperature by numeric value and prefix symbol.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a896201b67c0ab66db88e6df2355321ce}{get\+Pressure}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the material\textquotesingle{}s pressure.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_aee1b90a6f01eafc083f3436be9d09c7b}{set\+Pressure}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \&pressure) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s pressure using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure} object.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_addace46fde29bda00d7561ab15fd9a9d}{set\+Pressure}} (std\+::array$<$ double, 3 $>$ pressure, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s pressure from an array of numeric values and a prefix name.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material_a0d538c0ea31eef1f3434c9e455606380}{set\+Pressure}} (std\+::array$<$ double, 3 $>$ pressure, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the material\textquotesingle{}s pressure from an array of numeric values and a prefix symbol.    \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IMaterial} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for interface cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Material} ()
+\begin{DoxyCompactList}\small\item\em Protected default constructor to prevent direct instantiation. \end{DoxyCompactList}\item 
+{\bfseries Material} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Material}} \&)=default
+\begin{DoxyCompactList}\small\item\em Protected copy constructor to allow derived classes to copy members. \end{DoxyCompactList}\item 
+{\bfseries Material} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Material}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Protected move constructor to allow derived classes to move members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Material}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Material}} \&)=default
+\begin{DoxyCompactList}\small\item\em Protected copy assignment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Material}} \& {\bfseries operator=} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Material}} \&\&)=default
+\begin{DoxyCompactList}\small\item\em Protected move assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Material}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} {\bfseries \+\_\+volume}
+\begin{DoxyCompactList}\small\item\em Internal storage for material volume. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} {\bfseries \+\_\+mass}
+\begin{DoxyCompactList}\small\item\em Internal storage for material mass. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} {\bfseries \+\_\+density}
+\begin{DoxyCompactList}\small\item\em Internal storage for material density. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} {\bfseries \+\_\+temperature}
+\begin{DoxyCompactList}\small\item\em Internal storage for material temperature. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} {\bfseries \+\_\+pressure}
+\begin{DoxyCompactList}\small\item\em Internal storage for material pressure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete class that represents a liquid material. 
+
+Inherits from the abstract \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_material}{Material} class and provides specific implementations for liquid materials. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a1516501a35b6c333d1be82606eb3c982}\index{InertiaFX::Core::Engine::Liquid@{InertiaFX::Core::Engine::Liquid}!clone@{clone}}
+\index{clone@{clone}!InertiaFX::Core::Engine::Liquid@{InertiaFX::Core::Engine::Liquid}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a1516501a35b6c333d1be82606eb3c982} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{IMaterial}} $>$ Inertia\+FX\+::\+Core\+::\+Engine\+::\+Liquid\+::clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a1516501a35b6c333d1be82606eb3c982}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{IMaterial} of the same dynamic type.    
+
+Creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}{Liquid} object that is a copy of this one. 
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material_a3fba8acdc15ce19e735a685eee3d8ecd}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMaterial}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a069bb831d8d60e3195723aa4bdeea15a}\index{InertiaFX::Core::Engine::Liquid@{InertiaFX::Core::Engine::Liquid}!getViscosity@{getViscosity}}
+\index{getViscosity@{getViscosity}!InertiaFX::Core::Engine::Liquid@{InertiaFX::Core::Engine::Liquid}}
+\doxysubsubsection{\texorpdfstring{getViscosity()}{getViscosity()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a069bb831d8d60e3195723aa4bdeea15a} 
+double Inertia\+FX\+::\+Core\+::\+Engine\+::\+Liquid\+::get\+Viscosity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the viscosity of the liquid. 
+
+\begin{DoxyReturn}{Returns}
+The viscosity value. 
+\end{DoxyReturn}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a2011283a30814de9b552d9cb7cbe44b3}\index{InertiaFX::Core::Engine::Liquid@{InertiaFX::Core::Engine::Liquid}!setViscosity@{setViscosity}}
+\index{setViscosity@{setViscosity}!InertiaFX::Core::Engine::Liquid@{InertiaFX::Core::Engine::Liquid}}
+\doxysubsubsection{\texorpdfstring{setViscosity()}{setViscosity()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid_a2011283a30814de9b552d9cb7cbe44b3} 
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Liquid\+::set\+Viscosity (\begin{DoxyParamCaption}\item[{double}]{viscosity}{}\end{DoxyParamCaption})}
+
+
+
+Sets the viscosity of the liquid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em viscosity} & The viscosity value. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/inc/\mbox{\hyperlink{liquid_8h}{liquid.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/src/liquid.\+cpp\end{DoxyCompactItemize}

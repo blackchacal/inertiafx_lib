@@ -58,6 +58,11 @@ namespace Core
             virtual ~IEntity() = default;
 
             /**
+             * @brief Add a clone() that creates a new IEntity of the same dynamic type.
+             */
+            virtual std::unique_ptr<IEntity> clone() const = 0;
+
+            /**
              * @brief Retrieves the current position of the entity.
              * @return A Position object reference representing the entity’s position.
              */

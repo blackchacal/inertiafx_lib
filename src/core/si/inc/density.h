@@ -95,6 +95,15 @@ namespace Core
              * @return A new Density object representing the sum.
              */
             Density operator+(const Density &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Density objects for equality.
+             *
+             * @param other The other Density object to compare.
+             * @return True if the objects are equal, false otherwise.
+             */
+            bool operator==(const Density &other) const;
         };
 
     }  // namespace SI

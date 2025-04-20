@@ -95,6 +95,30 @@ namespace Core
              * @return A new Temperature object representing the sum.
              */
             Temperature operator+(const Temperature &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Temperature objects for equality.
+             *
+             * @param other The other Temperature object to compare.
+             * @return True if the temperatures are equal, false otherwise.
+             */
+            bool operator==(const Temperature &other) const;
+
+            /**
+             * @copydoc IScalarQty::setValue(double)
+             */
+            void setValue(double newValue) override;
+
+            /**
+             * @copydoc IScalarQty::setValueFrom(double newValue, DecimalPrefix::Name prefix)
+             */
+            void setValueFrom(double newValue, DecimalPrefix::Name prefix) override;
+
+            /**
+             * @copydoc IScalarQty::setValueFrom(double newValue, DecimalPrefix::Symbol prefix)
+             */
+            void setValueFrom(double newValue, DecimalPrefix::Symbol prefix) override;
         };
 
     }  // namespace SI

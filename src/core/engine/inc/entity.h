@@ -54,7 +54,20 @@ namespace Core
              *
              * Initializes position, velocity, acceleration, net force, mass, and volume to zero.
              */
-            Entity();
+            Entity() :
+                _mass(0.0, DecimalPrefix::Name::base),    // Assumed to default to zero
+                _volume(0.0, DecimalPrefix::Name::base),  // Assumed to default to zero
+                _position(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _velocity(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                              DecimalPrefix::Name::base),  // Assumed to default to zero
+                _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _isFixed(false)                        // Assumed to default to not fixed
+            {
+            }
 
             /**
              * @brief Parameterized constructor.
@@ -62,7 +75,20 @@ namespace Core
              * Initializes mass, and volume to the provided values.
              * Position, velocity, acceleration, and net force are set to zero.
              */
-            Entity(const Mass &mass, const Volume &volume);
+            Entity(const Mass &mass, const Volume &volume) :
+                _mass(mass),      // Initialize mass with provided value
+                _volume(volume),  // Initialize volume with provided value
+                _position(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _velocity(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                              DecimalPrefix::Name::base),  // Assumed to default to zero
+                _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _isFixed(false)                        // Assumed to default to not fixed
+            {
+            }
 
             /**
              * @brief Parameterized constructor.
@@ -70,7 +96,19 @@ namespace Core
              * Initializes mass, volume, and position to the
              * provided values. Set velocity, acceleration and net force to zero.
              */
-            Entity(const Mass &mass, const Volume &volume, const Position &position);
+            Entity(const Mass &mass, const Volume &volume, const Position &position) :
+                _mass(mass),          // Initialize mass with provided value
+                _volume(volume),      // Initialize volume with provided value
+                _position(position),  // Initialize position with provided value
+                _velocity(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                              DecimalPrefix::Name::base),  // Assumed to default to zero
+                _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _isFixed(false)                        // Assumed to default to not fixed
+            {
+            }
 
             /**
              * @brief Parameterized constructor.
@@ -79,7 +117,18 @@ namespace Core
              * provided values. Set acceleration and net force to zero.
              */
             Entity(const Mass &mass, const Volume &volume, const Position &position,
-                   const Velocity &velocity);
+                   const Velocity &velocity) :
+                _mass(mass),          // Initialize mass with provided value
+                _volume(volume),      // Initialize volume with provided value
+                _position(position),  // Initialize position with provided value
+                _velocity(velocity),  // Initialize velocity with provided value
+                _acceleration(std::array<double, 3>({0.0, 0.0, 0.0}),
+                              DecimalPrefix::Name::base),  // Assumed to default to zero
+                _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _isFixed(false)                        // Assumed to default to not fixed
+            {
+            }
 
             /**
              * @brief Parameterized constructor.
@@ -88,7 +137,17 @@ namespace Core
              * provided values. Set net force to zero.
              */
             Entity(const Mass &mass, const Volume &volume, const Position &position,
-                   const Velocity &velocity, const Acceleration &acceleration);
+                   const Velocity &velocity, const Acceleration &acceleration) :
+                _mass(mass),                  // Initialize mass with provided value
+                _volume(volume),              // Initialize volume with provided value
+                _position(position),          // Initialize position with provided value
+                _velocity(velocity),          // Initialize velocity with provided value
+                _acceleration(acceleration),  // Initialize acceleration with provided value
+                _netForce(std::array<double, 3>({0.0, 0.0, 0.0}),
+                          DecimalPrefix::Name::base),  // Assumed to default to zero
+                _isFixed(false)                        // Assumed to default to not fixed
+            {
+            }
 
             /**
              * @brief Parameterized constructor.
@@ -98,102 +157,165 @@ namespace Core
              */
             Entity(const Mass &mass, const Volume &volume, const Position &position,
                    const Velocity &velocity, const Acceleration &acceleration,
-                   const Force &netForce);
+                   const Force &netForce) :
+                _mass(mass),                  // Initialize mass with provided value
+                _volume(volume),              // Initialize volume with provided value
+                _position(position),          // Initialize position with provided value
+                _velocity(velocity),          // Initialize velocity with provided value
+                _acceleration(acceleration),  // Initialize acceleration with provided value
+                _netForce(netForce),          // Initialize net force with provided value
+                _isFixed(false)               // Assumed to default to not fixed
+            {
+            }
 
             /**
              * @brief Virtual destructor for polymorphic cleanup.
              */
-            virtual ~Entity() = 0;
+            virtual ~Entity() = default;
 
             /**
              * @copydoc IEntity::getPosition
              */
-            const Position &getPosition() const override;
+            const Position &getPosition() const override
+            {
+                return _position;
+            }
 
             /**
              * @copydoc IEntity::setPosition(const Position &position)
              */
-            void setPosition(const Position &position) override;
+            void setPosition(const Position &position) override
+            {
+                _position = position;
+            }
 
             /**
              * @copydoc IEntity::setPosition(const std::array<double, 3> position)
              */
-            void setPosition(const std::array<double, 3> position) override;
+            void setPosition(const std::array<double, 3> position) override
+            {
+                _position.setValue(position);
+            }
 
             /**
              * @copydoc IEntity::getVelocity
              */
-            const Velocity &getVelocity() const override;
+            const Velocity &getVelocity() const override
+            {
+                return _velocity;
+            }
 
             /**
              * @copydoc IEntity::setVelocity(const Velocity &velocity)
              */
-            void setVelocity(const Velocity &velocity) override;
+            void setVelocity(const Velocity &velocity) override
+            {
+                _velocity = velocity;
+            }
 
             /**
              * @copydoc IEntity::setVelocity(const std::array<double, 3> velocity)
              */
-            void setVelocity(const std::array<double, 3> velocity) override;
+            void setVelocity(const std::array<double, 3> velocity) override
+            {
+                _velocity.setValue(velocity);
+            }
 
             /**
              * @copydoc IEntity::getAcceleration
              */
-            const Acceleration &getAcceleration() const override;
+            const Acceleration &getAcceleration() const override
+            {
+                return _acceleration;
+            }
 
             /**
              * @copydoc IEntity::setAcceleration(const Acceleration &acceleration)
              */
-            void setAcceleration(const Acceleration &acceleration) override;
+            void setAcceleration(const Acceleration &acceleration) override
+            {
+                _acceleration = acceleration;
+            }
 
             /**
              * @copydoc IEntity::setAcceleration(const std::array<double, 3> acceleration)
              */
-            void setAcceleration(const std::array<double, 3> acceleration) override;
+            void setAcceleration(const std::array<double, 3> acceleration) override
+            {
+                _acceleration.setValue(acceleration);
+            }
 
             /**
              * @copydoc IEntity::getForce
              */
-            const Force &getForce() const override;
+            const Force &getForce() const override
+            {
+                return _netForce;
+            }
 
             /**
              * @copydoc IEntity::setForce(const Force &force)
              */
-            void setForce(const Force &force) override;
+            void setForce(const Force &force) override
+            {
+                _netForce = force;
+            }
 
             /**
              * @copydoc IEntity::setForce(const std::array<double, 3> force)
              */
-            void setForce(const std::array<double, 3> force) override;
+            void setForce(const std::array<double, 3> force) override
+            {
+                _netForce.setValue(force);
+            }
 
             /**
              * @copydoc IEntity::addForce(const Force &force)
              */
-            void addForce(const Force &force) override;
+            void addForce(const Force &force) override
+            {
+                _netForce = _netForce + force;
+            }
 
             /**
              * @copydoc IEntity::addForce(const std::array<double, 3> force)
              */
-            void addForce(const std::array<double, 3> force) override;
+            void addForce(const std::array<double, 3> force) override
+            {
+                _netForce = _netForce + Force(force, DecimalPrefix::Name::base);
+            }
 
             /**
              * @copydoc IEntity::getMass
              */
-            const Mass &getMass() const override;
+            const Mass &getMass() const override
+            {
+                return _mass;
+            }
 
             /**
              * @copydoc IEntity::getVolume
              */
-            const Volume &getVolume() const override;
+            const Volume &getVolume() const override
+            {
+                return _volume;
+            }
 
             /**
              * @copydoc IEntity::isFixed
              */
-            bool isFixed() const override;
+            bool isFixed() const override
+            {
+                return _isFixed;
+            }
 
             /**
              * @copydoc IEntity::fixEntity
              */
-            void fixEntity() override;
+            void fixEntity() override
+            {
+                _isFixed = true;
+            }
 
           protected:
             /** Position of the entity. */

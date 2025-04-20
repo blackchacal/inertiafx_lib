@@ -5,5 +5,6 @@ var class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass =
     [ "Mass", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#af054fcab0dc2ce2c8c05034a20dabc09", null ],
     [ "Mass", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#adca48d414278cb1df12b60979267edc7", null ],
     [ "operator+", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#a7e4554f7118bf4a34ed55b68112b5307", null ],
-    [ "operator=", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#af348814fbb587cd5f012fc2502409eeb", null ]
+    [ "operator=", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#af348814fbb587cd5f012fc2502409eeb", null ],
+    [ "operator==", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html#a7c967f3dc820a0d84a93018574d8bdaf", null ]
 ];

@@ -1,31 +1,5 @@
 var searchData=
 [
-  ['_7eampere_0',['~Ampere',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_ampere.html#ada8d3447cc1221b5e7936f010e177ca9',1,'InertiaFX::Core::SI::Ampere']]],
-  ['_7ecandela_1',['~Candela',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_candela.html#ae41231a385fee98005a138204002aa32',1,'InertiaFX::Core::SI::Candela']]],
-  ['_7ederivedphysicalunit_2',['~DerivedPhysicalUnit',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_physical_unit.html#a162878416e0d9cba40e685854fec83d9',1,'InertiaFX::Core::SI::DerivedPhysicalUnit']]],
-  ['_7ederivedscalarqty_3',['~DerivedScalarQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty.html#a50eb807ba0bd9cccb6cb5550c19e9468',1,'InertiaFX::Core::SI::DerivedScalarQty']]],
-  ['_7ederivedvectorqty_4',['~DerivedVectorQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#ad9f9f2dc4c01d6f06e5c2a65c0fa3840',1,'InertiaFX::Core::SI::DerivedVectorQty']]],
-  ['_7eentity_5',['~Entity',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_entity.html#a9363ec5359f0347943eb2768613b91e3',1,'InertiaFX::Core::Engine::Entity']]],
-  ['_7efilelogger_6',['~FileLogger',['../class_inertia_f_x_1_1_core_1_1_tools_1_1_file_logger.html#aefa03802660e3813d275f12f44d8c7f7',1,'InertiaFX::Core::Tools::FileLogger']]],
-  ['_7efundamentalqty_7',['~FundamentalQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty.html#adbc09db12f5f4f85faa1a601d6abb6bd',1,'InertiaFX::Core::SI::FundamentalQty']]],
-  ['_7eientity_8',['~IEntity',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#a2b0c9759047b40739d59d447302d46e9',1,'InertiaFX::Core::Engine::IEntity']]],
-  ['_7eilogger_9',['~ILogger',['../class_inertia_f_x_1_1_core_1_1_tools_1_1_i_logger.html#abf5330fd91d710f786625942ea779948',1,'InertiaFX::Core::Tools::ILogger']]],
-  ['_7eimaterial_10',['~IMaterial',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material.html#ad077261e36884c5697fd673e8c8ddc33',1,'InertiaFX::Core::Engine::IMaterial']]],
-  ['_7einertiafx_11',['~InertiaFX',['../class_inertia_f_x_1_1_inertia_f_x.html#a263cbdebe6f6b7f506b4a51eecdc0042',1,'InertiaFX::InertiaFX']]],
-  ['_7eiphysicalqty_12',['~IPhysicalQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_qty.html#a7e06c205c2d08f80ee895226f5df736a',1,'InertiaFX::Core::SI::IPhysicalQty']]],
-  ['_7eiphysicalunit_13',['~IPhysicalUnit',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html#a229f7fc9aed6c1dfcff11e50fd383d2d',1,'InertiaFX::Core::SI::IPhysicalUnit']]],
-  ['_7eiscalarqty_14',['~IScalarQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_scalar_qty.html#a8607c6517b89a29293f8c450509659e7',1,'InertiaFX::Core::SI::IScalarQty']]],
-  ['_7eivectorqty_15',['~IVectorQty',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_vector_qty.html#a1fe882cf7fb84d05e165865dd963f760',1,'InertiaFX::Core::SI::IVectorQty']]],
-  ['_7ekelvin_16',['~Kelvin',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_kelvin.html#acd065fbcf99a992b0c44e6a8a7be9602',1,'InertiaFX::Core::SI::Kelvin']]],
-  ['_7ekilogram_17',['~Kilogram',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_kilogram.html#af0a6481edc70770994ad64c978a6d249',1,'InertiaFX::Core::SI::Kilogram']]],
-  ['_7elogger_18',['~Logger',['../class_inertia_f_x_1_1_core_1_1_tools_1_1_logger.html#a1fbb6bde81417080d5e1445d02de27c4',1,'InertiaFX::Core::Tools::Logger']]],
-  ['_7ematerial_19',['~Material',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_material.html#a6355e8d0f6dda6f46b1183c218c1736e',1,'InertiaFX::Core::Engine::Material']]],
-  ['_7emetre_20',['~Metre',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_metre.html#a732020a8c6222134855d6f667cda7b27',1,'InertiaFX::Core::SI::Metre']]],
-  ['_7emole_21',['~Mole',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_mole.html#a44902fb825ef40e7586eb9d2160c7268',1,'InertiaFX::Core::SI::Mole']]],
-  ['_7enewton_22',['~Newton',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_newton.html#a1522ddc5af72a3f699d00582b95b69f3',1,'InertiaFX::Core::SI::Newton']]],
-  ['_7epascal_23',['~Pascal',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_pascal.html#ab30b9758deb3b7da2df3a4e299b5d78f',1,'InertiaFX::Core::SI::Pascal']]],
-  ['_7ephysicalunit_24',['~PhysicalUnit',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit.html#aaa2d92c7d36cf383256e157a67b5c6af',1,'InertiaFX::Core::SI::PhysicalUnit']]],
-  ['_7epointmass_25',['~PointMass',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a85c0b60e9a46ce1a5e392c47ed2c79c8',1,'InertiaFX::Core::Engine::PointMass']]],
-  ['_7esecond_26',['~Second',['../class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html#ae55e4b2db5c9dde481d7242114dff4fc',1,'InertiaFX::Core::SI::Second']]],
-  ['_7esolidbody_27',['~SolidBody',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body.html#aa6984d49fd0465a063a83f79fd24a7f7',1,'InertiaFX::Core::Engine::SolidBody']]]
+  ['water_0',['Water',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_water.html#a9fed8b5fece63d65a9622db216360e9b',1,'InertiaFX::Core::Engine::Water::Water()'],['../class_inertia_f_x_1_1_core_1_1_engine_1_1_water.html#acc5e41285d33cb05c2dca2e206b6458a',1,'InertiaFX::Core::Engine::Water::Water(const Position &amp;position, const Volume &amp;volume)'],['../class_inertia_f_x_1_1_core_1_1_engine_1_1_water.html#ab23782d3d676a8469cd5fff92c6471db',1,'InertiaFX::Core::Engine::Water::Water(const Water &amp;other)']]],
+  ['world_1',['World',['../class_inertia_f_x_1_1_core_1_1_engine_1_1_world.html#a8346cc020704f2e7ad4931bbaa905457',1,'InertiaFX::Core::Engine::World::World()'],['../class_inertia_f_x_1_1_core_1_1_engine_1_1_world.html#ad6f01160517e83ded1dc8779c754de26',1,'InertiaFX::Core::Engine::World::World(const Volume &amp;volume, const Force &amp;gravity)']]]
 ];

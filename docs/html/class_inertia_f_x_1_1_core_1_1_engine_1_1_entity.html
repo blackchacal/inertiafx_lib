@@ -107,7 +107,7 @@ $(function(){initNavTree('class_inertia_f_x_1_1_core_1_1_engine_1_1_entity.html'
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_inertia_f_x_1_1_core_1_1_engine_1_1_entity-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">InertiaFX::Core::Engine::Entity Class Reference<span class="mlabels"><span class="mlabel abstract">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">InertiaFX::Core::Engine::Entity Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -147,10 +147,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad534db31c6d9b1bb29ea14b4bf32eb44" id="r_ad534db31c6d9b1bb29ea14b4bf32eb44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad534db31c6d9b1bb29ea14b4bf32eb44">Entity</a> (const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass.html">Mass</a> &amp;mass, const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume.html">Volume</a> &amp;volume, const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a> &amp;position, const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity.html">Velocity</a> &amp;velocity, const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration.html">Acceleration</a> &amp;acceleration, const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_force.html">Force</a> &amp;netForce)</td></tr>
 <tr class="memdesc:ad534db31c6d9b1bb29ea14b4bf32eb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor.  <br /></td></tr>
 <tr class="separator:ad534db31c6d9b1bb29ea14b4bf32eb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9363ec5359f0347943eb2768613b91e3" id="r_a9363ec5359f0347943eb2768613b91e3"><td class="memItemLeft" align="right" valign="top"><a id="a9363ec5359f0347943eb2768613b91e3" name="a9363ec5359f0347943eb2768613b91e3"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Entity</b> ()=0</td></tr>
-<tr class="memdesc:a9363ec5359f0347943eb2768613b91e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for polymorphic cleanup. <br /></td></tr>
-<tr class="separator:a9363ec5359f0347943eb2768613b91e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0a3507f929db1e7a2cd23eecdeda9ca" id="r_ac0a3507f929db1e7a2cd23eecdeda9ca"><td class="memItemLeft" align="right" valign="top"><a id="ac0a3507f929db1e7a2cd23eecdeda9ca" name="ac0a3507f929db1e7a2cd23eecdeda9ca"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Entity</b> ()=default</td></tr>
+<tr class="memdesc:ac0a3507f929db1e7a2cd23eecdeda9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for polymorphic cleanup. <br /></td></tr>
+<tr class="separator:ac0a3507f929db1e7a2cd23eecdeda9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab408f7e01249ec99173635b34ad479ed" id="r_ab408f7e01249ec99173635b34ad479ed"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab408f7e01249ec99173635b34ad479ed">getPosition</a> () const override</td></tr>
 <tr class="memdesc:ab408f7e01249ec99173635b34ad479ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current position of the entity.     <br /></td></tr>
 <tr class="separator:ab408f7e01249ec99173635b34ad479ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +210,9 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~Entity</b> ()=0</
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IEntity</b> ()=default</td></tr>
 <tr class="memdesc:a2b0c9759047b40739d59d447302d46e9 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for safe polymorphic cleanup. <br /></td></tr>
 <tr class="separator:a2b0c9759047b40739d59d447302d46e9 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57439391ba4a76e31a9f21b35ad2d2c3 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity" id="r_a57439391ba4a76e31a9f21b35ad2d2c3"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html">IEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#a57439391ba4a76e31a9f21b35ad2d2c3">clone</a> () const =0</td></tr>
+<tr class="memdesc:a57439391ba4a76e31a9f21b35ad2d2c3 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#a57439391ba4a76e31a9f21b35ad2d2c3" title="Add a clone() that creates a new IEntity of the same dynamic type.">clone()</a> that creates a new <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html" title="Represents a generic physical entity in the simulation world.">IEntity</a> of the same dynamic type.  <br /></td></tr>
+<tr class="separator:a57439391ba4a76e31a9f21b35ad2d2c3 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -237,6 +240,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">InertiaFX::Core::Engine::Entity::Entity </td>
@@ -245,6 +251,11 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
@@ -257,6 +268,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">InertiaFX::Core::Engine::Entity::Entity </td>
@@ -269,6 +283,11 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume.html">Volume</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>volume</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Parameterized constructor. </p>
@@ -281,6 +300,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">InertiaFX::Core::Engine::Entity::Entity </td>
@@ -298,6 +320,11 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>position</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Parameterized constructor. </p>
@@ -310,6 +337,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">InertiaFX::Core::Engine::Entity::Entity </td>
@@ -332,6 +362,11 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity.html">Velocity</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>velocity</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Parameterized constructor. </p>
@@ -344,6 +379,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">InertiaFX::Core::Engine::Entity::Entity </td>
@@ -371,6 +409,11 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration.html">Acceleration</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>acceleration</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Parameterized constructor. </p>
@@ -383,6 +426,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">InertiaFX::Core::Engine::Entity::Entity </td>
@@ -415,6 +461,11 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_force.html">Force</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>netForce</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Parameterized constructor. </p>
@@ -441,7 +492,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -477,7 +528,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -513,7 +564,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -542,7 +593,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -572,7 +623,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -602,7 +653,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -632,7 +683,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -662,7 +713,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -692,7 +743,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -722,7 +773,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -752,7 +803,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -787,7 +838,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -823,7 +874,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -858,7 +909,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -894,7 +945,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -929,7 +980,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -965,7 +1016,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1001,7 +1052,7 @@ Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1180,9 +1231,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/<a class="el" href="entity_8h_source.html">entity.h</a></li>
-<li>C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/src/<a class="el" href="entity_8cpp.html">entity.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

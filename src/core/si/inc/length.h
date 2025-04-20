@@ -95,6 +95,15 @@ namespace Core
              * @return A new Length object representing the sum.
              */
             Length operator+(const Length &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Length objects for equality.
+             *
+             * @param other The other Length object to compare.
+             * @return True if the Length objects are equal, false otherwise.
+             */
+            bool operator==(const Length &other) const;
         };
 
     }  // namespace SI

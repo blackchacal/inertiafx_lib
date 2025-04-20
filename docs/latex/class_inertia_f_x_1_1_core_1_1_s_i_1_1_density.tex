@@ -29,7 +29,9 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Density\+:\begin{figure}[H]
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density_a4021f312bbb8557e410962f6a0e1f33e}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density_ae38c02b5a4716a70ebfb72417441c45c}{operator+}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \&other) const
-\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density_ae7025192c14297db444a670b0fa9a5cc}{operator==}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_scalar_qty}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Scalar\+Qty}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -209,6 +211,26 @@ A reference to this object.
 \begin{DoxyNote}{Note}
 This operator performs a deep copy of the object. 
 \end{DoxyNote}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density_ae7025192c14297db444a670b0fa9a5cc}\index{InertiaFX::Core::SI::Density@{InertiaFX::Core::SI::Density}!operator==@{operator==}}
+\index{operator==@{operator==}!InertiaFX::Core::SI::Density@{InertiaFX::Core::SI::Density}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density_ae7025192c14297db444a670b0fa9a5cc} 
+bool Inertia\+FX\+::\+Core\+::\+SI\+::\+Density\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator. 
+
+Compares two \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density} objects for equality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_density}{Density} object to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal, false otherwise. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

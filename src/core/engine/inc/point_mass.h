@@ -108,6 +108,14 @@ namespace Core
              * @brief Destructor.
              */
             ~PointMass();
+
+            /**
+             * @copydoc IEntity::clone() const
+             */
+            virtual std::unique_ptr<IEntity> clone() const override
+            {
+                return std::make_unique<PointMass>(*this);
+            }
         };
 
     }  // namespace Engine

@@ -50,7 +50,7 @@ virtual const \mbox{\hyperlink{class_shape}{Shape}} \& \mbox{\hyperlink{class_in
 \begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad534db31c6d9b1bb29ea14b4bf32eb44}{Entity}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&mass, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&position, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&velocity, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&acceleration, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&net\+Force)
 \begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()=0
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic cleanup. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ab408f7e01249ec99173635b34ad479ed}{get\+Position}} () const override
 \begin{DoxyCompactList}\small\item\em Retrieves the current position of the entity.    \end{DoxyCompactList}\item 
@@ -92,7 +92,9 @@ void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abedb9301
 \begin{DoxyCompactItemize}
 \item 
 virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IEntity} ()=default
-\begin{DoxyCompactList}\small\item\em Virtual destructor for safe polymorphic cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for safe polymorphic cleanup. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity} of the same dynamic type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 

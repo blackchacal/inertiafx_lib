@@ -97,6 +97,15 @@ namespace Core
              * @return A new Position object representing the sum.
              */
             Position operator+(const Position &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Position objects for equality.
+             *
+             * @param other The other Position object to compare.
+             * @return True if the positions are equal, false otherwise.
+             */
+            bool operator==(const Position &other) const;
         };
 
     }  // namespace SI

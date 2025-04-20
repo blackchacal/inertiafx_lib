@@ -98,6 +98,15 @@ namespace Core
              * @return A new Force object representing the sum.
              */
             Force operator+(const Force &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Force objects for equality.
+             *
+             * @param other The other Force object to compare.
+             * @return True if the objects are equal, false otherwise.
+             */
+            bool operator==(const Force &other) const;
         };
 
     }  // namespace SI

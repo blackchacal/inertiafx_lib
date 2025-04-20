@@ -132,6 +132,9 @@ Public Member Functions</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IEntity</b> ()=default</td></tr>
 <tr class="memdesc:a2b0c9759047b40739d59d447302d46e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Virtual destructor for safe polymorphic cleanup. <br /></td></tr>
 <tr class="separator:a2b0c9759047b40739d59d447302d46e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57439391ba4a76e31a9f21b35ad2d2c3" id="r_a57439391ba4a76e31a9f21b35ad2d2c3"><td class="memItemLeft" align="right" valign="top">virtual std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html">IEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57439391ba4a76e31a9f21b35ad2d2c3">clone</a> () const =0</td></tr>
+<tr class="memdesc:a57439391ba4a76e31a9f21b35ad2d2c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a <a class="el" href="#a57439391ba4a76e31a9f21b35ad2d2c3" title="Add a clone() that creates a new IEntity of the same dynamic type.">clone()</a> that creates a new <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html" title="Represents a generic physical entity in the simulation world.">IEntity</a> of the same dynamic type.  <br /></td></tr>
+<tr class="separator:a57439391ba4a76e31a9f21b35ad2d2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42651a31eae16c45e9eae5221264b4c1" id="r_a42651a31eae16c45e9eae5221264b4c1"><td class="memItemLeft" align="right" valign="top">virtual const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42651a31eae16c45e9eae5221264b4c1">getPosition</a> () const =0</td></tr>
 <tr class="memdesc:a42651a31eae16c45e9eae5221264b4c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the current position of the entity.  <br /></td></tr>
 <tr class="separator:a42651a31eae16c45e9eae5221264b4c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,6 +263,35 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~IEntity</b> ()=de
 </dl>
 
 <p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_entity.html#a204b0a822151f348ef1e56517fe8cecc">InertiaFX::Core::Engine::Entity</a>.</p>
+
+</div>
+</div>
+<a id="a57439391ba4a76e31a9f21b35ad2d2c3" name="a57439391ba4a76e31a9f21b35ad2d2c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57439391ba4a76e31a9f21b35ad2d2c3">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html">IEntity</a> &gt; InertiaFX::Core::Engine::IEntity::clone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel pure-virtual">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a <a class="el" href="#a57439391ba4a76e31a9f21b35ad2d2c3" title="Add a clone() that creates a new IEntity of the same dynamic type.">clone()</a> that creates a new <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html" title="Represents a generic physical entity in the simulation world.">IEntity</a> of the same dynamic type. </p>
+
+<p>Implemented in <a class="el" href="class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html#a228eb918ee995c471ae8f65137989c4e">InertiaFX::Core::Engine::PointMass</a>.</p>
 
 </div>
 </div>

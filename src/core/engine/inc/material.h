@@ -62,108 +62,174 @@ namespace Core
             /**
              * @copydoc IMaterial::getVolume
              */
-            const Volume &getVolume() const override;
+            const Volume &getVolume() const override
+            {
+                return _volume;
+            }
 
             /**
-             * @copydoc IMaterial::setVolume(Volume)
+             * @copydoc IMaterial::setVolume(const Volume&)
              */
-            void setVolume(Volume volume) override;
+            void setVolume(const Volume &volume) override
+            {
+                _volume = volume;
+            }
 
             /**
              * @copydoc IMaterial::setVolume(double, DecimalPrefix::Name)
              */
-            void setVolume(double volume, DecimalPrefix::Name prefix) override;
+            void setVolume(double volume, DecimalPrefix::Name prefix) override
+            {
+                _volume = Volume(volume, prefix);
+            }
 
             /**
              * @copydoc IMaterial::setVolume(double, DecimalPrefix::Symbol)
              */
-            void setVolume(double volume, DecimalPrefix::Symbol prefix) override;
+            void setVolume(double volume, DecimalPrefix::Symbol prefix) override
+            {
+                _volume = Volume(volume, prefix);
+            }
 
             /**
              * @copydoc IMaterial::getMass
              */
-            const Mass &getMass() const override;
+            const Mass &getMass() const override
+            {
+                return _mass;
+            }
 
             /**
-             * @copydoc IMaterial::setMass(Mass)
+             * @copydoc IMaterial::setMass(const Mass&)
              */
-            void setMass(Mass mass) override;
+            void setMass(const Mass &mass) override
+            {
+                _mass = mass;
+            }
 
             /**
              * @copydoc IMaterial::setMass(double, DecimalPrefix::Name)
              */
-            void setMass(double mass, DecimalPrefix::Name prefix) override;
+            void setMass(double mass, DecimalPrefix::Name prefix) override
+            {
+                _mass = Mass(mass, prefix);
+            }
 
             /**
              * @copydoc IMaterial::setMass(double, DecimalPrefix::Symbol)
              */
-            void setMass(double mass, DecimalPrefix::Symbol prefix) override;
+            void setMass(double mass, DecimalPrefix::Symbol prefix) override
+            {
+                _mass = Mass(mass, prefix);
+            }
 
             /**
              * @copydoc IMaterial::getDensity
              */
-            const Density &getDensity() const override;
+            const Density &getDensity() const override
+            {
+                return _density;
+            }
 
             /**
-             * @copydoc IMaterial::setDensity(Density)
+             * @copydoc IMaterial::setDensity(const Density&)
              */
-            void setDensity(Density density) override;
+            void setDensity(const Density &density) override
+            {
+                _density = density;
+            }
 
             /**
              * @copydoc IMaterial::setDensity(double, DecimalPrefix::Name)
              */
-            void setDensity(double density, DecimalPrefix::Name prefix) override;
+            void setDensity(double density, DecimalPrefix::Name prefix) override
+            {
+                _density = Density(density, prefix);
+            }
 
             /**
              * @copydoc IMaterial::setDensity(double, DecimalPrefix::Symbol)
              */
-            void setDensity(double density, DecimalPrefix::Symbol prefix) override;
+            void setDensity(double density, DecimalPrefix::Symbol prefix) override
+            {
+                _density = Density(density, prefix);
+            }
 
             /**
              * @copydoc IMaterial::getTemperature
              */
-            const Temperature &getTemperature() const override;
+            const Temperature &getTemperature() const override
+            {
+                return _temperature;
+            }
 
             /**
-             * @copydoc IMaterial::setTemperature(Temperature)
+             * @copydoc IMaterial::setTemperature(const Temperature&)
              */
-            void setTemperature(Temperature temperature) override;
+            void setTemperature(const Temperature &temperature) override
+            {
+                _temperature = temperature;
+            }
 
             /**
              * @copydoc IMaterial::setTemperature(double, DecimalPrefix::Name)
              */
-            void setTemperature(double temperature, DecimalPrefix::Name prefix) override;
+            void setTemperature(double temperature, DecimalPrefix::Name prefix) override
+            {
+                _temperature = Temperature(temperature, prefix);
+            }
 
             /**
              * @copydoc IMaterial::setTemperature(double, DecimalPrefix::Symbol)
              */
-            void setTemperature(double temperature, DecimalPrefix::Symbol prefix) override;
+            void setTemperature(double temperature, DecimalPrefix::Symbol prefix) override
+            {
+                _temperature = Temperature(temperature, prefix);
+            }
 
             /**
              * @copydoc IMaterial::getPressure
              */
-            const Pressure &getPressure() const override;
+            const Pressure &getPressure() const override
+            {
+                return _pressure;
+            }
 
             /**
-             * @copydoc IMaterial::setPressure(Pressure)
+             * @copydoc IMaterial::setPressure(const Pressure&)
              */
-            void setPressure(Pressure pressure) override;
+            void setPressure(const Pressure &pressure) override
+            {
+                _pressure = pressure;
+            }
 
             /**
              * @copydoc IMaterial::setPressure(std::array<double, 3>, DecimalPrefix::Name)
              */
-            void setPressure(std::array<double, 3> pressure, DecimalPrefix::Name prefix) override;
+            void setPressure(std::array<double, 3> pressure, DecimalPrefix::Name prefix) override
+            {
+                _pressure = Pressure(pressure, prefix);
+            }
 
             /**
              * @copydoc IMaterial::setPressure(std::array<double, 3>, DecimalPrefix::Symbol)
              */
-            void setPressure(std::array<double, 3> pressure, DecimalPrefix::Symbol prefix) override;
+            void setPressure(std::array<double, 3> pressure, DecimalPrefix::Symbol prefix) override
+            {
+                _pressure = Pressure(pressure, prefix);
+            }
 
           protected:
             /**
              * @brief Protected default constructor to prevent direct instantiation.
              */
-            Material() = default;
+            Material() :
+                _volume(0.0, DecimalPrefix::Name::base), _mass(0.0, DecimalPrefix::Name::base),
+                _density(0.0, DecimalPrefix::Name::base),
+                _temperature(0.0, DecimalPrefix::Name::base),
+                _pressure({0.0, 0.0, 0.0}, DecimalPrefix::Name::base)
+            {
+            }
 
             /**
              * @brief Protected copy constructor to allow derived classes to copy members.
@@ -185,7 +251,6 @@ namespace Core
              */
             Material &operator=(Material &&) = default;
 
-          protected:
             Volume _volume;            ///< Internal storage for material volume
             Mass _mass;                ///< Internal storage for material mass
             Density _density;          ///< Internal storage for material density

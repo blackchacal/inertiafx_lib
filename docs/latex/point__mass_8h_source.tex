@@ -37,12 +37,17 @@
 \DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&netForce);}
 \DoxyCodeLine{00106\ }
 \DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a85c0b60e9a46ce1a5e392c47ed2c79c8}{\string~PointMass}}();}
-\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00112\ }
-\DoxyCodeLine{00113\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
-\DoxyCodeLine{00114\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
-\DoxyCodeLine{00115\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
-\DoxyCodeLine{00116\ }
-\DoxyCodeLine{00117\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_POINT\_MASS\_H}}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::unique\_ptr<IEntity>\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a228eb918ee995c471ae8f65137989c4e}{clone}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00116\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ std::make\_unique<PointMass>(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
+\DoxyCodeLine{00122\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00123\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_POINT\_MASS\_H}}
 
 \end{DoxyCode}

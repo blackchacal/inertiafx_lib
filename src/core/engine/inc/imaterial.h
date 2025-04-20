@@ -62,6 +62,11 @@ namespace Core
             virtual ~IMaterial() = default;
 
             /**
+             * @brief Add a clone() that creates a new IMaterial of the same dynamic type.
+             */
+            virtual std::unique_ptr<IMaterial> clone() const = 0;
+
+            /**
              * @brief Retrieves the material's volume.
              * @return The current volume of the material.
              */
@@ -69,9 +74,9 @@ namespace Core
 
             /**
              * @brief Sets the material's volume using a Volume object.
-             * @param volume The Volume object representing the new volume.
+             * @param volume Reference to a Volume object representing the new volume.
              */
-            virtual void setVolume(Volume volume) = 0;
+            virtual void setVolume(const Volume &volume) = 0;
 
             /**
              * @brief Sets the material's volume by numeric value and prefix name.
@@ -95,9 +100,9 @@ namespace Core
 
             /**
              * @brief Sets the material's mass using a Mass object.
-             * @param mass The Mass object representing the new mass.
+             * @param mass Reference to a Mass object representing the new mass.
              */
-            virtual void setMass(Mass mass) = 0;
+            virtual void setMass(const Mass &mass) = 0;
 
             /**
              * @brief Sets the material's mass by numeric value and prefix name.
@@ -121,9 +126,9 @@ namespace Core
 
             /**
              * @brief Sets the material's density using a Density object.
-             * @param density The Density object representing the new density.
+             * @param density Reference to a Density object representing the new density.
              */
-            virtual void setDensity(Density density) = 0;
+            virtual void setDensity(const Density &density) = 0;
 
             /**
              * @brief Sets the material's density by numeric value and prefix name.
@@ -147,9 +152,10 @@ namespace Core
 
             /**
              * @brief Sets the material's temperature using a Temperature object.
-             * @param temperature The Temperature object representing the new temperature.
+             * @param temperature Reference to a Temperature object representing the new
+             * temperature.
              */
-            virtual void setTemperature(Temperature temperature) = 0;
+            virtual void setTemperature(const Temperature &temperature) = 0;
 
             /**
              * @brief Sets the material's temperature by numeric value and prefix name.
@@ -173,9 +179,9 @@ namespace Core
 
             /**
              * @brief Sets the material's pressure using a Pressure object.
-             * @param pressure The Pressure object representing the new pressure.
+             * @param pressure Reference to a Pressure object representing the new pressure.
              */
-            virtual void setPressure(Pressure pressure) = 0;
+            virtual void setPressure(const Pressure &pressure) = 0;
 
             /**
              * @brief Sets the material's pressure from an array of numeric values and a prefix

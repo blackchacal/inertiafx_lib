@@ -99,6 +99,15 @@ namespace Core
              * @return A new Acceleration object representing the sum.
              */
             Acceleration operator+(const Acceleration &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Acceleration objects for equality.
+             *
+             * @param other The other Acceleration object to compare.
+             * @return True if the objects are equal, false otherwise.
+             */
+            bool operator==(const Acceleration &other) const;
         };
 
     }  // namespace SI

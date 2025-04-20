@@ -98,6 +98,15 @@ namespace Core
              * @return A new Velocity object representing the sum.
              */
             Velocity operator+(const Velocity &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Velocity objects for equality.
+             *
+             * @param other The other Velocity object to compare.
+             * @return True if the objects are equal, false otherwise.
+             */
+            bool operator==(const Velocity &other) const;
         };
 
     }  // namespace SI

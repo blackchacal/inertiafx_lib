@@ -3,9 +3,10 @@ project(Engine)
 
 add_library(Engine STATIC)
 target_sources(Engine PRIVATE
-    src/entity.cpp
+    src/liquid.cpp
+    src/water.cpp
     src/point_mass.cpp
-    src/material.cpp
+    src/empty_space.cpp
     # src/solid_body.cpp
 )
 

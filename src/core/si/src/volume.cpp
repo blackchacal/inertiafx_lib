@@ -27,6 +27,8 @@
 #include "decimal_prefix.h"
 #include "derived_physical_unit.h"
 #include "metre.h"
+#include <cmath>
+#include <numbers>
 
 namespace InertiaFX
 {
@@ -36,6 +38,7 @@ namespace Core
     {
         // Constructor
         Volume::Volume() :
+            _length(1.0), _width(1.0), _height(1.0), _radius(0.0), _type(Type::Box),
             DerivedScalarQty(
                 "Volume", "V", "Represents the derived SI Volume quantity.",
                 std::make_unique<DerivedPhysicalUnit>(
@@ -50,7 +53,8 @@ namespace Core
         }
 
         // Constructor
-        Volume::Volume(double value, DecimalPrefix::Name prefix) :
+        Volume::Volume(double length, double width, double height, DecimalPrefix::Name prefix) :
+            _length(length), _width(width), _height(height), _radius(0.0), _type(Type::Box),
             DerivedScalarQty(
                 "Volume", "V", "Represents the derived SI Volume quantity.",
                 std::make_unique<DerivedPhysicalUnit>(
@@ -58,14 +62,17 @@ namespace Core
                     "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
         {
             // Store internally in base units
-            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+            this->_value = length * DecimalPrefix::getMultiplier(prefix) * width *
+                           DecimalPrefix::getMultiplier(prefix) * height *
+                           DecimalPrefix::getMultiplier(prefix);
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = prefix;
         }
 
         // Constructor
-        Volume::Volume(double value, DecimalPrefix::Symbol prefix) :
+        Volume::Volume(double length, double width, double height, DecimalPrefix::Symbol prefix) :
+            _length(length), _width(width), _height(height), _radius(0.0), _type(Type::Box),
             DerivedScalarQty(
                 "Volume", "V", "Represents the derived SI Volume quantity.",
                 std::make_unique<DerivedPhysicalUnit>(
@@ -73,7 +80,44 @@ namespace Core
                     "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
         {
             // Store internally in base units
-            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+            this->_value = length * DecimalPrefix::getMultiplier(prefix) * width *
+                           DecimalPrefix::getMultiplier(prefix) * height *
+                           DecimalPrefix::getMultiplier(prefix);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
+        }
+
+        // Constructor
+        Volume::Volume(double radius, DecimalPrefix::Name prefix) :
+            _length(0.0), _width(0.0), _height(0.0), _radius(radius), _type(Type::Sphere),
+            DerivedScalarQty(
+                "Volume", "V", "Represents the derived SI Volume quantity.",
+                std::make_unique<DerivedPhysicalUnit>(
+                    std::vector<PhysicalUnitPower>{PhysicalUnitPower{std::make_unique<Metre>(), 3}},
+                    "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
+        {
+            // Store internally in base units
+            this->_value = (4.0 / 3.0) * std::numbers::pi *
+                           std::pow(radius * DecimalPrefix::getMultiplier(prefix), 3);
+
+            // Optionally store the chosen prefix for reference or user logic
+            this->_prefix = prefix;
+        }
+
+        // Constructor
+        Volume::Volume(double radius, DecimalPrefix::Symbol prefix) :
+            _length(0.0), _width(0.0), _height(0.0), _radius(radius), _type(Type::Sphere),
+            DerivedScalarQty(
+                "Volume", "V", "Represents the derived SI Volume quantity.",
+                std::make_unique<DerivedPhysicalUnit>(
+                    std::vector<PhysicalUnitPower>{PhysicalUnitPower{std::make_unique<Metre>(), 3}},
+                    "The cubic metre, symbol m^3, is an SI coherent derived unit of volume."))
+        {
+
+            // Store internally in base units
+            this->_value = (4.0 / 3.0) * std::numbers::pi *
+                           std::pow(radius * DecimalPrefix::getMultiplier(prefix), 3);
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
@@ -90,6 +134,12 @@ namespace Core
             _value  = other._value;
             _unit   = other._unit ? std::unique_ptr<IPhysicalUnit>(other._unit->clone()) : nullptr;
             _prefix = other._prefix;
+
+            _length = other._length;
+            _width  = other._width;
+            _height = other._height;
+            _radius = other._radius;
+            _type   = other._type;
         }
 
         Volume &Volume::operator=(const Volume &other)
@@ -99,6 +149,12 @@ namespace Core
             {
                 _value  = other._value;
                 _prefix = other._prefix;
+
+                _length = other._length;
+                _width  = other._width;
+                _height = other._height;
+                _radius = other._radius;
+                _type   = other._type;
 
                 // If there's an existing owned object, remove it
                 _unit.reset();
@@ -112,8 +168,36 @@ namespace Core
 
         Volume Volume::operator+(const Volume &other) const
         {
-            return Volume(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
+            Volume vol;
+            vol.setValue(this->getValue() + other.getValue());
+            return vol;
         }
+
+        bool Volume::operator==(const Volume &other) const
+        {
+            constexpr double EPS = 1e-9;
+            return std::abs(_value - other._value) < EPS && _prefix == other._prefix &&
+                   _type == other._type && std::abs(_length - other._length) < EPS &&
+                   std::abs(_width - other._width) < EPS &&
+                   std::abs(_height - other._height) < EPS &&
+                   std::abs(_radius - other._radius) < EPS;
+        }
+
+        std::tuple<double, double, double> Volume::getBoxDimensions() const
+        {
+            return std::make_tuple(_length, _width, _height);
+        }
+
+        double Volume::getSphereDimensions() const
+        {
+            return _radius;
+        }
+
+        Volume::Type Volume::getType() const
+        {
+            return _type;
+        }
+
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX

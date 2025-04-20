@@ -3,6 +3,7 @@ var class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity =
     [ "~IEntity", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#a2b0c9759047b40739d59d447302d46e9", null ],
     [ "addForce", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#a6e9f294598a460e6f6dec176db7202f4", null ],
     [ "addForce", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#a7598e2b5a8355aacecc857cd4ea892f1", null ],
+    [ "clone", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#a57439391ba4a76e31a9f21b35ad2d2c3", null ],
     [ "fixEntity", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#af858a9cff366c8761c1f896ffba3620a", null ],
     [ "getAcceleration", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#afba33176600404df2f1e93f458514962", null ],
     [ "getForce", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html#af651564d3ccb112f631ba5c4af28dd56", null ],

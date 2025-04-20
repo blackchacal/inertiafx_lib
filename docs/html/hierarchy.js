@@ -13,7 +13,14 @@ var hierarchy =
       ] ]
     ] ],
     [ "InertiaFX::Core::Engine::IMaterial", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material.html", [
-      [ "InertiaFX::Core::Engine::Material", "class_inertia_f_x_1_1_core_1_1_engine_1_1_material.html", null ]
+      [ "InertiaFX::Core::Engine::Material", "class_inertia_f_x_1_1_core_1_1_engine_1_1_material.html", [
+        [ "InertiaFX::Core::Engine::Liquid", "class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid.html", null ]
+      ] ]
+    ] ],
+    [ "InertiaFX::Core::Engine::IMedium", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium.html", [
+      [ "InertiaFX::Core::Engine::Medium", "class_inertia_f_x_1_1_core_1_1_engine_1_1_medium.html", [
+        [ "InertiaFX::Core::Engine::Water", "class_inertia_f_x_1_1_core_1_1_engine_1_1_water.html", null ]
+      ] ]
     ] ],
     [ "InertiaFX", "class_inertia_f_x.html", null ],
     [ "InertiaFX::InertiaFX", "class_inertia_f_x_1_1_inertia_f_x.html", null ],
@@ -52,6 +59,11 @@ var hierarchy =
         [ "InertiaFX::Core::SI::Newton", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_newton.html", null ],
         [ "InertiaFX::Core::SI::Pascal", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_pascal.html", null ],
         [ "InertiaFX::Core::SI::Second", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_second.html", null ]
+      ] ]
+    ] ],
+    [ "InertiaFX::Core::Engine::IWorld", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world.html", [
+      [ "InertiaFX::Core::Engine::World", "class_inertia_f_x_1_1_core_1_1_engine_1_1_world.html", [
+        [ "InertiaFX::Core::Engine::EmptySpace", "class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space.html", null ]
       ] ]
     ] ],
     [ "InertiaFX::Core::SI::PhysicalUnitPower", "struct_inertia_f_x_1_1_core_1_1_s_i_1_1_physical_unit_power.html", null ],

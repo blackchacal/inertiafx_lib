@@ -101,6 +101,12 @@ namespace Core
         {
             return Mass(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
         }
+
+        bool Mass::operator==(const Mass &other) const
+        {
+            constexpr double EPS = 1e-9;
+            return std::abs(_value - other._value) < EPS && _prefix == other._prefix;
+        }
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX

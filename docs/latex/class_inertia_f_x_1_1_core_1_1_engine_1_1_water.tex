@@ -1,0 +1,168 @@
+\doxysection{Inertia\+FX\+::Core\+::Engine\+::Water Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}\index{InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}}
+
+
+Represents a specific type of \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Medium} with \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}{Liquid} as its material.  
+
+
+
+
+{\ttfamily \#include $<$water.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::Engine\+::Water\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_a9fed8b5fece63d65a9622db216360e9b}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_a9fed8b5fece63d65a9622db216360e9b} 
+{\bfseries Water} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_acc5e41285d33cb05c2dca2e206b6458a}{Water}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&position, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume)
+\begin{DoxyCompactList}\small\item\em Constructor to initialize \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water} with position, volume, and \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}{Liquid} material. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_ab23782d3d676a8469cd5fff92c6471db}{Water}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_a1e3ee4de3eade8a480d9975b4b30adba}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_a679d0f1787e4a60876149c5d5fd7ba2a}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_a679d0f1787e4a60876149c5d5fd7ba2a} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Water} () override=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_adf607b7ad171a24eb99edbf340810cf1}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_adf607b7ad171a24eb99edbf340810cf1}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium} of the same dynamic type.    \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Medium} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for cleanup. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{IMaterial}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a94f1ac3512369ee527d142fb1d1c19c5}{get\+Material}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the medium\textquotesingle{}s medium.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_ae480d5d5cabdb0922463e87fff31b8e5}{get\+Volume}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the medium\textquotesingle{}s volume.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_ac92bb55c6fed93ead470095846bc1466}{set\+Volume}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume) override
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s volume using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} object.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a4abd9afe9257b111f32343d4e6e7c46f}{set\+Volume}} (double volume) override
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s box volume by numeric value in base prefix.    \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a7c80999cc4aad22d0533d9e52b15efe8}{set\+Volume}} (double radius, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s spherical volume by radius value and prefix name. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a1805042d3e1269e810485df963fd060e}{set\+Volume}} (double radius, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s spherical volume by radius value and prefix symbol.    \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_ad110325517b383f5e0299546d2fe3ab8}{set\+Volume}} (double length, double width, double height, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s box volume by \textquotesingle{}length x width x height\textquotesingle{} and prefix name.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_aa0b056fa974918bc5eb0241307ed9803}{set\+Volume}} (double length, double width, double height, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s box volume by \textquotesingle{}length x width x height\textquotesingle{} and prefix name.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a8a2f163ed8cccafabceb8c5207f1f1a8}{get\+Position}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the medium\textquotesingle{}s center position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a99708111c795ed17823e07c3c4b8c2a8}{set\+Position}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&position) override
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s center position using a \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a228e6eac31f2e4cc207d8e78cb703244}{set\+Position}} (std\+::array$<$ double, 3 $>$ position, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s center position by numeric value and prefix name.    \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a5bc07e5880980d751cd3934fdfe29a5c}{set\+Position}} (std\+::array$<$ double, 3 $>$ position, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)
+\begin{DoxyCompactList}\small\item\em Sets the medium\textquotesingle{}s center position by numeric value and prefix symbol.    \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMedium}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IMedium} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for interface cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Medium} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a65d8d817de05bca2a132a5613348651e}{Medium}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&position, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{IMaterial}} $>$ material)
+\begin{DoxyCompactList}\small\item\em Protected constructor to initialize the medium with a material. \end{DoxyCompactList}\item 
+{\bfseries Medium} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Medium}} \&other)
+\begin{DoxyCompactList}\small\item\em Protected copy constructor to allow derived classes to copy members. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Medium}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Medium}} \&other)
+\begin{DoxyCompactList}\small\item\em Protected copy assignment operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Medium}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a9375616219795e3da1d3ae9077d2db63}{\+\_\+volume}}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_a04f47eb06cb06d49824b6c0199f41524}{\+\_\+position}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material}{IMaterial}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium_ab48c295b05d58b7c4d8bfa182d0461e7}{\+\_\+material}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a specific type of \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_medium}{Medium} with \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}{Liquid} as its material. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_acc5e41285d33cb05c2dca2e206b6458a}\index{InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}!Water@{Water}}
+\index{Water@{Water}!InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}}
+\doxysubsubsection{\texorpdfstring{Water()}{Water()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_acc5e41285d33cb05c2dca2e206b6458a} 
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Water\+::\+Water (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{}\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water} with position, volume, and \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid}{Liquid} material. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the water medium. \\
+\hline
+{\em volume} & The volume of the water medium. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_ab23782d3d676a8469cd5fff92c6471db}\index{InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}!Water@{Water}}
+\index{Water@{Water}!InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}}
+\doxysubsubsection{\texorpdfstring{Water()}{Water()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_ab23782d3d676a8469cd5fff92c6471db} 
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Water\+::\+Water (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water} object to copy from. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_adf607b7ad171a24eb99edbf340810cf1}\index{InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}!clone@{clone}}
+\index{clone@{clone}!InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_adf607b7ad171a24eb99edbf340810cf1} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ Inertia\+FX\+::\+Core\+::\+Engine\+::\+Water\+::clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_adf607b7ad171a24eb99edbf340810cf1}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium} of the same dynamic type.    
+
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium_a9e206b971dd26a390737896c172fda60}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IMedium}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_a1e3ee4de3eade8a480d9975b4b30adba}\index{InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}!operator=@{operator=}}
+\index{operator=@{operator=}!InertiaFX::Core::Engine::Water@{InertiaFX::Core::Engine::Water}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_water_a1e3ee4de3eade8a480d9975b4b30adba} 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Water\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water}} \&}]{other}{}\end{DoxyParamCaption})}
+
+
+
+Copy assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_water}{Water} object to copy from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this object. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/inc/\mbox{\hyperlink{water_8h}{water.\+h}}\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/src/\mbox{\hyperlink{water_8cpp}{water.\+cpp}}\end{DoxyCompactItemize}

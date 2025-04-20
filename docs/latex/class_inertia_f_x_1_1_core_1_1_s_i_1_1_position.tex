@@ -30,7 +30,9 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Position\+:\begin{figure}[H
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a3d13a5f595fb40b5ba3f75401bfb2067}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a2418c62ec9e75d55eed9c7b598a2d4df}{operator+}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other) const
-\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a19f67d82f22e27c6f311451da371c6de}{operator==}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Vector\+Qty}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -200,6 +202,26 @@ A reference to this object.
 \begin{DoxyNote}{Note}
 This operator performs a deep copy of the object. 
 \end{DoxyNote}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a19f67d82f22e27c6f311451da371c6de}\index{InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}!operator==@{operator==}}
+\index{operator==@{operator==}!InertiaFX::Core::SI::Position@{InertiaFX::Core::SI::Position}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position_a19f67d82f22e27c6f311451da371c6de} 
+bool Inertia\+FX\+::\+Core\+::\+SI\+::\+Position\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator. 
+
+Compares two \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} objects for equality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position} object to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the positions are equal, false otherwise. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

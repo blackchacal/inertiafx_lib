@@ -1,0 +1,94 @@
+\doxysection{world.\+h}
+\hypertarget{world_8h_source}{}\label{world_8h_source}\index{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/world.h@{C:/Users/ribei/OneDrive/Documentos/Code/InertiaFX/src/core/engine/inc/world.h}}
+\mbox{\hyperlink{world_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ INERTIAFX\_CORE\_ENGINE\_WORLD\_H}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ INERTIAFX\_CORE\_ENGINE\_WORLD\_H}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{iworld_8h}{iworld.h}}"{}}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{namespace\ }InertiaFX}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{namespace\ }Core}
+\DoxyCodeLine{00035\ \{}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{namespace\ }Engine}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8346cc020704f2e7ad4931bbaa905457}{World}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world}{IWorld}}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ab3f8da30b2df6b7171ae991ad49c8f38}{\string~World}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::unique\_ptr<IEntity>>\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_adeac7e3145586b5e3e40a4406431b266}{getEntities}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00054\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4}{\_entities}};}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a900a966c03a5363e1fdb8abda74db419}{getTotalNumberOfEntities}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00062\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4}{\_entities}}.size();}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::unique\_ptr<IMedium>>\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a575b60e55ee7b67d6fc73ba405172850}{getMediums}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00070\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c}{\_mediums}};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8edbf20baa1bfba0b98cd8f8e118836c}{getTotalNumberOfMediums}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00078\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c}{\_mediums}}.size();}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a82e395d397f766a8145f5ece569274ca}{getVolume}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00086\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}{\_volume}};}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ std::tuple<double,\ double,\ double>\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd877f3744302c252225b86b406fce68}{getVolumeDimensions}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00094\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}{\_volume}}.getBoxDimensions();}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_aa0dfc52c2904c7a572a7f4a80e1627c9}{addEntity}}(std::unique\_ptr<IEntity>\ entity)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00102\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4}{\_entities}}.push\_back(std::move(entity));}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_afe0203dc79d43a87e189567d3fffa4a4}{addMedium}}(std::unique\_ptr<IMedium>\ medium)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00110\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c}{\_mediums}}.push\_back(std::move(medium));}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a2b851c54444a4d2607e3d0072d9d126d}{getGravity}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00118\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded}{\_gravity}};}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8346cc020704f2e7ad4931bbaa905457}{World}}()\ :}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}{\_volume}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}(1000.0,\ 1000.0,\ 1000.0,\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix}{DecimalPrefix}}::Name::base)),}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded}{\_gravity}}(\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ -\/9.81\}),\ DecimalPrefix::Name::base))}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ad6f01160517e83ded1dc8779c754de26}{World}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&gravity)\ :\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}{\_volume}}(volume),\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded}{\_gravity}}(gravity)}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<IEntity>>}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4}{\_entities}};\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::unique\_ptr<IMedium>>}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c}{\_mediums}};\ \ \ }
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}{\_volume}};\ }
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded}{\_gravity}};\ }
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00148\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
+\DoxyCodeLine{00149\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00150\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00152\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_WORLD\_H}}
+
+\end{DoxyCode}

@@ -22,74 +22,196 @@
 \DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}}}
 \DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \{}
 \DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
-\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}();}
-\DoxyCodeLine{00058\ }
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume);}
-\DoxyCodeLine{00066\ }
-\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position);}
-\DoxyCodeLine{00074\ }
-\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
-\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity);}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
-\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration);}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}()\ :}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}}(0.0,\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix}{DecimalPrefix}}::Name::base),\ \ \ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}}(0.0,\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix}{DecimalPrefix}}::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}}(\textcolor{keyword}{false})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ not\ fixed}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a87a31defb0198d37f9a278f478f01092}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume)\ :}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}}(mass),\ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ mass\ with\ provided\ value}}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}}(volume),\ \ \textcolor{comment}{//\ Initialize\ volume\ with\ provided\ value}}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}}(\textcolor{keyword}{false})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ not\ fixed}}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00092\ }
-\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
-\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration,}
-\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&netForce);}
-\DoxyCodeLine{00102\ }
-\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a9363ec5359f0347943eb2768613b91e3}{\string~Entity}}()\ =\ 0;}
-\DoxyCodeLine{00107\ }
-\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ab408f7e01249ec99173635b34ad479ed}{getPosition}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa0c1cdc3f3d44fb38cab5cc6b2be650a}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position)\ :}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}}(mass),\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ mass\ with\ provided\ value}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}}(volume),\ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ volume\ with\ provided\ value}}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}(position),\ \ \textcolor{comment}{//\ Initialize\ position\ with\ provided\ value}}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}}(\textcolor{keyword}{false})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ not\ fixed}}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00112\ }
-\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a4e7ec62c73d090129fd651fa7292d6bf}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00117\ }
-\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a4e7ec62c73d090129fd651fa7292d6bf}{setPosition}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ position)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00122\ }
-\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae7abe1bd98a1cc13a70110f4d0c47b56}{getVelocity}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00127\ }
-\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae720daf18e2598a7a4d9807b9f5b662b}{setVelocity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afdfa3afedec7f871e44b9879cb9ceac2}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity)\ :}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}}(mass),\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ mass\ with\ provided\ value}}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}}(volume),\ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ volume\ with\ provided\ value}}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}(position),\ \ \textcolor{comment}{//\ Initialize\ position\ with\ provided\ value}}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}(velocity),\ \ \textcolor{comment}{//\ Initialize\ velocity\ with\ provided\ value}}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}}(\textcolor{keyword}{false})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ not\ fixed}}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
 \DoxyCodeLine{00132\ }
-\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae720daf18e2598a7a4d9807b9f5b662b}{setVelocity}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ velocity)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00137\ }
-\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa70295fa072b7c2c889a331ae3b76f97}{getAcceleration}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00142\ }
-\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_acf05f45ae024e200287e6aaed6f46d15}{setAcceleration}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00147\ }
-\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_acf05f45ae024e200287e6aaed6f46d15}{setAcceleration}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ acceleration)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00152\ }
-\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac8b702e69a24d650e84841a011181197}{getForce}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00157\ }
-\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_af739fd5522fc80115a2c9f4b40574217}{setForce}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&force)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00162\ }
-\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_af739fd5522fc80115a2c9f4b40574217}{setForce}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ force)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00167\ }
-\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad3e7a155c084aba7ec74b1049ffefd05}{addForce}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&force)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00172\ }
-\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad3e7a155c084aba7ec74b1049ffefd05}{addForce}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ force)\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00177\ }
-\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7a86518e65f02ebaab4a3a345bb3719d}{getMass}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00182\ }
-\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae69e033f636abc9521157c094fece8ae}{getVolume}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00187\ }
-\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a66c2e8ec7787cc30b1ae7b1280e2e774}{isFixed}}()\ \textcolor{keyword}{const\ override};}
-\DoxyCodeLine{00192\ }
-\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abedb9301c9f91443397bb5a130568fad}{fixEntity}}()\ \textcolor{keyword}{override};}
-\DoxyCodeLine{00197\ }
-\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
-\DoxyCodeLine{00200\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}};}
-\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}};}
-\DoxyCodeLine{00204\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}};}
-\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}};}
-\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}};}
-\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}};}
-\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}};}
-\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \};}
-\DoxyCodeLine{00214\ }
-\DoxyCodeLine{00215\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
-\DoxyCodeLine{00216\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
-\DoxyCodeLine{00217\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
-\DoxyCodeLine{00218\ }
-\DoxyCodeLine{00219\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_ENTITY\_H}}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a605ba2a6b7fa864160f7659c61623ffd}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration)\ :}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}}(mass),\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ mass\ with\ provided\ value}}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}}(volume),\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ volume\ with\ provided\ value}}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}(position),\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ position\ with\ provided\ value}}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}(velocity),\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ velocity\ with\ provided\ value}}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}(acceleration),\ \ \textcolor{comment}{//\ Initialize\ acceleration\ with\ provided\ value}}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}(std::array<double,\ 3>(\{0.0,\ 0.0,\ 0.0\}),}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DecimalPrefix::Name::base),\ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ zero}}
+\DoxyCodeLine{00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}}(\textcolor{keyword}{false})\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ not\ fixed}}
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00151\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad534db31c6d9b1bb29ea14b4bf32eb44}{Entity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&mass,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&volume,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position,}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration,}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&netForce)\ :}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}}(mass),\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ mass\ with\ provided\ value}}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}}(volume),\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ volume\ with\ provided\ value}}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}(position),\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ position\ with\ provided\ value}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}(velocity),\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ velocity\ with\ provided\ value}}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}(acceleration),\ \ \textcolor{comment}{//\ Initialize\ acceleration\ with\ provided\ value}}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}(netForce),\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Initialize\ net\ force\ with\ provided\ value}}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}}(false)\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Assumed\ to\ default\ to\ not\ fixed}}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac0a3507f929db1e7a2cd23eecdeda9ca}{\string~Entity}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ab408f7e01249ec99173635b34ad479ed}{getPosition}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00180\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}};}
+\DoxyCodeLine{00182\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a4e7ec62c73d090129fd651fa7292d6bf}{setPosition}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \&position)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00188\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}\ =\ position;}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac2c675b51cf79314f780b6e26fd84efe}{setPosition}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ position)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00196\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00197\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}}.setValue(position);}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00199\ }
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae7abe1bd98a1cc13a70110f4d0c47b56}{getVelocity}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00204\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}};}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae720daf18e2598a7a4d9807b9f5b662b}{setVelocity}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \&velocity)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00212\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}\ =\ velocity;}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a6f5c0d76e2abbbddbd34e41a8d8314a7}{setVelocity}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ velocity)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00220\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}}.setValue(velocity);}
+\DoxyCodeLine{00222\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00223\ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa70295fa072b7c2c889a331ae3b76f97}{getAcceleration}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00228\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}};}
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00235\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_acf05f45ae024e200287e6aaed6f46d15}{setAcceleration}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \&acceleration)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00236\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}\ =\ acceleration;}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00239\ }
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a55744844441cf2d1e6b66a0008f03479}{setAcceleration}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ acceleration)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00244\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}}.setValue(acceleration);}
+\DoxyCodeLine{00246\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00247\ }
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac8b702e69a24d650e84841a011181197}{getForce}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00252\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}};}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00255\ }
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_af739fd5522fc80115a2c9f4b40574217}{setForce}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&force)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00260\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}\ =\ force;}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00263\ }
+\DoxyCodeLine{00267\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae1f54e2b9c33e34e0149ceb008e81882}{setForce}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ force)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00268\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00269\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}.setValue(force);}
+\DoxyCodeLine{00270\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00271\ }
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad3e7a155c084aba7ec74b1049ffefd05}{addForce}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \&force)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00276\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}\ =\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}\ +\ force;}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00279\ }
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a204b0a822151f348ef1e56517fe8cecc}{addForce}}(\textcolor{keyword}{const}\ std::array<double,\ 3>\ force)\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00284\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}\ =\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}}\ +\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}(force,\ DecimalPrefix::Name::base);}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7a86518e65f02ebaab4a3a345bb3719d}{getMass}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00292\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}};}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00295\ }
+\DoxyCodeLine{00299\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \&\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae69e033f636abc9521157c094fece8ae}{getVolume}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00300\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}};}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00303\ }
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a66c2e8ec7787cc30b1ae7b1280e2e774}{isFixed}}()\textcolor{keyword}{\ const\ override}}
+\DoxyCodeLine{00308\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}};}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abedb9301c9f91443397bb5a130568fad}{fixEntity}}()\textcolor{keyword}{\ override}}
+\DoxyCodeLine{00316\ \textcolor{keyword}{\ \ \ \ \ \ \ \ \ \ \ \ }\{}
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae2d2bec14b7c3bc05670dd9dd8f881d3}{\_position}};}
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abe82760525db798709b0ff6a150cb76f}{\_velocity}};}
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a650228b841ca62493c08cc5de6130907}{\_acceleration}};}
+\DoxyCodeLine{00328\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7cece56583fd8a9637a744a5a748cc38}{\_netForce}};}
+\DoxyCodeLine{00330\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa489300b18673e0f0fe069ea79a5ea72}{\_mass}};}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a8c7a287fb9aea57e5914b6a10e5ae969}{\_volume}};}
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afc83a57220e588a50bed65bd32599678}{\_isFixed}};}
+\DoxyCodeLine{00335\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00336\ }
+\DoxyCodeLine{00337\ \ \ \ \ \}\ \ \textcolor{comment}{//\ namespace\ Engine}}
+\DoxyCodeLine{00338\ \}\ \ \textcolor{comment}{//\ namespace\ Core}}
+\DoxyCodeLine{00339\ \}\ \ \textcolor{comment}{//\ namespace\ InertiaFX}}
+\DoxyCodeLine{00340\ }
+\DoxyCodeLine{00341\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ INERTIAFX\_CORE\_ENGINE\_ENTITY\_H}}
 
 \end{DoxyCode}

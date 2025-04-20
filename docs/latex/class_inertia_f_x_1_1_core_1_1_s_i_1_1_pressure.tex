@@ -29,7 +29,9 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Pressure\+:\begin{figure}[H
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure_ad41a4b07882ea0688a1a34494c793331}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure_abb47d660a2bd99a1131f01fc89a1213b}{operator+}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \&other) const
-\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure_abe8f88c90c07802e815cdec6324565c4}{operator==}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Derived\+Vector\+Qty}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -209,6 +211,26 @@ A reference to this object.
 \begin{DoxyNote}{Note}
 This operator performs a deep copy of the object. 
 \end{DoxyNote}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure_abe8f88c90c07802e815cdec6324565c4}\index{InertiaFX::Core::SI::Pressure@{InertiaFX::Core::SI::Pressure}!operator==@{operator==}}
+\index{operator==@{operator==}!InertiaFX::Core::SI::Pressure@{InertiaFX::Core::SI::Pressure}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure_abe8f88c90c07802e815cdec6324565c4} 
+bool Inertia\+FX\+::\+Core\+::\+SI\+::\+Pressure\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator. 
+
+Compares two \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure} objects for equality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_pressure}{Pressure} object to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the objects are equal, false otherwise. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

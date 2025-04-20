@@ -53,7 +53,7 @@ namespace Core
                            std::make_unique<Kelvin>())
         {
             // Store internally in base units
-            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+            this->_value = (value < 0.0) ? 0.0 : value * DecimalPrefix::getMultiplier(prefix);
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = prefix;
@@ -66,7 +66,7 @@ namespace Core
                            std::make_unique<Kelvin>())
         {
             // Store internally in base units
-            this->_value = value * DecimalPrefix::getMultiplier(prefix);
+            this->_value = (value < 0.0) ? 0.0 : value * DecimalPrefix::getMultiplier(prefix);
 
             // Optionally store the chosen prefix for reference or user logic
             this->_prefix = static_cast<DecimalPrefix::Name>(prefix);
@@ -104,6 +104,39 @@ namespace Core
         Temperature Temperature::operator+(const Temperature &other) const
         {
             return Temperature(this->getValue() + other.getValue(), DecimalPrefix::Name::base);
+        }
+
+        bool Temperature::operator==(const Temperature &other) const
+        {
+            constexpr double EPS = 1e-9;
+            return std::abs(_value - other._value) < EPS && _prefix == other._prefix;
+        }
+
+        /**
+         * @copydoc IScalarQty::setValue(double)
+         */
+        void Temperature::setValue(double newValue)
+        {
+            _value  = (newValue < 0.0) ? 0.0 : newValue;
+            _prefix = DecimalPrefix::Name::base;
+        }
+
+        /**
+         * @copydoc IScalarQty::setValueFrom(double newValue, DecimalPrefix::Name prefix)
+         */
+        void Temperature::setValueFrom(double newValue, DecimalPrefix::Name prefix)
+        {
+            _value  = (newValue < 0.0) ? 0.0 : newValue * DecimalPrefix::getMultiplier(prefix);
+            _prefix = prefix;
+        }
+
+        /**
+         * @copydoc IScalarQty::setValueFrom(double newValue, DecimalPrefix::Symbol prefix)
+         */
+        void Temperature::setValueFrom(double newValue, DecimalPrefix::Symbol prefix)
+        {
+            _value  = (newValue < 0.0) ? 0.0 : newValue * DecimalPrefix::getMultiplier(prefix);
+            _prefix = static_cast<DecimalPrefix::Name>(prefix);
         }
     }  // namespace SI
 }  // namespace Core

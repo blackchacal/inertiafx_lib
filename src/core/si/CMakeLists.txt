@@ -16,6 +16,7 @@ target_sources(SI PRIVATE
     src/mole.cpp
     src/candela.cpp
     src/newton.cpp
+    src/pascal.cpp
 
     # Fundamental Quantities
     src/length.cpp
@@ -25,12 +26,14 @@ target_sources(SI PRIVATE
     # Derived Scalar Quantities
     src/volume.cpp
     src/density.cpp
+    src/temperature.cpp
 
     # Derived Vector Quantities
     src/position.cpp
     src/velocity.cpp
     src/acceleration.cpp
     src/force.cpp
+    src/pressure.cpp
 )
 
 add_subdirectory(tests)

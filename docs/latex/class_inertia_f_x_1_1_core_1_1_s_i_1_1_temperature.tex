@@ -29,7 +29,15 @@ Inheritance diagram for Inertia\+FX\+::Core\+::SI\+::Temperature\+:\begin{figure
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a7cc644d6f8838b8816ae8e3297001fa8}{operator=}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \&other)
 \begin{DoxyCompactList}\small\item\em Copy assignment operator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_aa279dec7b0c609debed591d274895065}{operator+}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \&other) const
-\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a19f1f242931df7fbf781013cf19f7419}{operator==}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a5226c942b56884933a374378d1b4366c}{set\+Value}} (double new\+Value) override
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a9a7661a3e5f520e4057a4f35994c63ca}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_ae5495720ad663042871db89f79927919}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) override
+\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}}
 \begin{DoxyCompactItemize}
 \item 
@@ -63,12 +71,6 @@ double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a
 \begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit.    \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a94911962bce27c661582248806ea94c0}{get\+Value\+In}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix) const
 \begin{DoxyCompactList}\small\item\em Retrieves the current value of the physical quantity in the specified prefix of its base unit.    \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aa49d5903aebcd415abbb79caf3399668}{set\+Value}} (double new\+Value)
-\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity.    \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a4e12554d9a7c6c359c8f51a528cbccfa}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix)
-\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aadf8a1288ecf503493f96b3841953c18}{set\+Value\+From}} (double new\+Value, \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}} prefix)
-\begin{DoxyCompactList}\small\item\em Sets the value of this physical quantity (in a specific prefix of its base unit).    \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a7550a34fc01939a413f1d86cc8fd760e}{to\+String}} () const
 \begin{DoxyCompactList}\small\item\em Builds a string representation of the quantity and its current value in the base unit. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a4bb043d886cb9140dcc9d469f59699c9}{to\+String}} (\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}} prefix) const
@@ -209,6 +211,87 @@ A reference to this object.
 \begin{DoxyNote}{Note}
 This operator performs a deep copy of the object. 
 \end{DoxyNote}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a19f1f242931df7fbf781013cf19f7419}\index{InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}!operator==@{operator==}}
+\index{operator==@{operator==}!InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a19f1f242931df7fbf781013cf19f7419} 
+bool Inertia\+FX\+::\+Core\+::\+SI\+::\+Temperature\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator. 
+
+Compares two \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature} objects for equality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature}{Temperature} object to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the temperatures are equal, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a5226c942b56884933a374378d1b4366c}\index{InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}!setValue@{setValue}}
+\index{setValue@{setValue}!InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a5226c942b56884933a374378d1b4366c} 
+void Inertia\+FX\+::\+Core\+::\+SI\+::\+Temperature\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{new\+Value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the value of this physical quantity.    
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value to assign in base unit.    \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aa49d5903aebcd415abbb79caf3399668}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a9a7661a3e5f520e4057a4f35994c63ca}\index{InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}!setValueFrom@{setValueFrom}}
+\index{setValueFrom@{setValueFrom}!InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}}
+\doxysubsubsection{\texorpdfstring{setValueFrom()}{setValueFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_a9a7661a3e5f520e4057a4f35994c63ca} 
+void Inertia\+FX\+::\+Core\+::\+SI\+::\+Temperature\+::set\+Value\+From (\begin{DoxyParamCaption}\item[{double}]{new\+Value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a3069866022d95ef4fd31e116b527838b}{Decimal\+Prefix\+::\+Name}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the value of this physical quantity (in a specific prefix of its base unit).    
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value to assign. \\
+\hline
+{\em prefix} & The decimal prefix by name (e.\+g., "{}kilo"{}, "{}milli"{}).    \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_a4e12554d9a7c6c359c8f51a528cbccfa}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_ae5495720ad663042871db89f79927919}\index{InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}!setValueFrom@{setValueFrom}}
+\index{setValueFrom@{setValueFrom}!InertiaFX::Core::SI::Temperature@{InertiaFX::Core::SI::Temperature}}
+\doxysubsubsection{\texorpdfstring{setValueFrom()}{setValueFrom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_s_i_1_1_temperature_ae5495720ad663042871db89f79927919} 
+void Inertia\+FX\+::\+Core\+::\+SI\+::\+Temperature\+::set\+Value\+From (\begin{DoxyParamCaption}\item[{double}]{new\+Value}{, }\item[{\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_decimal_prefix_a7b871473c8374eb9b755d6d70658b8ec}{Decimal\+Prefix\+::\+Symbol}}}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the value of this physical quantity (in a specific prefix of its base unit).    
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new value to assign. \\
+\hline
+{\em prefix} & The decimal prefix by symbol (e.\+g., "{}k"{}, "{}m"{}).    \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_fundamental_qty_aadf8a1288ecf503493f96b3841953c18}{Inertia\+FX\+::\+Core\+::\+SI\+::\+Fundamental\+Qty}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

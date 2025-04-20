@@ -99,6 +99,15 @@ namespace Core
              * @return A new Pressure object representing the sum.
              */
             Pressure operator+(const Pressure &other) const;
+
+            /**
+             * @brief Equality operator.
+             * @details Compares two Pressure objects for equality.
+             *
+             * @param other The other Pressure object to compare.
+             * @return True if the objects are equal, false otherwise.
+             */
+            bool operator==(const Pressure &other) const;
         };
 
     }  // namespace SI

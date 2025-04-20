@@ -30,8 +30,8 @@ Inheritance diagram for Inertia\+FX\+::Core\+::Engine\+::Entity\+:\begin{figure}
 \begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad534db31c6d9b1bb29ea14b4bf32eb44}{Entity}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&mass, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&position, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&velocity, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&acceleration, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&net\+Force)
 \begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
-\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a9363ec5359f0347943eb2768613b91e3}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a9363ec5359f0347943eb2768613b91e3} 
-virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()=0
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac0a3507f929db1e7a2cd23eecdeda9ca}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac0a3507f929db1e7a2cd23eecdeda9ca} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor for polymorphic cleanup. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ab408f7e01249ec99173635b34ad479ed}{get\+Position}} () const override
 \begin{DoxyCompactList}\small\item\em Retrieves the current position of the entity.    \end{DoxyCompactList}\item 
@@ -73,7 +73,9 @@ void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abedb9301
 \begin{DoxyCompactItemize}
 \item 
 virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IEntity} ()=default
-\begin{DoxyCompactList}\small\item\em Virtual destructor for safe polymorphic cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Virtual destructor for safe polymorphic cleanup. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity} of the same dynamic type. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -103,7 +105,7 @@ This class provides default handling of position, velocity, acceleration, mass, 
 \index{Entity@{Entity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aca4d9db67f76fd052c326d77a10d042b} 
-Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -113,7 +115,7 @@ Initializes position, velocity, acceleration, net force, mass, and volume to zer
 \index{Entity@{Entity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a87a31defb0198d37f9a278f478f01092} 
-Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{}\end{DoxyParamCaption})}
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -123,7 +125,7 @@ Initializes mass, and volume to the provided values. \doxylink{class_inertia_f_x
 \index{Entity@{Entity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa0c1cdc3f3d44fb38cab5cc6b2be650a} 
-Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{}\end{DoxyParamCaption})}
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -133,7 +135,7 @@ Initializes mass, volume, and position to the provided values. Set velocity, acc
 \index{Entity@{Entity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_afdfa3afedec7f871e44b9879cb9ceac2} 
-Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{}\end{DoxyParamCaption})}
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -143,7 +145,7 @@ Initializes mass, volume, position, and velocity to the provided values. Set acc
 \index{Entity@{Entity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a605ba2a6b7fa864160f7659c61623ffd} 
-Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&}]{acceleration}{}\end{DoxyParamCaption})}
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&}]{acceleration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -153,7 +155,7 @@ Initializes mass, volume, position, velocity, and acceleration to the provided v
 \index{Entity@{Entity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad534db31c6d9b1bb29ea14b4bf32eb44} 
-Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&}]{acceleration}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{net\+Force}{}\end{DoxyParamCaption})}
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \&}]{mass}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&}]{acceleration}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{net\+Force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -166,7 +168,7 @@ Initializes mass, volume, position, velocity, acceleration, and net force to the
 \index{addForce@{addForce}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{addForce()}{addForce()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ad3e7a155c084aba7ec74b1049ffefd05} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::add\+Force (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::add\+Force (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -187,7 +189,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{addForce@{addForce}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{addForce()}{addForce()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a204b0a822151f348ef1e56517fe8cecc} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::add\+Force (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::add\+Force (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -208,7 +210,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{fixEntity@{fixEntity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{fixEntity()}{fixEntity()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_abedb9301c9f91443397bb5a130568fad} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::fix\+Entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::fix\+Entity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -222,7 +224,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{getAcceleration@{getAcceleration}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{getAcceleration()}{getAcceleration()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_aa70295fa072b7c2c889a331ae3b76f97} 
-const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Acceleration (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Acceleration (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -239,7 +241,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{getForce@{getForce}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{getForce()}{getForce()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac8b702e69a24d650e84841a011181197} 
-const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Force (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Force (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -256,7 +258,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{getMass@{getMass}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{getMass()}{getMass()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a7a86518e65f02ebaab4a3a345bb3719d} 
-const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Mass (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_mass}{Mass}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Mass (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -273,7 +275,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{getPosition@{getPosition}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ab408f7e01249ec99173635b34ad479ed} 
-const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Position (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -290,7 +292,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{getVelocity@{getVelocity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae7abe1bd98a1cc13a70110f4d0c47b56} 
-const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Velocity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -307,7 +309,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{getVolume@{getVolume}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae69e033f636abc9521157c094fece8ae} 
-const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::get\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -324,7 +326,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{isFixed@{isFixed}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{isFixed()}{isFixed()}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a66c2e8ec7787cc30b1ae7b1280e2e774} 
-bool Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::is\+Fixed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+bool Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::is\+Fixed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -341,7 +343,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setAcceleration@{setAcceleration}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setAcceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_acf05f45ae024e200287e6aaed6f46d15} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&}]{acceleration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration}{Acceleration}} \&}]{acceleration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -360,7 +362,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setAcceleration@{setAcceleration}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setAcceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a55744844441cf2d1e6b66a0008f03479} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{acceleration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{acceleration}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -381,7 +383,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setForce@{setForce}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setForce()}{setForce()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_af739fd5522fc80115a2c9f4b40574217} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Force (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Force (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -400,7 +402,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setForce@{setForce}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setForce()}{setForce()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae1f54e2b9c33e34e0149ceb008e81882} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Force (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Force (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{force}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -421,7 +423,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setPosition@{setPosition}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a4e7ec62c73d090129fd651fa7292d6bf} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -440,7 +442,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setPosition@{setPosition}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ac2c675b51cf79314f780b6e26fd84efe} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Position (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{position}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -461,7 +463,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setVelocity@{setVelocity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a6f5c0d76e2abbbddbd34e41a8d8314a7} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{velocity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const std\+::array$<$ double, 3 $>$}]{velocity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -482,7 +484,7 @@ Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a
 \index{setVelocity@{setVelocity}!InertiaFX::Core::Engine::Entity@{InertiaFX::Core::Engine::Entity}}
 \doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_ae720daf18e2598a7a4d9807b9f5b662b} 
-void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_velocity}{Velocity}} \&}]{velocity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -544,7 +546,6 @@ Net \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} acting on the
 
 \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} of the entity. 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/inc/\mbox{\hyperlink{entity_8h}{entity.\+h}}\item 
-C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/src/\mbox{\hyperlink{entity_8cpp}{entity.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/inc/\mbox{\hyperlink{entity_8h}{entity.\+h}}\end{DoxyCompactItemize}

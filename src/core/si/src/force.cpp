@@ -112,6 +112,15 @@ namespace Core
             newValue[2]                    = this->getValue()[2] + other.getValue()[2];
             return Force(newValue, DecimalPrefix::Name::base);
         }
+
+        bool Force::operator==(const Force &other) const
+        {
+            constexpr double EPS = 1e-9;
+            auto v1              = this->getValue();
+            auto v2              = other.getValue();
+            return std::abs(v1[0] - v2[0]) < EPS && std::abs(v1[1] - v2[1]) < EPS &&
+                   std::abs(v1[2] - v2[2]) < EPS && _prefix == other._prefix;
+        }
     }  // namespace SI
 }  // namespace Core
 }  // namespace InertiaFX

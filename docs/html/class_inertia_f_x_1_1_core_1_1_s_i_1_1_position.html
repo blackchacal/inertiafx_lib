@@ -147,6 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2418c62ec9e75d55eed9c7b598a2d4df" id="r_a2418c62ec9e75d55eed9c7b598a2d4df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2418c62ec9e75d55eed9c7b598a2d4df">operator+</a> (const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a> &amp;other) const</td></tr>
 <tr class="memdesc:a2418c62ec9e75d55eed9c7b598a2d4df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Addition operator.  <br /></td></tr>
 <tr class="separator:a2418c62ec9e75d55eed9c7b598a2d4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19f67d82f22e27c6f311451da371c6de" id="r_a19f67d82f22e27c6f311451da371c6de"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19f67d82f22e27c6f311451da371c6de">operator==</a> (const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a> &amp;other) const</td></tr>
+<tr class="memdesc:a19f67d82f22e27c6f311451da371c6de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equality operator.  <br /></td></tr>
+<tr class="separator:a19f67d82f22e27c6f311451da371c6de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html">InertiaFX::Core::SI::DerivedVectorQty</a></td></tr>
 <tr class="memitem:ad76e2135f7f1fb944ff92a7bee0c04a4 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty" id="r_ad76e2135f7f1fb944ff92a7bee0c04a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html#ad76e2135f7f1fb944ff92a7bee0c04a4">DerivedVectorQty</a> (const std::string &amp;name, const std::string &amp;symbol, const std::string &amp;description, std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i_physical_unit.html">IPhysicalUnit</a> &gt; unit)</td></tr>
 <tr class="memdesc:ad76e2135f7f1fb944ff92a7bee0c04a4 inherit pub_methods_class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_derived_vector_qty.html" title="Represents a derived vector physical quantity in the system (e.g., velocity, acceleration).">DerivedVectorQty</a> object.  <br /></td></tr>
@@ -390,6 +393,33 @@ std::unique_ptr&lt; <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_i
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A reference to this object.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This operator performs a deep copy of the object. </dd></dl>
+
+</div>
+</div>
+<a id="a19f67d82f22e27c6f311451da371c6de" name="a19f67d82f22e27c6f311451da371c6de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f67d82f22e27c6f311451da371c6de">&#9670;&#160;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InertiaFX::Core::SI::Position::operator== </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html">Position</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Equality operator. </p>
+<p>Compares two <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html" title="Concrete derived quantity representing position in space.">Position</a> objects for equality.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The other <a class="el" href="class_inertia_f_x_1_1_core_1_1_s_i_1_1_position.html" title="Concrete derived quantity representing position in space.">Position</a> object to compare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the positions are equal, false otherwise. </dd></dl>
 
 </div>
 </div>

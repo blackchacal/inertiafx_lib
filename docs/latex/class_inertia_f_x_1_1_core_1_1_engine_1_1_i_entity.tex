@@ -21,6 +21,8 @@ Inheritance diagram for Inertia\+FX\+::Core\+::Engine\+::IEntity\+:\begin{figure
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a2b0c9759047b40739d59d447302d46e9}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a2b0c9759047b40739d59d447302d46e9} 
 virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IEntity} ()=default
 \begin{DoxyCompactList}\small\item\em Virtual destructor for safe polymorphic cleanup. \end{DoxyCompactList}\item 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity} of the same dynamic type. \end{DoxyCompactList}\item 
 virtual const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a42651a31eae16c45e9eae5221264b4c1}{get\+Position}} () const =0
 \begin{DoxyCompactList}\small\item\em Retrieves the current position of the entity. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_ae7d480811c1fde06bbb9bd0daa1ca897}{set\+Position}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_position}{Position}} \&position)=0
@@ -106,6 +108,20 @@ This overload allows adding a force to the existing net force, using a 3D vector
 
 
 Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_entity_a204b0a822151f348ef1e56517fe8cecc}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Entity}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}\index{InertiaFX::Core::Engine::IEntity@{InertiaFX::Core::Engine::IEntity}!clone@{clone}}
+\index{clone@{clone}!InertiaFX::Core::Engine::IEntity@{InertiaFX::Core::Engine::IEntity}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3} 
+virtual std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ Inertia\+FX\+::\+Core\+::\+Engine\+::\+IEntity\+::clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Add a \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_a57439391ba4a76e31a9f21b35ad2d2c3}{clone()} that creates a new \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity} of the same dynamic type. 
+
+
+
+Implemented in \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass_a228eb918ee995c471ae8f65137989c4e}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+Point\+Mass}}.
 
 \Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity_af858a9cff366c8761c1f896ffba3620a}\index{InertiaFX::Core::Engine::IEntity@{InertiaFX::Core::Engine::IEntity}!fixEntity@{fixEntity}}
 \index{fixEntity@{fixEntity}!InertiaFX::Core::Engine::IEntity@{InertiaFX::Core::Engine::IEntity}}

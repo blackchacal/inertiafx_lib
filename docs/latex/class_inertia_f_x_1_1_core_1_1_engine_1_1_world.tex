@@ -1,0 +1,280 @@
+\doxysection{Inertia\+FX\+::Core\+::Engine\+::World Class Reference}
+\hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}{}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+
+
+Abstract class implementing the \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world}{IWorld} interface.  
+
+
+
+
+{\ttfamily \#include $<$world.\+h$>$}
+
+Inheritance diagram for Inertia\+FX\+::Core\+::Engine\+::World\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_inertia_f_x_1_1_core_1_1_engine_1_1_world}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ab3f8da30b2df6b7171ae991ad49c8f38}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ab3f8da30b2df6b7171ae991ad49c8f38} 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+World} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ $>$ \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_adeac7e3145586b5e3e40a4406431b266}{get\+Entities}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves all entities in the simulation world.    \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a900a966c03a5363e1fdb8abda74db419}{get\+Total\+Number\+Of\+Entities}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the total number of entities in the simulation world.    \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ $>$ \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a575b60e55ee7b67d6fc73ba405172850}{get\+Mediums}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves all mediums in the simulation world.    \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8edbf20baa1bfba0b98cd8f8e118836c}{get\+Total\+Number\+Of\+Mediums}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the total number of mediums in the simulation world.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a82e395d397f766a8145f5ece569274ca}{get\+Volume}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the medium\textquotesingle{}s volume.    \end{DoxyCompactList}\item 
+std\+::tuple$<$ double, double, double $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd877f3744302c252225b86b406fce68}{get\+Volume\+Dimensions}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the dimensions of the simulation world\textquotesingle{}s volume.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_aa0dfc52c2904c7a572a7f4a80e1627c9}{add\+Entity}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ entity) override
+\begin{DoxyCompactList}\small\item\em Adds an entity to the simulation world.    \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_afe0203dc79d43a87e189567d3fffa4a4}{add\+Medium}} (std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ medium) override
+\begin{DoxyCompactList}\small\item\em Adds a medium to the simulation world.    \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \& \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a2b851c54444a4d2607e3d0072d9d126d}{get\+Gravity}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the gravity force acting on the world.    \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual {\bfseries \texorpdfstring{$\sim$}{\string~}\+IWorld} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for interface cleanup. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8346cc020704f2e7ad4931bbaa905457}\label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8346cc020704f2e7ad4931bbaa905457} 
+{\bfseries World} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ad6f01160517e83ded1dc8779c754de26}{World}} (const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&volume, const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&gravity)
+\begin{DoxyCompactList}\small\item\em Constructor with volume and gravity parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4}{\+\_\+entities}}
+\item 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ $>$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c}{\+\_\+mediums}}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}{\+\_\+volume}}
+\item 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded}{\+\_\+gravity}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class implementing the \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world}{IWorld} interface. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ad6f01160517e83ded1dc8779c754de26}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!World@{World}}
+\index{World@{World}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{World()}{World()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_ad6f01160517e83ded1dc8779c754de26} 
+Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::\+World (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \&}]{volume}{, }\item[{const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \&}]{gravity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Constructor with volume and gravity parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em volume} & \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} of the world. \\
+\hline
+{\em gravity} & Gravity force acting on the world. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_aa0dfc52c2904c7a572a7f4a80e1627c9}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!addEntity@{addEntity}}
+\index{addEntity@{addEntity}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{addEntity()}{addEntity()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_aa0dfc52c2904c7a572a7f4a80e1627c9} 
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::add\+Entity (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$}]{entity}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds an entity to the simulation world.    
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & A unique pointer to the \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity} object to be added.    \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_afdd908a36926de2f2fe9b59cbdb3ee5e}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_afe0203dc79d43a87e189567d3fffa4a4}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!addMedium@{addMedium}}
+\index{addMedium@{addMedium}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{addMedium()}{addMedium()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_afe0203dc79d43a87e189567d3fffa4a4} 
+void Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::add\+Medium (\begin{DoxyParamCaption}\item[{std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$}]{medium}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds a medium to the simulation world.    
+
+
+\begin{DoxyParams}{Parameters}
+{\em medium} & A unique pointer to the \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium} object to be added.    \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_a4f3504a00b6285bbf20b0d78356745d5}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_adeac7e3145586b5e3e40a4406431b266}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!getEntities@{getEntities}}
+\index{getEntities@{getEntities}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{getEntities()}{getEntities()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_adeac7e3145586b5e3e40a4406431b266} 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}} $>$ $>$ \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::get\+Entities (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves all entities in the simulation world.    
+
+\begin{DoxyReturn}{Returns}
+A vector of unique pointers to \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity} objects.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_a9c2e85cf98b91c4901e3894bdf63450d}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a2b851c54444a4d2607e3d0072d9d126d}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!getGravity@{getGravity}}
+\index{getGravity@{getGravity}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{getGravity()}{getGravity()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a2b851c54444a4d2607e3d0072d9d126d} 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::get\+Gravity (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the gravity force acting on the world.    
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} object representing gravity.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_ad89c620de22d46dd2723241af6fc42f6}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a575b60e55ee7b67d6fc73ba405172850}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!getMediums@{getMediums}}
+\index{getMediums@{getMediums}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{getMediums()}{getMediums()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a575b60e55ee7b67d6fc73ba405172850} 
+const std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}} $>$ $>$ \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::get\+Mediums (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves all mediums in the simulation world.    
+
+\begin{DoxyReturn}{Returns}
+A vector of unique pointers to \doxylink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium} objects.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_ad5a6ad9eae7894b11f0545375b0661b5}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a900a966c03a5363e1fdb8abda74db419}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!getTotalNumberOfEntities@{getTotalNumberOfEntities}}
+\index{getTotalNumberOfEntities@{getTotalNumberOfEntities}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{getTotalNumberOfEntities()}{getTotalNumberOfEntities()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a900a966c03a5363e1fdb8abda74db419} 
+unsigned int Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::get\+Total\+Number\+Of\+Entities (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the total number of entities in the simulation world.    
+
+\begin{DoxyReturn}{Returns}
+The total number of entities.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_a6b25b7658cc2ca4b091fa4cc51aa5959}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8edbf20baa1bfba0b98cd8f8e118836c}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!getTotalNumberOfMediums@{getTotalNumberOfMediums}}
+\index{getTotalNumberOfMediums@{getTotalNumberOfMediums}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{getTotalNumberOfMediums()}{getTotalNumberOfMediums()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a8edbf20baa1bfba0b98cd8f8e118836c} 
+unsigned int Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::get\+Total\+Number\+Of\+Mediums (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the total number of mediums in the simulation world.    
+
+\begin{DoxyReturn}{Returns}
+The total number of mediums.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_a8935236cebfe8d1bac9fbf7a0a94935e}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a82e395d397f766a8145f5ece569274ca}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!getVolume@{getVolume}}
+\index{getVolume@{getVolume}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{getVolume()}{getVolume()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a82e395d397f766a8145f5ece569274ca} 
+const \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} \& Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::get\+Volume (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the medium\textquotesingle{}s volume.    
+
+\begin{DoxyReturn}{Returns}
+The current volume of the medium.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_abc9460c68d33adb21541cbb9ff470d53}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd877f3744302c252225b86b406fce68}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!getVolumeDimensions@{getVolumeDimensions}}
+\index{getVolumeDimensions@{getVolumeDimensions}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{getVolumeDimensions()}{getVolumeDimensions()}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd877f3744302c252225b86b406fce68} 
+std\+::tuple$<$ double, double, double $>$ Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::get\+Volume\+Dimensions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the dimensions of the simulation world\textquotesingle{}s volume.    
+
+\begin{DoxyReturn}{Returns}
+A tuple containing the length, width, and height of the volume.    
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world_a7b5ad1ec2d574e794fb93d23b9a96be1}{Inertia\+FX\+::\+Core\+::\+Engine\+::\+IWorld}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!\_entities@{\_entities}}
+\index{\_entities@{\_entities}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{\_entities}{\_entities}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a59984c815ab60112de9d66ddb0000cd4} 
+std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity}{IEntity}}$>$ $>$ Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::\+\_\+entities\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector of unique pointers to entities in the world. \Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!\_gravity@{\_gravity}}
+\index{\_gravity@{\_gravity}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{\_gravity}{\_gravity}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a66cec98d9eb462635a1a1d5b78d8aded} 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force}} Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::\+\_\+gravity\hspace{0.3cm}{\ttfamily [protected]}}
+
+Gravity \doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_force}{Force} acting on the world. \Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!\_mediums@{\_mediums}}
+\index{\_mediums@{\_mediums}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{\_mediums}{\_mediums}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_a17159c2e8c40204fabcd59014072bb9c} 
+std\+::vector$<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium}{IMedium}}$>$ $>$ Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::\+\_\+mediums\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector of unique pointers to mediums in the world. \Hypertarget{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2}\index{InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}!\_volume@{\_volume}}
+\index{\_volume@{\_volume}!InertiaFX::Core::Engine::World@{InertiaFX::Core::Engine::World}}
+\doxysubsubsection{\texorpdfstring{\_volume}{\_volume}}
+{\footnotesize\ttfamily \label{class_inertia_f_x_1_1_core_1_1_engine_1_1_world_acd5f4dc9990c92fcd933701d343155d2} 
+\mbox{\hyperlink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume}} Inertia\+FX\+::\+Core\+::\+Engine\+::\+World\+::\+\_\+volume\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{class_inertia_f_x_1_1_core_1_1_s_i_1_1_volume}{Volume} of the world. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/ribei/\+One\+Drive/\+Documentos/\+Code/\+Inertia\+FX/src/core/engine/inc/\mbox{\hyperlink{world_8h}{world.\+h}}\end{DoxyCompactItemize}

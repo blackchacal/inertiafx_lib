@@ -3,12 +3,19 @@ var annotated_dup =
     [ "InertiaFX", null, [
       [ "Core", null, [
         [ "Engine", null, [
+          [ "EmptySpace", "class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_empty_space" ],
           [ "Entity", "class_inertia_f_x_1_1_core_1_1_engine_1_1_entity.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_entity" ],
           [ "IEntity", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_entity" ],
           [ "IMaterial", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_material" ],
+          [ "IMedium", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_medium" ],
+          [ "IWorld", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_i_world" ],
+          [ "Liquid", "class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_liquid" ],
           [ "Material", "class_inertia_f_x_1_1_core_1_1_engine_1_1_material.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_material" ],
+          [ "Medium", "class_inertia_f_x_1_1_core_1_1_engine_1_1_medium.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_medium" ],
           [ "PointMass", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_point_mass" ],
-          [ "SolidBody", "class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body" ]
+          [ "SolidBody", "class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_solid_body" ],
+          [ "Water", "class_inertia_f_x_1_1_core_1_1_engine_1_1_water.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_water" ],
+          [ "World", "class_inertia_f_x_1_1_core_1_1_engine_1_1_world.html", "class_inertia_f_x_1_1_core_1_1_engine_1_1_world" ]
         ] ],
         [ "SI", null, [
           [ "Acceleration", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration.html", "class_inertia_f_x_1_1_core_1_1_s_i_1_1_acceleration" ],
