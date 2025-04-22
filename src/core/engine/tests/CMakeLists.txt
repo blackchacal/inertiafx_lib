@@ -6,6 +6,7 @@ add_executable(Engine_UnitTests
     test_water.cpp
     test_point_mass.cpp
     test_empty_space.cpp
+    test_engine.cpp
 )
 
 target_link_libraries(Engine_UnitTests PRIVATE

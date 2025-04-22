@@ -23,8 +23,8 @@
  * @date 26, Mar 2025
  */
 
-#ifndef INERTIAFX_LOGGER_H
-#define INERTIAFX_LOGGER_H
+#ifndef INERTIAFX_CORE_TOOLS_LOGGER_H
+#define INERTIAFX_CORE_TOOLS_LOGGER_H
 
 #include "ILogger.h"
 #include <cstdarg>
@@ -107,4 +107,4 @@ namespace Core
 }  // namespace Core
 }  // namespace InertiaFX
 
-#endif  // INERTIAFX_LOGGER_H
+#endif  // INERTIAFX_CORE_TOOLS_LOGGER_H

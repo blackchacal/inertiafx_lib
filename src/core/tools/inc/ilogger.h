@@ -23,8 +23,8 @@
  * @date 26, Mar 2025
  */
 
-#ifndef INERTIAFX_ILOGGER_H
-#define INERTIAFX_ILOGGER_H
+#ifndef INERTIAFX_CORE_TOOLS_ILOGGER_H
+#define INERTIAFX_CORE_TOOLS_ILOGGER_H
 
 #include <cstdarg>
 #include <string>
@@ -92,4 +92,4 @@ namespace Core
 }  // namespace Core
 }  // namespace InertiaFX
 
-#endif  // INERTIAFX_ILOGGER_H
+#endif  // INERTIAFX_CORE_TOOLS_ILOGGER_H

@@ -7,6 +7,7 @@ target_sources(Engine PRIVATE
     src/water.cpp
     src/point_mass.cpp
     src/empty_space.cpp
+    src/engine.cpp
     # src/solid_body.cpp
 )
 
